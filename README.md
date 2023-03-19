@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="![GitHub Banner](https://user-images.githubusercontent.com/77539004/226190752-5f1bfb10-7cb1-410f-bdb3-fd79be7dd406.png)" height="250">
+  <img src="https://user-images.githubusercontent.com/77539004/226191234-269ac220-e035-464f-ac00-9e65bbd80a78.png" height="250">
 </p>
 
-<p align="center">Welcome to the ever-growing tech community.</p>
+<p align="center">Welcome to the Ever-Growing Tech Community.</p>
 
 ## About Us
 
