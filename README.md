@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="" height="250">
+  <img src="![GitHub Banner](https://user-images.githubusercontent.com/77539004/226190752-5f1bfb10-7cb1-410f-bdb3-fd79be7dd406.png)" height="250">
 </p>
 
 <p align="center">Welcome to the ever-growing tech community.</p>
@@ -38,15 +38,15 @@ We are a Multi-College Tech Community that helps college students to **Learn** i
 ## 💈 Contribute
 
 We welcome contributions in our community.<br>
-Before making a contribution, check the <a href="">Contribution guide.</a>
+Before making a contribution, check the <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/CONTRIBUTING.md">Contribution guide.</a>
 
 ## 🧧 Code of Conduct
 
-Check out <a href="">Code of Conduct</a> to know inclusive environment that respects all contributions.
+Check out <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a> to know inclusive environment that respects all contributions.
 
 ## 📜 License
 
-This Community is <a href="">Licensed</a> under MIT license.
+This Community is <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/LICENSE">Licensed</a> under MIT license.
 
 ## 🚀 Getting Started
 
