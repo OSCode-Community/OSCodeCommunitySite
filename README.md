@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+<p align="center">
+  <img src="" height="250">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">Welcome to the ever-growing tech community.</p>
 
-## Available Scripts
+## About Us
 
-In the project directory, you can run:
+We are a Multi-College Tech Community that helps college students to **Learn** in Public and **Engage** with similar-minded people. We help local college communities to encourage this culture on their campus and help them build it. We help students by upskilling them in the domain of their interests by organizing workshops, technical seminars, hackathons, project sessions, code-along, etc.
 
-### `npm start`
+## OSCode
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<a href="https://oscode-community.github.io/OSCodeCommunitySite/">Visit</a> our website.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📱 Connect with us
 
-### `npm test`
+<a href="https://discord.gg/P3xqtSU8zU">
+  <img src="https://img.icons8.com/color/2x/discord--v2.png" height="60px"></img>
+</a>
+<a href="https://github.com/OSCode-Community">
+  <img src="https://img.icons8.com/ios-glyphs/2x/github.png" height="60px"></img>
+</a>
+<a href="https://twitter.com/OSCodeCommunity">
+  <img src="https://img.icons8.com/fluency/2x/twitter.png" height="60px"></img>
+</a>
+<a href="https://www.linkedin.com/company/oscode">
+  <img src="https://img.icons8.com/fluency/2x/linkedin.png" height="60px"></img>
+</a>
+<a href=""><img src="https://img.icons8.com/color/2x/instagram-new.png" height="60px"></img>
+</a>
+<a href="">
+  <img src="https://img.icons8.com/color/2x/telegram-app.png" height="60px"></img>
+</a>
+<a href="">
+  <img src="https://img.icons8.com/color/2x/youtube.png" height="60px"></img>
+</a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💈 Contribute
 
-### `npm run build`
+We welcome contributions in our community.<br>
+Before making a contribution, check the <a href="">Contribution guide.</a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧧 Code of Conduct
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Check out <a href="">Code of Conduct</a> to know inclusive environment that respects all contributions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📜 License
 
-### `npm run eject`
+This Community is <a href="">Licensed</a> under MIT license.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🧾 Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Before starting out, you'll need to install the following on your computer.
 
-## Learn More
+[![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/download/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/downloads)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
 
-### Code Splitting
+## 🛠️ Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Fork the repo
+2. Clone the repository `git clone `
+3. Run `cd ` to change the working directory
+4. Add the steps
 
-### Analyzing the Bundle Size
+## ❤️ Thanks to all the contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="https://github.com/OSCode-Community/OSCodeCommunitySite/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=OSCode-Community/OSCodeCommunitySite" />
+</a>
