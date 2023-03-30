@@ -26,12 +26,12 @@ We are a Multi-College Tech Community that helps college students to **Learn** i
 <a href="https://www.linkedin.com/company/oscode">
   <img src="https://img.icons8.com/fluency/2x/linkedin.png" height="60px"></img>
 </a>
-<a href=""><img src="https://img.icons8.com/color/2x/instagram-new.png" height="60px"></img>
+<a href="https://instagram.com/os_code_community?igshid=YmMyMTA2M2Y="><img src="https://img.icons8.com/color/2x/instagram-new.png" height="60px"></img>
 </a>
-<a href="">
+<a href="https://t.me/+yNBAO5cbFLk3NTA1">
   <img src="https://img.icons8.com/color/2x/telegram-app.png" height="60px"></img>
 </a>
-<a href="">
+<a href="https://youtube.com/@oscodecommunity">
   <img src="https://img.icons8.com/color/2x/youtube.png" height="60px"></img>
 </a>
 
