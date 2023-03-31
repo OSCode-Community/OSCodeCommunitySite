@@ -142,6 +142,10 @@ h6 {
 */
 .navbar {
   padding: 0;
+
+    background-color: transparent;
+  
+  
 }
 
 .navbar ul {
@@ -778,7 +782,7 @@ section {
 }
 .tabs .nav-link {
   border: 1px solid #b9b9b9;
-  padding: 15px;
+  padding: 7px;
   transition: 0.3s;
   color: #111111;
   border-radius: 0;
@@ -808,7 +812,9 @@ section {
   color: #fff;
   border-color: #16a9e4;
 }
-
+.tab-img{
+  margin-top: 50px;
+}
 @media (max-width: 768px) {
   .tabs .nav-link i {
     padding: 0;
@@ -962,7 +968,7 @@ section {
   opacity: 0;
 }
 
-.portfolio .portfolio-wrap img {
+.portfolio .portfolio-wrap  {
   transition: all ease-in-out 0.3s;
 }
 
@@ -1332,7 +1338,7 @@ section {
 }
 
 .contact .php-email-form input {
-  padding: 10px 15px;
+  padding: 20px 20px;
 }
 
 .contact .php-email-form textarea {
@@ -1346,6 +1352,8 @@ section {
   color: #fff;
   transition: 0.4s;
   border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 35px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
