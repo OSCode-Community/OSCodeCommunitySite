@@ -15,8 +15,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@300&display=swap"
     rel="stylesheet">
+
   <!-- Vendor CSS Files -->
   <link href="vendor/aos/aos.css" rel="stylesheet" />
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -38,6 +39,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
+
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/37377042d1.js" crossorigin="anonymous"></script>
 
@@ -54,7 +56,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#tabs">Services</a></li>
           <li>
             <a class="nav-link scrollto" href="#portfolio">Previous Work</a>
           </li>
@@ -84,13 +86,13 @@
                 <li><a href="#">Drop Down 4</a></li>
               </ul>
             </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
       <!-- .navbar -->
 
-      <a href="#contact" class="get-started-btn scrollto">Feedback</a>
+      <a href="#contact" class="get-started-btn scrollto">Contact Us</a>
     </div>
   </header>
   <!-- End Header -->
@@ -100,9 +102,9 @@
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <div class="row">
         <div class="col-xl-6">
-          <h1 class="home css-15">A community of Open Source developers</h1>
+          <h1 class="home css-15 roboto">A community of Open Source developers</h1>
           <h2>
-            <span id="auto-type"></span>
+            <span id="auto-type" class="roboto"></span>
           </h2>
           <a href="#contact" class="btn-get-started scrollto">Get Started</a>
         </div>
@@ -112,19 +114,21 @@
   <!-- End Hero -->
 
   <main id="main">
-    <!-- ======= Clients Section ======= -->
+    <!-- ======= About Section ======= -->
     <section id="about" class="clients">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>About Us</h2>
+          <h2>
+            About Us
+          </h2>
         </div>
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-6">
             <div class="abt-txt">
               <p class="p-hover">
                 <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                We are a <strong>Multi-College Tech Community</strong> that helps college students to Learn in
-                public and Engage with similar-minded people.
+                We are a <strong>Multi-College Tech Community</strong> that helps college students to learn in
+                public and engage with similar-minded people.
               </p>
               <p class="p-hover">
                 <i class="fa-sharp fa-solid fa-arrow-right"></i>
@@ -150,10 +154,9 @@
         </div>
       </div>
     </section>
-    <!-- End Clients Section -->
+    <!-- End About Section -->
 
-    <!-- ======= About Section ======= -->
-
+    <!-- ======= Carousel Section ======= -->
     <section id="testimonials">
       <div id="testimonial-carousel" class="carousel slide" data-ride="false">
         <div class="carousel-inner">
@@ -186,7 +189,7 @@
       </div>
 
     </section>
-
+    <!-- End Carousel section -->
 
     <!-- ======= Counts Section ======= -->
     <!-- <section id="counts" class="counts">
@@ -232,48 +235,61 @@
     </section>
      End Counts Section -->
 
+    <!-- ======= Gain Section ======= -->
     <section id="faq" class="faq">
 
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-right">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="section-title">
+              <h2>What you will gain from us? </h2>
+            </div>
 
-        <div class="section-title">
-          <h2>What you will gain from us? 🤔</h2>
-        </div>
+            <!-- <ul data-aos="fade-up"> -->
+            <div class="row abt-txt" data-aos="fade-right" data-aos-delay="100">
+              <p class="p-hover">
+                <i class="fa-solid fa-check"></i> Getting started with your <strong>lifelong journey of
+                  coding.</strong>
+              </p>
+              <p class="p-hover">
+                <i class="fa-solid fa-check"></i> <strong>Live training sessions</strong> regarding programming, open
+                source
+                etc.
+              </p>
+              <p class="p-hover">
+                <i class="fa-solid fa-check"></i> Improve your <strong>Interpersonal skills</strong>.
+              </p>
+              <p class="p-hover">
+                <i class="fa-solid fa-check"></i> Explore and Learn what real-world <strong>Software
+                  development</strong>
+                looks like.
+              </p>
+              <p class="p-hover">
+                <i class="fa-solid fa-check"></i> Refine your <strong>Problem-Solving skills</strong>.
 
-        <!-- <ul data-aos="fade-up"> -->
-        <div class="row abt-txt" data-aos="fade-up" data-aos-delay="100">
-          <p class="p-hover">
-            <i class="fa-solid fa-check"></i> Getting started with their <strong>lifelong journey of coding.</strong>
-          </p>
-          <p class="p-hover">
-            <i class="fa-solid fa-check"></i> <strong>Live training sessions</strong> regarding programming, open source
-            etc.
-          </p>
-          <p class="p-hover">
-            <i class="fa-solid fa-check"></i> Improve their <strong>Interpersonal skills</strong>.
-          </p>
-          <p class="p-hover">
-            <i class="fa-solid fa-check"></i> Explore and Learn what real-world <strong>Software development</strong>
-            looks like.
-          </p>
-          <p class="p-hover">
-            <i class="fa-solid fa-check"></i> Refine their <strong>Problem-Solving skills</strong>.
-
-          </p>
-
-
-          <p class="p-hover">
-            <i class="fa-solid fa-check"></i> Collaborative journey of <strong> learning, practising and
-              sharing technical skills</strong>
-            with our enthusiastic community!!
-          </p>
+              </p>
+              <p class="p-hover">
+                <i class="fa-solid fa-check"></i> Collaborative journey of <strong> learning, practising and
+                  sharing technical skills</strong>
+                with our enthusiastic community!!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bubble think">
+              <div class="bubble-inner">
+                <img src="assets/img/thinking.jpg" alt="Person">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- End Gain section -->
 
-
-    <section id="about" class="about section-bg">
-      <div class="container" data-aos="fade-up">
+    <!-- ======= Explore Section ======= -->
+    <section class="about section-bg">
+      <div class="container" data-aos="fade-down">
         <div class="row no-gutters">
           <div class="content col-xl-5 d-flex align-items-stretch">
             <div class="content">
@@ -291,50 +307,58 @@
           <div class="col-xl-7 d-flex align-items-stretch">
             <div class="icon-boxes d-flex flex-column justify-content-center">
               <div class="row">
-                <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="fa-regular fa-heart"></i>
-                  <h4>Mentorship</h4>
+                <div class="col-lg-4 col-sm-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <a><i class="fa-regular fa-heart hi-icon"></i>
+                    <h4>Mentorship</h4>
+                  </a>
                 </div>
-                <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="fa-solid fa-book"></i>
-                  <h4>Resources</h4>
+                <div class="col-lg-4 col-sm-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <a><i class="fa-solid fa-book hi-icon"></i>
+                    <h4>Resources</h4>
+                  </a>
                 </div>
-                <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="fa-solid fa-rocket"></i>
-                  <h4>Community</h4>
+                <div class="col-lg-4 col-sm-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <a><i class="fa-solid fa-rocket"></i>
+                    <h4>Community</h4>
+                  </a>
                 </div>
-                <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="fa-solid fa-id-card-clip"></i>
-                  <h4>Workshops</h4>
+                <div class="col-lg-4 col-sm-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <a><i class="fa-solid fa-id-card-clip"></i>
+                    <h4>Workshops</h4>
+                  </a>
                 </div>
-                <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="200">
-                  <i class="fa-solid fa-laptop-code"></i>
-                  <h4>Technical Seminars</h4>
+                <div class="col-lg-4 col-sm-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <a><i class="fa-solid fa-laptop-code"></i>
+                    <h4>Technical Seminars</h4>
+                  </a>
                 </div>
-                <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="300">
-                  <i class="fa-solid fa-gears"></i>
-                  <h4>Hackathons</h4>
+                <div class="col-lg-4 col-sm-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <a><i class="fa-solid fa-gears"></i>
+                    <h4>Hackathons</h4>
+                  </a>
                 </div>
-                <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="400">
-                  <i class="fa-solid fa-lightbulb"></i>
-                  <h4>Project Sessions</h4>
+                <div class="col-lg-4 col-sm-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <a><i class="fa-solid fa-lightbulb"></i>
+                    <h4>Project Sessions</h4>
+                  </a>
                 </div>
-                <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="400">
-                  <i class="fa-solid fa-code"></i>
-                  <h4>Code-along</h4>
+                <div class="col-lg-4 col-sm-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <a><i class="fa-solid fa-code"></i>
+                    <h4>Code-along</h4>
+                  </a>
                 </div>
-                <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="400">
-                  <i class="fa-solid fa-chalkboard-user"></i>
-                  <h4>Webinars</h4>
+                <div class="col-lg-4 col-sm-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <a><i class="fa-solid fa-chalkboard-user"></i>
+                    <h4>Webinars</h4>
+                  </a>
                 </div>
               </div>
             </div>
-            <!-- End .content -->
           </div>
         </div>
       </div>
     </section>
-    <!-- End About Section -->
+    <!-- End Explore Section -->
 
     <!-- ======= Tabs Section ======= -->
     <section id="tabs" class="tabs">
@@ -359,7 +383,7 @@
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
               <!-- <i class="ri-sun-line"></i> -->
-              <i class="bi bi-receipt-cutoff"></i>
+              <i class="bi bi-file-earmark-code"></i>
               <h4 class="d-none d-lg-block">Competitive Programming</h4>
             </a>
           </li>
@@ -452,7 +476,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/app-dev.svg" alt="" class="img-fluid" />
+                <img src="assets/img/app-dev.svg" alt="" class="img-fluid tab-img" />
               </div>
             </div>
           </div>
@@ -487,7 +511,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/cp.svg" alt="" class="img-fluid" />
+                <img src="assets/img/cp.svg" alt="" class="img-fluid tab-img" />
               </div>
             </div>
           </div>
@@ -527,7 +551,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/data-science.svg" alt="" class="img-fluid" />
+                <img src="assets/img/data-science.svg" alt="" class="img-fluid tab-img" />
               </div>
             </div>
           </div>
@@ -536,95 +560,8 @@
     </section>
     <!-- End Tabs Section -->
 
-    <!-- ======= Services Section ======= -->
-    <!-- <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Services</h2>
-          
-        </div>
-
-        <div class="row">
-          <div class="col-md-9">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <i class="bi bi-android2"></i>
-              <h4><a href="#">APP DEVELOPMENT</a></h4>
-              <p class="desc">
-                We specialize in creating
-                customized mobile applications
-                for iOS and Android platforms.
-                Whether it's a simple utility app
-                or a complex social networking
-                platform, we have the expertise
-                to deliver a solution that exceeds your expectations.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-9 mt-4 mt-md-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-laptop"></i>
-              <h4><a href="#">WEB DEVELOPMENT</a></h4>
-              <p class="desc">
-                We offer customized web
-                development solutions that are
-                tailored to meet your business
-                needs. Our team has experience
-                in developing everything from
-                simple static websites to
-                complex e-commerce platforms.
-                We use the latest web
-                technologies to ensure your
-                website is responsive, fast, and
-                user-friendly.
-              </p>
-            </div>
-          </div> -->
-    <!-- <div class="col-md-6 mt-4 mt-md-0">
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-bar-chart"></i>
-                <h4><a href="#">Sed ut perspiciatis</a></h4>
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6 mt-4 mt-md-0">
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-binoculars"></i>
-                <h4><a href="#">Nemo Enim</a></h4>
-                <p>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia deserunt mollit anim id est laborum
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6 mt-4 mt-md-0">
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
-                <i class="bi bi-brightness-high"></i>
-                <h4><a href="#">Magni Dolore</a></h4>
-                <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium voluptatum deleniti atque
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6 mt-4 mt-md-0">
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
-                <i class="bi bi-calendar4-week"></i>
-                <h4><a href="#">Eiusmod Tempor</a></h4>
-                <p>
-                  Et harum quidem rerum facilis est et expedita distinctio. Nam
-                  libero tempore, cum soluta nobis est eligendi
-                </p>
-              </div>
-            </div> -->
-    <!-- </div>
-    </div>
-    </section> -->
-    <!-- End Services Section -->
-
-    <section id="about" class="about section-bg">
+    <!-- ======= Work Section ======= -->
+    <section class="about section-bg">
       <div class="container" data-aos="fade-up">
         <div class="row no-gutters">
           <div class="content col-xl-5 d-flex align-items-stretch">
@@ -642,40 +579,46 @@
           <div class="col-xl-7 d-flex align-items-stretch">
             <div class="icon-boxes d-flex flex-column justify-content-center">
               <div class="row">
-                <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="fa-solid fa-satellite-dish"></i>
-                  <h4>Telecom</h4>
+                <div class="col-lg-4 col-sm-6  icon-box" data-aos="fade-down" data-aos-delay="100">
+                  <a><i class="fa-solid fa-satellite-dish"></i>
+                    <h4>Telecom</h4>
+                  </a>
                 </div>
-                <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bi bi-airplane-engines"></i>
-                  <h4>Travel</h4>
+                <div class="col-lg-4 col-sm-6  icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <a><i class="fa-solid fa-location-dot"></i>
+                    <h4>Travel</h4>
+                  </a>
                 </div>
-                <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bi bi-bank"></i>
-                  <h4>Banking</h4>
+                <div class="col-lg-4 col-sm-6  icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <a>
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h4>Banking</h4>
+                  </a>
                 </div>
-                <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="fa-solid fa-filter-circle-dollar"></i>
-                  <h4>Insurance</h4>
+                <div class="col-lg-4 col-sm-6  icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <a><i class="fa-solid fa-filter-circle-dollar"></i>
+                    <h4>Insurance</h4>
+                  </a>
                 </div>
-                <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="200">
-                  <i class="fa-solid fa-heart-pulse"></i>
-                  <h4>Health</h4>
+                <div class="col-lg-4 col-sm-6  icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <a><i class="fa-solid fa-heart-pulse"></i>
+                    <h4>Health</h4>
+                  </a>
                 </div>
-                <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="300">
-                  <i class="fa-solid fa-user-graduate"></i>
-                  <h4>Educational</h4>
+                <div class="col-lg-4 col-sm-6  icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <a><i class="fa-solid fa-user-graduate"></i>
+                    <h4>Educational</h4>
+                  </a>
                 </div>
               </div>
             </div>
-            <!-- End .content -->
           </div>
         </div>
       </div>
     </section>
-    <!-- End About Section -->
+    <!-- End Work Section -->
 
-    <!-- ======= Portfolio Section ======= -->
+    <!-- ======= Project Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
@@ -701,7 +644,7 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/panchami.png" class="img-fluid" alt="" />
+              <img src="assets/img/portfolio/panchami.png" class="img-fluid project-img" alt="panchami" />
               <div class="portfolio-info">
                 <h4>Panchami Associates</h4>
                 <p>Web</p>
@@ -716,7 +659,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/hamclub.png" class="img-fluid" alt="" />
+              <img src="assets/img/portfolio/hamclub.png" class="img-fluid project-img" alt="HAMClub" />
               <div class="portfolio-info">
                 <h4>Ham Club of BIT</h4>
                 <p>Web</p>
@@ -730,7 +673,7 @@
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/rotaract.png" class="img-fluid" alt="" />
+              <img src="assets/img/portfolio/rotaract.png" class="img-fluid project-img" alt="Rotaract" />
               <div class="portfolio-info">
                 <h4>Rotaract Club of BIT</h4>
                 <p>Web</p>
@@ -747,119 +690,16 @@
         </div>
       </div>
     </section>
-    <!-- End Portfolio Section -->
-
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <!-- <section id="faq" class="faq">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-        </div>
-
-        <ul class="faq-list accordion" data-aos="fade-up">
-          <li>
-            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">Non consectetur a erat nam at lectus
-              urna duis?
-              <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
-                volutpat lacus laoreet non curabitur gravida. Venenatis lectus
-                magna fringilla urna porttitor rhoncus dolor purus non.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim
-              nunc faucibus a
-              pellentesque? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque
-                habitant morbi. Id interdum velit laoreet id donec ultrices.
-                Fringilla phasellus faucibus scelerisque eleifend donec
-                pretium. Est pellentesque elit ullamcorper dignissim. Mauris
-                ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing
-              elit pellentesque
-              habitant morbi? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices
-                sagittis orci. Faucibus pulvinar elementum integer enim. Sem
-                nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
-                pellentesque eu tincidunt. Lectus urna duis convallis
-                convallis tellus. Urna molestie at elementum eu facilisis sed
-                odio morbi quis
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam
-              eleifend mi in nulla?
-              <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque
-                habitant morbi. Id interdum velit laoreet id donec ultrices.
-                Fringilla phasellus faucibus scelerisque eleifend donec
-                pretium. Est pellentesque elit ullamcorper dignissim. Mauris
-                ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq5" class="collapsed">Tempus quam pellentesque nec nam
-              aliquam sem et tortor
-              consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo.
-                Dignissim suspendisse in est ante in. Nunc vel risus commodo
-                viverra maecenas accumsan. Sit amet nisl suscipit adipiscing
-                bibendum est. Purus gravida quis blandit turpis cursus in
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq6" class="collapsed">Tortor vitae purus faucibus ornare.
-              Varius vel pharetra vel
-              turpis nunc eget lorem dolor?
-              <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris
-                vitae ultricies leo integer malesuada nunc vel. Tincidunt eget
-                nullam non nisi est sit amet. Turpis nunc eget lorem dolor
-                sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-                Pellentesque diam volutpat commodo sed egestas egestas
-                fringilla phasellus faucibus. Nibh tellus molestie nunc non
-                blandit massa enim nec.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section> -->
-    <!-- End Frequently Asked Questions Section -->
+    <!-- End Project Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-right">
         <div class="section-title">
           <h2>Contact Us</h2>
         </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="row" data-aos="flip-left" data-aos-delay="100">
           <div class="col-lg-6">
             <div class="row">
               <div class="col-md-12">
@@ -897,27 +737,27 @@
           </div> -->
 
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <!-- <div class="row">
+              <div class="row">
                 <div class="col form-group">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
                 </div>
                 <div class="col form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
                 </div>
-              </div> -->
-              <div class="form-group">
-                <!-- <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required /> -->
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
               </div>
               <div class="form-group">
-                <input type="password" class="form-control" name="password" id="password" placeholder="Enter password"
-                  required />
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
+                <!-- <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required /> -->
               </div>
               <!-- <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Enter password"
+                  required />
               </div> -->
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
@@ -926,9 +766,9 @@
                 </div>
               </div>
               <div class="text-center">
-                <button type="submit">Login</button>
+                <button type="submit">Message us</button>
               </div>
-              <p class="text-center">Are you visiting for the first time??</p>
+              <p class="text-center register">Stay tuned for more updates!!</p>
               <p class="text-center"><a href="#">Register Now</a></p>
             </form>
           </div>
