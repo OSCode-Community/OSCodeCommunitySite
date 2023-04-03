@@ -1749,6 +1749,7 @@ a:hover i {
     background-repeat:repeat-y;
     /* width: 1000px;
     height: 1000px; */
+    background-size: 100vw auto;
      }
 #home {
   width: 100%;
