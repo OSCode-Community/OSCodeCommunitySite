@@ -1167,9 +1167,10 @@ a:hover i {
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
-/* .project-img{
-  height: 200px;
-} */
+.project-img{
+  height: 250px;
+  width: 500px;
+}
 .portfolio-wrap{
   border-radius: 1%;
 }
@@ -1763,7 +1764,6 @@ a:hover i {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   line-height: 1.5em;
-  letter-spacing: 1.5px;
 }
 .demo a {
   position: absolute;
