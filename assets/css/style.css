@@ -130,7 +130,7 @@ h6 {
 @media (max-width: 992px) {
   .get-started-btn {
     margin: 0 15px 0 0;
-    padding: 6px 18px;
+    padding: 6px 8px;
   }
 }
 
@@ -635,13 +635,18 @@ section {
       transform: scale(1);
     }
   }
-  
+  /* Bootstrap toggle icon */
+  .bi-list::before {
+    content: "\f479";
+    color: white;
+}
   @media only screen and (max-width: 600px) {
     .abt-img {
       animation: float 4.5s ease-in-out infinite;
       height: 300px;
       width: 300px;
-  
+      margin-left: 80px;      
+
       background: radial-gradient(
         circle at 65% 35%,
         white 5px,
@@ -1728,6 +1733,12 @@ a:hover i {
   #event-p-div, #event-h1{
     display: none;
   }
+  .event-h1{
+    line-height: 1em;
+  }
+  .event-h2{
+    line-height: 1.2em;
+  }
 }
 #card{
   display: flex;
@@ -1788,6 +1799,7 @@ a:hover i {
 
 #home a {
   padding-top: 70px;
+  bottom: 0;
 }
 
 #home a span {
