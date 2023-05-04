@@ -54,14 +54,14 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#tabs">Services</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#benefits">Benefits</a></li>
           <li>
-            <a class="nav-link scrollto" href="index.html#portfolio">Previous Work</a>
+            <a class="nav-link scrollto" href="#">Services</a>
           </li>
           <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-          <li><a href="#home">Events</a></li>
+          <li><a href="events.html">Events</a></li>
           <!-- <li class="dropdown">
               <a href="#"
                 ><span>Drop Down</span> <i class="bi bi-chevron-down"></i
@@ -92,7 +92,7 @@
       </nav>
       <!-- .navbar -->
 
-      <a href="#footer" class="get-started-btn scrollto">Contact Us</a>
+      <a href="#contact" class="get-started-btn scrollto">Contact Us</a>
     </div>
   </header>
   <!-- End Header -->
@@ -100,10 +100,10 @@
   <!-- ======= Hero Section ======= -->
   <section id="home" class="d-flex align-items-center demo">
 
-    <div class="container text-center p" data-aos="zoom-out" data-aos-delay="100">
+    <div class="container text-center p event-wrap" data-aos="zoom-out" data-aos-delay="100">
       <div class="row">
         <div class="col-xl-12">
-          <h1 class="home css-15 text-center">Our Events</h1>
+          <h1 class="home css-15 text-center event-h1">Our Events</h1>
           <h3 class="event-h2">
             We have spectacular events which benefit the students.<br>
             The Club aims to support individuals working together by conducting enthralling events as documented below-
@@ -145,25 +145,22 @@
             </p>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
+          <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li>
                 <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
               </li>
               <li>
-                <i class="bx bx-chevron-right"></i> <a href="#about">About us</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i> <a href="#services">Services</a>
+                <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
               </li>
               <li>
                 <i class="bx bx-chevron-right"></i>
-                <a href="#">Terms of service</a>
+                <a href="policy.html">Terms of service</a>
               </li>
               <li>
                 <i class="bx bx-chevron-right"></i>
-                <a href="#">Privacy policy</a>
+                <a href="policy.html">Privacy policy</a>
               </li>
             </ul>
           </div>
@@ -175,26 +172,33 @@
                 <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
               </li>
               <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Web Development</a>
+                <i class="bx bx-chevron-right"></i><a href="#">Web Development</a>
               </li>
-
               <li>
                 <i class="bx bx-chevron-right"></i> <a href="#">App Development</a>
               </li>
-
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <!-- <p>
-            Tamen quem nulla quae legam multos aute sint culpa legam noster
-            magna
-          </p> -->
-            <form action="" method="post">
-              <input type="email" name="email" /><input type="submit" value="Subscribe" />
-            </form>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Community</h4>
+            <!-- <form action="mailto:oscode.community@gmail.com" method="post" enctype="text/plain">
+            <input type="email" name="email" /><input type="submit" value="Subscribe" />
+          </form> -->
+            <ul>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="#about">About us</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="#benefits">Benefits</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i><a href="#achievement">Accomplishments</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="#faq">FAQ</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -219,7 +223,7 @@
   </footer>
   <!-- End Footer -->
 
-  <a href="#home" class="back-to-top d-flex align-items-center justify-content-center"><i
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
@@ -231,48 +235,28 @@
   <script src="vendor/swiper/swiper-bundle.min.js"></script>
   <script src="vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- Auto-Typing -->
+  <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
   <script>
-    const container = document.getElementById('card');
-    const url = './events.json';
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        let cardsHtml = '';
-
-        console.log('Success:', data);
-        data = data.slice().reverse()
-        data.forEach((item) => {
-          const cardHtml = `
-      
-            <div class="card" data-aos="zoom-in" data-aos-delay="100">
-              
-              <div class="for-image-div">
-                <img src="${item.image}" alt="" id="image-for-card">
-              </div>
-
-              <div>
-                <span><h2 id="event-h1" >${item.title}</h2></span>
-              </div>
-
-              <div id="event-p-div">
-                <em><p id="event-p">${item.date}</p></em>
-              </div>
-              <div id="event-p-div">
-                <p id="event-p">${item.description}</p>
-              </div>
-         
-            </div>`;
-
-          cardsHtml += cardHtml;
-        });
-        container.innerHTML = cardsHtml;
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
+    var typed = new Typed('#auto-type', {
+      strings: ["Transforming EDUCATION with TECHNOLOGY"],
+      typeSpeed: 50,
+      loop: true
+    });
   </script>
+
+
+  <!-- Template Main JS File -->
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202304250101/show_ads_impl_fy2021.js"
+    id="google_shimpl"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
