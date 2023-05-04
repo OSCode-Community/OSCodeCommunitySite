@@ -124,12 +124,9 @@
 
   <main id="main">
 
-
-
-
-
   </main>
   <!-- End #main -->
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
@@ -183,8 +180,8 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Community</h4>
             <!-- <form action="mailto:oscode.community@gmail.com" method="post" enctype="text/plain">
-            <input type="email" name="email" /><input type="submit" value="Subscribe" />
-          </form> -->
+              <input type="email" name="email" /><input type="submit" value="Subscribe" />
+            </form> -->
             <ul>
               <li>
                 <i class="bx bx-chevron-right"></i> <a href="#about">About us</a>
@@ -223,7 +220,7 @@
   </footer>
   <!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+  <a href="#home" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
@@ -235,28 +232,48 @@
   <script src="vendor/swiper/swiper-bundle.min.js"></script>
   <script src="vendor/php-email-form/validate.js"></script>
 
-  <!-- Auto-Typing -->
-  <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
-
-  <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#auto-type', {
-      strings: ["Transforming EDUCATION with TECHNOLOGY"],
-      typeSpeed: 50,
-      loop: true
-    });
-  </script>
-
-
   <!-- Template Main JS File -->
-
   <script src="assets/js/main.js"></script>
-  <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202304250101/show_ads_impl_fy2021.js"
-    id="google_shimpl"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-    crossorigin="anonymous"></script>
+  <script>
+    const container = document.getElementById('card');
+    const url = './events.json';
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        let cardsHtml = '';
+
+        console.log('Success:', data);
+        data = data.slice().reverse()
+        data.forEach((item) => {
+          const cardHtml = `
+      
+            <div class="card" data-aos="zoom-in" data-aos-delay="100">
+              
+              <div class="for-image-div">
+                <img src="${item.image}" alt="" id="image-for-card">
+              </div>
+
+              <div>
+                <span><h2 id="event-h1" >${item.title}</h2></span>
+              </div>
+
+              <div id="event-p-div">
+                <em><p id="event-p">${item.date}</p></em>
+              </div>
+              <div id="event-p-div">
+                <p id="event-p">${item.description}</p>
+              </div>
+         
+            </div>`;
+
+          cardsHtml += cardHtml;
+        });
+        container.innerHTML = cardsHtml;
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  </script>
 </body>
 
 </html>
