@@ -633,7 +633,7 @@ section {
 .clients .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #ffffff;
   opacity: 1;
   border: 1px solid #5942e9;
 }
@@ -645,13 +645,13 @@ section {
 }
 
 .clients .swiper-slide img {
-  opacity: 0.5;
+
   transition: 0.3s;
   filter: grayscale(100);
 }
 .clients .swiper-slide img:hover {
   opacity: 1;
-  filter: none;
+  filter: drop-shadow(2px 4px 6px black);
 }
 .clients h1{
   color: #5942e9;
@@ -660,7 +660,8 @@ section {
 }
 .enlarge{
   height: 60px;
-  width: 200px;
+  width: 300px;
+  
 }
 @media only screen and (max-width: 600px) {
   .clients h1{
