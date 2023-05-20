@@ -1778,6 +1778,10 @@ a:hover i {
   padding-bottom: 20px;
 }
 
+.faq .faq-list li a:hover  {
+  box-shadow: 0 0 10px  #5942e9; 
+}
+
 .faq .faq-list a {
   display: block;
   position: relative;
@@ -1785,7 +1789,7 @@ a:hover i {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  padding-right: 25px;
+  padding: 25px;
   cursor: pointer;
 }
 
