@@ -776,7 +776,15 @@ section {
     text-decoration: none;
     font-weight: normal !important;
   }
-    @keyframes float {
+  .p-hover{
+    padding: 50px;
+    background-color: green;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+      @keyframes float {
       0% {
         transform: translatey(0px);
       }
@@ -955,7 +963,7 @@ section {
 }
 .count-box{
   background:  linear-gradient(145deg, #0e034d, #240ab3);
-}
+ }
 .row{
   margin-top: 70px;
 }
