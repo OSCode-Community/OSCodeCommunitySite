@@ -47,6 +47,16 @@ h1{
   height: 40px;
   border-radius: 4px;
   transition: all 0.4s;
+  animation: action 1s infinite alternate;
+}
+
+@keyframes action{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-15px);
+  }
 }
 
 .back-to-top i {
