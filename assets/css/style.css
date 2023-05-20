@@ -1,3 +1,19 @@
+/* Customize Scrollbar*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7027f9;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+/* Customize Scrollbar*/
+
 body {
   /* font-family: 'Roboto', sans-serif; */
   font-family: "Montserrat", sans-serif;
@@ -107,6 +123,10 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
+.nav-blur {
+  backdrop-filter: blur(4rem);
+}
+
 .logo1 {
   padding: 5px;
   width: 60px;
@@ -180,6 +200,7 @@ h1 {
 
 .navbar li {
   position: relative;
+  text-decoration: none;
 }
 
 .navbar a,
@@ -1082,12 +1103,14 @@ hr.line {
 }
 
 .circle .nav-link:hover {
+
   /* border-radius: 90%; */
   /* transition: 1s ease; */
 
   transform: scale(1.1);
   transition: width 1s, height 3s;
 }
+
 
 .flex-child {
   flex: 1;
