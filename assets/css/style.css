@@ -1513,22 +1513,15 @@ a:hover i {
 .carousel-control-next {
   width: 30px;
   height: 30px;
-  border-radius: 50%;
-  background: #999;
   text-shadow: none;
-  top: 4px;
+  top: 20%;
 }
 .carousel-control-prev i,
 .carousel-control-next i {
-  font-size: 20px;
-  margin-right: 2px;
+  font-size: 30px;
 }
 .carousel-control-prev {
-  left: auto;
-  right: 40px;
-}
-.carousel-control-next i {
-  margin-right: -2px;
+  left: 0%;
 }
 .carousel .carousel-indicators {
   bottom: 15px;
