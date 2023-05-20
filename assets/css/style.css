@@ -1085,7 +1085,7 @@ hr.line {
   /* border-radius: 90%; */
   /* transition: 1s ease; */
 
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: width 1s, height 3s;
 }
 
