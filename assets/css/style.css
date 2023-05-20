@@ -2408,6 +2408,17 @@ a:focus{
 .event-wrap{
   width: 900px;
 }
+.msg-us{
+  padding:8px 15px;
+  font-size: 22px;
+  color:white;
+  background-color:#2727be;
+  border-radius: 20px;
+}
+.msg-us:hover{
+  background-color: #2261b8;
+  box-shadow: 4px 4px 4px grey;
+}
 @media only screen and (max-width: 479px){
     .vertical-tab .nav-tabs{
         width: 100%;
