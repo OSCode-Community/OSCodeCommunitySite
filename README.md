@@ -67,7 +67,11 @@ Before starting out, you'll need to install the following on your computer.
 1. Fork the repo
 2. Clone the repository `git clone `
 3. Run `cd ` to change the working directory
-4. Add the steps
+4. Run `npm install` to install all the dependencies
+5. Run `npm install -g serve` to install serve
+6. Run `serve` to start the development server
+7. Navigate to `http://localhost:5000/`
+
 
 ## ❤️ Thanks to all the contributors
 
