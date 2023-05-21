@@ -1417,6 +1417,7 @@ a:hover i {
   position: relative;
   background: #fff;
   border-radius: 15px;
+  height: 400px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
