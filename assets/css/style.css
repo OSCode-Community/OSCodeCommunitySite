@@ -844,16 +844,6 @@ section {
     text-decoration: none;
     font-weight: normal !important;
   }
-
-  .p-hover{
-    padding: 50px;
-    background-color: green;
-    transition: transform .2s; /* Animation */
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-  }
-
   @keyframes float {
     0% {
       transform: translatey(0px);
@@ -863,10 +853,9 @@ section {
     }
     100% {
       transform: translatey(0px);
-
     }
   }
-
+}
 
 .abt-txt {
   margin-top: 40px;
@@ -1037,16 +1026,10 @@ hr.line {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
 }
-
-.count-box{
-  background:  linear-gradient(145deg, #0e034d, #240ab3);
- }
-
 .count-box {
   background: linear-gradient(145deg, #0e034d, #240ab3);
 }
 .row {
-
   margin-top: 70px;
 }
 .counts .count-box {
