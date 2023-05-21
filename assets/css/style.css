@@ -2510,3 +2510,9 @@ a:focus {
     font-size: 22px;
   }
 }
+
+/* Contact Us form style rule*/
+.box-rounded {
+  border-radius: 1rem;
+ }
+
