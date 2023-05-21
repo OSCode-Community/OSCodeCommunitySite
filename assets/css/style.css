@@ -2181,10 +2181,10 @@ a:hover i {
 # Events
 --------------------------------------------------------------*/
 .card {
-  border-radius: 56px;
+  border-radius: 16px;
   width: 50%;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  box-shadow: 20px 20px 40px #bebebe, -20px -20px 40px #ffffff;
+  /* box-shadow: 5px 5px 5px #bebebe, -5px -5px 5px #ffffff; */
   margin-bottom: 50px;
 
   display: flex;
@@ -2198,8 +2198,8 @@ a:hover i {
 #image-for-card {
   width: 100%;
   height: 100%;
-  border-top-left-radius: 56px;
-  border-top-right-radius: 56px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 .for-image-div {
   width: 100%;
@@ -2213,7 +2213,7 @@ a:hover i {
     height: 50vh;
   }
   #image-for-card {
-    border-radius: 56px;
+    border-radius: 16px;
   }
   #event-p-div,
   #event-h1 {
