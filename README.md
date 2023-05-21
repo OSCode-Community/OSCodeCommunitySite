@@ -73,5 +73,4 @@ Before starting out, you'll need to install the following on your computer.
 
 <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=OSCode-Community/OSCodeCommunitySite" />
-  <img src="![image](https://github.com/harshita-2003/OSCodeCommunitySite/assets/119532943/1b083bdd-a7ff-4d9f-bb3c-2daf1682f71e)">
 </a>
