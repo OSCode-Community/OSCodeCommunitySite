@@ -1878,10 +1878,14 @@ a:hover i {
 .contact .info-box {
   color: #444444;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 2rem rgba(214, 215, 216, 0.6);
   padding: 15px 0 15px 0;
-  border-radius: 4px;
+  border-radius: 2rem;
   background-color: #fff;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }
 #contact h1 {
   color: #5942e9 !important;
@@ -2516,3 +2520,23 @@ a:focus {
   border-radius: 1rem;
  }
 
+
+/*Added Info Box Style*/
+.info-box-2 {
+background-color: #f2f2f2;
+border-radius: 1rem;
+padding: 20px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.info-box-2 iframe {
+border-radius: 1rem;
+}
+.info-box-2 h3 {
+font-size: 18px;
+margin-top: 0;
+margin-bottom: 10px;
+}
+.info-box-2 p {
+margin-top: 0;
+margin-bottom: 0;
+}
