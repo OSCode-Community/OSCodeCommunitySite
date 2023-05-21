@@ -30,7 +30,10 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
+h1 .header {
+  font-family: 'Roboto', sans-serif;
+}
+
 h2,
 h3,
 h5,
@@ -121,10 +124,6 @@ h1 {
   padding: 0;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-}
-
-.nav-blur {
-  backdrop-filter: blur(4rem);
 }
 
 .logo1 {
@@ -341,16 +340,25 @@ h1 {
 }
 
 .navbar-mobile ul {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
+  top: 50%;
+  right: 2rem;
+  left: 2rem;
+  transform: translateY(-135%);
   padding: 10px 0;
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
+  border-radius: 8px;
+  max-height: calc(100vh - 70px);
+  -webkit-transform: translateY(-135%);
+  -moz-transform: translateY(-135%);
+  -ms-transform: translateY(-135%);
+  -o-transform: translateY(-135%);
 }
 
 .navbar-mobile a,
@@ -405,6 +413,40 @@ h1 {
   display: block;
 }
 
+
+/*------------------------------------------
+# GLASSMORPHIC EFFECT 
+------------------------------------------*/
+.glassmorphic {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.glassmorphic::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(1rem);
+  z-index: -1;
+}
+
+.glassmorphic::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1); /* Adjust the background color and transparency as desired */
+  z-index: -2;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
