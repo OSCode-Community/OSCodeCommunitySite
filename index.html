@@ -48,6 +48,20 @@
 </head>
 
 <body>
+  <style>
+    .zoom {
+      padding: 50px;
+      /* background-color: green; */
+      transition: transform .2s; /* Animation */
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+    }
+    
+    .zoom:hover {
+      transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+    </style>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center nav-blur">
     <div class="container d-flex align-items-center">
@@ -132,7 +146,7 @@
         </div>
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-6">
-            <h1 class="us">Who we are ?</h1>
+            <h1 class="us">Who we are ?</h1> 
             <hr class="line">
             <div class="abt-txt">
               <p class="p-hover">
@@ -143,7 +157,7 @@
                     d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
                   </path>
                 </svg>
-                We are a <strong>Multi-College Tech Community</strong> that helps college students to learn in
+                We are a <strong><b><i>Multi-College Tech Community</i></b></strong> that helps college students to learn in
                 public and engage with similar-minded people.
               </p>
               <p class="p-hover">
@@ -200,8 +214,8 @@
         <h1 class="number">Numbers say it all!</h1>
         <hr class="line">
         <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
+          <div class="col-lg-3 col-md-6" st;">
+            <div class="count-box zoom">
               <i class="bi bi-people-fill"></i>
               <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1"
                 class="purecounter"></span>
@@ -211,7 +225,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
+            <div class="count-box zoom">
               <i class="bi bi-stars"></i>
               <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1"
                 class="purecounter"></span>
@@ -221,7 +235,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
+            <div class="count-box zoom">
               <i class="fa-solid fa-user-graduate"></i>
               <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
                 class="purecounter"></span>
@@ -231,7 +245,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
+            <div class="count-box zoom">
               <i class="bi bi-journal-richtext"></i>
               <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
                 class="purecounter"></span>
@@ -392,7 +406,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/achievement/devx.jfif" class="testimonial-img" alt="">
+                  <img src="assets/img/achievement/devx.jfif" class="testimonial-img " alt="">
                   <h3>Partnership with DevX</h3>
                   <h4>Annual Springfest of Techno India
                     University</h4>
@@ -978,9 +992,9 @@
     var typed = new Typed('#auto-type', {
       strings: ["Transforming EDUCATION with TECHNOLOGY"],
       typeSpeed: 50,
-      loop: true
+      loop: true,
     });
-  </script>
+     </script>
 
 
   <!-- Template Main JS File -->
