@@ -1,6 +1,6 @@
 ---
 name: 💡 Feature request
-about: Suggest an enhancement to ODCodeCommunitySite
+about: Suggest an enhancement to OSCodeCommunitySite
 title: ''
 labels: 
  - 'kind/enhancement'

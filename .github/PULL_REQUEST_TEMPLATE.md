@@ -7,7 +7,7 @@ This PR fixes #
 
 
 <!--
-Thank you for contributing to Meshery! 
+Thank you for contributing to OSCodeCommunitySite! 
 
 Contributing Conventions:
 
