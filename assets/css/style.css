@@ -1892,6 +1892,88 @@ a:hover i {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact-form{
+  margin-top: 11%;
+}
+label {
+  display: block;
+  letter-spacing: 2px;
+  padding-top: 5px;
+  text-align: center;
+}
+label .label-text{
+  color: black;
+  cursor: text;
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: uppercase;
+  -moz-transform: translateY(-34px);
+  -ms-transform: translateY(-34px);
+  -webkit-transform: translateY(-34px);
+  transform: translateY(-34px);
+  transition: all 0.5s;
+}
+label input,textarea{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #4A4A4A;
+  color: rgb(40, 37, 37);
+  font-size: 20px;
+  letter-spacing: -1px;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transition: all 0.3s;
+  width: 150px;
+}
+label input,textarea:focus {
+  max-width: 100%;
+  width: 350px;
+}
+textarea{
+  width: 350px;
+}
+label input:focus + .label-text {
+  color:#5942e9;
+  font-size: 13px;
+  -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+}
+label input:valid + .label-text {
+  font-size: 13px;
+  -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+}
+input[type="email"]::-webkit-input-placeholder {
+  opacity: 0;
+}
+label #email:not(:placeholder-shown) + .label-text {
+  font-size: 13px;
+  -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+}
+label textarea:focus + .label-text {
+  color:#5942e9;
+  font-size: 13px;
+  -moz-transform: translateY(-85px);
+  -ms-transform: translateY(-85px);
+  -webkit-transform: translateY(-85px);
+  transform: translateY(-85px);
+}
+label textarea:valid + .label-text {
+  font-size: 13px;
+  -moz-transform: translateY(-85px);
+  -ms-transform: translateY(-85px);
+  -webkit-transform: translateY(-85px);
+  transform: translateY(-85px);
+}
+
 #contact {
   background-image: url("../img/abt-bg1.jpg");
   background-size: cover;
