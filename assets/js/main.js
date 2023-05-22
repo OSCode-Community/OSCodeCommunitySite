@@ -108,6 +108,22 @@
   }
 
   /**
+   * Theme toggle
+   */
+  on("click", ".default-theme", function (e) {
+    var imgbtn = select(".default-theme")
+    if(imgbtn.classList.contains("dark-theme")) {
+      imgbtn.classList.add("default-theme");
+      imgbtn.classList.remove("dark-theme");
+    }
+    else{
+      imgbtn.classList.add("dark-theme");
+    }
+    var header = select("#header");
+    header.classList.toggle("light-theme");
+  });
+
+  /**
    * Mobile nav toggle
    */
   on("click", ".mobile-nav-toggle", function (e) {
