@@ -20,8 +20,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif&display=swap" rel="stylesheet">
 
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+
 
     <style>
+        *{
+            scroll-behavior: smooth;
+        }
         body {
             margin: 0;
             font-family: 'Montserrat', sans-serif;
@@ -185,6 +190,13 @@
             text-align: left;
             background-color: #2b3adf;
             color: white;
+        }
+
+        .back-to-top i{
+            position: relative;
+            right: -5px;
+            bottom: -3px;
+
         }
 
 
@@ -887,6 +899,12 @@
         </div>
     </footer>
     <!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <script src="assets/js/main.js"></script>
+    
 </body>
 
 </html>
