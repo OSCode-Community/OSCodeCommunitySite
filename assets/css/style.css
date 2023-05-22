@@ -722,6 +722,11 @@ section {
   background-color: #5942e9;
 }
 
+.clients .swiper-slide {
+  width: 100px !important;
+  margin-right: 112px !important;
+}
+
 .clients .swiper-slide img {
   opacity: 0.5;
   transition: 0.3s;
@@ -739,6 +744,7 @@ section {
 .enlarge {
   height: 60px;
   width: 200px;
+  object-fit: contain;
 }
 @media only screen and (max-width: 600px) {
   .clients h1 {
@@ -1087,17 +1093,17 @@ hr.line {
   color: #fff;
 }
 
-@media (max-width: 1000px){
-.row {
+@media (max-width: 1000px) {
+  .row {
     margin-top: 160px !important;
-}
+  }
 }
 
-@media (max-width: 393px){
+@media (max-width: 393px) {
   .row {
-      margin-top: 320px !important;
+    margin-top: 320px !important;
   }
-  }
+}
 
 /*--------------------------------------------------------------
 # Icons
