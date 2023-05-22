@@ -1615,7 +1615,7 @@ a:hover i {
   border: none;
 }
 .carousel-indicators li.active {
-  background: #888;
+  background: #ffffff;
 }
 @media only screen and (max-width: 600px) {
   .carousel {
