@@ -1,3 +1,7 @@
+## OSCodeCommunitySite
+
+**Welcome to the Ever-Growing Tech Community - OSCode!**
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/77539004/226191234-269ac220-e035-464f-ac00-9e65bbd80a78.png" height="250">
 </p>
@@ -42,7 +46,10 @@ Problem-solving skills and interpersonal skills will be refined. Overall student
 
 ![GSSoC Logo](https://i.imgur.com/BR9Q5Pd.png)
 
-Yes, we’re a part of GSSoC ’23.</br> </br>
+**GSSoC '23**
+
+We are proud to be a part of GSSoC '23 (Global Summer of Code)! Join us and be a part of this amazing programes.
+</br> </br>
 <a href=""><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
 <a href=""><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
 <a href=""><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
@@ -58,6 +65,9 @@ Before making a contribution, check the <a href="https://github.com/OSCode-Commu
 ## 🧧 Code of Conduct
 
 Check out <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a> to know inclusive environment that respects all contributions.
+
+
+At OSCode, we value an inclusive environment that respects all contributions. To ensure a positive experience for everyone, please review our Code of Conduct.
 
 ## 📜 License
 
@@ -113,3 +123,7 @@ Before starting out, you'll need to install the following on your computer.
 <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=OSCode-Community/OSCodeCommunitySite" />
 </a>
+
+---
+✨✨
+We extend our heartfelt gratitude to all the contributors who have helped make OSCodeCommunitySite a success. We appreciate your dedication and hard work in improving the project.🚀🚀
