@@ -335,8 +335,8 @@ h1 {
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  right: 25px;
 }
 
 .navbar-mobile ul {
@@ -345,9 +345,10 @@ h1 {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50%;
-  right: 2rem;
-  left: 2rem;
+  top: 340px;
+  right: 70px;
+  width: 200px;
+  /* left: 2rem;  */
   transform: translateY(-135%);
   padding: 10px 0;
   background-color: #fff;
@@ -373,7 +374,6 @@ h1 {
 .navbar-mobile li:hover > a {
   color: #5942e9;
 }
-
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -1202,6 +1202,7 @@ hr.line {
 }
 .text-center {
   text-align: center;
+  padding: 2rem;
 }
 .hr-center {
   margin: auto;
@@ -2236,7 +2237,12 @@ a:hover i {
   align-items: center;
 }
 .card:hover {
-  box-shadow: 20px 20px 40px #d970ea, -20px -20px 40px #a5b5c0;
+  /* box-shadow: 20px 20px 40px #d970ea, -20px -20px 40px #a5b5c0; */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4),
+   0 4px 8px rgba(0, 0, 0, 0.2),
+   20px 20px 40px #d970ea,
+   -20px -20px 40px #a5b5c0;
+  transition: box-shadow 0.15s ease-in-out;
   margin-bottom: 50px;
 }
 #image-for-card {
