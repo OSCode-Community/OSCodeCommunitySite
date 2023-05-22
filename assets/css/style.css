@@ -31,7 +31,7 @@ a:hover {
 }
 
 h1 .header {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h2,
@@ -335,8 +335,8 @@ h1 {
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  right: 25px;
 }
 
 .navbar-mobile ul {
@@ -345,9 +345,10 @@ h1 {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50%;
-  right: 2rem;
-  left: 2rem;
+  top: 340px;
+  right: 70px;
+  width: 200px;
+  /* left: 2rem;  */
   transform: translateY(-135%);
   padding: 10px 0;
   background-color: #fff;
@@ -373,7 +374,6 @@ h1 {
 .navbar-mobile li:hover > a {
   color: #5942e9;
 }
-
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -413,7 +413,6 @@ h1 {
   display: block;
 }
 
-
 /*------------------------------------------
 # GLASSMORPHIC EFFECT 
 ------------------------------------------*/
@@ -444,7 +443,12 @@ h1 {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.1); /* Adjust the background color and transparency as desired */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /* Adjust the background color and transparency as desired */
   z-index: -2;
 }
 /*--------------------------------------------------------------
@@ -639,11 +643,17 @@ section {
 }
 .roboto {
   /* font-family: 'Roboto', sans-serif; */
-  font-family: "Prompt", sans-serif;
+  /* font-family: "Prompt", sans-serif; */
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
   font-size: 1.2em;
-  /* color: #14e5d4; */
-  color: rgb(44, 246, 199);
+  /* color: #b8ce55; */
+  /* color: rgb(118, 218, 221); */
   margin-top: 0;
+  background: -webkit-linear-gradient(#dee0d6, #3eaad1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -712,6 +722,13 @@ section {
   background-color: #5942e9;
 }
 
+@media only screen and (min-width: 600px) {
+  .clients .swiper-slide {
+    width: 100px !important;
+    margin-right: 112px !important;
+  }
+}
+
 .clients .swiper-slide img {
   opacity: 0.5;
   transition: 0.3s;
@@ -729,6 +746,7 @@ section {
 .enlarge {
   height: 60px;
   width: 200px;
+  object-fit: contain;
 }
 @media only screen and (max-width: 600px) {
   .clients h1 {
@@ -1076,6 +1094,19 @@ hr.line {
   font-size: 21px;
   color: #fff;
 }
+
+@media (max-width: 1000px) {
+  .row {
+    margin-top: 160px !important;
+  }
+}
+
+@media (max-width: 393px) {
+  .row {
+    margin-top: 320px !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Icons
 --------------------------------------------------------------*/
@@ -1166,6 +1197,7 @@ hr.line {
 }
 .text-center {
   text-align: center;
+  padding: 2rem;
 }
 .hr-center {
   margin: auto;
@@ -1518,7 +1550,7 @@ a:hover i {
   margin-top: 50px;
 }
 .carousel {
-  width: 650px;
+  /* width: 650px; */ /* was causing problem in responsiveness*/
   margin: 0 auto;
   padding-bottom: 50px;
 }
@@ -1592,7 +1624,7 @@ a:hover i {
   border: none;
 }
 .carousel-indicators li.active {
-  background: #888;
+  background: #ffffff;
 }
 @media only screen and (max-width: 600px) {
   .carousel {
@@ -2181,7 +2213,7 @@ a:hover i {
 # Events
 --------------------------------------------------------------*/
 .card {
-  border-radius: 56px;
+  border-radius: 16px;
   width: 50%;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
   box-shadow: 20px 20px 40px #bebebe, -20px -20px 40px #ffffff;
@@ -2198,8 +2230,8 @@ a:hover i {
 #image-for-card {
   width: 100%;
   height: 100%;
-  border-top-left-radius: 56px;
-  border-top-right-radius: 56px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 .for-image-div {
   width: 100%;
@@ -2213,7 +2245,7 @@ a:hover i {
     height: 50vh;
   }
   #image-for-card {
-    border-radius: 56px;
+    border-radius: 16px;
   }
   #event-p-div,
   #event-h1 {
