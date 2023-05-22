@@ -795,37 +795,29 @@
 
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <form class="contact-form" action="mailto:oscode.community@gmail.com" method="post" enctype="text/plain" autocomplete="on">
-              <!-- <div class="row"> -->
-                <div class="form-group">
-                  <label>
-                    <input type="text" autocomplete="name" name="name" id="name" required />
-                      <div class="label-text">Your Name</div>
-                  </label>
+            <form action="mailto:oscode.community@gmail.com" method="post" enctype="text/plain" autocomplete="on">
+              <div class="row">
+                <div class="col form-group">
+                  <input type="email" autocomplete="email" class="form-control" name="email" id="email"
+                    placeholder="Your Email" required />
                 </div>
-                <div class="form-group"> 
-                  <label>
-                    <input type="email" autocomplete="email" name="email" id="email" placeholder="Your Email" required />
-                    <div class="label-text">Your Email</div>
-                  </label>
-                <!-- </div> -->
+                <div class="col form-group">
+                  <input type="text" autocomplete="name" name="name" class="form-control" id="name"
+                    placeholder="Your Name" required />
+                </div>
               </div>
               <div class="form-group">
-                <label>
-                  <input type="text" autocomplete="subject" name="subject" id="subject" required />
-                  <div class="label-text">Subject</div>
-                </label>
+                <input type="text" autocomplete="subject" class="form-control" name="subject" id="subject"
+                  placeholder="Subject" required />
                 <!-- <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required /> -->
               </div>
               <!-- <div class="form-group">
                 <input type="password" class="form-control" name="password" id="password" placeholder="Enter password"
-                required />
+                  required />
               </div> -->
               <div class="form-group">
-                <label>
-                  <textarea autocomplete="message" name="message" rows="1" required></textarea>
-                  <div class="label-text">Message</div>
-                </label>
+                <textarea class="form-control" autocomplete="message" name="message" rows="5" placeholder="Message"
+                  required></textarea>
               </div>
               <!-- <div class="my-3">
                 <div class="loading">Loading</div>
