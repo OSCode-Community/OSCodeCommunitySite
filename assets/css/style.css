@@ -2055,14 +2055,6 @@ a:hover i {
 # Footer
 --------------------------------------------------------------*/
 
-.copyright-social{
-  flex-direction: column;
-}
-
-.copyright-section{
-  margin: 0 auto; 
-}
-
 #footer {
   color: #fff;
   font-size: 14px;
