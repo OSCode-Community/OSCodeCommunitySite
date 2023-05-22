@@ -1086,6 +1086,19 @@ hr.line {
   font-size: 21px;
   color: #fff;
 }
+
+@media (max-width: 1000px){
+.row {
+    margin-top: 160px !important;
+}
+}
+
+@media (max-width: 393px){
+  .row {
+      margin-top: 320px !important;
+  }
+  }
+
 /*--------------------------------------------------------------
 # Icons
 --------------------------------------------------------------*/
