@@ -487,8 +487,7 @@ h1 {
   font-family: "Kanit", sans-serif;
 }
 #hero h2 {
-  color: rgb(226, 213, 213);
-
+  color: white;
   font-size: 25px;
 }
 .home-para {
@@ -650,7 +649,7 @@ section {
   /* color: #b8ce55; */
   /* color: rgb(118, 218, 221); */
   margin-top: 0;
-  background: -webkit-linear-gradient(#dee0d6, #3eaad1);
+  background: -webkit-linear-gradient(white, #91ddf4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-top: 5px;
@@ -739,9 +738,11 @@ section {
   filter: none;
 }
 .clients h1 {
-  color: #5942e9;
+  color: #5d45f6;
+  text-shadow: 0 0 1px black;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
+  font-weight: bold;
 }
 .enlarge {
   height: 60px;
@@ -775,8 +776,10 @@ section {
 }
 .us {
   color: #5942e9 !important;
+  font-weight: bold;
+  text-shadow: 0 0 1px black;
   font-family: "Montserrat", sans-serif;
-  font-size: 60px;
+  font-size: 65px;
 }
 .abt-img {
   margin-left: 150px;
@@ -940,7 +943,7 @@ section {
 
 .about .icon-boxes .icon-box p {
   font-size: 15px;
-  color: #848484;
+  color: #e5e3e3;
 }
 .p-hover {
   background-image: linear-gradient(
@@ -1040,9 +1043,10 @@ hr.line {
   background-color: #0e034d;
 }
 .number {
-  color: #d3d0e5 !important;
+  color: white !important;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
+  font-weight: bold;
 }
 .count-box {
   background: linear-gradient(145deg, #0e034d, #240ab3);
@@ -1055,7 +1059,7 @@ hr.line {
   width: 100%;
   position: relative;
   text-align: center;
-  box-shadow: 0px 2px 30px #dbdaec;
+  box-shadow: 0px 2px 30px white;
   border-radius: 10px;
 }
 .count-box > span {
@@ -1070,7 +1074,7 @@ hr.line {
   transform: translateX(-50%);
   font-size: 24px;
   background: #5942e9;
-  color: #d3d0e5;
+  color: white;
   border-radius: 50px;
   border: 2px solid #5942e9;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
@@ -1083,7 +1087,7 @@ hr.line {
   font-size: 36px;
   display: block;
   font-weight: 700;
-  color: #f0f0f0;
+  color: white;
   margin-top: 10px;
 }
 
@@ -1115,9 +1119,10 @@ hr.line {
   color: #fff;
   font-size: 18px;
   padding: 10px;
+  font-weight: bold;
 }
 .nav-pills .nav-link {
-  color: #ada1d3;
+  color: whitesmoke;
   border: solid 1px #471ed2;
   margin-bottom: 20px;
   margin-top: 10px;
@@ -1193,7 +1198,7 @@ hr.line {
 }
 .benefits {
   font-weight: 700;
-  color: #cbc6ef;
+  color: white;
 }
 .text-center {
   text-align: center;
@@ -1463,12 +1468,11 @@ a:hover i {
   font-size: 18px;
   font-weight: bold;
   margin: 25px 0 5px 0;
-  color: #111;
+  color: #040404;
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
   margin: 0;
 }
 
@@ -1514,7 +1518,7 @@ a:hover i {
 }
 #achievement h1,
 #testimonials h1 {
-  color: #d3d0e5 !important;
+  color: white !important;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
 }
@@ -1598,7 +1602,6 @@ a:hover i {
 .carousel-control-next {
   width: 30px;
   height: 30px;
-  text-shadow: none;
   top: 20%;
 }
 .carousel-control-prev i,
@@ -1657,7 +1660,7 @@ a:hover i {
   background-color: #0e034d;
 }
 .number {
-  color: #d3d0e5 !important;
+  color: white !important;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
 }
@@ -1833,6 +1836,8 @@ a:hover i {
 }
 #faq h1 {
   color: #5942e9 !important;
+  font-weight: bold;
+  text-shadow: 0 0 1px black;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
 }
@@ -1917,6 +1922,8 @@ a:hover i {
   color: #5942e9 !important;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
+  font-weight: bold;
+  text-shadow: 0 0 1px black;
 }
 .contact .info-box i {
   font-size: 32px;
@@ -2047,10 +2054,22 @@ a:hover i {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
+.copyright-social{
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright-section{
+  margin: 0 auto;
+  
+}
+
 #footer {
   color: #fff;
   font-size: 14px;
   background: #111111;
+  font-weight: bold;
 }
 
 #footer .footer-top {
@@ -2187,6 +2206,10 @@ a:hover i {
   font-size: 13px;
 }
 
+.social-links{
+  margin-bottom: 10px;
+}
+
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
@@ -2194,7 +2217,7 @@ a:hover i {
   color: #fff;
   line-height: 1;
   padding: 8px 0;
-  margin-right: 4px;
+  margin: 20px;
   border-radius: 4px;
   text-align: center;
   width: 36px;
