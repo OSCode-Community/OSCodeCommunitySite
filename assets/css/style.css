@@ -1541,7 +1541,7 @@ a:hover i {
   margin-top: 50px;
 }
 .carousel {
-  width: 650px;
+  /* width: 650px; */ /* was causing problem in responsiveness*/
   margin: 0 auto;
   padding-bottom: 50px;
 }
