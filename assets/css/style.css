@@ -14,11 +14,6 @@
 }
 /* Customize Scrollbar*/
 
-:root{
-  --bg-color:rgba(0, 0, 0, 0.4);
-  --text-color: white;
-}
-
 body {
   /* font-family: 'Roboto', sans-serif; */
   font-family: "Montserrat", sans-serif;
@@ -112,8 +107,7 @@ h1 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: var(--bg-color);
-  color: var(--text-color);
+  background: rgba(0, 0, 0, 0.4);
   transition: all 0.5s;
   z-index: 997;
   padding: 11px 0;
@@ -139,7 +133,7 @@ h1 {
   margin-right: 5px;
 }
 #header .logo a {
-  color: var(--text-color);
+  color: #fff;
 }
 
 #header .logo a span {
@@ -217,7 +211,7 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  color: var(--text-color);
+  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
   font-weight: 500;
@@ -2055,9 +2049,9 @@ a:hover i {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: white;
+  color: #fff;
   font-size: 14px;
-  background: black;
+  background: #111111;
 }
 
 #footer .footer-top {
@@ -2665,28 +2659,4 @@ a:focus {
   .event-h2 {
     font-size: 22px;
   }
-}
-
-/*--------------------------------------------------------------
-# Theme
---------------------------------------------------------------*/
-
-.default-theme{
-  width: 25px;
-  height: 25px;
-  margin-left: 50px;
-  content: url("../img/theme/light_theme.png");
-}
-
-.dark-theme{
-  width: 24px;
-  height: 24px;
-  margin-left: 50px;
-  content: url("../img/theme/dark_theme.png");
-}
-
-
-.light-theme{
-  --bg-color:rgba(176, 236, 253, 0.4);
-  --text-color: black;
 }
