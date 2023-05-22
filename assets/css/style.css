@@ -2185,7 +2185,7 @@ a:hover i {
   width: 50%;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
   box-shadow: 20px 20px 40px #bebebe, -20px -20px 40px #ffffff;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 
   display: flex;
   justify-content: center;
@@ -2193,7 +2193,7 @@ a:hover i {
 }
 .card:hover {
   box-shadow: 20px 20px 40px #d970ea, -20px -20px 40px #a5b5c0;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 }
 #image-for-card {
   width: 100%;
@@ -2246,8 +2246,14 @@ a:hover i {
   background-repeat: repeat-y;
   /* width: 1000px;
     height: 1000px; */
-  /* background-size: 100vw auto;  */
-  background: linear-gradient(180deg, #b9b3b8, 5%, #390244, 50%, #1b011d);
+  /* background-size: 100vw auto;  
+    background: linear-gradient(180deg, #b9b3b8, 5%, #390244, 50%, #1b011d);
+*/
+  background-image: url("../img/background/event.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no no-repeat;
+  background-size: cover;
 }
 .for-bgg {
   /* height: 100%;
