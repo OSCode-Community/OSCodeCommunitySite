@@ -2056,13 +2056,11 @@ a:hover i {
 --------------------------------------------------------------*/
 
 .copyright-social{
-  display: flex;
   flex-direction: column;
 }
 
 .copyright-section{
-  margin: 0 auto;
-  
+  margin: 0 auto; 
 }
 
 #footer {
