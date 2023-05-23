@@ -1,0 +1,20 @@
+/* This css will be used to replace bootstrap css in navbar */
+.newFlex{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+.mainContainer{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logoAndName{
+    display: flex;
+    align-items: center;
+}
+.navListAndContact{
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+}
