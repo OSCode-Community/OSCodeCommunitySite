@@ -1,9 +1,3 @@
-import Aos from "aos";
-import PureCounter from "@srexi/purecounterjs";
-import Swiper from "swiper/bundle";
-import "swiper/css/bundle";
-// import "aos/dist/aos.css";
-
 (function () {
   "use strict";
 
@@ -233,7 +227,7 @@ import "swiper/css/bundle";
             filter: this.getAttribute("data-filter"),
           });
           portfolioIsotope.on("arrangeComplete", function () {
-            Aos.refresh();
+            AOS.refresh();
           });
         },
         true
@@ -298,7 +292,7 @@ import "swiper/css/bundle";
    * Animation on scroll
    */
   window.addEventListener("load", () => {
-    Aos.init({
+    AOS.init({
       duration: 1000,
       easing: "ease-in-out",
       once: true,
