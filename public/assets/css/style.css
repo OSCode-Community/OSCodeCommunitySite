@@ -1,22 +1,12 @@
 /* Adding all colours in a root */
-<<<<<<< HEAD:public/assets/css/style.css
-:root {
-  --background-white: #ffffff;
-=======
 :root{
   --background-white : #ffffff;
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
   --h2-color: rgb(226, 213, 213);
   --navbar-box-shadow-color: rgba(127, 137, 161, 0.25);
   --navbar-background-color: #3e3939;
   --body-color: #444444;
-<<<<<<< HEAD:public/assets/css/style.css
-  --background-black: #000000;
-  --background-black-lv1: #111;
-=======
   --background-black : #000000;
   --background-black-lv1 : #111;
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
   --header-rgb-transparent: rgba(0, 0, 0, 0.4);
   --header-rgb-transparent-sc: rgba(0, 0, 0, 0.1);
   --navbar-mobile-background-color: rgba(0, 0, 0, 0.9);
@@ -181,11 +171,7 @@ h1 {
   background-color: transparent;
   outline: none;
   color: #fff;
-<<<<<<< HEAD:public/assets/css/style.css
-  border: 2px solid #5942e9;
-=======
   border:2px solid #5942e9;
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
   border-radius: 10px;
   padding: 8px 15px;
   white-space: nowrap;
@@ -248,16 +234,10 @@ h1 {
   color: #fff;
   white-space: nowrap;
   transition: 0.3s;
-<<<<<<< HEAD:public/assets/css/style.css
-}
-
-.navbar > ul > li::after {
-=======
 
 }
 
 .navbar>ul>li::after{
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
   content: "";
   width: 0%;
   height: 2px;
@@ -266,11 +246,7 @@ h1 {
   transition: 0.5s;
   margin: auto;
 }
-<<<<<<< HEAD:public/assets/css/style.css
-.navbar > ul > li:hover::after {
-=======
 .navbar>ul>li:hover::after{
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
   width: 100%;
 }
 
@@ -501,13 +477,7 @@ h1 {
   right: 0;
   bottom: 0;
   left: 0;
-<<<<<<< HEAD:public/assets/css/style.css
-  background: var(
-    --header-rgb-transparent-sc
-  ); /* Adjust the background color and transparency as desired */
-=======
   background: var(--header-rgb-transparent-sc); /* Adjust the background color and transparency as desired */
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
   z-index: -2;
 }
 /*--------------------------------------------------------------
@@ -516,12 +486,7 @@ h1 {
 #hero {
   width: 100%;
   height: 100vh;
-<<<<<<< HEAD:public/assets/css/style.css
-  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.2)),
-    url("../img/background/bg.jfif") top center no-repeat;
-=======
   background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.2)),url("../img/background/bg.jfif") top center no-repeat;
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
   background-size: cover;
   position: relative;
   padding-top: 62px;
@@ -906,16 +871,9 @@ section {
       darkblue 50%,
       aqua 100%
     );
-<<<<<<< HEAD:public/assets/css/style.css
-    box-shadow: inset 0 -20px 30px var(--background-white),
-      inset 40px 0 46px #eaf5fc, inset 58px 0px 60px #c2d8fe,
-      inset -8px -30px 100px #fde9ea, inset 0 20px 110px #fde9ea,
-      0 0 90px var(--background-white);
-=======
     box-shadow: inset 0 -20px 30px var(--background-white), inset 40px 0 46px #eaf5fc,
       inset 58px 0px 60px #c2d8fe, inset -8px -30px 100px #fde9ea,
       inset 0 20px 110px #fde9ea, 0 0 90px var(--background-white);
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
   }
   .whoweare {
     height: 300px;
@@ -1624,11 +1582,7 @@ a:hover i {
   margin-top: 50px;
 }
 .carousel {
-<<<<<<< HEAD:public/assets/css/style.css
-  width: 650px;
-=======
  width: 650px; 
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
 
   margin: 0 auto;
   padding-bottom: 50px;
@@ -1642,43 +1596,18 @@ background-image:linear-gradient(30deg,rgb(26, 26, 72),rgb(38, 38, 100),rgb(75, 
 /* background-color:rgb(225, 225, 248) ; */
 box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
 }
-.carousel-inner {
-  padding-top: 2.5rem;
-  padding-bottom: 2rem;
-  border-radius: 2%;
-  background-image: linear-gradient(
-    30deg,
-    rgb(26, 26, 72),
-    rgb(38, 38, 100),
-    rgb(75, 75, 206),
-    rgb(181, 181, 253),
-    rgb(209, 209, 245)
-  );
-  /* background-color:rgb(225, 225, 248) ; */
-  box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
-}
 .carousel .carousel-item {
   color: #fcfafa;
   font-size: 15px;
-<<<<<<< HEAD:public/assets/css/style.css
-  font-weight: 150;
-=======
   font-weight:150;
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
   text-align: center;
   overflow: hidden;
   font-family: sans-serif;
   min-height: 340px;
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-<<<<<<< HEAD:public/assets/css/style.css
-.carousel-inner:hover {
-  box-shadow: rgba(17, 17, 17, 0.25) 0px 30px 60px -12px inset,
-    rgba(12, 12, 12, 0.3) 0px 18px 36px -18px inset;
-=======
 .carousel-inner:hover{
   box-shadow: rgba(17, 17, 17, 0.25) 0px 30px 60px -12px inset, rgba(12, 12, 12, 0.3) 0px 18px 36px -18px inset;
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
   transform: translateY(20px);
 }
 .carousel .img-box {
@@ -1686,15 +1615,8 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   height: 145px;
   margin: 0 auto;
   border-radius: 50%;
-<<<<<<< HEAD:public/assets/css/style.css
-
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px;
-=======
   
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
 }
 .carousel .img-box img {
   width: 100%;
@@ -1728,10 +1650,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
 
   text-shadow: none;
   top: 40%;
-<<<<<<< HEAD:public/assets/css/style.css
-=======
 
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
 }
 .carousel-control-prev i,
 .carousel-control-next i {
@@ -1740,13 +1659,6 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
 }
 .carousel-control-prev {
   left: -13%;
-<<<<<<< HEAD:public/assets/css/style.css
-}
-.carousel-control-next {
-  right: -13%;
-}
-.carousel .carousel-indicators {
-=======
  
 }
 .carousel-control-next {
@@ -1755,7 +1667,6 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
 }
 .carousel .carousel-indicators {
  
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
   bottom: -30px;
 }
 .carousel-indicators li,
@@ -2340,11 +2251,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   font-size: 13px;
 }
 
-<<<<<<< HEAD:public/assets/css/style.css
-.social-links {
-=======
 .social-links{
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
   margin-bottom: 10px;
 }
 
@@ -2386,14 +2293,9 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
 .card:hover {
   /* box-shadow: 20px 20px 40px #d970ea, -20px -20px 40px #a5b5c0; */
   box-shadow: 0 8px 16px var(--header-rgb-transparent),
-<<<<<<< HEAD:public/assets/css/style.css
-    0 4px 8px rgba(0, 0, 0, 0.2), 20px 20px 40px #d970ea,
-    -20px -20px 40px #a5b5c0;
-=======
    0 4px 8px rgba(0, 0, 0, 0.2),
    20px 20px 40px #d970ea,
    -20px -20px 40px #a5b5c0;
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
   transition: box-shadow 0.15s ease-in-out;
   margin-bottom: 50px;
 }
@@ -2454,11 +2356,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   background-image: url("../img/background/event.png");
   background-attachment: fixed;
   background-position: center;
-<<<<<<< HEAD:public/assets/css/style.css
-  background-repeat: no-repeat;
-=======
   background-repeat: no no-repeat;
->>>>>>> fed396d411015a1aebce1b89697ef3d5ae733da0:assets/css/style.css
   background-size: cover;
 }
 .for-bgg {
@@ -2833,114 +2731,5 @@ a:focus {
   }
   .event-h2 {
     font-size: 22px;
-  }
-}
-
-#preloader {
-  background: #080808 url(../img/loader.gif) no-repeat center center;
-  background-size: 5%;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 999999;
-}
-
-#event-hero {
-  background-image: url("../public/assets/img/background/peopleImg.jpg");
-  background-size: cover;
-  padding: 0;
-  height: 400px;
-  padding-top: 100px;
-  padding-bottom: 50px;
-  justify-content: center;
-}
-
-.input {
-  width: 250px;
-  padding: 10px 0px 10px 40px;
-  border-radius: 9999px;
-  border: solid 1px #333;
-  background-image: url("../public/assets/img/search.png");
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: 3% 50%;
-  background-color: white;
-  outline: none;
-  opacity: 0.8;
-  transition: all 0.2s ease-in-out;
-}
-
-.input:focus {
-  opacity: 0.9;
-  width: 350px;
-}
-
-#results.input:focus {
-  display: none;
-}
-
-#results {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  max-height: 240px;
-  overflow-y: auto;
-  max-width: 400px;
-  margin-left: 230px;
-}
-
-#results li {
-  padding: 10px;
-  cursor: pointer;
-  background-color: rgba(204, 204, 204, 0.4);
-  backdrop-filter: blur(4px);
-}
-
-#results li:hover {
-  background-color: rgba(131, 128, 128, 0.5);
-}
-
-#results::-webkit-scrollbar-track {
-  background-color: rgba(204, 204, 204, 0.4);
-  backdrop-filter: blur(4px);
-}
-
-#results::-webkit-scrollbar-thumb {
-  background-color: rgba(131, 128, 128, 0.7);
-}
-
-.text-clg {
-  margin-left: 60px;
-}
-
-#event-about {
-  background-image: url("../public/assets/img/background/s3.png");
-}
-
-#event-line {
-  border: 4px solid #5942e9;
-  border-radius: 5px;
-  width: 120px;
-  opacity: 1;
-}
-
-#event-faq {
-  background-image: none;
-  margin-left: 50px;
-}
-
-#event-faq li {
-  font-weight: bold;
-  color: #000;
-  font-size: 20px;
-}
-
-@media screen and (max-width: 600px) {
-  #results {
-    margin-left: 10px;
-    max-width: 350px;
-    max-height: 200px;
   }
 }
