@@ -475,6 +475,8 @@ h1 {
   right: 0;
 }
 
+
+
 #hero h1 {
   margin: 0;
   font-size: 4em;
@@ -1197,7 +1199,6 @@ hr.line {
 }
 .text-center {
   text-align: center;
-  padding: 2rem;
 }
 .hr-center {
   margin: auto;
@@ -2224,12 +2225,7 @@ a:hover i {
   align-items: center;
 }
 .card:hover {
-  /* box-shadow: 20px 20px 40px #d970ea, -20px -20px 40px #a5b5c0; */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4),
-   0 4px 8px rgba(0, 0, 0, 0.2),
-   20px 20px 40px #d970ea,
-   -20px -20px 40px #a5b5c0;
-  transition: box-shadow 0.15s ease-in-out;
+  box-shadow: 20px 20px 40px #d970ea, -20px -20px 40px #a5b5c0;
   margin-bottom: 50px;
 }
 #image-for-card {
