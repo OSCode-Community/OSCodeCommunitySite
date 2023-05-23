@@ -1135,7 +1135,7 @@ hr.line {
 
 @media (max-width: 393px) {
   .row {
-    margin-top: 320px !important;
+    /* margin-top: 320px !important; */
   }
 }
 
@@ -1625,7 +1625,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   border-radius: 50%;
 }
 .carousel .testimonial {
-  padding: 30px 0 10px;
+  padding: 30px 20px;
   /* display: none; */
 }
 .carousel .overview {
