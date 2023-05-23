@@ -284,7 +284,9 @@ h1 {
   left: 100%;
   visibility: visible;
 }
-
+.navbar li:hover {
+  text-decoration: underline 2px #5942e9;
+}
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
