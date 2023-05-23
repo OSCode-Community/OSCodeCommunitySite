@@ -48,7 +48,7 @@ Problem-solving skills and interpersonal skills will be refined. Overall student
 
 **GSSoC '23**
 
-We are proud to be a part of GSSoC '23 (Global Summer of Code)! Join us and be a part of this amazing programes.
+We are proud to be a part of GSSoC '23 (GirlScript Summer of Code)! Join us and be a part of this amazing programes.
 </br> </br>
 <a href=""><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
 <a href=""><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
