@@ -2733,3 +2733,14 @@ a:focus {
     font-size: 22px;
   }
 }
+
+.msg-us{
+  color:rgb(27, 27, 27);
+  
+  transition: all 0.2s;
+}
+.msg-us:hover{
+  background-color: rgb(147, 133, 237);
+  translate:0px -5px;
+
+}
