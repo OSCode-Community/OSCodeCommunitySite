@@ -170,7 +170,7 @@ h1 {
   margin-left: 30px;
   background: var(--backtotop-btn-color);
   color: var(--background-white);
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 8px 15px;
   white-space: nowrap;
   transition: 0.3s;
