@@ -1,0 +1,268 @@
+#event-hero {
+  background-image: url("../public/assets/img/background/peopleImg.jpg");
+  background-size: cover;
+  padding: 0;
+  height: 400px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.input {
+  width: 250px;
+  padding: 10px 0px 10px 40px;
+  border-radius: 9999px;
+  border: solid 1px #333;
+  background-image: url("../public/assets/img/search.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 3% 50%;
+  background-color: white;
+  outline: none;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+
+.input:focus {
+  opacity: 0.9;
+  width: 350px;
+}
+
+#results.input:focus {
+  display: none;
+}
+
+#results {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-height: 240px;
+  overflow-y: auto;
+  max-width: 400px;
+  margin-left: 230px;
+}
+
+#results li {
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(204, 204, 204, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+#results li:hover {
+  background-color: rgba(131, 128, 128, 0.5);
+}
+
+#results::-webkit-scrollbar-track {
+  background-color: rgba(204, 204, 204, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+#results::-webkit-scrollbar-thumb {
+  background-color: rgba(131, 128, 128, 0.7);
+}
+
+.text-clg {
+  margin-left: 60px;
+}
+
+#event-about {
+  background-image: url("../public/assets/img/background/s3.png");
+}
+
+#event-line {
+  border: 4px solid #5942e9;
+  border-radius: 5px;
+  width: 120px;
+  opacity: 1;
+}
+
+#event-faq {
+  background-image: none;
+  margin-left: 50px;
+}
+
+#event-faq li {
+  font-weight: bold;
+  color: #000;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  #results {
+    margin-left: 10px;
+    max-width: 350px;
+    max-height: 200px;
+  }
+}
+
+.phead {
+  font-size: 30px;
+  color: #ffffff;
+  position: relative;
+  overflow: auto;
+  text-align: center;
+  /* background: url("./assets/img/background/bg9.jpg"); */
+  background-color: purple;
+}
+
+#summary,
+#tableofcontents,
+#personal,
+#process,
+#share,
+#cookies,
+#social,
+#keep,
+#safe,
+#privacy-rights,
+#controls,
+#california,
+#updates,
+#notice,
+#review {
+  padding: 25px 50px 0px 70px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.privacy-img {
+  border-radius: 2%;
+  width: 550px;
+  height: 500px;
+  float: center;
+  margin-left: 100px;
+  max-width: 100%;
+}
+
+.flex-child {
+  flex: 1;
+  /* border: 2px solid yellow; */
+}
+
+.flex-child:first-child {
+  margin-right: 20px;
+}
+
+.concern {
+  padding-bottom: 10px;
+}
+
+.ques {
+  padding-top: 30px;
+}
+
+.ptitle {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Noto Serif", serif;
+}
+
+.arrow {
+  list-style: none;
+  line-height: 2em;
+  font-size: 16px;
+}
+
+.arrow::before {
+  content: "\00BB";
+}
+
+.table-p {
+  line-height: 2em;
+  font-size: 16px;
+}
+
+.sub {
+  font-size: 20px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.center {
+  text-align: center;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #2b3adf;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .privacy-img {
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+  }
+
+  .flex-container {
+    display: block;
+  }
+
+  .flex-child {
+    flex: 0;
+  }
+
+  #main,
+  #summary,
+  #tableofcontents,
+  #personal,
+  #process,
+  #share,
+  #cookies,
+  #social,
+  #keep,
+  #safe,
+  #privacy-rights,
+  #controls,
+  #california,
+  #updates,
+  #notice,
+  #review {
+    font-size: medium;
+    line-height: 1.5;
+    padding: 30px;
+    margin: 0px;
+    height: 100%;
+  }
+}
+
+#preloader {
+  background: #080808 url(../public/assets/img/loader.gif) no-repeat center
+    center;
+  background-size: 5%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+}
