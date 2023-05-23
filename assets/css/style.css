@@ -1,14 +1,21 @@
+/* Adding all colours in a root */
+:root{
+  --background : #000000;
+  --theme-color: #8919e4;
+  --scroll-bar-thumb-color: #7027f9;
+}
+
 /* Customize Scrollbar*/
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: black;
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #7027f9;
+  background: var(--scroll-bar-thumb-color);
   border-radius: 10px;
   opacity: 0.5;
 }
@@ -21,7 +28,7 @@ body {
 }
 
 a {
-  color: #8919e4;
+  color: var(--theme-color);
   text-decoration: none;
 }
 
