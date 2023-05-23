@@ -491,12 +491,11 @@ h1 {
   position: relative;
   padding-top: 62px;
   text-align: center;
-  /* opacity: 2; */
 }
 
 #hero:before {
   content: "";
-  /* background: rgba(0, 0, 0, 0.6); */
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -791,6 +790,7 @@ section {
   position: relative;
   padding-top: 0px;
   padding-bottom: 80px;
+  background-color: rgba(235, 232, 232, 1);
 }
 .whoweare {
   margin-top: 30px;
