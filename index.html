@@ -48,12 +48,25 @@
   <!-- Why Choose Us button css -->
   <link rel="stylesheet" href="whychooseusbutton.css">
 
-  <!-- for overriding the nav css -->
+<!-- for overriding the nav css -->
+<style>
+  #preloader{
+    background: #080808 url(loader.gif) no-repeat center center;
+    background-size: 5%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+  }
+  </style>
   <link rel="stylesheet" href="/assets/css/override.css">
 
 </head>
 
-<body>
+<body onload="myFunction()">
+  
+  <div id="preloader"></div>
+
   <!-- ======= Header ======= -->
   <header id="header" class="glassmorphic fixed-top d-flex align-items-center newFlex">
     <div class=" mainContainer container d-flex align-items-center">
@@ -86,21 +99,21 @@
 
       <div id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" style="text-decoration: none;" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" style="text-decoration: none;" href="#about">About</a></li>
+          <li><a class="nav-link scrollto active" style="text-decoration: none;" href="#hero">HOME</a></li>
+          <li><a class="nav-link scrollto" style="text-decoration: none;" href="#about">ABOUT</a></li>
           <li>
-            <a class="nav-link scrollto" style="text-decoration: none;" href="chapters/chapter.html">Chapters</a>
+            <a class="nav-link scrollto" style="text-decoration: none;" href="chapters/chapter.html">CHAPTERS</a>
           </li>
-          <li><a class="nav-link scrollto" style="text-decoration: none;" href="https://blog.oscode.co.in/">Blogs</a>
+          <li><a class="nav-link scrollto" style="text-decoration: none;" href="https://blog.oscode.co.in/">BLOGS</a>
           </li>
-          <li><a href="events/events.html" style="text-decoration: none;">Events</a></li>
+          <li><a href="events/events.html" style="text-decoration: none;">EVENTS</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </div>
 
       <!-- navbar list ends here -->
 
-      <a href="#contact" class="get-started-btn scrollto">Contact Us</a>
+      <a href="#contact" class="get-started-btn scrollto">CONTACT US</a>
 
     </div>
   </header>
@@ -997,6 +1010,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
+     <script>
+   
+      var loader=document.grtElementById("preloader");
+
+      function myFunction(){
+        preloader.style.display="none";
+      }
+    </script>
 </body>
 
 </html>

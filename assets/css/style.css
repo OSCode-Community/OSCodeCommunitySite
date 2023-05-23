@@ -168,16 +168,18 @@ h1 {
 --------------------------------------------------------------*/
 .get-started-btn {
   margin-left: 30px;
-  background: var(--backtotop-btn-color);
-  color: var(--background-white);
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+  border:2px solid #5942e9;
   border-radius: 10px;
   padding: 8px 15px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .home-i {
   margin-left: 4px;
@@ -226,14 +228,26 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--background-white);
+  padding: 8px 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
-  font-weight: 500;
+
+}
+
+.navbar>ul>li::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #5942e9;
+  display: block;
+  transition: 0.5s;
+  margin: auto;
+}
+.navbar>ul>li:hover::after{
+  width: 100%;
 }
 
 .navbar a i,
@@ -247,9 +261,10 @@ h1 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: var(--backtotop-btn-color);
+  color: white;
   text-decoration: underline;
 }
+
 
 .navbar .dropdown ul {
   display: block;
@@ -471,7 +486,7 @@ h1 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/background/bg1.avif") top center no-repeat;
+  background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.2)),url("../img/background/bg.jfif") top center no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 62px;
@@ -1567,25 +1582,41 @@ a:hover i {
   margin-top: 50px;
 }
 .carousel {
-  /* width: 650px; */ /* was causing problem in responsiveness*/
+ width: 650px; 
+
   margin: 0 auto;
   padding-bottom: 50px;
+
+}
+.carousel-inner{
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  border-radius: 2%;
+background-image:linear-gradient(30deg,rgb(26, 26, 72),rgb(38, 38, 100),rgb(75, 75, 206),rgb(181, 181, 253),rgb(209, 209, 245));
+/* background-color:rgb(225, 225, 248) ; */
+box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
 }
 .carousel .carousel-item {
-  color: #cdc6c6;
+  color: #fcfafa;
   font-size: 15px;
+  font-weight:150;
   text-align: center;
   overflow: hidden;
+  font-family: sans-serif;
   min-height: 340px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-/* .carousel .carousel-item a {
-	color: #eb7245;
-} */
+.carousel-inner:hover{
+  box-shadow: rgba(17, 17, 17, 0.25) 0px 30px 60px -12px inset, rgba(12, 12, 12, 0.3) 0px 18px 36px -18px inset;
+  transform: translateY(20px);
+}
 .carousel .img-box {
   width: 145px;
   height: 145px;
   margin: 0 auto;
   border-radius: 50%;
+  
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .carousel .img-box img {
   width: 100%;
@@ -1616,17 +1647,27 @@ a:hover i {
 .carousel-control-next {
   width: 30px;
   height: 30px;
-  top: 20%;
+
+  text-shadow: none;
+  top: 40%;
+
 }
 .carousel-control-prev i,
 .carousel-control-next i {
   font-size: 30px;
+
 }
 .carousel-control-prev {
-  left: 0%;
+  left: -13%;
+ 
+}
+.carousel-control-next {
+  right: -13%;
+ 
 }
 .carousel .carousel-indicators {
-  bottom: 15px;
+ 
+  bottom: -30px;
 }
 .carousel-indicators li,
 .carousel-indicators li.active {
