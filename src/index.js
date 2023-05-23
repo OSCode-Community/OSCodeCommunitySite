@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Body from "./components/Body";
-import Footer from "./components/Footer";
 import Chapters from "./components/Chapters";
 import Events from "./components/Events";
 import Policy from "./components/Policy";
@@ -11,7 +10,6 @@ const App = () => {
   return (
     <>
       <Outlet />
-      <Footer />
     </>
   );
 };

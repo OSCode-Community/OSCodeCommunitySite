@@ -24,19 +24,19 @@ const Footer = () => {
                 <h4>Useful Links</h4>
                 <ul>
                   <li>
-                    <i class="bx bx-chevron-right"></i> <Link to="/">Home</Link>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="oscode.co.in">Home</a>
                   </li>
                   <li>
-                    <i class="bx bx-chevron-right"></i>{" "}
-                    <Link to="/services">Services</Link>
+                    <i class="bx bx-chevron-right"></i> <a href="/">Services</a>
                   </li>
                   <li>
                     <i class="bx bx-chevron-right"></i>
-                    <Link to="/policy">Terms of service</Link>
+                    <a href="../policy.html">Terms of service</a>
                   </li>
                   <li>
                     <i class="bx bx-chevron-right"></i>
-                    <a href="/policy">Privacy policy</a>
+                    <a href="../policy.html">Privacy policy</a>
                   </li>
                 </ul>
               </div>
@@ -46,42 +46,37 @@ const Footer = () => {
                 <ul>
                   <li>
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <Link href="/webdesign">Web Design</Link>
+                    <a href="/">Web Design</a>
                   </li>
                   <li>
                     <i class="bx bx-chevron-right"></i>
-                    <Link href="/webdevelopment">Web Development</Link>
+                    <a href="/">Web Development</a>
                   </li>
                   <li>
-                    <i class="bx bx-chevron-right"></i>{" "}
-                    <Link href="/appdevelopment">App Development</Link>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="/">App Development</a>
                   </li>
                 </ul>
               </div>
 
               <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Community</h4>
-                {/* <!-- <form action="mailto:oscode.community@gmail.com" method="post" enctype="text/plain">
-              <input type="email" name="email" /><input type="submit" value="Subscribe" />
-            </form> --> */}
                 <ul>
                   <li>
                     <i class="bx bx-chevron-right"></i>
-                    <Link href="/about" to="/about">
-                      About us
-                    </Link>
+                    <a href="../index.html#about">About us</a>
                   </li>
                   <li>
                     <i class="bx bx-chevron-right"></i>
-                    <Link to="/benefits">Benefits</Link>
+                    <a href="../index.html#benefits">Benefits</a>
                   </li>
                   <li>
                     <i class="bx bx-chevron-right"></i>
-                    <Link href="/achievement">Accomplishments</Link>
+                    <a href="../index.html#achievement">Accomplishments</a>
                   </li>
                   <li>
                     <i class="bx bx-chevron-right"></i>
-                    <Link href="/faq">FAQ</Link>
+                    <a href="../index.html#faq">FAQ</a>
                   </li>
                 </ul>
               </div>
@@ -89,17 +84,17 @@ const Footer = () => {
           </div>
         </div>
 
-        <div class="container d-md-flex py-4">
+        <div class="container py-4">
           <div class="me-md-auto text-center text-md-start">
             <div class="copyright">
-              &copy; Copyright
+              &copy; Copyright{" "}
               <strong>
                 <span>OS-Code</span>
               </strong>
               . All Rights Reserved
             </div>
             <div class="credits">
-              Designed by <a href="/">OS-Code</a>
+              Designed by <a href="#">OS-Code</a>
             </div>
           </div>
           <div class="social-links text-center text-md-end pt-3 pt-md-0">

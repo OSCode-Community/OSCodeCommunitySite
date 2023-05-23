@@ -1,3 +1,9 @@
+import Aos from "aos";
+import PureCounter from "@srexi/purecounterjs";
+import Swiper from "swiper/bundle";
+import "swiper/css/bundle";
+// import "aos/dist/aos.css";
+
 (function () {
   "use strict";
 
@@ -132,7 +138,7 @@
   );
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scroll with ofset on links with a class name .scrollto
    */
   on(
     "click",
@@ -227,7 +233,7 @@
             filter: this.getAttribute("data-filter"),
           });
           portfolioIsotope.on("arrangeComplete", function () {
-            AOS.refresh();
+            Aos.refresh();
           });
         },
         true
@@ -292,7 +298,7 @@
    * Animation on scroll
    */
   window.addEventListener("load", () => {
-    AOS.init({
+    Aos.init({
       duration: 1000,
       easing: "ease-in-out",
       once: true,

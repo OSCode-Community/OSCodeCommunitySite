@@ -1,10 +1,20 @@
 import React from "react";
 import { useEffect } from "react";
 import Typed from "typed.js";
-import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import PureCounter from "@srexi/purecounterjs";
+import "swiper/css";
+import "swiper/css/bundle";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import Swiper from "swiper";
 
 const Body = () => {
+  Aos.init();
   const el = React.useRef(null);
 
   useEffect(() => {
@@ -12,6 +22,36 @@ const Body = () => {
       strings: ["Transforming Education with Technology"],
       typeSpeed: 50,
       loop: true,
+    });
+    new PureCounter();
+
+    /**
+     * Testimonials slider
+     */
+    new Swiper(".testimonials-slider", {
+      speed: 600,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: "auto",
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
     });
 
     return () => {
@@ -23,7 +63,8 @@ const Body = () => {
   return (
     <>
       <Navbar />
-      {/* Hero Section */}
+      {/* <!-- ======= Hero Section ======= --> */}
+
       <section id="hero" className="d-flex align-items-center">
         <div
           className="container hero"
@@ -44,16 +85,17 @@ const Body = () => {
                 the tech space.
               </h2>
 
-              <Link to="/contact" className="btn-get-started scrollto left">
+              <a href="#contact" className="btn-get-started scrollto left">
                 Get Started<i className="bi bi-caret-right home-i"></i>
-              </Link>
-              <Link to="/services" className="btn-get-started scrollto left">
+              </a>
+              <a href="/" className="btn-get-started scrollto left">
                 Services<i className="bi bi-caret-right home-i"></i>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
       </section>
+      {/* <!-- End Hero --> */}
 
       <main id="main">
         {/* <!-- ======= About Section ======= --> */}
@@ -79,7 +121,7 @@ const Body = () => {
                       height="0.8em"
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
-                      style={{ flexShrink: "0" }}
+                      style={{ flexShrink: 0 }}
                     >
                       <path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path>
                     </svg>
@@ -236,7 +278,7 @@ const Body = () => {
                   role="tablist"
                   aria-orientation="vertical"
                 >
-                  <Link
+                  <a
                     className="nav-link active edit1"
                     id="v-pills-link1-tab"
                     data-bs-toggle="pill"
@@ -246,8 +288,8 @@ const Body = () => {
                     aria-selected="true"
                   >
                     Upskill Students
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     className="nav-link edit1"
                     id="v-pills-link2-tab"
                     data-bs-toggle="pill"
@@ -257,8 +299,8 @@ const Body = () => {
                     aria-selected="false"
                   >
                     Hire Talents
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     className="nav-link edit1"
                     id="v-pills-link3-tab"
                     data-bs-toggle="pill"
@@ -268,8 +310,8 @@ const Body = () => {
                     aria-selected="false"
                   >
                     Hackathons & Seminars
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     className="nav-link edit1"
                     id="v-pills-link4-tab"
                     data-bs-toggle="pill"
@@ -279,7 +321,7 @@ const Body = () => {
                     aria-selected="false"
                   >
                     Ideation Seeding
-                  </Link>
+                  </a>
                 </div>
                 {/* <!-- Tab navs --> */}
               </div>
@@ -519,13 +561,13 @@ const Body = () => {
                         resources, and expertise to help make DevX successful.
                         <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                       </p>
-                      <Link
+                      <a
                         href="https://www.linkedin.com/posts/oscode_oscode-community-devx-activity-7050410583078182912-z5k_?utm_source=share&utm_medium=member_desktop"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         Know more..
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -550,13 +592,13 @@ const Body = () => {
                         contests! Stay tuned 💫
                         <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                       </p>
-                      <Link
+                      <a
                         href="https://www.linkedin.com/posts/oscode_oscode-hustle-hustle7-activity-7042872281932476416-8vfU?utm_source=share&utm_medium=member_desktop"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         Know more..
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -581,13 +623,13 @@ const Body = () => {
                         humour component 🤩.
                         <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                       </p>
-                      <Link
+                      <a
                         href="https://www.linkedin.com/posts/oscode_achievements-have-no-value-if-you-leave-activity-6968906596198346753-L8hY?utm_source=share&utm_medium=member_desktop"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         Know more..
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -612,13 +654,13 @@ const Body = () => {
                         our journey with you.
                         <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                       </p>
-                      <Link
+                      <a
                         href="https://www.linkedin.com/posts/oscode_oscode-community-bit-activity-7046111645508481024-fzUe?utm_source=share&utm_medium=member_desktop"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         Know more..
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -631,21 +673,21 @@ const Body = () => {
         {/* <!-- End Achievement Section --> */}
 
         {/* <!-- ======= Join US Section ======= --> */}
-        <section id="join-us" className="join section-bg1">
-          <div className="container" data-aos="fade-up">
-            <h1 className="number text-center">Join Us</h1>
-            <hr className="line hr-center" />
+        <section id="join-us" class="join section-bg1">
+          <div class="container" data-aos="fade-up">
+            <h1 class="number text-center">Join Us</h1>
+            <hr class="line hr-center" />
 
             <div
-              className="row"
+              class="row"
               data-aos="fade-up"
               data-aos-delay="100"
               style={{ marginTop: "10px" }}
             >
-              <div className="abt-txt">
-                <h2 className="us">
+              <div class="abt-txt">
+                <h2 class="us">
                   <i
-                    className="fa-sharp fa-regular fa-handshake"
+                    class="fa-sharp fa-regular fa-handshake"
                     style={{ color: "#3713b9", marginRight: "10px" }}
                   ></i>
                   How to Join us??
@@ -656,172 +698,109 @@ const Body = () => {
                   filling out this Google form 👇
                 </p>
               </div>
-              <Link
+              <a
                 href="https://forms.gle/w3SgHzXz4m9bynXL9"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p className="benefits link">OSCode Community Student Form</p>
-              </Link>
+                <p class="benefits link">OSCode Community Student Form</p>
+              </a>
             </div>
 
             <div
-              className="row"
+              class="row"
               data-aos="fade-up"
               data-aos-delay="100"
               style={{ marginTop: "10px" }}
             >
-              <div className="abt-txt">
-                <h2 className="us" style={{ marginBottom: "0px" }}>
-                  <i className="bi bi-chat-heart"></i> Reach us out through...
+              <div class="abt-txt">
+                <h2 class="us" style={{ marginBottom: "0px" }}>
+                  <i class="bi bi-chat-heart"></i> Reach us out through...
                 </h2>
               </div>
-              <div className="row join">
-                <Link
+              <div class="row join ml-auto mr-auto">
+                <a
                   href="https://github.com/OSCode-Community"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="col-lg-3 col-md-6 shrink">
-                    <div className="count-box">
-                      <i className="bi bi-github"></i>
+                  <div class="col-lg-3 col-md-6 shrink">
+                    <div class="count-box">
+                      <i class="bi bi-github"></i>
                       <p>Github</p>
                     </div>
                   </div>
-                </Link>
+                </a>
               </div>
 
-              <div className="col-lg-3 col-md-6 mt-5 mt-md-0 shrink">
-                <Link
+              <div class="col-lg-3 col-md-6 mt-5 mt-md-0 shrink">
+                <a
                   href="https://discordapp.com/channels/945676223101698060/945680318248128543/946084270693318686"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="count-box">
-                    <i className="bi bi-discord"></i>
+                  <div class="count-box">
+                    <i class="bi bi-discord"></i>
                     <p>Discord</p>
                   </div>
-                </Link>
+                </a>
               </div>
 
-              <div className="col-lg-3 col-md-6 mt-5 mt-lg-0 shrink">
-                <Link
+              <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 shrink">
+                <a
                   href="https://www.linkedin.com/company/oscode/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="count-box">
-                    <i className="bi bi-linkedin"></i>
+                  <div class="count-box">
+                    <i class="bi bi-linkedin"></i>
                     <p>LinkedIn</p>
                   </div>
-                </Link>
+                </a>
               </div>
             </div>
 
-            <div className="row join shrink">
-              <Link
+            <div class="row join shrink  ml-auto mr-auto">
+              <a
                 href="https://instagram.com/os_code_community?igshid=YmMyMTA2M2Y="
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="col-lg-3 col-md-6">
-                  <div className="count-box">
-                    <i className="bi bi-instagram"></i>
+                <div class="col-lg-3 col-md-6">
+                  <div class="count-box">
+                    <i class="bi bi-instagram"></i>
                     <p>Instagram</p>
                   </div>
                 </div>
-              </Link>
+              </a>
             </div>
 
-            <div className="col-lg-3 col-md-6 mt-5 mt-md-0 shrink">
-              <Link
+            <div class="col-lg-3 col-md-6 mt-5 mt-md-0 shrink">
+              <a
                 href="https://twitter.com/OSCodeCommunity"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="count-box">
-                  <i className="bi bi-twitter"></i>
+                <div class="count-box">
+                  <i class="bi bi-twitter"></i>
                   <p>Twitter</p>
                 </div>
-              </Link>
+              </a>
             </div>
 
-            <div className="col-lg-3 col-md-6 mt-5 mt-lg-0 shrink">
-              <Link
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 shrink">
+              <a
                 href="https://t.me/+yNBAO5cbFLk3NTA1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="count-box">
-                  <i className="bi bi-telegram"></i>
+                <div class="count-box">
+                  <i class="bi bi-telegram"></i>
                   <p>Telegram</p>
                 </div>
-              </Link>
+              </a>
             </div>
           </div>
-          {/* </div> */}
-          {/* </div> */}
-
-          {/* <!-- <div className="row" data-aos="fade-up" data-aos-delay="100" style="margin-top: 10px;">
-          <div className="abt-txt">
-            <h2 className="us"><i className="fa-regular fa-comment-arrow-up-right" style="color: #2a13a0;"></i>Reach Us on</h2>
-          </div>
-          <div className="container team" data-aos="fade-up">
-
-            <div className="row">
-
-              <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div className="member" data-aos="fade-up" data-aos-delay="100">
-                  <div className="member-img">
-                    <Link href="https://twitter.com/oscodecommunity" className="social-links twitter"><i
-                        className="bx bxl-twitter"></i></Link>
-                  </div>
-                  <div className="member-info">
-                    <h4>Walter White</h4>
-                    <span>Chief Executive Officer</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div className="member" data-aos="fade-up" data-aos-delay="200">
-                  <div className="member-img">
-                    <img src="assets/img/team/team-2.jpg" className="img-fluid" alt="">
-                  </div>
-                  <div className="member-info">
-                    <h4>Sarah Jhonson</h4>
-                    <span>Product Manager</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div className="member" data-aos="fade-up" data-aos-delay="300">
-                  <div className="member-img">
-                    <img src="assets/img/team/team-3.jpg" className="img-fluid" alt="">
-                  </div>
-                  <div className="member-info">
-                    <h4>William Anderson</h4>
-                    <span>CTO</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div className="member" data-aos="fade-up" data-aos-delay="400">
-                  <div className="member-img">
-                    <img src="assets/img/team/team-4.jpg" className="img-fluid" alt="">
-                  </div>
-                  <div className="member-info">
-                    <h4>Amanda Jepson</h4>
-                    <span>Accountant</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> --> */}
-          {/* </div> */}
         </section>
         {/* <!-- End join-us Section --> */}
 
@@ -959,20 +938,20 @@ const Body = () => {
                 </div>
               </div>
               {/* <!-- Carousel controls --> */}
-              <Link
+              <a
                 className="carousel-control-prev"
                 href="#myCarousel"
                 data-slide="prev"
               >
                 <i className="fa fa-angle-left"></i>
-              </Link>
-              <Link
+              </a>
+              <a
                 className="carousel-control-next"
                 href="#myCarousel"
                 data-slide="next"
               >
                 <i className="fa fa-angle-right"></i>
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -986,16 +965,16 @@ const Body = () => {
 
             <ul className="faq-list accordion" data-aos="fade-up">
               <li>
-                <Link
+                <a
                   data-bs-toggle="collapse"
-                  classNameName="collapsed"
+                  className="collapsed"
                   data-bs-target="#faq1"
-                  href="/"
+                  href="#faq1"
                 >
                   Do I need to pay anything before joining the community?
                   <i className="bx bx-chevron-down icon-show"></i>
                   <i className="bx bx-x icon-close"></i>
-                </Link>
+                </a>
                 <div id="faq1" className="collapse" data-bs-parent=".faq-list">
                   <p>
                     🆓 Not at all! Everything is completely FREE OF COST and we
@@ -1007,44 +986,44 @@ const Body = () => {
               </li>
 
               <li>
-                <Link
+                <a
                   data-bs-toggle="collapse"
                   data-bs-target="#faq2"
                   className="collapsed"
-                  href="/"
+                  href="#faq2"
                 >
                   How do I join OS-Code Community?{" "}
                   <i className="bx bx-chevron-down icon-show"></i>
                   <i className="bx bx-x icon-close"></i>
-                </Link>
+                </a>
                 <div id="faq2" className="collapse" data-bs-parent=".faq-list">
                   <p>
                     Start your collaborative journey of learning, practising and
                     sharing technical skills with our enthusiastic community!!
                     by filling out this Google form 👇
                     <br />
-                    <Link
+                    <a
                       href="https://docs.google.com/forms/d/e/1FAIpQLSf-bIAC1VdPJxODwdcPnvH-SWhbu0SVl47SgyLdagNAciYYUA/viewform"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       Community Student form
-                    </Link>
+                    </a>
                   </p>
                 </div>
               </li>
 
               <li>
-                <Link
+                <a
                   data-bs-toggle="collapse"
                   data-bs-target="#faq3"
                   className="collapsed"
-                  href="/"
+                  href="#faq3"
                 >
                   How do you stay up to date on the latest updates?{" "}
                   <i className="bx bx-chevron-down icon-show"></i>
                   <i className="bx bx-x icon-close"></i>
-                </Link>
+                </a>
                 <div id="faq3" className="collapse" data-bs-parent=".faq-list">
                   <p>
                     Please join us on our social media channels to know about
@@ -1055,16 +1034,16 @@ const Body = () => {
               </li>
 
               <li>
-                <Link
+                <a
                   data-bs-toggle="collapse"
                   data-bs-target="#faq4"
                   className="collapsed"
-                  href="/"
+                  href="#faq4"
                 >
                   Is your community beginner friendly?
                   <i className="bx bx-chevron-down icon-show"></i>
                   <i className="bx bx-x icon-close"></i>
-                </Link>
+                </a>
                 <div id="faq4" className="collapse" data-bs-parent=".faq-list">
                   <p>
                     Yes! Even non-coders are welcome. Our courses are designed
@@ -1075,16 +1054,16 @@ const Body = () => {
               </li>
 
               <li>
-                <Link
+                <a
                   data-bs-toggle="collapse"
                   data-bs-target="#faq5"
                   className="collapsed"
-                  href="/"
+                  href="#faq5"
                 >
                   Do you provide mentorship and guidance?{" "}
                   <i className="bx bx-chevron-down icon-show"></i>
                   <i className="bx bx-x icon-close"></i>
-                </Link>
+                </a>
                 <div id="faq5" className="collapse" data-bs-parent=".faq-list">
                   <p>
                     Yes. That is the highlight of our community. By joining us,
@@ -1114,13 +1093,13 @@ const Body = () => {
                       {/* <!-- <i className="bx bx-map"></i> --> */}
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3295777128365!2d77.57881345058549!3d12.950750090824721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156bf4c356ed%3A0x3466b397b31dae21!2sOS-CODE%20headquarter!5e0!3m2!1sen!2sin!4v1679811939861!5m2!1sen!2sin"
-                        title="iframe"
                         width="510"
                         height="180"
                         style={{ border: 0 }}
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
+                        title="iframe"
                       ></iframe>
                       <h3>Address</h3>
                       <p>
@@ -1132,19 +1111,21 @@ const Body = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="info-box mt-4">
-                      <Link href="mailto:oscode.community@gmail.com?subject=Enquiry">
+                      <a href="mailto:oscode.community@gmail.com?subject=Enquiry">
                         <i className="bx bx-envelope"></i>
-                      </Link>
+                      </a>
                       <h3>Email Us</h3>
-                      {/* <p>oscode.community@gmail.com<br><br></p> */}
-                      <p>oscode.community@gmail.com</p>
+                      <p>
+                        oscode.community@gmail.com
+                        <br /> <br />
+                      </p>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="info-box mt-4">
-                      <Link href="tel:+91-7667109405">
+                      <a href="tel:+91-7667109405">
                         <i className="bx bx-phone-call"></i>
-                      </Link>
+                      </a>
                       <h3>Call Us</h3>
                       <p>
                         +91-7667109405
@@ -1243,6 +1224,7 @@ const Body = () => {
         </section>
         {/* <!-- End Contact Section --> */}
       </main>
+      <Footer />
     </>
   );
 };
