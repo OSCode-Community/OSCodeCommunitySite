@@ -2052,12 +2052,14 @@ a:hover i {
 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
+  margin-right: 50px;
 }
 
 #footer .footer-top .footer-contact h3 {
   font-size: 26px;
   line-height: 1;
   font-weight: 700;
+  margin-bottom: 25px;
 }
 
 #footer .footer-top .footer-contact h3 span {
@@ -2076,6 +2078,7 @@ a:hover i {
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 #footer .footer-top h4::after {
@@ -2091,6 +2094,7 @@ a:hover i {
 
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
+  margin-right: 30px;
 }
 
 #footer .footer-top .footer-links ul {
@@ -2120,6 +2124,13 @@ a:hover i {
   color: #aaaaaa;
   transition: 0.3s;
   display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links .social-links a {
+  color: #aaaaaa;
+  transition: 0.3s;
+  display: inline;
   line-height: 1;
 }
 
@@ -2179,27 +2190,23 @@ a:hover i {
   font-size: 13px;
 }
 
-#footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #2b2b2b;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 4px;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
 
-#footer .social-links a:hover {
-  background: #5942e9;
-  color: #fff;
+.social-links a {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
 }
 
+.social-links a i {
+  margin-right: 5px;
+}
+
+.text-center{
+  margin-left: 0;
+  padding-left:40%;
+}
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
