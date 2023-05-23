@@ -851,6 +851,12 @@ section {
     transform: scale(1);
   }
 }
+/*Adding hover to chapter*/
+
+.faq-list li:hover {
+  text-decoration: underline #5942e9;
+}
+
 /* Bootstrap toggle icon */
 .bi-list::before {
   content: "\f479";
@@ -2304,10 +2310,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
 }
 .card:hover {
   /* box-shadow: 20px 20px 40px #d970ea, -20px -20px 40px #a5b5c0; */
-  box-shadow: 0 8px 16px var(--header-rgb-transparent),
-   0 4px 8px rgba(0, 0, 0, 0.2),
-   20px 20px 40px #d970ea,
-   -20px -20px 40px #a5b5c0;
+
   transition: box-shadow 0.15s ease-in-out;
   margin-bottom: 50px;
 }
