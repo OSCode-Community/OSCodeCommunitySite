@@ -107,7 +107,7 @@ h1 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgb(199 199 199 / 9%);
+  background: var(--header-rgb-transparent);
   transition: all 0.5s;
   z-index: 997;
   padding: 11px 0;
