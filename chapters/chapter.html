@@ -62,7 +62,7 @@
     ></script>
 
     <!-- for overriding the nav css -->
-<link rel="stylesheet" href="/assets/css/override.css">
+    <link rel="stylesheet" href="/assets/css/override.css" />
 
     <style>
       #hero {
@@ -122,7 +122,7 @@
         width: 350px;
       }
 
-       #results.input:focus {
+      #results.input:focus {
         display: none;
       }
 
@@ -155,18 +155,18 @@
 
       #results li:hover {
         background-color: #9b999c;
-       font-weight: bolder;
+        font-weight: bolder;
       }
 
-      #results li.active{
+      #results li.active {
         background-color: #78a4f1;
       }
-      #results li a{
-        color:#333;
+      #results li a {
+        color: #333;
         font-size: 16px;
         font-weight: bold;
       }
-      #results li a:hover{
+      #results li a:hover {
         color: #eee;
       }
 
@@ -175,7 +175,7 @@
         backdrop-filter: blur(4px);
       }
 
-      #results::-webkit-scrollbar-thumb{
+      #results::-webkit-scrollbar-thumb {
         background-color: rgba(131, 128, 128, 0.7);
       }
       /* input {
@@ -210,13 +210,14 @@
 
   <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="glassmorphic fixed-top d-flex align-items-center newFlex">
+    <header
+      id="header"
+      class="glassmorphic fixed-top d-flex align-items-center newFlex"
+    >
       <div class="mainContainer container d-flex align-items-center">
-  
         <!-- logo and name together -->
-  
+
         <div class="logoAndName">
-  
           <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="50pt" viewBox="0 0 1600.000000 1600.000000"
             preserveAspectRatio="xMidYMid meet">
             <g transform="translate(0.000000,1600.000000) scale(0.100000,-0.100000)" fill="#00c3ff" stroke="none">
@@ -231,38 +232,62 @@
             height="60px"
             alt="logo"
           />
-  
+
           <!-- company name -->
-  
+
           <h1 class="logo me-auto"><a href="../index.html">OS-CODE</a></h1>
-  
         </div>
         <!-- removed image and replaced with a svg -->
-  
+
         <!-- navbar list excluding contact part -->
-  
-        
       </div>
       <div class="navListAndContact">
-  
         <div id="navbar" class="navbar order-last order-lg-0">
           <ul>
-            <li><a class="nav-link scrollto active" style="text-decoration: none;" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" style="text-decoration: none;" href="#about">About</a></li>
             <li>
-              <a class="nav-link scrollto" style="text-decoration: none;" href="#">Chapters</a>
+              <a
+                class="nav-link scrollto active"
+                style="text-decoration: none"
+                href="#hero"
+                >Home</a
+              >
             </li>
-            <li><a class="nav-link scrollto" style="text-decoration: none;" href="https://blog.oscode.co.in/">Blogs</a>
+            <li>
+              <a
+                class="nav-link scrollto"
+                style="text-decoration: none"
+                href="#about"
+                >About</a
+              >
             </li>
-            <li><a href="../events/events.html" style="text-decoration: none;">Events</a></li>
+            <li>
+              <a
+                class="nav-link scrollto"
+                style="text-decoration: none"
+                href="#"
+                >Chapters</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav-link scrollto"
+                style="text-decoration: none"
+                href="https://blog.oscode.co.in/"
+                >Blogs</a
+              >
+            </li>
+            <li>
+              <a href="../events/events.html" style="text-decoration: none"
+                >Events</a
+              >
+            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </div>
-  
+
         <!-- navbar list ends here -->
-  
+
         <a href="#contact" class="get-started-btn scrollto">Contact Us</a>
-  
       </div>
     </header>
     <!-- End Header -->
@@ -562,16 +587,14 @@
       }
 
       searchBar.addEventListener("input", () => {
-  console.log(searchBar.value.length);
+        console.log(searchBar.value.length);
 
-  if (searchBar.value.length === 0) {
-    results.innerHTML = "";
-  } else {
-    searchInstitutes(searchBar.value);
-  }
-});
-
-
+        if (searchBar.value.length === 0) {
+          results.innerHTML = "";
+        } else {
+          searchInstitutes(searchBar.value);
+        }
+      });
     </script>
   </body>
 </html>
