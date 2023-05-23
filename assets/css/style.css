@@ -457,7 +457,7 @@ h1 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/background/bg.jfif") top center no-repeat;
+  background: url("../img/background/bg1.avif") top center no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 62px;
@@ -512,7 +512,7 @@ h1 {
 }
 .home {
   background-color: #4158d0;
-  background-image: linear-gradient(43deg, #21beee, #ee21d9 46%, #ee2121);
+  background-image: linear-gradient(43deg, #ffc107, #9d369b 46%, #f45f5f);
   -webkit-animation: home_btn__VDNR5 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: home_btn__VDNR5 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
