@@ -72,6 +72,7 @@
         padding-top: 100px;
         padding-bottom: 50px;
         justify-content: center;
+        margin-top: 5.4%;
       }
 
       #about {
@@ -131,7 +132,7 @@
         margin-top: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
-        max-height: 240px;
+        max-height: 193px;
         overflow-y: auto;
         max-width: 400px;
         margin-left: 230px;
@@ -140,7 +141,10 @@
       #results li {
         padding: 10px;
         cursor: pointer;
-        background-color: rgba(204, 204, 204, 0.4);
+
+        background-color: #eee;
+        transition: background-color 0.2s;
+
         backdrop-filter: blur(4px);
       }
 
@@ -150,7 +154,20 @@
       }
 
       #results li:hover {
-        background-color: rgba(131, 128, 128, 0.5);
+        background-color: #9b999c;
+       font-weight: bolder;
+      }
+
+      #results li.active{
+        background-color: #78a4f1;
+      }
+      #results li a{
+        color:#333;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      #results li a:hover{
+        color: #eee;
       }
 
       #results::-webkit-scrollbar-track {
@@ -544,9 +561,17 @@
         }
       }
 
-      searchBar.addEventListener("input", () =>
-        searchInstitutes(searchBar.value)
-      );
+      searchBar.addEventListener("input", () => {
+  console.log(searchBar.value.length);
+
+  if (searchBar.value.length === 0) {
+    results.innerHTML = "";
+  } else {
+    searchInstitutes(searchBar.value);
+  }
+});
+
+
     </script>
   </body>
 </html>
