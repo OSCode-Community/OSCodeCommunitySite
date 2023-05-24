@@ -820,8 +820,6 @@ section {
   width: 600px;
   height: 500px;
   border-radius: 48% 0 48% 48%;
-  transition: all 0.4s;
-  animation: action 0.7s infinite alternate;
 }
 .text-primary {
   color: var(--backtotop-btn-color) !important;
