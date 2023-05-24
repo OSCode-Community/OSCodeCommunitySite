@@ -1869,26 +1869,35 @@ a:hover i {
 # Contact
 --------------------------------------------------------------*/
 #contact {
-  background-image: url("../img/abt-bg1.jpg");
+  /* background-image: url("../img/abt-bg1.jpg"); */
+  background-image: linear-gradient(to right, #2c3e50, #4ca1af);
   background-size: cover;
   position: relative;
+ 
 }
+
 .contact .info-box {
   color: #444444;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  /* box-shadow: 0 0 30px rgba(214, 215, 216, 0.6); */
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   padding: 15px 0 15px 0;
   border-radius: 4px;
-  background-color: #fff;
+  background-image:linear-gradient(30deg,rgb(1, 13, 17),rgb(6, 71, 93),rgb(3, 111, 158),rgb(5, 143, 189));
+}
+.contact .info-box:hover{
+  transform:scale(0.9);
+  transform-origin: center ;
 }
 #contact h1 {
-  color: #5942e9 !important;
+  color: #fcfafa !important;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
 }
 .contact .info-box i {
   font-size: 32px;
-  color: #5942e9;
+  color: whitesmoke;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #f8d4d5;
@@ -1896,7 +1905,7 @@ a:hover i {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color: whitesmoke;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1906,14 +1915,32 @@ a:hover i {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  color: rgb(221, 226, 228);
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(232, 243, 253, 0.6);
   padding: 30px;
   border-radius: 4px;
 }
+.mapp{
+   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
+   cursor: pointer;
+} 
+.mapp:hover{
+  box-shadow: rgba(8, 8, 8, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+   /* box-shadow: rgba(2, 2, 2, 0.25) 0px 2px 5px -1px, rgba(14, 13, 13, 0.3) 0px 1px 3px -1px; */
+
+   transform:scale(1.2);
+} 
+
+hr.line {
+  border: 4px solid rgb(240 239 247);
+  border-radius: 5px;
+  width: 120px;
+  opacity: 1;
+}
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
@@ -1958,7 +1985,11 @@ a:hover i {
 .contact .php-email-form .form-group {
   margin-bottom: 25px;
 }
-
+input{
+ padding: 20px;
+ margin: 0px 10px 10px 0px;
+ 
+}
 .contact .php-email-form input,
 .contact .php-email-form textarea {
   box-shadow: none;
@@ -1978,9 +2009,24 @@ a:hover i {
 .contact .php-email-form textarea {
   padding: 12px 15px;
 }
-
+.get-started-btn {
+  /* margin-left: 30px; */
+   background-image:linear-gradient(30deg,rgb(1, 13, 17),rgb(6, 71, 93),rgb(3, 111, 158),rgb(5, 143, 189));
+  color: #fff;
+  border-radius: 15px;
+  padding: 8px 15px;
+  width:auto;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+}
 .contact .php-email-form button[type="submit"] {
-  background: #5942e9;
+   background-color: #0b697e;
+
   border: 0;
   padding: 10px 32px;
   color: #fff;
