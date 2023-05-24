@@ -1252,7 +1252,7 @@ hr.line {
 }
 .text-center {
   text-align: center;
-  padding: 2rem;
+  padding: 0.8rem;
 }
 .hr-center {
   margin: auto;
@@ -2287,6 +2287,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
 
 .social-links{
   margin-bottom: 10px;
+  padding-bottom: -50px;
 }
 
 #footer .social-links a {
@@ -2296,7 +2297,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   color: var(--background-white);
   line-height: 1;
   padding: 8px 0;
-  margin: 15px;
+  margin: 5px;
   border-radius: 4px;
   text-align: center;
   width: 36px;
