@@ -4,7 +4,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: black;
+  background: rgb(0, 1, 1);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -477,7 +477,7 @@ h1 {
 
 #hero h1 {
   margin: 0;
-  font-size: 4em;
+  font-size: 2em;
   font-weight: 900;
   align-items: center;
   margin-top: 0px;
@@ -486,11 +486,7 @@ h1 {
 .home {
   font-family: "Kanit", sans-serif;
 }
-#hero h2 {
-  color: rgb(226, 213, 213);
 
-  font-size: 25px;
-}
 .home-para {
   padding: 35px 0 0 0;
 }
@@ -512,7 +508,7 @@ h1 {
 }
 .home {
   background-color: #4158d0;
-  background-image: linear-gradient(43deg, #21beee, #ee21d9 46%, #ee2121);
+  background-image: linear-gradient(43deg, #2113e9, #be05ac 46%, #ee2121);
   -webkit-animation: home_btn__VDNR5 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: home_btn__VDNR5 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -646,7 +642,7 @@ section {
   /* font-family: "Prompt", sans-serif; */
   font-family: "Kanit", sans-serif;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   /* color: #b8ce55; */
   /* color: rgb(118, 218, 221); */
   margin-top: 0;
