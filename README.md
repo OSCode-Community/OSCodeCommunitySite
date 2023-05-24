@@ -2,19 +2,20 @@
   <img src="https://user-images.githubusercontent.com/77539004/226191234-269ac220-e035-464f-ac00-9e65bbd80a78.png" height="250">
 </p>
 
-<p align="center">Welcome to the Ever-Growing Tech Community.</p>
+<h2 align="center">Welcome to the Ever-Growing Tech Community 🚀</h2>
 
-## About Us
 
-We are a Multi-College Tech Community that helps college students to **Learn** in Public and **Engage** with similar-minded people. We help local college communities to encourage this culture on their campus and help them build it. We help students by upskilling them in the domain of their interests by organizing workshops, technical seminars, hackathons, project sessions, code-along, etc.
 
-We help students to get start with their lifelong journey of coding. Students will explore and learn what real-world Software development looks like.
+## 🙌 About Us
 
-Problem-solving skills and interpersonal skills will be refined. Overall students will enjoy with this collaborative journey of learning, practising and sharing technical skills with our enthusiastic community!!
++ We are a Multi-College Tech Community that helps college students to **Learn in Public** and **Engage** with similar-minded people. 
++ We help local college communities to encourage this culture on their campus and help them build it. We help students by upskilling them in the domain of their interests by organizing **workshops, technical seminars, hackathons, project sessions, code-along, etc.**
++ We help students to get start with their **lifelong journey of coding.** Students will explore and learn what real-world Software development looks like - problem-solving skills and interpersonal **skills will be refined.** 
++ Overall students will enjoy with this **collaborative journey of learning**, practising and sharing technical skills with our enthusiastic community!!
 
-## OSCode
+## 💪 OSCode
 
-<a href="https://oscode-community.github.io/OSCodeCommunitySite/">Visit</a> our website amd start your journey we us !
+Visite our website - <a href="https://oscode-community.github.io/OSCodeCommunitySite/"><strong>OSCode</strong></a> and start your journey with us !
 
 ## 📱 Connect with us
 
@@ -39,10 +40,14 @@ Problem-solving skills and interpersonal skills will be refined. Overall student
   <img src="https://img.icons8.com/color/2x/youtube.png" height="50px"></img>
 </a>
 
+<br>
 
 ![GSSoC Logo](https://i.imgur.com/BR9Q5Pd.png)
 
-Yes, we’re a part of GSSoC ’23.</br> </br>
+### GSSoC '23
+
+We are proud to be a part of GSSoC '23 (GirlScript Summer of Code)! Join us and be a part of this amazing programes.
+</br> </br>
 <a href=""><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
 <a href=""><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
 <a href=""><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
@@ -58,6 +63,9 @@ Before making a contribution, check the <a href="https://github.com/OSCode-Commu
 ## 🧧 Code of Conduct
 
 Check out <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a> to know inclusive environment that respects all contributions.
+
+
+At OSCode, we value an inclusive environment that respects all contributions. To ensure a positive experience for everyone, please review our Code of Conduct.
 
 ## 📜 License
 
@@ -113,3 +121,7 @@ Before starting out, you'll need to install the following on your computer.
 <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=OSCode-Community/OSCodeCommunitySite" />
 </a>
+
+---
+✨✨
+We extend our heartfelt gratitude to all the contributors who have helped make OSCodeCommunitySite a success. We appreciate your dedication and hard work in improving the project.🚀🚀

@@ -1,0 +1,146 @@
+/* This css will be used to replace bootstrap css in navbar */
+.newFlex {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+.mainContainer {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.modifiedFooter {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row-reverse;
+}
+.socialLinkMod{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 0;
+}
+.crMod{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logoAndName {
+  display: flex;
+  align-items: center;
+}
+.navListAndContact {
+  display: flex;
+  align-items: center;
+  padding-right: 25px;
+}
+.modified {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftPart {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+.rightPart {
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+.section-bg {
+  padding: 160px 0;
+}
+.flex-container {
+  column-gap: 20px;
+}
+.right-tab {
+  margin-left: 0;
+}
+.msg-us{
+  color: #5942e9;;
+}
+.msg-us:hover{
+  color: white;
+  background-color: #5942e9;
+}
+.cntctBtn{
+  color: white;
+}
+.cntctBtn:hover{
+  background-color:#5942e9;
+  color: white;
+}
+.faq .faq-list li {
+  margin: 0;
+  padding: 0;
+  padding: 20px 15px;
+  transition: 0.3s ease-in-out;
+}
+.faqs{
+  transition: 0.3s ease-in-out;
+}
+.faqs:hover{
+transition: 0.3s ease-in-out;
+  box-shadow: rgba(137, 119, 212, 0.456) 0px 5px 15px;
+}
+@media (max-width: 992px) {
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+  }
+  .gallery img {
+    margin: 0;
+  }
+  .leftPart {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .rightPart {
+    flex: 0 0 100%;
+    width: 60%;
+  }
+  .modified {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 670px;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 1060px) and (min-width: 768px){
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 884px;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px){
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 758px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+  }
+}
+@media (min-width: 768px){
+.me-md-auto {
+    margin-right: 0!important;
+}
+}
