@@ -1,23 +1,112 @@
-# Contributing
+Thank you for taking the time to contribute to our project.
 
-Thank you for considering and taking the time to contribute! Product focuses on 100% quality education free for all.
+## How to Contribute 🤔
 
-The following are guidelines for contributing to this project.
+## Step 1: Fork the Repository
 
-## How to Report Bugs
+Click on the "Fork" button.
 
-Please open [a new issue in the appropriate GitHub repository][new-issue] with steps to reproduce the problem you're experiencing.
+By forking the repository, you will have your own version of the repository under your GitHub username.
 
-Be sure to include as much information including screenshots, text output, and both your expected and actual results.
+Once you have forked your repository, go to your profile inside the repository section you will find your forked repository.
 
-## How to Request Enhancements
 
-First, please refer to the applicable [GitHub repository][github-repo] and search [the repository's GitHub issues][issues-list] to make sure your idea has not been (or is not still) considered.
+## Step 2: Clone the Forked Repository 
+Once you locate your repository you need to clone it to your local machine.
 
-Then, please [create a new issue in the GitHub repository][new-issue] describing your enhancement.
+Click on the "Code" button located on the repository's page.
 
-Be sure to include as much detail as possible including step-by-step descriptions, specific examples, screenshots or mockups, and reasoning for why the enhancement might be worthwhile.
+Copy the link provided in the dropdown menu.
 
-[new-issue]: https://github.com/OSCode-Community/OSCodeCommunitySite/issues/new
-[github-repo]: https://github.com/OSCode-Community/OSCodeCommunitySite
-[issues-list]: https://github.com/OSCode-Community/OSCodeCommunitySite/issues
+On your local machine, open Git Bash.
+
+In the terminal, run this command:
+
+```bash
+  git clone <paste-the-link-here>
+```
+Make sure to remove <paste-the-link-here> and replace it with the actual link you copied earlier.
+
+Which looks something like:
+```bash
+  git clone https://github.com/yourUsername/OSCodeCommunitySite
+.git
+```
+The yourUsername is nothing but your github username.
+
+Congratulations! You have successfully cloned the repository to your local machine. You can now make changes, add new features, or fix issues in the codebase.
+
+## Step 3: Create a New Branch
+After making the necessary changes, it's recommended to create a new branch for your changes. This helps keep your modifications separate from the main branch, making it easier to manage and review your contributions.
+
+Use the following command to create a new branch:
+
+``` bash
+git checkout -b my-branch-name
+```
+Replace my-branch-name with a name of your choice for your branch.
+
+### git checkout -b branch-name
+The git checkout -b branch-name command in Git creates a new branch with the specified branch-name and switches to it.
+
+**checkout branch-name** : switches to the branch branch-name.
+
+**-b** : this creates the branch if it not exists already of name branch-name. 
+## Step 4: Make Your Changes
+
+Make the necessary changes or additions to the codebase.
+Once you have added changes in your local, its time to push them, for that run this command to bring the modification to staging area.
+### git add .
+This command is used to stage all the changes in the current directory and its subdirectories for the next commit. It adds all modified and new files to the staging area, allowing you to include them in the next commit. 
+
+**Note:** The . represents the current directory, so git add . includes all files and directories within the current working directory. Which means if you are anywhere oustide from the directory then the changes would not be staged.
+So make sure you are in correct directory.
+
+To change directory run this command:
+``` bash
+  cd <path>
+```
+replace <path> with your working directory.
+
+and then run this command:
+``` bash
+  git add .
+```
+
+## Step 5: Commit Your Changes
+
+Commit your changes with a meaningful commit message using the following command:
+``` bash
+  git commit -m "Enter Your message related to what work you did"
+```
+Once you have committed your changes, it's time to push them to your forked repository on GitHub.
+
+## Step 6: Push Your Changes
+
+Use the following command to push your changes:
+
+``` bash
+git push origin branch-name
+```
+Replace branch-name with the name of the branch you created earlier.
+
+## Step 7: Make a Pull Request
+
+After pushing your changes, open your forked repository on GitHub in your web browser.
+
+Go to pull request section in your forked repository (not the main repository)
+
+Click on "New Pull Request".
+Then this will appear.
+
+
+Provide a clear and informative title and description for your pull request. Explain the changes you have made and why they should be incorporated into the original repository.
+
+Review your pull request to ensure everything is correct, and then click on the "Create pull request" button to submit it.
+
+## End
+
+Your pull request will now be visible to the maintainers of the original repository. They will review your changes, provide feedback if necessary, and decide whether to merge your changes into the main branch.
+
+Congratulations! You have successfully created a pull request to contribute your changes to the repository. Remember to monitor the pull request for any updates or feedback from the maintainers.
+
