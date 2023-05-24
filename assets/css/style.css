@@ -1159,16 +1159,16 @@ hr.line {
 }
 
 .gallery img {
-  width: 100%;
+  width: 300px;
   max-width: 300px;
-  height: 250px;
+  height: 280px;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .gallery::after {
   content: "";
-  width: 250px;
+ 
 }
 .left-tab {
   width: 200px;
@@ -1180,7 +1180,7 @@ hr.line {
   margin-left: 100px;
 }
 .right-tab {
-  width: 300px;
+  width: 400px;
   height: 300px;
   margin-left: 10px;
 }
