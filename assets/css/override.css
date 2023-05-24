@@ -72,6 +72,19 @@
   background-color:#5942e9;
   color: white;
 }
+.faq .faq-list li {
+  margin: 0;
+  padding: 0;
+  padding: 20px 15px;
+  transition: 0.3s ease-in-out;
+}
+.faqs{
+  transition: 0.3s ease-in-out;
+}
+.faqs:hover{
+transition: 0.3s ease-in-out;
+  box-shadow: rgba(137, 119, 212, 0.456) 0px 5px 15px;
+}
 @media (max-width: 992px) {
   .flex-container {
     display: flex;
