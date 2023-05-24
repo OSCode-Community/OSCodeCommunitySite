@@ -704,31 +704,79 @@ section {
   background-color: #fff;
   opacity: 1;
   border: 1px solid #5942e9;
+  border-radius: 50%;
 }
 .clients-slider {
   margin-top: 40px;
 }
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5942e9;
-}
+  background-image: linear-gradient(to right, #5942e9 0%, #fff 50%, #5942e9 100%);
 
+  background-color: #5942e9;
+  box-shadow: 0 0 5px 0 #5942e9;
+}
+.nav-link:hover{
+  background-image: linear-gradient(to right, #5942e9 0%, #72a9fb 50%, #8272eb 100%);
+font-weight: bold;
+color:black;
+  box-shadow: 0 0 5px 0 #5942e9;
+}
 .clients .swiper-slide img {
   opacity: 0.5;
   transition: 0.3s;
   filter: grayscale(100);
+  box-shadow: 0 0 5px 0 #5942e9;
 }
 .clients .swiper-slide img:hover {
   opacity: 1;
   filter: none;
-}
+  transform: scale(1.1);
+  }
 .clients h1 {
-  color: #5942e9;
+  color:#fff;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
 }
 .enlarge {
   height: 60px;
   width: 200px;
+}
+.ig{
+  box-shadow: rgba(195, 192, 192, 0.35) 0px 5px 15px;
+}
+.right-tab  {
+  box-shadow: rgba(195, 192, 192, 0.35) 0px 5px 15px;
+    background-image: linear-gradient(120deg,black,rgb(64, 63, 63),rgb(86, 85, 85),rgb(105, 104, 104),rgb(216, 215, 215));
+    /* background-image: linear-gradient(20deg,  #000000 ,#1e193f 0%, #221957 , #494565 ,#544c90 ,#6a5fb9 ,#b9b0fc ); */
+
+   width: 600px;
+    border-radius: 5px;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+.left-tab{
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+.left-tab:hover{
+ transform: translateY(30px); 
+ }
+.right-tab p {
+ padding-left: 5px;
+padding-right: 5px;
+transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+}
+.right-tab:hover{
+  transform: translateY(30px); 
+ }
+.right-tab h4 {
+  box-shadow: rgba(545, 543, 543, 5.15) 1.95px 1.95px 2.6px;
+font-weight: bolder;
+  
+    border-radius: 5px;
+padding-left: 5px;
+padding-right: 5px;
 }
 @media only screen and (max-width: 600px) {
   .clients h1 {
