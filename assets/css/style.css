@@ -2623,3 +2623,7 @@ a:focus {
     font-size: 22px;
   }
 }
+
+#google_translate_element{
+  margin-left:3rem;
+}
