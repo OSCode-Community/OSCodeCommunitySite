@@ -820,6 +820,8 @@ section {
   width: 600px;
   height: 500px;
   border-radius: 48% 0 48% 48%;
+	transition: all 0.4s;
+  animation: action 0.7s infinite alternate;
 }
 .text-primary {
   color: var(--backtotop-btn-color) !important;
@@ -1111,6 +1113,12 @@ hr.line {
   text-align: center;
   box-shadow: 0px 2px 30px white;
   border-radius: 10px;
+  cursor: pointer;
+}
+.counts .count-box:hover{
+  /* box-shadow: 0 5px 10px #aaa; */
+  transform: scale(1.1);
+  transition: 0.1s ease-in-out;
 }
 .count-box > span {
   display: inline-block !important;
@@ -1149,15 +1157,12 @@ hr.line {
   color: var(--background-white);
 }
 
-@media (max-width: 1000px) {
-  .row {
-    /* margin-top: 160px !important; */
+@media (max-width: 526px) {
+  .css-15 {
+    font-size: 5vh;
   }
-}
-
-@media (max-width: 393px) {
-  .row {
-    /* margin-top: 320px !important; */
+  .event-h2{
+    font-size: 3vh;
   }
 }
 
@@ -2440,7 +2445,7 @@ input{
   color: var(--background-white);
   line-height: 1;
   padding: 8px 0;
-  margin: 5px;
+  /* margin: 15px; alreadry overriden */
   border-radius: 4px;
   text-align: center;
   width: 36px;
@@ -2460,8 +2465,8 @@ input{
 .card {
   border-radius: 16px;
   width: 50%;
-  background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  box-shadow: 20px 20px 40px #bebebe, -20px -20px 40px #ffffff;
+  background: linear-gradient(145deg, #e5d9d9, #ffffff);
+  box-shadow: 20px 20px 40px #bebebe, -20px -10px 40px #ffffff;
   margin-bottom: 200px;
 
   display: flex;
@@ -2531,7 +2536,7 @@ input{
   /* background-size: 100vw auto;  
     background: linear-gradient(180deg, #b9b3b8, 5%, #390244, 50%, #1b011d);
 */
-  background-image: url("../img/background/event.png");
+  background-image: url("../img/background/event2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no no-repeat;
@@ -2656,7 +2661,7 @@ div .dot {
   background: url("../img/background/bg3.jpg") top center no-repeat;
   background-size: cover;
   position: relative;
-  padding-top: 82px;
+  padding-top: 2vh;
 }
 .event-h2 {
   color: var(--background-white);
