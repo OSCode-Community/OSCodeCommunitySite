@@ -1252,7 +1252,7 @@ hr.line {
 }
 .text-center {
   text-align: center;
-  padding: 2rem;
+  padding: 0.8rem;
 }
 .hr-center {
   margin: auto;
@@ -2036,6 +2036,96 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   margin-bottom: 0;
 }
 
+
+.row.form-group{
+  margin-left:2px;
+  height: 45px;
+  width: 100%;
+  margin-bottom:30px;
+}
+.form-group input{
+  border: 2px solid #f0f0f0;
+  border-radius:6px;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  height: 40px;
+  width: 100%;
+}
+.form-group textarea{
+  border: 2px solid #f0f0f0;
+  border-radius:6px;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.form-group i{
+  position: absolute;
+  visibility: hidden;
+  top: 16px;
+  right: 20px;
+}
+
+.form-group .spandiv
+{
+  visibility: hidden;
+}
+.form-group small{
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-group.success input{
+  border-color: #2ecc71;
+}
+
+.form-group.error input{
+  border-color: #e74c3c;
+}
+
+.form-group.success textarea{
+  border-color: #2ecc71;
+}
+
+.form-group.error textarea{
+  border-color: #e74c3c;
+}
+
+.form-group.success i.fa-check-circle
+{
+  color:#2ecc71;
+  visibility: visible;
+}
+
+.form-group.error i.fa-exclamation-circle
+{
+  color:#e74c3c;
+  visibility: visible;
+}
+
+
+.form-group.error .spandiv 
+{
+  visibility: visible;
+  margin-top:20px;
+}
+.form-group.error .spandiv small{
+  color:#e74c3c;
+  visibility: visible;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.form-group.error small{
+  color:#e74c3c;
+  visibility: visible;
+}
+
+
+
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
@@ -2287,6 +2377,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
 
 .social-links{
   margin-bottom: 10px;
+  padding-bottom: -50px;
 }
 
 #footer .social-links a {
@@ -2296,7 +2387,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   color: var(--background-white);
   line-height: 1;
   padding: 8px 0;
-  margin: 15px;
+  margin: 5px;
   border-radius: 4px;
   text-align: center;
   width: 36px;
