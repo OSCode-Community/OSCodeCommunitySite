@@ -2316,8 +2316,8 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
 .card {
   border-radius: 16px;
   width: 50%;
-  background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  box-shadow: 20px 20px 40px #bebebe, -20px -20px 40px #ffffff;
+  background: linear-gradient(145deg, #e5d9d9, #ffffff);
+  box-shadow: 20px 20px 40px #bebebe, -20px -10px 40px #ffffff;
   margin-bottom: 200px;
 
   display: flex;
@@ -2387,7 +2387,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   /* background-size: 100vw auto;  
     background: linear-gradient(180deg, #b9b3b8, 5%, #390244, 50%, #1b011d);
 */
-  background-image: url("../img/background/event.png");
+  background-image: url("../img/background/event2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no no-repeat;
