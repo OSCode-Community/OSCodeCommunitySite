@@ -1149,15 +1149,12 @@ hr.line {
   color: var(--background-white);
 }
 
-@media (max-width: 1000px) {
-  .row {
-    /* margin-top: 160px !important; */
+@media (max-width: 526px) {
+  .css-15 {
+    font-size: 5vh;
   }
-}
-
-@media (max-width: 393px) {
-  .row {
-    /* margin-top: 320px !important; */
+  .event-h2{
+    font-size: 3vh;
   }
 }
 
@@ -2603,7 +2600,7 @@ div .dot {
   background: url("../img/background/bg3.jpg") top center no-repeat;
   background-size: cover;
   position: relative;
-  padding-top: 82px;
+  padding-top: 2vh
 }
 .event-h2 {
   color: var(--background-white);
