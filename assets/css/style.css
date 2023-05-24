@@ -2389,7 +2389,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   color: var(--background-white);
   line-height: 1;
   padding: 8px 0;
-  margin: 5px;
+  /* margin: 15px; alreadry overriden */
   border-radius: 4px;
   text-align: center;
   width: 36px;

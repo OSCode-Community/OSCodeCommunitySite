@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <style>
+    #preloader {
+      background: #000000 url(OSCode.gif) no-repeat center center;
+      background-size: 60%;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      z-index: 999999;
+    }
+  </style>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
@@ -48,23 +58,13 @@
   <!-- Why Choose Us button css -->
   <link rel="stylesheet" href="whychooseusbutton.css">
 
-<!-- for overriding the nav css -->
-<style>
-  #preloader{
-    background: #080808 url(loader.gif) no-repeat center center;
-    background-size: 5%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 999999;
-  }
-  </style>
+  <!-- for overriding the nav css -->
   <link rel="stylesheet" href="/assets/css/override.css">
 
 </head>
 
 <body onload="myFunction()">
-  
+
   <div id="preloader"></div>
 
   <!-- ======= Header ======= -->
@@ -113,7 +113,7 @@
 
       <!-- navbar list ends here -->
 
-      <a href="#contact" class="get-started-btn scrollto">CONTACT US</a>
+      <a href="#contact" class="get-started-btn scrollto cntctBtn">CONTACT US</a>
 
     </div>
   </header>
@@ -124,15 +124,7 @@
     <div class="container hero" data-aos="zoom-out" data-aos-delay="100">
       <div class="row">
         <div class="col-xl-12">
-          <div class="word">
-            <h1 class="home css-15">A </h1>
-            <h1 class="home css-15"> Community </h1>
-            <h1 class="home css-15"> of </h1>
-            <h1 class="home css-15"> Learners, </h1>
-            <h1 class="home css-15"> Creators, </h1>
-            <h1 class="home css-15"> and </h1>
-            <h1 class="home css-15"> Contributors</h1>
-          </div>
+          <h1 class="home css-15">A Community of Learners, Creators, and Contributors</h1>
           <h2>
             <span id="auto-type" class="roboto"></span>
           </h2>
@@ -227,7 +219,7 @@
         <h1 class="number">Numbers say it all!</h1>
         <hr class="line">
         <div class="row">
-          <div class="col-lg-3 col-md-6 shrink">
+          <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <i class="bi bi-people-fill"></i>
               <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1"
@@ -237,7 +229,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0 shrink">
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
             <div class="count-box">
               <i class="bi bi-stars"></i>
               <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1"
@@ -247,7 +239,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 shrink">
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="fa-solid fa-user-graduate"></i>
               <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
@@ -257,7 +249,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 shrink">
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="bi bi-journal-richtext"></i>
               <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
@@ -280,7 +272,8 @@
         <div class="row modified">
           <div class="col-lg-3 col-sm-6 leftPart">
             <!-- Tab navs -->
-            <div class="nav flex-column nav-pills text-center circle leftPartTabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div class="nav flex-column nav-pills text-center circle leftPartTabs" id="v-pills-tab" role="tablist"
+              aria-orientation="vertical">
               <a class="nav-link active edit1" id="v-pills-link1-tab" data-bs-toggle="pill" href="#v-pills-link1"
                 role="tab" aria-controls="v-pills-link1" aria-selected="true">Upskill Students</a>
               <a class="nav-link edit1" id="v-pills-link2-tab" data-bs-toggle="pill" href="#v-pills-link2" role="tab"
@@ -735,68 +728,78 @@
         <hr class="line hr-center">
 
         <ul class="faq-list accordion" data-aos="fade-up">
+          <div class="faqs">
+            <li>
+              <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">
+                Do I need to pay anything before joining the community?
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+              <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  🆓 Not at all! Everything is completely FREE OF COST and we will bear its cost for you.
+                  We also provide 50% off on our OPTIONAL certifications which students can take if they are interested
+                  otherwise can skip.
+                </p>
+              </div>
+            </li>
+          </div>
+          <div class="faqs">
 
-          <li>
-            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">
-              Do I need to pay anything before joining the community?
-              <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                🆓 Not at all! Everything is completely FREE OF COST and we will bear its cost for you.
-                We also provide 50% off on our OPTIONAL certifications which students can take if they are interested
-                otherwise can skip.
-              </p>
-            </div>
-          </li>
+            <li>
+              <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">How do I join OS-Code Community? <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+              <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Start your collaborative journey of learning, practising and sharing technical skills with our
+                  enthusiastic community!! by filling out this Google form 👇<br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-bIAC1VdPJxODwdcPnvH-SWhbu0SVl47SgyLdagNAciYYUA/viewform"
+                    target="_blank" rel="noopener noreferrer">Community Student form</a>
+                </p>
+              </div>
+            </li>
+          </div>
+          <div class="faqs">
 
-          <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">How do I join OS-Code Community? <i
-                class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Start your collaborative journey of learning, practising and sharing technical skills with our
-                enthusiastic community!! by filling out this Google form 👇<br>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-bIAC1VdPJxODwdcPnvH-SWhbu0SVl47SgyLdagNAciYYUA/viewform"
-                  target="_blank" rel="noopener noreferrer">Community Student form</a>
-              </p>
-            </div>
-          </li>
+            <li>
+              <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">How do you stay up to date on the
+                latest updates? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+              <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Please join us on our social media channels to know about our upcoming events. We have so much in
+                  store
+                  for you and can't wait to have you onboard 💪
+                </p>
+              </div>
+            </li>
+          </div>
+          <div class="faqs">
 
-          <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">How do you stay up to date on the
-              latest updates? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Please join us on our social media channels to know about our upcoming events. We have so much in store
-                for you and can't wait to have you onboard 💪
-              </p>
-            </div>
-          </li>
+            <li>
+              <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed">Is your community beginner friendly?
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+              <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes! Even non-coders are welcome. Our courses are designed in such a way that anyone can get started
+                  with it. Even people who have never programmed before!
+                </p>
+              </div>
+            </li>
+          </div>
+          <div class="faqs">
 
-          <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed">Is your community beginner friendly?
-              <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Yes! Even non-coders are welcome. Our courses are designed in such a way that anyone can get started
-                with it. Even people who have never programmed before!
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq5" class="collapsed">Do you provide mentorship and
-              guidance? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Yes. That is the highlight of our community. By joining us, you benefit with future internship
-                opportunities, connect
-                with industry experts, certifications, career guidance mentorship,
-                practical learning, connect with similar-minded people, and so much
-                more.
-              </p>
-            </div>
-          </li>
+            <li>
+              <a data-bs-toggle="collapse" data-bs-target="#faq5" class="collapsed">Do you provide mentorship and
+                guidance? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+              <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes. That is the highlight of our community. By joining us, you benefit with future internship
+                  opportunities, connect
+                  with industry experts, certifications, career guidance mentorship,
+                  practical learning, connect with similar-minded people, and so much
+                  more.
+                </p>
+              </div>
+            </li>
+          </div>
         </ul>
 
       </div>
@@ -847,56 +850,30 @@
 
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <form class="contactForm" id="contact_Form" action="mailto:oscode.community@gmail.com" method="post" enctype="text/plain" autocomplete="on">
-              <div class="row form-group">
+            <form action="mailto:oscode.community@gmail.com" method="post" enctype="text/plain" autocomplete="on">
+              <div class="row">
                 <div class="col form-group">
-                  <div>
-                  <input type="email"  autocomplete="email" class="form-control" name="email" id="email"
-                    placeholder="Your Email"/>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                  </div>
-                     <div class="spandiv"><small class="small"></small></div>
-                  </div>
-
+                  <input type="email" autocomplete="email" class="form-control" name="email" id="email"
+                    placeholder="Your Email" required />
+                </div>
                 <div class="col form-group">
-                  <div>
-                    <input type="text"  autocomplete="name" name="name" class="form-control" id="name"
-                    placeholder="Your Name"/>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                  </div>
-                  <div class="spandiv"><small class="small"></small></div>
-                  </div>
+                  <input type="text" autocomplete="name" name="name" class="form-control" id="name"
+                    placeholder="Your Name" required />
+                </div>
               </div>
-              
-            
-          
-                <div class="col form-group">
-                <div><input type="text"  autocomplete="subject" class="form-control" name="subject" id="subject"
-                  placeholder="Subject"/>
-                  <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                  </div>
-                  <div class="spandiv" style="padding-top: 4px;"> <small class="small"></small></div>
-                  </div>
+              <div class="form-group">
+                <input type="text" autocomplete="subject" class="form-control" name="subject" id="subject"
+                  placeholder="Subject" required />
                 <!-- <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required /> -->
-          
+              </div>
               <!-- <div class="form-group">
                 <input type="password" class="form-control" name="password" id="password" placeholder="Enter password"
                   required />
               </div> -->
-     
-              <div class="col form-group">
-                <div><textarea class="form-control" autocomplete="message" id="message" name="message" rows="5" placeholder="Message"
-                  ></textarea>
-                   <i class="fas fa-check-circle"></i>
-                     <i class="fas fa-exclamation-circle"></i>
-                  </div>
-                    <div class="spandiv" style="padding-top: 4px;"><small class="small"></small></div>
-                  </div>
-             
-                  
+              <div class="form-group">
+                <textarea class="form-control" autocomplete="message" name="message" rows="5" placeholder="Message"
+                  required></textarea>
+              </div>
               <!-- <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
@@ -990,14 +967,9 @@
       </div>
     </div>
 
-    <div class="container py-4">
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>OS-Code</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">Designed by <a href="#">OS-Code</a></div>
-      </div>
-      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+    <div class="container py-4 modifiedFooter">
+      <div class="social-links text-md-end pt-3 pt-md-0 socialLinkMod">
+        <div class="textSocials">Stay in the loop?</div>
         <a href="https://twitter.com/oscodecommunity" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="https://www.facebook.com/profile.php?id=100090940131222&mibextid=ZbWKwL" class="facebook"><i
             class="bx bxl-facebook"></i></a>
@@ -1005,6 +977,14 @@
         <a href="https://www.youtube.com/@oscodecommunity" class="youtube"><i class="fab fa-youtube"></i></a>
         <a href="https://www.linkedin.com/company/oscode/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
+
+      <div class="me-md-auto text-md-start crMod">
+        <div class="copyright">
+          &copy; Copyright <strong><span>OS-Code</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">Designed by <a href="#">OS-Code</a></div>
+      </div>
+
     </div>
   </footer>
   <!-- End Footer -->
@@ -1033,108 +1013,6 @@
     });
   </script>
 
-   <!--JS form validation -->
-  <script>
-    const form = document.getElementById('contact_Form');
-    const useremail = document.getElementById('email');
-    const username = document.getElementById('name');
-    const subject = document.getElementById('subject');
-    const message = document.getElementById('message');
-
-    form.addEventListener('submit',(e)=>{
-      if(checkInputs())
-      return true;
-      else
-      e.preventDefault();
-
-    });
-
-    function checkInputs()
-    {
-         //get values from input fields
-         const emailval = useremail.value.trim();
-         const usernameval = username.value.trim();
-         const subjectval = subject.value.trim();
-         const messageval = message.value.trim();
-
-         if(emailval === '')
-         {
-            setErrorFor(useremail,'Please enter a Email');
-         }
-         else if(!validEmail(emailval))
-         {
-           setErrorFor(useremail,'Enter a valid Email');
-         }
-         else
-         {
-          setSuccessFor(useremail);
-         }
-         
-         if(usernameval === '')
-         {
-            setErrorFor(username,'Please enter a name');
-         }else
-         {
-          setSuccessFor(username);
-         }
-
-         
-         if(subjectval === '')
-         {
-            setErrorFor(subject,'Please enter a subject');
-         }else
-         {
-          setSuccessFor(subject);
-         }
-
-         
-         if(messageval === '')
-         {
-            setErrorFor(message,'Please enter a message');
-         }else
-         {
-          setSuccessFor(message);
-         }
-
-         if(emailval !== '' && usernameval !== '' && subjectval !== '' && messageval !== '')
-         {
-          console.log("complete");
-          return true;
-         }
-        
-    }
-
-    function validEmail(emailval)
-    {
-      return String(emailval)
-      .toLowerCase()
-      .match(
-        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-      );
-    }
-    
-    function setErrorFor(input,showerror)
-    {
-      let formControl = input.parentElement.parentElement;
-      const small = formControl.querySelector('small');
-      small.innerText = showerror;
-
-      formControl.classList.remove('success');
-      formControl.classList.add('error');
- 
-    }
-
-    function setSuccessFor(input)
-    {
-      let formControl = input.parentElement.parentElement;
-      formControl.classList.remove('error');
-      formControl.classList.add('success');
-    }
-
-
-  </script>
-
-
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
@@ -1144,14 +1022,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
-         <script>
-   
-      var loader=document.getElementById("preloader");
+  <script>
 
-      function myFunction(){
-        preloader.style.display="none";
-      }
-    </script>
+    var loader = document.grtElementById("preloader");
+
+    function myFunction() {
+      preloader.style.display = "none";
+    }
+  </script>
 </body>
 
 </html>
