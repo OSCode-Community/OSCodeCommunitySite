@@ -554,7 +554,29 @@ h1 {
   line-height: 1.5;
   letter-spacing: -0.009em;
 }
-
+.word {
+	perspective: 1000px; 
+}
+.word h1 {
+	cursor: pointer;
+	display: inline-block;
+	user-select: none;
+}
+.word h1.active {
+	animation: balance 1.5s ease-out;
+	transform-origin: bottom;
+}
+@keyframes balance {
+	0%, 100% {
+		transform: rotate(0deg);
+	}
+	30%, 50% {
+		transform: rotate(-5deg);
+	}
+	50%, 70% {
+		transform: rotate(5deg);
+	}
+}
 #hero .btn-get-started:hover {
   background: transparent;
   border-color: var(--background-white);
