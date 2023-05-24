@@ -2600,7 +2600,7 @@ div .dot {
   background: url("../img/background/bg3.jpg") top center no-repeat;
   background-size: cover;
   position: relative;
-  padding-top: 2vh
+  padding-top: 2vh;
 }
 .event-h2 {
   color: var(--background-white);
