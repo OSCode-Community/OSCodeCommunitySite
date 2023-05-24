@@ -554,7 +554,29 @@ h1 {
   line-height: 1.5;
   letter-spacing: -0.009em;
 }
-
+.word {
+	perspective: 1000px; 
+}
+.word h1 {
+	cursor: pointer;
+	display: inline-block;
+	user-select: none;
+}
+.word h1.active {
+	animation: balance 1.5s ease-out;
+	transform-origin: bottom;
+}
+@keyframes balance {
+	0%, 100% {
+		transform: rotate(0deg);
+	}
+	30%, 50% {
+		transform: rotate(-5deg);
+	}
+	50%, 70% {
+		transform: rotate(5deg);
+	}
+}
 #hero .btn-get-started:hover {
   background: transparent;
   border-color: var(--background-white);
@@ -1230,7 +1252,7 @@ hr.line {
 }
 .text-center {
   text-align: center;
-  padding: 2rem;
+  padding: 0.8rem;
 }
 .hr-center {
   margin: auto;
@@ -1463,7 +1485,9 @@ a:hover i {
 --------------------------------------------------------------*/
 #achievement,
 #testimonials {
-  background-color: #0e034d;
+  background-image: linear-gradient(to right,#0f0c29,#302b63,#24243e,rgb(69, 69, 107));
+  
+  
 }
 .testimonials-slider {
   margin-top: 40px;
@@ -1477,28 +1501,37 @@ a:hover i {
   box-sizing: content-box;
   padding: 30px;
   margin: 30px 15px;
-  min-height: 200px;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  height: 360px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   position: relative;
   background: var(--background-white);
   border-radius: 15px;
-  height: 400px;
-}
 
+  }
+.testimonials .testimonial-item:hover{
+  transform: translateY(30px);
+   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+  height: 400px;
+
+}
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
   border-radius: 10px;
   border: 6px solid var(--background-white);
   float: left;
   margin: 0 10px 0 0;
+   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 25px 0 5px 0;
-  color: var(--background-black-lv1);
-}
+
+  color: #111;}
+
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
@@ -1692,7 +1725,8 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
 # Join us
 --------------------------------------------------------------*/
 #join-us {
-  background-color: #1b1b1b;
+  /* background-color: #1b1b1b; */
+  background-image: linear-gradient(#0f0c29,#302b63,#24243e);
 }
 #join-us .abt-txt {
   font-size: 18px;
@@ -2002,6 +2036,96 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   margin-bottom: 0;
 }
 
+
+.row.form-group{
+  margin-left:2px;
+  height: 45px;
+  width: 100%;
+  margin-bottom:30px;
+}
+.form-group input{
+  border: 2px solid #f0f0f0;
+  border-radius:6px;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  height: 40px;
+  width: 100%;
+}
+.form-group textarea{
+  border: 2px solid #f0f0f0;
+  border-radius:6px;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.form-group i{
+  position: absolute;
+  visibility: hidden;
+  top: 16px;
+  right: 20px;
+}
+
+.form-group .spandiv
+{
+  visibility: hidden;
+}
+.form-group small{
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-group.success input{
+  border-color: #2ecc71;
+}
+
+.form-group.error input{
+  border-color: #e74c3c;
+}
+
+.form-group.success textarea{
+  border-color: #2ecc71;
+}
+
+.form-group.error textarea{
+  border-color: #e74c3c;
+}
+
+.form-group.success i.fa-check-circle
+{
+  color:#2ecc71;
+  visibility: visible;
+}
+
+.form-group.error i.fa-exclamation-circle
+{
+  color:#e74c3c;
+  visibility: visible;
+}
+
+
+.form-group.error .spandiv 
+{
+  visibility: visible;
+  margin-top:20px;
+}
+.form-group.error .spandiv small{
+  color:#e74c3c;
+  visibility: visible;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.form-group.error small{
+  color:#e74c3c;
+  visibility: visible;
+}
+
+
+
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
@@ -2253,6 +2377,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
 
 .social-links{
   margin-bottom: 10px;
+  padding-bottom: -50px;
 }
 
 #footer .social-links a {
@@ -2732,4 +2857,15 @@ a:focus {
   .event-h2 {
     font-size: 22px;
   }
+}
+
+.msg-us{
+  color:rgb(27, 27, 27);
+  
+  transition: all 0.2s;
+}
+.msg-us:hover{
+  background-color: rgb(147, 133, 237);
+  translate:0px -5px;
+
 }
