@@ -1915,13 +1915,34 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
 }
 
 /*--------------------------------------------------------------
-# Frequently Asked Questions
+# OLD Frequently Asked Questions
 --------------------------------------------------------------*/
+/* .faq-box{
+  box-shadow: 2px 2px 3px 2px rgb(189, 176, 247);
+  border-radius: 10px;
+  background-color: linear-gradient(to right, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62), rgb(69, 69, 107));
+  margin-bottom: 10px;
+}
+.text-center{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.faq-list accordion{
+  margin-top: 10px;
+}
+.faq-mn-line{
+  margin-bottom: 10px;
+}
+.faq-list accordion{
+  box-shadow: 1px 2px 2px 1px rgb(162, 153, 201);
+}
 #faq {
   padding-bottom: 0;
   background-image: url("../img/abt-bg1.jpg");
   background-size: cover;
   position: relative;
+  box-shadow: 1px 2px 2px 1px rgb(162, 153, 201);
+  margin-bottom: 10px;
 }
 #faq h1 {
   color: var(--backtotop-btn-color) !important;
@@ -1990,7 +2011,487 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   #faq h1 {
     font-size: 27px;
   }
+} */
+
+
+/*--------------------------------------------------------------
+# NEW Frequently Asked Questions
+--------------------------------------------------------------*/
+.faq-all{
+	background-color: linear-gradient(to right, rgb(151, 190, 203), transparent);
+	box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
+	margin: auto;
+	border-radius: 10px;
+	margin-bottom: 10px;
 }
+.faq-sub-container{
+	background-color: var(--info);
+	box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
+	padding-top: 5px;
+	margin: auto;
+	border-radius: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.faq-sub-container:hover{
+	background-color: #00a9d4;
+}
+.faq-heading {
+  text-align: center;
+	padding: 10px 60px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background: linear-gradient(to right, lightblue, gray);
+}
+.faq-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	/* background-color: #f3d094; */
+	background: linear-gradient(to right, lightblue, gray);;
+	min-height: 100vh;
+	/* height: 700px; */
+}
+.faq-one{
+	margin-top: 10px;
+}
+.faq-ten{
+	margin-bottom: 10px;
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+	color: black;
+	cursor: pointer;
+	padding: 20px 20px;
+	width: 60%;
+	font-size: 1.47rem;
+	transition: 1.4s ease;
+	margin: auto;
+	border-bottom: 2px solid #000;
+	text-decoration: none;
+}
+.faq-body {
+	margin: auto;
+	width: 60%;
+	padding: 0px 18px;
+	font-size: 1.36rem;
+	/* background-color: #f3d094; */
+	background-color: var(--info);
+	display: none;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.faq-body p {
+	margin-top: 28px;
+	font-family: "Source Sans Pro", sans-serif !important;
+}
+/* Add a background color to the button if it is clicked on when you move the mouse over it (hover) */
+.faq-page:hover {
+	/* background-color: #f1c476; */
+	background-color: #00a9d4;
+	border-radius: 10px;
+}
+/* Style the faq-page panel. Note: hidden by default */
+
+.faq-page:after {
+	content: "\02795";
+	font-size: 13px;
+	color: #777;
+	float: right;
+	margin-left: 5px;
+}
+.active:after {
+	content: "\2796";
+}
+
+.nav-item a {
+	text-decoration: none;
+}
+
+.book-img ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+	.contain{
+		margin-left: 0px !important; 
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+		margin-right: 0;
+		margin: 0 auto;
+		padding-left: 0;
+	}
+
+	.left {
+		padding: 0 0% 10% 25%;
+	}
+
+	#table {
+		width: 100%;
+	}
+
+	.contain {
+		width: 100%;
+	}
+
+	.member {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.member .donate {
+		width: 40%;
+	}
+
+	.photo img {
+		width: 60%;
+		height: 70%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.header ul li {
+		margin-right: 0;
+	}
+
+	.hero-right {
+		padding-left: 0;
+	}
+
+	.books1 {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+	}
+	.books {
+		margin-left: 0px;
+		margin-right: 40px;
+	}
+
+	.member {
+		flex-direction: column;
+		padding-bottom: 30px;
+	}
+
+	.member .donate {
+		width: 100%;
+	}
+
+	.member .photo {
+		width: 100%;
+	}
+
+	.donate div {
+		margin-top: 30px;
+	}
+
+	.photo img {
+		width: 50%;
+		height: 60%;
+	}
+
+	.photo {
+		display: flex;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.header .logo,
+	.header .login a {
+		font-size: 1rem;
+	}
+	.logo-img {
+		margin-left: 5px;
+	}
+	.new-nav ul {
+		flex-direction: column;
+	}
+	.new-nav ul {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.new-nav li {
+		margin: 10px 8px;
+	}
+
+	.left {
+		padding: 0 0 5% 5%;
+	}
+
+	.contain {
+		height: 400px;
+	}
+
+	#search {
+		margin-top: 8%;
+		/* width: 100%; */
+	}
+
+	.contain{
+		align-items: center;
+    	justify-content: center;
+	}
+
+	.list {
+		flex-wrap: wrap;
+	}
+	.list li {
+		width: 300px;
+		height: 100px;
+		font-size: 0.8cm;
+	}
+
+	.books li {
+		width: 180px;
+		height: 270px;
+		margin: 20px 0px;
+	}
+}
+
+
+/*--------------------------------------------------------------
+# Doubt
+---------------------------------------------------------------*/
+#doubt {
+  background-image: url("../img/abt-bg1.jpg");
+  background-size: cover;
+  position: relative;
+}
+.doubt .info-box {
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 15px 0 15px 0;
+  border-radius: 4px;
+  background-color: var(--background-white);
+}
+#doubt h1 {
+  color: var(--backtotop-btn-color) !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 0 0 1px black;
+}
+.doubt .info-box i {
+  font-size: 32px;
+  color: var(--backtotop-btn-color);
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #f8d4d5;
+}
+
+.doubt .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.doubt .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.text-bottom{
+  justify-content: center;
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.row.form-group{
+  margin-left:2px;
+  height: 45px;
+  width: 100%;
+  margin-bottom:30px;
+}
+.form-group textarea{
+  border: 2px solid #f0f0f0;
+  border-radius:6px;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  width: 550px;
+  margin-top: 10px;
+}
+
+.form-group i{
+  position: absolute;
+  visibility: hidden;
+  top: 16px;
+  right: 20px;
+}
+.form-group .spandiv
+{
+  visibility: hidden;
+}
+.form-group small{
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-group.success input{
+  border-color: #2ecc71;
+}
+
+.form-group.error input{
+  border-color: #e74c3c;
+}
+
+.form-group.success textarea{
+  border-color: #2ecc71;
+}
+
+.form-group.error textarea{
+  border-color: #e74c3c;
+}
+
+.form-group.success i.fa-check-circle
+{
+  color:#2ecc71;
+  visibility: visible;
+}
+
+.form-group.error i.fa-exclamation-circle
+{
+  color:#e74c3c;
+  visibility: visible;
+}
+
+
+.form-group.error .spandiv 
+{
+  visibility: visible;
+  margin-top:20px;
+}
+.form-group.error .spandiv small{
+  color:#e74c3c;
+  visibility: visible;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.form-group.error small{
+  color:#e74c3c;
+  visibility: visible;
+}
+
+
+
+.doubt .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  border-radius: 4px;
+}
+
+.doubt .php-email-form .error-message {
+  display: none;
+  color: var(--background-white);
+  background: var(--backtotop-btn-color);
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.doubt .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.doubt .php-email-form .sent-message {
+  display: none;
+  color: var(--background-white);
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.doubt .php-email-form .loading {
+  display: none;
+  background: var(--background-white);
+  text-align: center;
+  padding: 15px;
+}
+
+.doubt .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.doubt .php-email-form .form-group {
+  margin-bottom: 25px;
+}
+
+.doubt .php-email-form input,
+.doubt .php-email-form textarea {
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.doubt .php-email-form input:focus,
+.doubt .php-email-form textarea:focus {
+  border-color: var(--background-black-lv1);
+}
+
+.doubt .php-email-form input {
+  padding: 20px 20px;
+}
+
+.doubt .php-email-form textarea {
+  padding: 12px 15px;
+}
+.doubt .php-email-form button[type="submit"] {
+  background: var(--backtotop-btn-color);
+  border: 0;
+  padding: 10px 32px;
+  color: var(--background-white);
+  transition: 0.4s;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.doubt .php-email-form button[type="submit"]:hover {
+  background: #50e3ca;
+}
+
+.register {
+  margin-bottom: 1px;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 600px) {
+  #doubt h1 {
+    font-size: 27px;
+  }
+}
+
+
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
