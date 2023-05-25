@@ -339,44 +339,5 @@
 
     <!-- Template Main JS File -->
     <script src="../assets/js/main.js"></script>
-    <script>
-      const container = document.getElementById("card");
-      const url = "./events.json";
-      fetch(url)
-        .then((response) => response.json())
-        .then((data) => {
-          let cardsHtml = "";
-
-          data = data.slice().reverse();
-          data.forEach((item) => {
-            const cardHtml = `
-      
-            <div class="card" data-aos="zoom-in" data-aos-delay="100">
-              
-              <div class="for-image-div">
-                <img src="${item.image}" alt="" id="image-for-card">
-              </div>
-
-              <div>
-                <span><h2 id="event-h1" >${item.title}</h2></span>
-              </div>
-
-              <div id="event-p-div">
-                <em><p id="event-p">${item.date}</p></em>
-              </div>
-              <div id="event-p-div">
-                <p id="event-p">${item.description}</p>
-              </div>
-         
-            </div>`;
-
-            cardsHtml += cardHtml;
-          });
-          container.innerHTML = cardsHtml;
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-        });
-    </script>
   </body>
 </html>
