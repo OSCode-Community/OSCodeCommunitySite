@@ -140,7 +140,14 @@ transition: 0.3s ease-in-out;
   }
 }
 @media (min-width: 768px){
-.me-md-auto {
+  .me-md-auto {
     margin-right: 0!important;
+  }
 }
+#scrolling{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
 }
