@@ -322,11 +322,3 @@ spans.forEach((span, idx) => {
 		span.classList.add('active');
 	}, 750 * (idx+1))
 });
-
-
-function googleTranslateElementInit() {  
-  new google.translate.TranslateElement(  
-      {pageLanguage: 'en'},  
-      'google_translate_element'  
-  );  
-}
