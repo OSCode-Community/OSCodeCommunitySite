@@ -44,6 +44,12 @@ Visite our website - <a href="https://oscode-community.github.io/OSCodeCommunity
 
 ![GSSoC Logo](https://i.imgur.com/BR9Q5Pd.png)
 
+
+## 💈 Want to Contribute?
+
+We welcome contributions in our community.<br>
+Before making a contribution, check the <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/CONTRIBUTING.md">Contribution guide.</a>
+
 ### GSSoC '23
 
 We are proud to be a part of GSSoC '23 (GirlScript Summer of Code)! Join us and be a part of this amazing programes.
@@ -54,11 +60,6 @@ We are proud to be a part of GSSoC '23 (GirlScript Summer of Code)! Join us and 
 <a href=""><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103"></a>
 
 
-
-## 💈 Want to Contribute?
-
-We welcome contributions in our community.<br>
-Before making a contribution, check the <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/CONTRIBUTING.md">Contribution guide.</a>
 
 ## 🧧 Code of Conduct
 
@@ -115,12 +116,31 @@ Before starting out, you'll need to install the following on your computer.
 6. Run `serve` to start the development server
 7. Navigate to `http://localhost:5000/`
 
+## Oppurtunites We Offer
+     We are a Multi-College Tech Community that helps college students to learn in public and engage with similar-minded people
+     
+     We help local college communities to encourage this culture on their campus and help them to build it.
+
+     We help upskill in the domain of your interests by organizing workshops, technical seminars, hackathons, project sessions, code-along, etc.
+     
+     The Community aims to help individuals to Collaborate and Contribute to Open-Source Projects by mentoring them at each stage of their Contribution.
+    
+## College Chapter
+
+  1. Bangalore Institute of Technology
+  2. Dayananda Sagar University
+  3. S J C institute of technology
+  4. Sambhram Institute of Technology
+  5. Sir M Vishwesariya Institute of Technology
+  6. Sri Krishna Institute of Technology
+  7. Vemana institute of technology
 
 ## ❤️ Thanks to all the contributors
 
 <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=OSCode-Community/OSCodeCommunitySite" />
 </a>
+
 
 ---
 ✨✨
