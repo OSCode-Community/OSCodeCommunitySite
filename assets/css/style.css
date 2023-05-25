@@ -262,7 +262,7 @@ h1 {
 .navbar .active:focus,
 .navbar li:hover > a {
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
