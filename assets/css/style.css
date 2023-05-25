@@ -2609,6 +2609,7 @@ div .dot {
   background-size: cover;
   position: relative;
   padding-top: 2vh;
+  flex-direction: column;
 }
 .event-h2 {
   color: var(--background-white);
@@ -2616,11 +2617,11 @@ div .dot {
   line-height: 1.5em;
 }
 .demo a {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
+  /* position: absolute; These was causing scroll not be in center */
+  /* bottom: 20px; */
+  /* left: 50%; */
   z-index: 2;
-  display: inline-block;
+  /* display: inline-block; */
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: var(--background-white);
@@ -2632,18 +2633,19 @@ div .dot {
 
 .demo a:hover {
   opacity: 0.5;
-  color: #0be6db;
-  font-weight: bold;
+  color: #5d5aff;
+  /* font-weight: bold; */
 }
 
 #home a {
   padding-top: 70px;
-  bottom: 0;
+  /* bottom: 0; */
 }
 
 #home a span {
-  position: absolute;
-  top: 0;
+  position: relative;
+  display: inline-block;
+  top: -30px;
   left: 50%;
   width: 24px;
   height: 24px;

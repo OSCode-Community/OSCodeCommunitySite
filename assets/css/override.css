@@ -120,6 +120,9 @@ transition: 0.3s ease-in-out;
     flex-direction: column;
     row-gap: 30px;
   }
+  .mainContainer{
+    flex-direction: row;
+  }
 }
 @media (max-width: 1060px) and (min-width: 768px){
   .container,
@@ -133,14 +136,21 @@ transition: 0.3s ease-in-out;
   .container-md,
   .container-sm {
     max-width: 758px;
-    flex-direction: column;
+    /* flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     row-gap: 30px;
   }
 }
 @media (min-width: 768px){
-.me-md-auto {
+  .me-md-auto {
     margin-right: 0!important;
+  }
 }
+#scrolling{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
 }
