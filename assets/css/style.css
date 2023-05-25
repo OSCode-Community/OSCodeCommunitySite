@@ -2643,8 +2643,9 @@ div .dot {
 }
 
 #home a span {
-  position: absolute;
-  top: 0;
+  position: relative;
+  display: inline-block;
+  top: -30px;
   left: 50%;
   width: 24px;
   height: 24px;
