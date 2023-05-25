@@ -1111,7 +1111,7 @@ hr.line {
   width: 100%;
   position: relative;
   text-align: center;
-  box-shadow: 0px 2px 30px white;
+  box-shadow: 0px 2px 5px slateblue;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -1754,7 +1754,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   background-color: #0e034d;
 }
 .number {
-  color: rgb(241, 206, 255) !important;
+  color: beige !important;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
 }
