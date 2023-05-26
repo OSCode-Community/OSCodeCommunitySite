@@ -32,7 +32,7 @@ Which looks something like:
   git clone https://github.com/yourUsername/OSCodeCommunitySite
 .git
 ```
-The yourUsername is nothing but your github username.
+The yourUsername is nothing but your GitHub username.
 
 Congratulations! You have successfully cloned the repository to your local machine. You can now make changes, add new features, or fix issues in the codebase.
 
@@ -55,11 +55,11 @@ The git checkout -b branch-name command in Git creates a new branch with the spe
 ## Step 4: Make Your Changes
 
 Make the necessary changes or additions to the codebase.
-Once you have added changes in your local, its time to push them, for that run this command to bring the modification to staging area.
+Once you have added changes in your local, its time to push them, for that run this command to bring the modification to the staging area.
 ### git add .
-This command is used to stage all the changes in the current directory and its subdirectories for the next commit. It adds all modified and new files to the staging area, allowing you to include them in the next commit. 
+This command is used to stage all the changes in the current directory and it's subdirectories for the next commit. It adds all modified and new files to the staging area, allowing you to include them in the next commit. 
 
-**Note:** The . represents the current directory, so git add . includes all files and directories within the current working directory. Which means if you are anywhere oustide from the directory then the changes would not be staged.
+**Note:** The . represents the current directory, so git add . includes all files and directories within the current working directory. This means if you are anywhere outside from the directory then the changes would not be staged.
 So make sure you are in correct directory.
 
 To change directory run this command:

@@ -167,8 +167,8 @@ h1 {
 # Get Started Button
 --------------------------------------------------------------*/
 .get-started-btn {
-  margin-left: 30px;
-  background-color: transparent;
+  /* margin-left: 30px; */
+  /* background-color: transparent; */
   outline: none;
   color: #fff;
   border:2px solid #5942e9;
@@ -178,8 +178,9 @@ h1 {
   transition: 0.3s;
   font-size: 15px;
   font-weight: 600;
+  text-transform: uppercase;
   display: inline-block;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .home-i {
   margin-left: 4px;
@@ -229,7 +230,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   padding: 8px 12px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   color: #fff;
   white-space: nowrap;
@@ -520,7 +521,7 @@ h1 {
   font-size: 25px;
 }
 .home-para {
-  padding: 35px 0 0 0;
+  padding: 35px 0 30px 0;
 }
 #hero .btn-get-started {
   font-family: "Roboto", sans-serif;
@@ -596,6 +597,7 @@ h1 {
 
 .left {
   -webkit-animation: leftarrow 0.6s infinite alternate ease-in-out;
+  margin: 0 0 0 30px;
 }
 .hero {
   width: 900px;
