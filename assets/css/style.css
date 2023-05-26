@@ -597,6 +597,7 @@ h1 {
 
 .left {
   -webkit-animation: leftarrow 0.6s infinite alternate ease-in-out;
+  margin: 0 0 0 30px;
 }
 .hero {
   width: 900px;
