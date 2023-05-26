@@ -2,19 +2,20 @@
   <img src="https://user-images.githubusercontent.com/77539004/226191234-269ac220-e035-464f-ac00-9e65bbd80a78.png" height="250">
 </p>
 
-<p align="center">Welcome to the Ever-Growing Tech Community.</p>
+<h2 align="center">Welcome to the Ever-Growing Tech Community 🚀</h2>
 
-## About Us
 
-We are a Multi-College Tech Community that helps college students to **Learn** in Public and **Engage** with similar-minded people. We help local college communities to encourage this culture on their campus and help them build it. We help students by upskilling them in the domain of their interests by organizing workshops, technical seminars, hackathons, project sessions, code-along, etc.
 
-We help students to get start with their lifelong journey of coding. Students will explore and learn what real-world Software development looks like.
+## 🙌 About Us
 
-Problem-solving skills and interpersonal skills will be refined. Overall students will enjoy with this collaborative journey of learning, practising and sharing technical skills with our enthusiastic community!!
++ We are a Multi-College Tech Community that helps college students to **Learn in Public** and **Engage** with similar-minded people. 
++ We help local college communities to encourage this culture on their campus and help them build it. We help students by upskilling them in the domain of their interests by organizing **workshops, technical seminars, hackathons, project sessions, code-along, etc.**
++ We help students to get start with their **lifelong journey of coding.** Students will explore and learn what real-world Software development looks like - problem-solving skills and interpersonal **skills will be refined.** 
++ Overall students will enjoy with this **collaborative journey of learning**, practising and sharing technical skills with our enthusiastic community!!
 
-## OSCode
+## 💪 OSCode
 
-<a href="https://oscode-community.github.io/OSCodeCommunitySite/">Visit</a> our website amd start your journey we us !
+Visite our website - <a href="https://oscode-community.github.io/OSCodeCommunitySite/"><strong>OSCode</strong></a> and start your journey with us !
 
 ## 📱 Connect with us
 
@@ -39,15 +40,9 @@ Problem-solving skills and interpersonal skills will be refined. Overall student
   <img src="https://img.icons8.com/color/2x/youtube.png" height="50px"></img>
 </a>
 
+<br>
 
 ![GSSoC Logo](https://i.imgur.com/BR9Q5Pd.png)
-
-Yes, we’re a part of GSSoC ’23.</br> </br>
-<a href=""><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
-<a href=""><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
-<a href=""><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
-<a href=""><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103"></a>
-
 
 
 ## 💈 Want to Contribute?
@@ -55,9 +50,23 @@ Yes, we’re a part of GSSoC ’23.</br> </br>
 We welcome contributions in our community.<br>
 Before making a contribution, check the <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/CONTRIBUTING.md">Contribution guide.</a>
 
+### GSSoC '23
+
+We are proud to be a part of GSSoC '23 (GirlScript Summer of Code)! Join us and be a part of this amazing programes.
+</br> </br>
+<a href=""><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
+<a href=""><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
+<a href=""><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
+<a href=""><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103"></a>
+
+
+
 ## 🧧 Code of Conduct
 
 Check out <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a> to know inclusive environment that respects all contributions.
+
+
+At OSCode, we value an inclusive environment that respects all contributions. To ensure a positive experience for everyone, please review our Code of Conduct.
 
 ## 📜 License
 
@@ -107,9 +116,32 @@ Before starting out, you'll need to install the following on your computer.
 6. Run `serve` to start the development server
 7. Navigate to `http://localhost:5000/`
 
+## Oppurtunites We Offer
+     We are a Multi-College Tech Community that helps college students to learn in public and engage with similar-minded people
+     
+     We help local college communities to encourage this culture on their campus and help them to build it.
+
+     We help upskill in the domain of your interests by organizing workshops, technical seminars, hackathons, project sessions, code-along, etc.
+     
+     The Community aims to help individuals to Collaborate and Contribute to Open-Source Projects by mentoring them at each stage of their Contribution.
+    
+## College Chapter
+
+  1. Bangalore Institute of Technology
+  2. Dayananda Sagar University
+  3. S J C institute of technology
+  4. Sambhram Institute of Technology
+  5. Sir M Vishwesariya Institute of Technology
+  6. Sri Krishna Institute of Technology
+  7. Vemana institute of technology
 
 ## ❤️ Thanks to all the contributors
 
 <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=OSCode-Community/OSCodeCommunitySite" />
 </a>
+
+
+---
+✨✨
+We extend our heartfelt gratitude to all the contributors who have helped make OSCodeCommunitySite a success. We appreciate your dedication and hard work in improving the project.🚀🚀
