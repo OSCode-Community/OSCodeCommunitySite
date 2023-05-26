@@ -1793,7 +1793,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   margin-left: 70px;
 }
 .join .count-box:hover {
-  box-shadow: 0px 1px 25px #b8b4f4;
+  box-shadow: 0px 5px 15px darkblue;
 }
 .join .count-box span {
   font-size: 36px;
