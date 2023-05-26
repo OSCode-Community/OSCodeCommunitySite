@@ -1603,6 +1603,22 @@ a:hover i {
 --------------------------------------------------------------*/
 #join-us {
   background-color: #1b1b1b;
+  transition: 1s ease;
+
+}
+.section-bg1 {
+  padding: 120px 0;
+  color: #fff;
+  background: #0e034d;
+  background-image: linear-gradient( #0e034d, #0e034d );
+  background-size: 50% 50%;
+ 
+}
+.ctr {
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
 }
 #join-us .abt-txt {
   font-size: 18px;
@@ -1619,6 +1635,10 @@ a:hover i {
 }
 .link {
   font-size: 20px;
+  /* transform: scale(1.8); */
+}
+.link:hover{
+  font-size: 30px;
 }
 .counts {
   padding-top: 80px;
@@ -1630,7 +1650,8 @@ a:hover i {
   font-size: 40px;
 }
 .count-box {
-  background: linear-gradient(145deg, #0e034d, #240ab3);
+  background: linear-gradient(130deg,rgb(8, 2, 46), #211b3d, #322861, #3e3569, #534c86, #645e81);
+  /* background-image: radial-gradient(rgb(42, 36, 82), #252041, #272433); */
 }
 .row {
   margin-top: 70px;
@@ -1640,6 +1661,7 @@ a:hover i {
   width: 100%;
   position: relative;
   text-align: center;
+  box-shadow: 0px 1px 15px #4d4d4f;
   border-radius: 10px;
 }
 .count-box > span {
@@ -1653,18 +1675,21 @@ a:hover i {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #5942e9;
+  background: #6b6784;
   color: #d3d0e5;
   border-radius: 50px;
-  border: 2px solid #5942e9;
+  border: 2px solid #6b6784;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition: 1s ease-in-out;
   margin-left: 70px;
 }
+
 .join .count-box:hover {
   box-shadow: 0px 1px 25px #b8b4f4;
+  background: linear-gradient(145deg, #0e034d, #281c6c, #4e4776, #7067a1, #a19bc5);
 }
 .join .count-box span {
   font-size: 36px;
