@@ -262,7 +262,7 @@ h1 {
 .navbar .active:focus,
 .navbar li:hover > a {
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
@@ -1111,7 +1111,7 @@ hr.line {
   width: 100%;
   position: relative;
   text-align: center;
-  box-shadow: 0px 2px 30px white;
+  box-shadow: 0px 2px 5px slateblue;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -1754,7 +1754,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   background-color: #0e034d;
 }
 .number {
-  color: rgb(241, 206, 255) !important;
+  color: beige !important;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
 }
@@ -1793,7 +1793,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   margin-left: 70px;
 }
 .join .count-box:hover {
-  box-shadow: 0px 1px 25px #b8b4f4;
+  box-shadow: 0px 5px 15px darkblue;
 }
 .join .count-box span {
   font-size: 36px;
@@ -2609,6 +2609,7 @@ div .dot {
   background-size: cover;
   position: relative;
   padding-top: 2vh;
+  flex-direction: column;
 }
 .event-h2 {
   color: var(--background-white);
@@ -2616,11 +2617,11 @@ div .dot {
   line-height: 1.5em;
 }
 .demo a {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
+  /* position: absolute; These was causing scroll not be in center */
+  /* bottom: 20px; */
+  /* left: 50%; */
   z-index: 2;
-  display: inline-block;
+  /* display: inline-block; */
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: var(--background-white);
@@ -2632,18 +2633,19 @@ div .dot {
 
 .demo a:hover {
   opacity: 0.5;
-  color: #0be6db;
-  font-weight: bold;
+  color: #5d5aff;
+  /* font-weight: bold; */
 }
 
 #home a {
   padding-top: 70px;
-  bottom: 0;
+  /* bottom: 0; */
 }
 
 #home a span {
-  position: absolute;
-  top: 0;
+  position: relative;
+  display: inline-block;
+  top: -30px;
   left: 50%;
   width: 24px;
   height: 24px;
