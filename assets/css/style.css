@@ -1111,9 +1111,6 @@ hr.line {
 .count-box {
   background: linear-gradient(145deg, #0e034d, #240ab3);
 }
-.row {
-  margin-top: 70px;
-}
 .counts .count-box {
   padding: 30px 30px 25px 30px;
   width: 100%;

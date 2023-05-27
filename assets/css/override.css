@@ -183,3 +183,9 @@ transition: 0.3s ease-in-out;
   background: rgb(151,140,255);
 background: linear-gradient(209deg, rgba(151,140,255,1) 0%, rgba(198,198,255,1) 56%, rgba(225,208,255,1) 100%);
 }
+.wrapping{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
