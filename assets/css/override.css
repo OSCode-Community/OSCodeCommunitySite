@@ -160,19 +160,19 @@ transition: 0.3s ease-in-out;
   flex-direction: column;
   position: relative;
 }
-.col-12 img{
+.colImg img{
   margin: 0;
 }
-.carousel{
+.carou{
   width: auto;
   padding: 0;
 }
-.carousel .carousel-indicators{
+.carou .ind{
   bottom: -50px;
   margin: 0;
   padding: 0;
 }
-.carousel-inner{
+.innerCarou{
   padding: 0;
   background: none;
 }
