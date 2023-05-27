@@ -41,6 +41,12 @@
   align-items: center;
   justify-content: center;
 }
+.modifiedLook{
+  margin: 70px 0;
+  display: flex;
+  align-items: center;
+  row-gap: 30px;
+}
 .leftPart {
   flex: 0 0 30%;
   max-width: 30%;
@@ -153,4 +159,27 @@ transition: 0.3s ease-in-out;
   justify-content: center;
   flex-direction: column;
   position: relative;
+}
+.col-12 img{
+  margin: 0;
+}
+.carousel{
+  width: auto;
+  padding: 0;
+}
+.carousel .carousel-indicators{
+  bottom: -50px;
+  margin: 0;
+  padding: 0;
+}
+.carousel-inner{
+  padding: 0;
+  background: none;
+}
+.modal-content{
+  border-radius: 1.3rem;
+}
+.eventBody{
+  background: rgb(151,140,255);
+background: linear-gradient(209deg, rgba(151,140,255,1) 0%, rgba(198,198,255,1) 56%, rgba(225,208,255,1) 100%);
 }
