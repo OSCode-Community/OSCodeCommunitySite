@@ -189,6 +189,30 @@ h1 {
   background: var(--get-started-btn-color);
   color: var(--background-black-lv1);
 }
+.get-started-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.get-started-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.get-started-btn:hover span {
+  padding-right: 25px;
+}
+
+.get-started-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 @media (max-width: 992px) {
   .get-started-btn {
