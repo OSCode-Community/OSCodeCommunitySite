@@ -186,8 +186,8 @@ h1 {
   margin-left: 4px;
 }
 .get-started-btn:hover {
-  background: var(--get-started-btn-color);
-  color: var(--background-black-lv1);
+  background: #5942e9;
+  color: #fff;
 }
 .get-started-btn span {
   cursor: pointer;
