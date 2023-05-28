@@ -160,19 +160,19 @@ transition: 0.3s ease-in-out;
   flex-direction: column;
   position: relative;
 }
-.col-12 img{
+.colImg img{
   margin: 0;
 }
-.carousel{
+.carou{
   width: auto;
   padding: 0;
 }
-.carousel .carousel-indicators{
+.carou .ind{
   bottom: -50px;
   margin: 0;
   padding: 0;
 }
-.carousel-inner{
+.innerCarou{
   padding: 0;
   background: none;
 }
@@ -182,4 +182,10 @@ transition: 0.3s ease-in-out;
 .eventBody{
   background: rgb(151,140,255);
 background: linear-gradient(209deg, rgba(151,140,255,1) 0%, rgba(198,198,255,1) 56%, rgba(225,208,255,1) 100%);
+}
+.wrapping{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
