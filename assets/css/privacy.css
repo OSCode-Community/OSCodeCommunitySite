@@ -36,7 +36,7 @@ h2,
 h3 {
     font-weight: bold;
     font-size: 2.5rem;
-    line-height: 1em;
+    line-height: 0.3em;
     letter-spacing: 2px;
     font-family: 'Noto Serif', serif;
 }
@@ -166,6 +166,9 @@ ul.square {
     color: white;
 }
 
+.credits a{
+    color: #8e2bdf;
+}
 
 @media only screen and (max-width: 600px) {
     .privacy-img {
