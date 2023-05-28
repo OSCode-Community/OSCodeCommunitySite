@@ -189,3 +189,21 @@ background: linear-gradient(209deg, rgba(151,140,255,1) 0%, rgba(198,198,255,1) 
   justify-content: center;
   width: 100%;
 }
+.modifiedAccomp{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.upperPart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+.textUpperPart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
