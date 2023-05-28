@@ -206,7 +206,7 @@ h1 {
 }
 
 .get-started-btn span:after {
-  content: '\00bb';
+  content: "\00bb";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -1558,8 +1558,7 @@ a:hover i {
 .testimonials .testimonial-item:hover {
   cursor: pointer;
   transition: 0.4s ease-in-out;
-  box-shadow:  6px 6px 12px #16161c,
-  -6px -6px 12px #7b7bff;
+  box-shadow: 6px 6px 12px #16161c, -6px -6px 12px #7b7bff;
 }
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
@@ -1681,8 +1680,6 @@ a:hover i {
     rgb(181, 181, 253),
     rgb(209, 209, 245)
   );
-  /* background-color:rgb(225, 225, 248) ; */
-  box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
 }
 .carousel .carousel-item {
   color: #fcfafa;
@@ -1692,12 +1689,12 @@ a:hover i {
   overflow: hidden;
   font-family: sans-serif;
   min-height: 340px;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.4s ease-in-out;
+  /* transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 }
 .carousel-inner:hover {
-  box-shadow: rgba(17, 17, 17, 0.25) 0px 30px 60px -12px inset,
-    rgba(12, 12, 12, 0.3) 0px 18px 36px -18px inset;
-  /* transform: translateY(20px); */
+  transition: 0.4s ease-in-out;
+  box-shadow: 6px 6px 12px #16161c, -6px -6px 12px #7b7bff;
 }
 .carousel .img-box {
   width: 145px;
