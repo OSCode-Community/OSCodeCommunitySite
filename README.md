@@ -17,34 +17,6 @@
 
 <div align="center">Visit our website - <a href="https://oscode-community.github.io/OSCodeCommunitySite/"><strong>OSCode</strong></a> and start your journey with us !</div>
 <br>
-<div align="center"><h1>📱 Connect with us</h1></div>
-
-<div align="center">
-<a href="https://discord.gg/P3xqtSU8zU">
-  <img src="https://img.icons8.com/color/2x/discord--v2.png" height="50px"></img>
-</a>
-<a href="https://github.com/OSCode-Community">
-  <img src="https://img.icons8.com/ios-glyphs/2x/github.png" height="50px"></img>
-</a>
-<a href="https://twitter.com/OSCodeCommunity">
-  <img src="https://img.icons8.com/fluency/2x/twitter.png" height="50px"></img>
-</a>
-<a href="https://www.linkedin.com/company/oscode">
-  <img src="https://img.icons8.com/fluency/2x/linkedin.png" height="50px"></img>
-</a>
-<a href="https://instagram.com/os_code_community?igshid=YmMyMTA2M2Y="><img src="https://img.icons8.com/color/2x/instagram-new.png" height="50px"></img>
-</a>
-<a href="https://t.me/+yNBAO5cbFLk3NTA1">
-  <img src="https://img.icons8.com/color/2x/telegram-app.png" height="50px"></img>
-</a>
-<a href="https://youtube.com/@oscodecommunity">
-  <img src="https://img.icons8.com/color/2x/youtube.png" height="50px"></img>
-</a>
-</div>
-
-<br>
-
-![GSSoC Logo](https://camo.githubusercontent.com/0eaaaece51cad6ed831cbaf77ad31538f241fd324eec3d5fc6fcec27543fca29/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a66714a61485f6f49534f523936674c67704a427757512e706e67)
 
 
 <div align="center"><h1>💈 Want to Contribute?</h1></div>
@@ -53,6 +25,8 @@ We welcome contributions in our community.<br>
 Before making a contribution, check the <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/CONTRIBUTING.md">Contribution guide.</a>
 
 <div align="center"> <h1>✨ GSSoC '23 </h1> </div>
+
+![GSSoC Logo](https://camo.githubusercontent.com/0eaaaece51cad6ed831cbaf77ad31538f241fd324eec3d5fc6fcec27543fca29/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a66714a61485f6f49534f523936674c67704a427757512e706e67)
 
 We are proud to be a part of GSSoC '23 (GirlScript Summer of Code)! Join us and be a part of this amazing programme.
 </br> </br>
@@ -148,6 +122,35 @@ Before starting out, you'll need to install the following on your computer.
   5. Sir M Vishwesariya Institute of Technology
   6. Sri Krishna Institute of Technology
   7. Vemana institute of technology
+
+
+<div align="center"><h1>📱 Connect with us</h1></div>
+
+<div align="center">
+<a href="https://discord.gg/P3xqtSU8zU">
+  <img src="https://img.icons8.com/color/2x/discord--v2.png" height="50px"></img>
+</a>
+<a href="https://github.com/OSCode-Community">
+  <img src="https://img.icons8.com/ios-glyphs/2x/github.png" height="50px"></img>
+</a>
+<a href="https://twitter.com/OSCodeCommunity">
+  <img src="https://img.icons8.com/fluency/2x/twitter.png" height="50px"></img>
+</a>
+<a href="https://www.linkedin.com/company/oscode">
+  <img src="https://img.icons8.com/fluency/2x/linkedin.png" height="50px"></img>
+</a>
+<a href="https://instagram.com/os_code_community?igshid=YmMyMTA2M2Y="><img src="https://img.icons8.com/color/2x/instagram-new.png" height="50px"></img>
+</a>
+<a href="https://t.me/+yNBAO5cbFLk3NTA1">
+  <img src="https://img.icons8.com/color/2x/telegram-app.png" height="50px"></img>
+</a>
+<a href="https://youtube.com/@oscodecommunity">
+  <img src="https://img.icons8.com/color/2x/youtube.png" height="50px"></img>
+</a>
+</div>
+
+<br>
+
 
 <div align="center"><h1>❤️ Thanks to all the contributors</h1></div>
 
