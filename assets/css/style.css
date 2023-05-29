@@ -1811,9 +1811,12 @@ a:hover i {
 }
 .join .count-box {
   padding: 30px 30px 25px 30px;
-  width: 100%;
+  width: 75%;
   position: relative;
+  margin: auto;
   text-align: center;
+  align-content: center;
+  align-items: center !important;
   border-radius: 10px;
 }
 .count-box > span {
@@ -1865,6 +1868,56 @@ a:hover i {
   transform: scale(0.8);
   transition: 1s ease;
 }
+
+.github-box:hover {
+  background: var(--background-white) !important;
+  color: black !important;
+  text-decoration: none;
+  border: transparent !important;
+  font-size: 36px !important;
+}
+.discord-box:hover {
+  background: #7289da !important;
+  color: var(--background-white)  !important;
+  text-decoration: none;
+  border: transparent !important;
+  font-size: 33px !important;
+}
+.linkedin-box:hover {
+  background: #0072b1 !important;
+  color: var(--background-white) !important;
+  text-decoration: none;
+  border: transparent !important;
+  font-size: 33px !important;
+}
+.instagram-box:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+  color: var(--background-white) !important;
+  text-decoration: none;
+  border: transparent !important;
+  font-size: 33px !important;
+}
+.twitter-box:hover {
+  background: #00acee !important;
+  color: var(--background-white) !important;
+  text-decoration: none;
+  border: transparent !important;
+  font-size: 31px !important;
+}
+.telegram-box {
+  font-size: 62px !important;
+  background-color: white !important;
+  color:#5942e9 !important;
+}
+.telegram-box:hover {
+  background: var(--background-white)  !important;
+  color:#0088cc !important;
+  text-decoration: none;
+  border: transparent !important;
+  font-size: 63px !important;
+  transition: all;
+}
+
 .link:hover {
   background-color: #4158d0;
   background-image: linear-gradient(43deg, #ee21d9, #21eecf 46%, #ee2121);
@@ -2437,8 +2490,28 @@ a:hover i {
   transition: 0.3s;
 }
 
-#footer .social-links a:hover {
-  background: var(--backtotop-btn-color);
+#footer .social-links .twitter:hover {
+  background: #1DA1F2;
+  color: var(--background-white);
+  text-decoration: none;
+}
+#footer .social-links .facebook:hover {
+  background: #4267B2;
+  color: var(--background-white);
+  text-decoration: none;
+}
+#footer .social-links .instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: var(--background-white);
+  text-decoration: none;
+}
+#footer .social-links .youtube:hover {
+  background: var(--background-white);
+  color: #c4302b;
+  text-decoration: none;
+}
+#footer .social-links .linkedin:hover {
+  background: #0072b1;
   color: var(--background-white);
   text-decoration: none;
 }
