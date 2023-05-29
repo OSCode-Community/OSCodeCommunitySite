@@ -2732,20 +2732,28 @@ div .dot {
 }
 
 #section07 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
+  position: relative;
+  /* top: 0; */
+  /* left: 50%; */
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 1px solid var(--background-white);
-  border-bottom: 1px solid var(--background-white);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb07 2s infinite;
-  animation: sdb07 2s infinite;
-  opacity: 0;
+  /* border-left: 1px solid var(--background-white); */
+  /* border-bottom: 1px solid var(--background-white); */
+  /* -webkit-transform: rotate(-45deg); */
+  /* transform: rotate(-45deg); */
+  /* -webkit-animation: sdb07 2s infinite; */
+  /* animation: sdb07 2s infinite; */
+  opacity: 1;
   box-sizing: border-box;
+}
+.prevIcon, .nextIcon{
+  position: absolute;
+  height:50px;
+  width: 50px;
+  padding: 50%;
+  border-radius: 50%;
+  background-color: #9a6af9;
 }
 
 #section07 a span:nth-of-type(1) {

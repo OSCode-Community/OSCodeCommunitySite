@@ -194,11 +194,12 @@ background: linear-gradient(209deg, rgba(151,140,255,1) 0%, rgba(198,198,255,1) 
   flex-direction: column;
   justify-content: space-between;
 }
-.upperPart{
+.upperPart, .middlePart, .bottompart{
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 10px;
+  max-height: 200px;
 }
 .textUpperPart{
   display: flex;
