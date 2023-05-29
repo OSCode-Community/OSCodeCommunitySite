@@ -11,7 +11,7 @@
 + We are a Multi-College Tech Community that helps college students to **Learn in Public** and **Engage** with similar-minded people. 
 + We help local college communities to encourage this culture on their campus and help them build it. We help students by upskilling them in the domain of their interests by organizing **workshops, technical seminars, hackathons, project sessions, code-along, etc.**
 + We help students to get start with their **lifelong journey of coding.** Students will explore and learn what real-world Software development looks like - problem-solving skills and interpersonal **skills will be refined.** 
-+ Overall students will enjoy with this **collaborative journey of learning**, practising and sharing technical skills with our enthusiastic community!!
++ Overall students will enjoy with this **collaborative journey of learning**, practicing and sharing technical skills with our enthusiastic community!!
 
 ## 💪 OSCode
 
@@ -44,9 +44,15 @@ Visite our website - <a href="https://oscode-community.github.io/OSCodeCommunity
 
 ![GSSoC Logo](https://i.imgur.com/BR9Q5Pd.png)
 
+
+## 💈 Want to Contribute?
+
+We welcome contributions in our community.<br>
+Before making a contribution, check the <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/CONTRIBUTING.md">Contribution guide.</a>
+
 ### GSSoC '23
 
-We are proud to be a part of GSSoC '23 (GirlScript Summer of Code)! Join us and be a part of this amazing programes.
+We are proud to be a part of GSSoC '23 (GirlScript Summer of Code)! Join us and be a part of this amazing programe.
 </br> </br>
 <a href=""><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
 <a href=""><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
@@ -55,10 +61,12 @@ We are proud to be a part of GSSoC '23 (GirlScript Summer of Code)! Join us and 
 
 
 
+
 ## 💈 Want to Contribute?
 
-We welcome contributions in our community.<br>
+We welcome contributions to our community.<br>
 Before making a contribution, check the <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/CONTRIBUTING.md">Contribution guide.</a>
+
 
 ## 🧧 Code of Conduct
 
@@ -75,17 +83,17 @@ This Community is <a href="https://github.com/OSCode-Community/OSCodeCommunitySi
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-- Create an issue of the project or a feature you would like to add in the project and get the task assigned for youself. (issue can be any feature or project that you think you could contribute to).
+- Create an issue of the project or a feature you would like to add to the project and get the task assigned for yourself. (issue can be any feature or project that you think you could contribute to).
 
-- Fork the repo to your Github.<br/>
+- Fork the repo to your GitHub.<br/>
 
-- Clone the Repo by going to your local Git Client in a particular local folder in your local machine by using this command with your forked repository link in place of below given link: <br/>
+- Clone the Repo by going to your local Git Client in a particular local folder in your local machine by using this command with your forked repository link in place of below-given link: <br/>
   `git clone https://github.com/<GITHUB PROFILE NAME>/OSCodeCommunitySite.git`
 - Create a branch using below command.
   `git branch <your branch name>`
 - Checkout to your branch.
   `git checkout <your branch name>`
-- Add your code in your local machine folder.
+- Add your code to your local machine folder.
   `git add . `
 - Commit your changes.
   `git commit -m"<add your message here>"`
@@ -105,6 +113,13 @@ Before starting out, you'll need to install the following on your computer.
 
 [![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
 
+## Tech Stack Used
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS5](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![javascript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![php](https://img.shields.io/badge/php-777BB4?style=for-the-badge&logo=php&logoColor=white)
+
 ## 🛠️ Installation
 
 1. Fork the repo
@@ -115,12 +130,31 @@ Before starting out, you'll need to install the following on your computer.
 6. Run `serve` to start the development server
 7. Navigate to `http://localhost:5000/`
 
+## Oppurtunites We Offer
+     We are a Multi-College Tech Community that helps college students to learn in public and engage with similar-minded people
+     
+     We help local college communities to encourage this culture on their campus and help them to build it.
+
+     We help upskill in the domain of your interests by organizing workshops, technical seminars, hackathons, project sessions, code-along, etc.
+     
+     The Community aims to help individuals to Collaborate and Contribute to Open-Source Projects by mentoring them at each stage of their Contribution.
+    
+## College Chapter
+
+  1. Bangalore Institute of Technology
+  2. Dayananda Sagar University
+  3. S J C institute of technology
+  4. Sambhram Institute of Technology
+  5. Sir M Vishwesariya Institute of Technology
+  6. Sri Krishna Institute of Technology
+  7. Vemana institute of technology
 
 ## ❤️ Thanks to all the contributors
 
 <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=OSCode-Community/OSCodeCommunitySite" />
 </a>
+
 
 ---
 ✨✨

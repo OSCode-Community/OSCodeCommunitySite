@@ -4,7 +4,7 @@
 <head>
   <style>
     #preloader {
-      background: #000000 url(OSCode.gif) no-repeat center center;
+      background: #000000 url(/assets/img/gifs/OSCode.gif) no-repeat center center;
       background-size: 60%;
       height: 100vh;
       width: 100%;
@@ -51,12 +51,13 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/contact.css" rel="stylesheet" />
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/37377042d1.js" crossorigin="anonymous"></script>
 
   <!-- Why Choose Us button css -->
-  <link rel="stylesheet" href="whychooseusbutton.css">
+  <link rel="stylesheet" href="/assets/css/whychooseusbutton.css">
 
   <!-- for overriding the nav css -->
   <link rel="stylesheet" href="/assets/css/override.css">
@@ -65,7 +66,7 @@
 
 <body onload="myFunction()">
 
-  <div id="preloader"></div>
+  <!-- <div id="preloader"></div> -->
 
   <!-- ======= Header ======= -->
   <header id="header" class="glassmorphic fixed-top d-flex align-items-center newFlex">
@@ -84,9 +85,9 @@
         </svg> -->
         <img class="logo1" src="../assets/img/logo.jpeg" width="60px" height="60px" alt="logo" />
 
-        <!-- company name -->
+        <!-- company name --> 
 
-        <h1 class="logo me-auto"><a href="index.html">OS-CODE</a></h1>
+        <h1 class="logo me-auto" id="landingPage"><a href="#">OS-CODE</a></h1>
 
       </div>
       <!-- removed image and replaced with a svg -->
@@ -97,7 +98,7 @@
     </div>
     <div class="navListAndContact">
 
-      <div id="navbar" class="navbar order-last order-lg-0">
+      <div id="navbar" class="navbar order-last order-lg-0 me-4">
         <ul>
           <li><a class="nav-link scrollto active" style="text-decoration: none;" href="#hero">HOME</a></li>
           <li><a class="nav-link scrollto" style="text-decoration: none;" href="#mainabout">ABOUT</a></li>
@@ -131,9 +132,14 @@
           <h2 class="home-para">Our mission is to provide college students with the resources and opportunities they
             need to learn, grow, and collaborate in the tech space.</h2>
 
-          <a href="#contact" class="btn-get-started scrollto left">Get Started<i
+          <!-- <a href="#contact" class="get-started-btn scrollto left cntctBtn">Get Started<i
               class="bi bi-caret-right home-i"></i></a>
-          <a href="#" class="btn-get-started scrollto left">Services<i class="bi bi-caret-right home-i"></i></a>
+          <a href="#" class="get-started-btn scrollto left cntctBtn">Services<i
+              class="bi bi-caret-right home-i"></i></a> -->
+
+          <a href="#join-us" class="get-started-btn scrollto left cntctBtn"><span>Get Started</span></a>
+          <a href="#" class="get-started-btn scrollto left cntctBtn"><span>Services</span></a>
+
         </div>
       </div>
     </div>
@@ -298,11 +304,11 @@
                   </div>
                   <div class="flex-child gallery right-tab">
                     <h4 class="benefits">Upskill Students</h4>
-                    <p>We help students to get start with their lifelong journey of coding.
+                    <p>We help students to get started with their lifelong journey of coding.
                       Students will explore and learn what real-world Software
                       development looks like.</p>
                     <p>Problem-solving skills and interpersonal skills will be refined. Overall students will enjoy with
-                      this collaborative journey of learning, practising and sharing technical skills with our
+                      this collaborative journey of learning, practicing and sharing technical skills with our
                       enthusiastic community!!</p>
                   </div>
                 </div>
@@ -316,9 +322,9 @@
                   <div class="flex-child gallery right-tab">
                     <h4 class="benefits">Hire Talents</h4>
                     <p>At OSCode, we are dedicated to help students jumpstart their
-                      technical journey and pave the way towards their first job or
+                      technical journey and pave the way toward their first job or
                       internship.</p>
-                    <p>By joining us, you benefit with future internship opportunities, connect
+                    <p>By joining us, you benefit from future internship opportunities, connect
                       with industry experts, certifications, career guidance mentorship,
                       practical learning, connect with similar-minded people, and so much
                       more.</p>
@@ -409,83 +415,119 @@
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/achievement/devx.jfif" class="testimonial-img" alt="">
-                  <h3>Partnership with DevX</h3>
-                  <h4>Annual Springfest of Techno India
-                    University</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    OSCode has officially joined as a community partner for DevX, the annual Springfest of Techno India
-                    University. We look forward to contributing our knowledge, resources, and expertise to help make
-                    DevX successful.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <a href="https://www.linkedin.com/posts/oscode_oscode-community-devx-activity-7050410583078182912-z5k_?utm_source=share&utm_medium=member_desktop"
-                    target="_blank" rel="noopener noreferrer">Know more..</a>
+                <div class="testimonial-item modifiedAccomp">
+                  <div class="upperPart">
+                    <img src="assets/img/achievement/devx.jfif" class="testimonial-img" alt="">
+                    <div class="textUpperPart">
+                      <h3>Partnership with DevX</h3>
+                      <h4>Annual Springfest of Techno India
+                        University</h4>
+                    </div>
+                  </div>
+                  <div class="middlePart">
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      OSCode has officially joined as a community partner for DevX, the annual Springfest of Techno
+                      India
+                      University. We look forward to contributing our knowledge, resources, and expertise to help make
+                      DevX successful.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                  <div class="bottomPart">
+                    <a href="https://www.linkedin.com/posts/oscode_oscode-community-devx-activity-7050410583078182912-z5k_?utm_source=share&utm_medium=member_desktop"
+                      target="_blank" rel="noopener noreferrer">Know more...</a>
+                  </div>
                 </div>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="https://drive.google.com/uc?export=download&id=1Jvw70OAJzX9iWz7Iurv3t35cSD2Teiz5"
-                    class="testimonial-img" alt="">
-                  <h3>Partnership with Codechef</h3>
-                  <h4>To conduct contests</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    OS CODE was proud to present the 7th edition of HUSTLE with Platform Partner CODECHEF! We thank and
-                    appreciate all the participants who helped in making this event a success.
-                    We'll be back with many more events and contests! Stay tuned 💫
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <a href="https://www.linkedin.com/posts/oscode_oscode-hustle-hustle7-activity-7042872281932476416-8vfU?utm_source=share&utm_medium=member_desktop"
-                    target="_blank" rel="noopener noreferrer">Know more..</a>
+                <div class="testimonial-item modifiedAccomp">
+                  <div class="upperPart">
+                    <img src="https://drive.google.com/uc?export=download&id=1Jvw70OAJzX9iWz7Iurv3t35cSD2Teiz5"
+                      class="testimonial-img" alt="">
+                    <div class="textUpperPart">
+
+                      <h3>Partnership with Codechef</h3>
+                      <h4>To conduct contests</h4>
+                    </div>
+                  </div>
+                  <div class="middlePart">
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      OS CODE was proud to present the 7th edition of HUSTLE with Platform Partner CODECHEF! We thank
+                      and
+                      appreciate all the participants who helped in making this event a success.
+                      We'll be back with many more events and contests! Stay tuned 💫
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                  <div class="bottomPart">
+                    <a href="https://www.linkedin.com/posts/oscode_oscode-hustle-hustle7-activity-7042872281932476416-8vfU?utm_source=share&utm_medium=member_desktop"
+                      target="_blank" rel="noopener noreferrer">Know more...</a>
+                  </div>
                 </div>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/achievement/1st_offline.jfif" class="testimonial-img" alt="">
-                  <h3>Open Source: The Foundation Stone</h3>
-                  <h4>1st offline event</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    *Open Source: The Foundation Stone* turned out to be a great success with peak participation of more
-                    than 2️⃣0️⃣0️⃣ people. 💫 It remained extremely informative and ever inspiring without compromising
-                    on the fun
-                    and humour component 🤩.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <a href="https://www.linkedin.com/posts/oscode_achievements-have-no-value-if-you-leave-activity-6968906596198346753-L8hY?utm_source=share&utm_medium=member_desktop"
-                    target="_blank" rel="noopener noreferrer">Know more..</a>
+                <div class="testimonial-item modifiedAccomp">
+                  <div class="upperPart">
+                    <img src="assets/img/achievement/1st_offline.jfif" class="testimonial-img" alt="">
+                    <div class="textUpperPart">
+                      <h3>Open Source: The Foundation Stone</h3>
+                      <h4>1st offline event</h4>
+                    </div>
+                  </div>
+                  <div class="middlePart">
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      *Open Source: The Foundation Stone* turned out to be a great success with peak participation of
+                      more
+                      than 2️⃣0️⃣0️⃣ people. 💫 It remained extremely informative and ever inspiring without
+                      compromising
+                      on the fun
+                      and humour component 🤩.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                  <div class="bottomPart">
+                    <a href="https://www.linkedin.com/posts/oscode_achievements-have-no-value-if-you-leave-activity-6968906596198346753-L8hY?utm_source=share&utm_medium=member_desktop"
+                      target="_blank" rel="noopener noreferrer">Know more...</a>
+                  </div>
                 </div>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/achievement/team.jpg" class="testimonial-img" alt="">
-                  <h3>Amazing community</h3>
-                  <!-- <h4>Learing & building together</h4> -->
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Achievements have no value, if you leave behind the people to celebrate with.We believe that our
-                    club is making a positive impact on our college community and
-                    beyond, and we're grateful for the opportunity to share our journey with you.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <a href="https://www.linkedin.com/posts/oscode_oscode-community-bit-activity-7046111645508481024-fzUe?utm_source=share&utm_medium=member_desktop"
-                    target="_blank" rel="noopener noreferrer">Know more..</a>
+                <div class="testimonial-item modifiedAccomp">
+                  <div class="upperPart">
+                    <img src="assets/img/achievement/team.jpg" class="testimonial-img" alt="">
+                    <div class="textUpperPart">
+                      <h3>Amazing community</h3>
+                      <h4>Learing & building together</h4>
+                    </div>
+                  </div>
+                  <div class="middlePart">
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      Achievements have no value, if you leave behind the people to celebrate with.We believe that our
+                      club is making a positive impact on our college community and
+                      beyond, and we're grateful for the opportunity to share our journey with you.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                  <div class="bottomPart">
+                    <a href="https://www.linkedin.com/posts/oscode_oscode-community-bit-activity-7046111645508481024-fzUe?utm_source=share&utm_medium=member_desktop"
+                      target="_blank" rel="noopener noreferrer">Know more...</a>
+                  </div>
                 </div>
               </div>
             </div><!-- End testimonial item -->
-
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -504,6 +546,7 @@
           <div class="abt-txt">
             <h2 class="us"><i class="fa-sharp fa-regular fa-handshake"
                 style="color: #3713b9; margin-right: 10px;"></i>How to Join us??</h2>
+
             <p class="para_customization">Start your collaborative journey of learning, practising and sharing technical skills with
               our enthusiastic
               community!! by filling out this Google form 👇</p>
@@ -519,62 +562,67 @@
               through...</h2>
           </div>
           <div class="row join ml-auto mr-auto">
-            <a href="https://github.com/OSCode-Community" target="_blank" rel="noopener noreferrer">
-              <div class="col-lg-3 col-md-6 shrink">
+            
+              <div class="col-lg-4 col-md-6 shrink">
+                
                 <div class="count-box">
-                  <i class="bi bi-github"></i>
+                  <a href="https://github.com/OSCode-Community" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github github-box"></i>
                   <p>Github</p>
+                </a>
                 </div>
-            </a>
+            
           </div>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0 shrink">
-            <a href="https://discordapp.com/channels/945676223101698060/945680318248128543/946084270693318686"
+          <div class="col-lg-4 col-md-6 mt-5 mt-md-0 shrink">
+              <div class="count-box">
+                <a href="https://discordapp.com/channels/945676223101698060/945680318248128543/946084270693318686"
               target="_blank" rel="noopener noreferrer">
-              <div class="count-box">
-                <i class="bi bi-discord"></i>
+                <i class="bi bi-discord discord-box"></i>
                 <p>Discord</p>
+              </a>
               </div>
-            </a>
+            
           </div>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 shrink">
-            <a href="https://www.linkedin.com/company/oscode/" target="_blank" rel="noopener noreferrer">
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 shrink">
               <div class="count-box">
-                <i class="bi bi-linkedin"></i>
+                <a href="https://www.linkedin.com/company/oscode/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin linkedin-box"></i>
                 <p>LinkedIn</p>
+              </a>
               </div>
           </div>
-          </a>
         </div>
 
         <div class="row join shrink  ml-auto mr-auto">
-          <a href="https://instagram.com/os_code_community?igshid=YmMyMTA2M2Y=" target="_blank"
-            rel="noopener noreferrer">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-6">
               <div class="count-box">
-                <i class="bi bi-instagram"></i>
+                <a href="https://instagram.com/os_code_community?igshid=YmMyMTA2M2Y=" target="_blank"
+            rel="noopener noreferrer">
+                <i class="bi bi-instagram instagram-box"></i>
                 <p>Instagram</p>
+              </a>
               </div>
-          </a>
+          
         </div>
 
-        <div class="col-lg-3 col-md-6 mt-5 mt-md-0 shrink">
-          <a href="https://twitter.com/OSCodeCommunity" target="_blank" rel="noopener noreferrer">
+        <div class="col-lg-4 col-md-6 mt-5 mt-md-0 shrink">
             <div class="count-box">
-              <i class="bi bi-twitter"></i>
+              <a href="https://twitter.com/OSCodeCommunity" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter twitter-box"></i>
               <p>Twitter</p>
+            </a>
             </div>
-          </a>
         </div>
 
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 shrink">
-          <a href="https://t.me/+yNBAO5cbFLk3NTA1" target="_blank" rel="noopener noreferrer">
+        <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 shrink">
             <div class="count-box">
-              <i class="bi bi-telegram"></i>
+              <a href="https://t.me/+yNBAO5cbFLk3NTA1" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-telegram telegram-box"></i>
               <p>Telegram</p>
+            </a>
             </div>
-          </a>
         </div>
       </div>
       </div>
@@ -653,31 +701,33 @@
           <!-- Carousel indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <!-- <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li> -->
           </ol>
           <!-- Wrapper for carousel items -->
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="img-box"><img src="assets/img/testimonials/testimonials-1.jpg" alt=""></div>
-              <p class="testimonial">It's been a great feeling to collaborate with OS-Code community, and they have
-                made the entire process a pleasure. What's more matters, they made great contributions to letting
-                more people know the benefits of our services and increase our user base.</p>
-              <p class="overview"><b>Michael Holz</b>Seo Analyst at OsCorp Tech.</p>
+              <div class="img-box"><img src="assets/img/testimonials/meghaTours&Travels.jpeg" alt=""></div>
+              <p class="testimonial">OSCode is highly recommended by Megha Tours and Travels for their exceptional
+                website and app development services. The visually engaging and user-friendly solutions they delivered
+                aligned perfectly with our branding. OSCode's communication, attention to detail, and timely delivery
+                made the collaboration smooth. We endorse them wholeheartedly for their innovative and reliable digital
+                solutions.</p>
+              <p class="overview"><b>Anuj Kumar</b>Owner of Megha Tours and Travels</p>
               <div class="star-rating">
                 <ul class="list-inline">
                   <li class="list-inline-item"><i class="fa fa-star"></i></li>
                   <li class="list-inline-item"><i class="fa fa-star"></i></li>
                   <li class="list-inline-item"><i class="fa fa-star"></i></li>
                   <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                  <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
                 </ul>
               </div>
             </div>
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
               <div class="img-box"><img src="assets/img/testimonials/testimonials-2.jpg" alt=""></div>
               <p class="testimonial">We've worked on various collaborations with OS-Code community, all of which have
-                been an extraordinary and profitable experience. Their interest to detail, clear expectations, and
+                been  extraordinary and profitable experiences. Their interest in detail, clear expectations, and
                 innovative work paired with his reach is a fantastic equation.</p>
               <p class="overview"><b>Paula Wilson</b>Media Analyst at SkyNet Inc.</p>
               <div class="star-rating">
@@ -689,12 +739,12 @@
                   <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                 </ul>
               </div>
-            </div>
-            <div class="carousel-item">
+            </div> -->
+            <!-- <div class="carousel-item">
               <div class="img-box"><img src="assets/img/testimonials/testimonials-3.jpg" alt=""></div>
               <p class="testimonial">The collab with OS-Code's community was fantastic! After every activity with
                 OS-Code
-                my community grows by 100s and the same goes for GH stars!. We plan and look forward to continued
+                my community grows by 100s and the same goes for GH stars! We plan and look forward to continued
                 partnership with OS-Code.</p>
               <p class="overview"><b>Antonio Moreno</b>Web Developer at Circle Ltd.</p>
               <div class="star-rating">
@@ -706,15 +756,15 @@
                   <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
                 </ul>
               </div>
-            </div>
+            </div> -->
           </div>
           <!-- Carousel controls -->
-          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <!-- <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
             <i class="fa fa-angle-left"></i>
           </a>
           <a class="carousel-control-next" href="#myCarousel" data-slide="next">
             <i class="fa fa-angle-right"></i>
-          </a>
+          </a> -->
         </div>
 
       </div>
@@ -749,7 +799,7 @@
                   class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
               <div id="faq2" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Start your collaborative journey of learning, practising and sharing technical skills with our
+                  Start your collaborative journey of learning, practicing and sharing technical skills with our
                   enthusiastic community!! by filling out this Google form 👇<br>
                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-bIAC1VdPJxODwdcPnvH-SWhbu0SVl47SgyLdagNAciYYUA/viewform"
                     target="_blank" rel="noopener noreferrer">Community Student form</a>
@@ -766,7 +816,7 @@
                 <p>
                   Please join us on our social media channels to know about our upcoming events. We have so much in
                   store
-                  for you and can't wait to have you onboard 💪
+                  for you and can't wait to have you on onboard 💪
                 </p>
               </div>
             </li>
@@ -791,7 +841,7 @@
                 guidance? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
               <div id="faq5" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Yes. That is the highlight of our community. By joining us, you benefit with future internship
+                  Yes. That is the highlight of our community. By joining us, you benefit from future internship
                   opportunities, connect
                   with industry experts, certifications, career guidance mentorship,
                   practical learning, connect with similar-minded people, and so much
@@ -806,89 +856,118 @@
     </section><!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-right">
-        <h1 class="text-center">Contact Us</h1>
-        <hr class="line hr-center">
-
-        <div class="row" data-aos="flip-left" data-aos-delay="100">
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="info-box">
-                  <!-- <i class="bx bx-map"></i> -->
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3295777128365!2d77.57881345058549!3d12.950750090824721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156bf4c356ed%3A0x3466b397b31dae21!2sOS-CODE%20headquarter!5e0!3m2!1sen!2sin!4v1679811939861!5m2!1sen!2sin"
-                    width="510" height="180" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  <h3>Address</h3>
-                  <p>
-                    OS-CODE headquarter, Shanbough Krinshappa Ln, Upparahalli, <br>Mavalli, Bengaluru, Karnataka 560004
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <a href="mailto:oscode.community@gmail.com?subject=Enquiry"><i class="bx bx-envelope"></i></a>
-                  <h3>Email Us</h3>
-                  <p>oscode.community@gmail.com<br> <br></p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <a href="tel:+91-7667109405"><i class="bx bx-phone-call"></i></a>
-                  <h3>Call Us</h3>
-                  <p>+91-7667109405<br />+91-7014122349</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-lg-6 contact-img">
-            <img src="assets/img/contact.png" alt="contact us" style="margin-left: 100px;
-            margin-top: 75px; height: 400px;">
-          </div> -->
-
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <form action="mailto:oscode.community@gmail.com" method="post" enctype="text/plain" autocomplete="on">
-              <div class="row">
-                <div class="col form-group">
-                  <input type="email" autocomplete="email" class="form-control" name="email" id="email"
-                    placeholder="Your Email" required />
-                </div>
-                <div class="col form-group">
-                  <input type="text" autocomplete="name" name="name" class="form-control" id="name"
-                    placeholder="Your Name" required />
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" autocomplete="subject" class="form-control" name="subject" id="subject"
-                  placeholder="Subject" required />
-                <!-- <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required /> -->
-              </div>
-              <!-- <div class="form-group">
-                <input type="password" class="form-control" name="password" id="password" placeholder="Enter password"
-                  required />
-              </div> -->
-              <div class="form-group">
-                <textarea class="form-control" autocomplete="message" name="message" rows="5" placeholder="Message"
-                  required></textarea>
-              </div>
-              <!-- <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  You don't have an account yet, please register!!
-                </div>
-              </div> -->
-              <div class="text-center white">
-                <button type="submit" class="btn get-started-btn msg-us">Message us</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="contact">
+			<header class="contact-title">
+				<p>Get in touch</p>
+			</header>
+			<div class="contact-content">
+				<div class="contact-form">
+					<header>
+						<p>Message us</p>
+					</header>
+					<form class="form-content">
+						<div class="form-field">
+							<label for="fname">First name: </label>
+							<input
+								type="text"
+								placeholder="Enter your first name"
+								name="fname"
+								id="fname"
+								autofocus
+								required
+							/>
+						</div>
+						<div class="form-field">
+							<label for="lname">last name: </label>
+							<input
+								type="text"
+								placeholder="Enter your last name"
+								name="lname"
+								id="lname"
+								required
+							/>
+						</div>
+						<div class="form-field">
+							<label for="email">Email </label>
+							<input
+								type="email"
+								placeholder="Enter your email"
+								name="email"
+								id="email"
+								required
+							/>
+						</div>
+						<div class="form-field">
+							<label for="mobile">mobile </label>
+							<input
+								type="tel"
+								placeholder="Enter your mobile"
+								name="mobile"
+								id="mobile"
+								required
+							/>
+						</div>
+						<div class="form-field message">
+							<label for="textarea">message </label>
+							<textarea
+								name="textarea"
+								id="textarea"
+								placeholder="Drop a message"
+								required
+							></textarea>
+						</div>
+						<button type="submit" class="btn">
+							<span class="btn-text-one">send</span>
+							<span class="btn-text-two">
+								<i class="fa-solid fa-paper-plane"></i
+							></span>
+						</button>
+					</form>
+				</div>
+				<div class="contact-rhs">
+					<div class="contact-info">
+						<header>
+							<p>Contact info</p>
+						</header>
+						<div class="contact-address">
+							<i class="fa-sharp fa-solid fa-location-dot icon"></i>
+							<p>
+								OS-CODE headquarter, Shanbough Krinshappa Ln,
+								Upparahalli, Mavalli, Bengaluru, Karnataka 560004
+							</p>
+						</div>
+						<div class="contact-email">
+							<i class="fa-regular fa-envelope icon"></i>
+							<a href="mailto:oscode.community@gmail.com"
+								>oscode.community@gmail.com</a
+							>
+						</div>
+						<div class="contact-phone">
+							<i class="fa-solid fa-phone icon"></i>
+							<div>
+								<a href="tel:7014122349">+91-7014122349</a><br />
+								<a href="tel:7667109405">+91-7667109405</a>
+							</div>
+						</div>
+						<div class="social-media">
+							<a href="https://www.instagram.com/os_code_community/" ><i class="fa-brands fa-instagram icon"></i></a>
+							<a href="https://twitter.com/oscodecommunity"><i class="fa-brands fa-twitter icon"></i></a>
+							<a href="https://www.linkedin.com/company/oscode/"><i class="fa-brands fa-linkedin icon"></i></a>
+							<a href="https://www.facebook.com/profile.php?id=100090940131222&mibextid=ZbWKwL"><i class="fa-brands fa-facebook icon"></i></a>
+						</div>
+					</div>
+					<div class="contact-map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d55812396.3908272!2d159.52832355!3d31.37226835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sos-code%20headquarters%20map!5e0!3m2!1sen!2sin!4v1685374430318!5m2!1sen!2sin"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
     <!-- End Contact Section -->
   </main>
   <!-- End #main -->
@@ -919,11 +998,11 @@
               </li>
               <li>
                 <i class="bx bx-chevron-right"></i>
-                <a href="policy.html">Terms of service</a>
+                <a href="/policy/policy.html">Terms of service</a>
               </li>
               <li>
                 <i class="bx bx-chevron-right"></i>
-                <a href="policy.html">Privacy policy</a>
+                <a href="/policy/policy.html">Privacy policy</a>
               </li>
             </ul>
           </div>
@@ -950,7 +1029,7 @@
             </form> -->
             <ul>
               <li>
-                <i class="bx bx-chevron-right"></i> <a href="#about">About us</a>
+                <i class="bx bx-chevron-right"></i> <a href="#mainabout">About us</a>
               </li>
               <li>
                 <i class="bx bx-chevron-right"></i> <a href="#benefits">Benefits</a>
@@ -967,20 +1046,25 @@
       </div>
     </div>
 
-    <div class="container py-4">
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>OS-Code</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">Designed by <a href="#">OS-Code</a></div>
-      </div>
-      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+    <div class="container py-4 modifiedFooter">
+      <div class="social-links text-md-end pt-3 pt-md-0 socialLinkMod">
+        <div class="textSocials">Stay in the loop?</div>
         <a href="https://twitter.com/oscodecommunity" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="https://www.facebook.com/profile.php?id=100090940131222&mibextid=ZbWKwL" class="facebook"><i
             class="bx bxl-facebook"></i></a>
         <a href="https://www.instagram.com/os_code_community/" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.youtube.com/@oscodecommunity" class="youtube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.youtube.com/@oscodecommunity" class="youtube"><i class="fab fa-youtube"></i></a>
         <a href="https://www.linkedin.com/company/oscode/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+
+        <a href="https://discord.com/channels/945676223101698060" class="discord"><i class="bi bi-discord"></i></a>
+
+      </div>
+
+      <div class="me-md-auto text-md-start crMod">
+        <div class="copyright">
+          &copy; Copyright <strong><span>OS-Code</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">Designed by <a href="#">OS-Code</a></div>
       </div>
     </div>
   </footer>
@@ -1010,6 +1094,107 @@
     });
   </script>
 
+ <!--JS contact form validation start-->
+ <script>
+  const form = document.getElementById('contact_Form');
+  const useremail = document.getElementById('email');
+  const username = document.getElementById('name');
+  const subject = document.getElementById('subject');
+  const message = document.getElementById('message');
+
+  form.addEventListener('submit',(e)=>{
+    if(checkInputs())
+    return true;
+    else
+    e.preventDefault();
+
+  });
+
+  function checkInputs()
+  {
+       //get values from input fields
+       const emailval = useremail.value.trim();
+       const usernameval = username.value.trim();
+       const subjectval = subject.value.trim();
+       const messageval = message.value.trim();
+
+       if(emailval === '')
+       {
+          setErrorFor(useremail,'Please enter a Email');
+       }
+       else if(!validateEmail(emailval))
+       {
+         setErrorFor(useremail,'Enter a valid Email');
+       }
+       else
+       {
+        setSuccessFor(useremail);
+       }
+       
+       if(usernameval === '')
+       {
+          setErrorFor(username,'Please enter a name');
+       }else
+       {
+        setSuccessFor(username);
+       }
+
+       
+       if(subjectval === '')
+       {
+          setErrorFor(subject,'Please enter a subject');
+       }else
+       {
+        setSuccessFor(subject);
+       }
+
+       
+       if(messageval === '')
+       {
+          setErrorFor(message,'Please enter a message');
+       }else
+       {
+        setSuccessFor(message);
+       }
+
+       if(emailval !== '' && usernameval !== '' && subjectval !== '' && messageval !== '')
+       {
+        console.log("complete");
+        return true;
+       }
+      
+  }
+
+  function validateEmail(mail) 
+  {
+     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+    {
+      return true;
+    }
+    return false;
+  }
+  
+  function setErrorFor(input,showerror)
+  {
+    let formControl = input.parentElement.parentElement;
+    const small = formControl.querySelector('small');
+    small.innerText = showerror;
+
+    formControl.classList.remove('success');
+    formControl.classList.add('error');
+
+  }
+
+  function setSuccessFor(input)
+  {
+    let formControl = input.parentElement.parentElement;
+    formControl.classList.remove('error');
+    formControl.classList.add('success');
+  }
+
+  //JS contact form validation end
+
+</script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
@@ -1021,7 +1206,7 @@
     crossorigin="anonymous"></script>
   <script>
 
-    var loader = document.grtElementById("preloader");
+    var loader = document.getElementById("preloader");
 
     function myFunction() {
       preloader.style.display = "none";
