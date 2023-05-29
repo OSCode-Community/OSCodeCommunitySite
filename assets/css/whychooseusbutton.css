@@ -19,7 +19,7 @@
     background-color: #7027f9;
     /* purple color */
     z-index: -1;
-    transition: left 0.3s;
+    transition: left 0.7s;
   }
 
   .edit1:hover:before {

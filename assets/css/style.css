@@ -1134,7 +1134,6 @@ hr.line {
 
 .counts {
   padding-top: 80px;
-  background-color: #0e034d;
 }
 .number {
   color: white !important;
@@ -1153,11 +1152,11 @@ hr.line {
   box-shadow: 0px 2px 5px slateblue;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.4s all ease-in-out;
 }
 .counts .count-box:hover {
   /* box-shadow: 0 5px 10px #aaa; */
   transform: scale(1.1);
-  transition: 0.1s ease-in-out;
 }
 .count-box > span {
   display: inline-block !important;
@@ -1276,10 +1275,8 @@ hr.line {
 
 .circle .nav-link:hover {
   /* border-radius: 90%; */
-  /* transition: 1s ease; */
-
   transform: scale(1.1);
-  transition: width 1s, height 3s;
+  transition: width 2s, height 3s;
 }
 
 .flex-child {
