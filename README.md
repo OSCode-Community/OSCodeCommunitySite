@@ -44,7 +44,7 @@
 
 <br>
 
-![GSSoC Logo](https://i.imgur.com/BR9Q5Pd.png)
+![GSSoC Logo](https://camo.githubusercontent.com/0eaaaece51cad6ed831cbaf77ad31538f241fd324eec3d5fc6fcec27543fca29/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a66714a61485f6f49534f523936674c67704a427757512e706e67)
 
 
 <div align="center"><h1>💈 Want to Contribute?</h1></div>
