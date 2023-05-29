@@ -892,35 +892,56 @@
 
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <form action="mailto: https://oscode.community@gmail.com" method="post" enctype="text/plain"
-              autocomplete="on">
-              <div class="row">
+            <form class="contactForm" id="contact_Form" action="mailto:oscode.community@gmail.com" method="post" enctype="text/plain" autocomplete="on">
+              <div class="row form-group">
                 <div class="col form-group">
-                  <input type="email" autocomplete="mail" class="form-control" name="email" id="email"
-                    placeholder="Your Email" required />
-                </div>
+                  <div>
+                  <input type="text"  autocomplete="email" class="form-control" name="email" id="email"
+                    placeholder="Your Email"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                  </div>
+                     <div class="spandiv"><small class="small"></small></div>
+                  </div>
+
                 <div class="col form-group">
-                  <input type="text" autocomplete="name" name="name" class="form-control" id="name"
-                    placeholder="Your Name" required />
-                </div>
+                  <div>
+                    <input type="text"  autocomplete="name" name="name" class="form-control" id="name"
+                    placeholder="Your Name"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                  </div>
+                  <div class="spandiv"><small class="small"></small></div>
+                  </div>
               </div>
-              <div class="form-group">
-                <input type="text" autocomplete="subject" class="form-control" name="College" id="college"
-                  placeholder="College" required />
-              </div>
-              <div class="form-group">
-                <input type="text" autocomplete="subject" class="form-control" name="subject" id="subject"
-                  placeholder="Subject" required />
+              
+            
+          
+                <div class="col form-group">
+                <div><input type="text"  autocomplete="subject" class="form-control" name="subject" id="subject"
+                  placeholder="Subject"/>
+                  <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                  </div>
+                  <div class="spandiv" style="padding-top: 4px;"> <small class="small"></small></div>
+                  </div>
                 <!-- <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required /> -->
-              </div>
+          
               <!-- <div class="form-group">
                 <input type="password" class="form-control" name="password" id="password" placeholder="Enter password"
                   required />
               </div> -->
-              <div class="form-group">
-                <textarea class="form-control" autocomplete="message" name="message" rows="5" placeholder="Message"
-                  required></textarea>
-              </div>
+     
+              <div class="col form-group">
+                <div><textarea class="form-control" autocomplete="message" id="message" name="message" rows="5" placeholder="Message"
+                  ></textarea>
+                   <i class="fas fa-check-circle"></i>
+                     <i class="fas fa-exclamation-circle"></i>
+                  </div>
+                    <div class="spandiv" style="padding-top: 4px;"><small class="small"></small></div>
+                  </div>
+             
+                  
               <!-- <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
@@ -1062,6 +1083,107 @@
     });
   </script>
 
+ <!--JS contact form validation start-->
+ <script>
+  const form = document.getElementById('contact_Form');
+  const useremail = document.getElementById('email');
+  const username = document.getElementById('name');
+  const subject = document.getElementById('subject');
+  const message = document.getElementById('message');
+
+  form.addEventListener('submit',(e)=>{
+    if(checkInputs())
+    return true;
+    else
+    e.preventDefault();
+
+  });
+
+  function checkInputs()
+  {
+       //get values from input fields
+       const emailval = useremail.value.trim();
+       const usernameval = username.value.trim();
+       const subjectval = subject.value.trim();
+       const messageval = message.value.trim();
+
+       if(emailval === '')
+       {
+          setErrorFor(useremail,'Please enter a Email');
+       }
+       else if(!validateEmail(emailval))
+       {
+         setErrorFor(useremail,'Enter a valid Email');
+       }
+       else
+       {
+        setSuccessFor(useremail);
+       }
+       
+       if(usernameval === '')
+       {
+          setErrorFor(username,'Please enter a name');
+       }else
+       {
+        setSuccessFor(username);
+       }
+
+       
+       if(subjectval === '')
+       {
+          setErrorFor(subject,'Please enter a subject');
+       }else
+       {
+        setSuccessFor(subject);
+       }
+
+       
+       if(messageval === '')
+       {
+          setErrorFor(message,'Please enter a message');
+       }else
+       {
+        setSuccessFor(message);
+       }
+
+       if(emailval !== '' && usernameval !== '' && subjectval !== '' && messageval !== '')
+       {
+        console.log("complete");
+        return true;
+       }
+      
+  }
+
+  function validateEmail(mail) 
+  {
+     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+    {
+      return true;
+    }
+    return false;
+  }
+  
+  function setErrorFor(input,showerror)
+  {
+    let formControl = input.parentElement.parentElement;
+    const small = formControl.querySelector('small');
+    small.innerText = showerror;
+
+    formControl.classList.remove('success');
+    formControl.classList.add('error');
+
+  }
+
+  function setSuccessFor(input)
+  {
+    let formControl = input.parentElement.parentElement;
+    formControl.classList.remove('error');
+    formControl.classList.add('success');
+  }
+
+  //JS contact form validation end
+
+</script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
@@ -1073,7 +1195,7 @@
     crossorigin="anonymous"></script>
   <script>
 
-    var loader = document.grtElementById("preloader");
+    var loader = document.getElementById("preloader");
 
     function myFunction() {
       preloader.style.display = "none";
