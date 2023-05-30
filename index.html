@@ -878,12 +878,12 @@
 							/>
 						</div>
 						<div class="form-field">
-							<label for="lname">College </label>
+							<label for="lname">last name: </label>
 							<input
 								type="text"
-								placeholder="Enter your college name"
-								name="College name"
-								id="College name"
+								placeholder="Enter your last name"
+								name="lname"
+								id="lname"
 								required
 							/>
 						</div>
@@ -897,7 +897,7 @@
 								required
 							/>
 						</div>
-						<div class="form-field num">
+						<div class="form-field">
 							<label for="mobile">mobile </label>
 							<input
 								type="tel"
@@ -1101,7 +1101,6 @@
   const username = document.getElementById('name');
   const subject = document.getElementById('subject');
   const message = document.getElementById('message');
-  const number=document.getElementById('mobile');
 
   form.addEventListener('submit',(e)=>{
     if(checkInputs())
@@ -1118,7 +1117,6 @@
        const usernameval = username.value.trim();
        const subjectval = subject.value.trim();
        const messageval = message.value.trim();
-       const numval=number.value.trim();
 
        if(emailval === '')
        {
@@ -1136,22 +1134,11 @@
        if(usernameval === '')
        {
           setErrorFor(username,'Please enter a name');
-       }
-       if(usernameval<2){
-        setErrorFor(username,'Invalid Name');
-       }
-       else
+       }else
        {
         setSuccessFor(username);
        }
-      if(numval<10)
-      {
-         setErrorFor(number,"Invalid Number");
-      }
-      else 
-      {
-        setSuccessFor(number);
-      }
+
        
        if(subjectval === '')
        {
