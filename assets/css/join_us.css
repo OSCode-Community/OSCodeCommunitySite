@@ -1,0 +1,188 @@
+/*--------------------------------------------------------------
+# Join us
+--------------------------------------------------------------*/
+#join-us {
+    /* background-color: #1b1b1b; */
+    background-image: linear-gradient(#0f0c29, #302b63, #24243e);
+  }
+  #join-us .abt-txt {
+    font-size: 18px;
+    /* margin-left: 20px; */
+    line-height: normal;
+    text-decoration: none;
+    font-weight: normal !important;
+    color: var(--background-white);
+    margin: auto;
+    text-align: center;
+  }
+  #join-us h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 16px;
+  }
+  
+  /* Line 1753-1760 contains "Join Us" Section para customized class styling as to overrise scss styling */
+  .para_customization{
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: auto;
+  }
+  
+  .link {
+    font-size: 20px;
+    margin: auto;
+    margin-top: 7px;
+    text-align: center;
+  }
+  .counts {
+    padding-top: 80px;
+    background-color: #0e034d;
+  }
+  .number {
+    color: beige !important;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+  }
+  .count-box {
+    background: linear-gradient(145deg, #0e034d, #240ab3);
+  }
+  .row {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border-spacing: 16px;
+    margin-top: 23px;
+  }
+  .join .count-box {
+    padding: 30px 30px 25px 30px;
+    width: 75%;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    align-items: center !important;
+    border-radius: 10px;
+  }
+  .count-box > span {
+    display: inline-block !important;
+  }
+  .join .count-box i {
+    /* position: absolute; */
+    width: 64px;
+    height: 64px;
+    top: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    background: var(--backtotop-btn-color);
+    color: #d3d0e5;
+    border-radius: 50px;
+    border: 2px solid var(--backtotop-btn-color);
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+  }
+  .join .count-box:hover {
+    box-shadow: 0px 5px 15px darkblue;
+  }
+  .join .count-box span {
+    font-size: 36px;
+    display: block;
+    font-weight: 700;
+    color: #f0f0f0;
+    margin-top: 10px;
+  }
+  
+  .join .count-box p {
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 21px;
+    color: var(--background-white);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  .shrink .count-box {
+    transition: 1s ease;
+  }
+  
+  .shrink .count-box:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+  }
+  
+  .github-box:hover {
+    background: var(--background-white) !important;
+    color: black !important;
+    text-decoration: none;
+    border: transparent !important;
+    font-size: 36px !important;
+  }
+  .discord-box:hover {
+    background: #7289da !important;
+    color: var(--background-white)  !important;
+    text-decoration: none;
+    border: transparent !important;
+    font-size: 33px !important;
+  }
+  .linkedin-box:hover {
+    background: #0072b1 !important;
+    color: var(--background-white) !important;
+    text-decoration: none;
+    border: transparent !important;
+    font-size: 33px !important;
+  }
+  .instagram-box:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+    color: var(--background-white) !important;
+    text-decoration: none;
+    border: transparent !important;
+    font-size: 33px !important;
+  }
+  .twitter-box:hover {
+    background: #00acee !important;
+    color: var(--background-white) !important;
+    text-decoration: none;
+    border: transparent !important;
+    font-size: 31px !important;
+  }
+  .telegram-box {
+    font-size: 62px !important;
+    background-color: white !important;
+    color:#5942e9 !important;
+  }
+  .telegram-box:hover {
+    background: var(--background-white)  !important;
+    color:#0088cc !important;
+    text-decoration: none;
+    border: transparent !important;
+    font-size: 63px !important;
+    transition: all;
+  }
+  
+  .link:hover {
+    background-color: #4158d0;
+    background-image: linear-gradient(43deg, #ee21d9, #21eecf 46%, #ee2121);
+    -webkit-animation: home_btn__VDNR5 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: home_btn__VDNR5 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @media only screen and (max-width: 600px) {
+    #join-us h1 {
+      font-size: 27px;
+    }
+    #join-us h2 {
+      font-size: 23px;
+      font-weight: 200;
+    }
+  }
