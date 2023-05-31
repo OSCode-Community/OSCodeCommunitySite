@@ -1,19 +1,41 @@
+
+.outer{
+	background: linear-gradient(
+    to right,
+    #0f0c29,
+    #302b63,
+    #24243e,
+    rgb(69, 69, 107)
+  );
+  width:100%;	
+}
 .contact {
-	width: 100%;
-	background: linear-gradient(to right, #12376e 0 35%, #5942e9 35%);
+	width: 1300px;
+	height:800px;
+	margin-left: 120px;
+	/*background: linear-gradient(to right, #12376e 0 35%, #5942e9 35%);*/
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 10px;
 	align-items: center;
 	padding: 2%;
+	background: linear-gradient(
+    to right,
+    #0f0c29,
+    #302b63,
+    #24243e,
+    rgb(69, 69, 107)
+  );
 }
 .contact-title {
 	font-weight: bolder;
 	font-size: 2.3rem;
 	text-transform: capitalize;
 	color: white;
+	margin-bottom:10px;
 }
 .contact-content {
+	
 	display: flex;
 	gap: 20px;
 	flex-direction: column;
@@ -22,7 +44,9 @@
 	height: fit-content;
 }
 .contact-form {
-	background-color: white;
+	background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+	
+	/*background-color:white;*/
 	padding: 30px;
 	display: flex;
 	flex-direction: column;
@@ -31,7 +55,7 @@
 	height: min-content;
 }
 .contact-form header {
-	color: #12376e;
+	color: white;
 	font-weight: bolder;
 	font-size: 1.4rem;
 }
@@ -47,7 +71,7 @@
 	width: 100%;
 }
 label {
-	color: #5942e9;
+	color:white;
 	font-size: 1.1rem;
 	text-transform: capitalize;
 	font-weight: bolder;
@@ -75,7 +99,8 @@ textarea {
 	width: 100%;
 }
 .contact-info {
-	background-color: #12376e;
+	/*background-color:black;*/
+	background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
@@ -151,15 +176,24 @@ a:hover {
 .btn {
 	width: 140px;
 	height: 50px;
-	background: linear-gradient(to top, #00154c, #12376e, #23487f);
+	background: linear-gradient(
+    to right,
+    #0f0c29,
+    #302b63,
+    #24243e,
+    rgb(69, 69, 107)
+  );
 	color: #fff;
 	border-radius: 10px;
 	border: none;
 	outline: none;
 	cursor: pointer;
-	position: relative;
+	position:relative;
+	margin-left:260px;
 	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 	overflow: hidden;
+	align:center;
+	font-weight:bold;
 }
 
 .btn span {
