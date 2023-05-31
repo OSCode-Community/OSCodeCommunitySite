@@ -15,6 +15,7 @@
   --scroll-bar-thumb-color: #7027f9;
   --backtotop-btn-color: #5942e9;
   --get-started-btn-color: #9385ed;
+  --Navbar-color:white;
 }
 
 /* Customize Scrollbar*/
@@ -139,7 +140,12 @@ h1 {
 
 #header.header-scrolled {
   padding: 12px 0;
-  box-shadow: 0px 2px 15px var(--header-rgb-transparent-sc);
+  background-color: aliceblue;
+  margin: 15px 0;
+  border-radius: 66px;
+  --background-white: black;
+  --Navbar-color:black;
+
 }
 
 #header .logo {
@@ -175,7 +181,7 @@ h1 {
   /* margin-left: 30px; */
   /* background-color: transparent; */
   outline: none;
-  color: #fff;
+  color: var(--Navbar-color);
   border: 2px solid #5942e9;
   border-radius: 10px;
   padding: 8px 15px;
@@ -196,7 +202,7 @@ h1 {
 } */
 .get-started-btn:hover {
   background: var(--get-started-btn-color);
-  color: var(--background-black-lv1);
+  color: var(--Navbar-color);
 }
 .get-started-btn span {
   cursor: pointer;
@@ -265,7 +271,7 @@ h1 {
   padding: 8px 12px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-  color: #fff;
+  color: var(--Navbar-color);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -294,7 +300,7 @@ h1 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: white;
+  color: var(--Navbar-color);
   text-decoration: none;
 }
 
