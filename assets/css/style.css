@@ -1873,13 +1873,16 @@ a:hover i {
   border: transparent !important;
   font-size: 36px !important;
 }
-.discord-box:hover {
+a.discord:hover {
   background: #7289da !important;
-  color: var(--background-white)  !important;
-  text-decoration: none;
-  border: transparent !important;
-  font-size: 33px !important;
 }
+
+a.discord:hover i {
+  filter: invert(1) brightness(2) saturate(2);
+}
+
+
+
 .linkedin-box:hover {
   background: #0072b1 !important;
   color: var(--background-white) !important;
