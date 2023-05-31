@@ -1206,32 +1206,33 @@
     integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
 
-    <script>
-
-      var loader = document.getElementById("preloader");
-  
-      function myFunction() {
-        preloader.style.display = "none";
-      }
-    </script>
-
-    <script>
-      // Wait for the DOM to load
-      document.addEventListener("DOMContentLoaded", function () {
-        // Initialize Swiper
-        var testimonialsSlider = new Swiper(".testimonials-slider", {
-          slidesPerView: "auto",
-          spaceBetween: 30,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
+  <script>
+    // Wait for the DOM to load
+    document.addEventListener("DOMContentLoaded", function () {
+      // Initialize Swiper
+      var testimonialsSlider = new Swiper(".testimonials-slider", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
       });
-    </script>
-  </body>
+    });
+  </script>  
+
+  <script>
+
+    var loader = document.getElementById("preloader");
+
+    function myFunction() {
+      preloader.style.display = "none";
+    }
+  </script>
+</body>
+
 </html>
