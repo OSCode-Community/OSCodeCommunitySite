@@ -16,7 +16,9 @@
   justify-content: space-between;
   flex-flow: row-reverse;
 }
-
+.modifiedFooterTop{
+  padding: 50px 0;
+}
 .socialLinkMod {
   display: flex;
   justify-content: center;
