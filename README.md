@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/77539004/226191234-269ac220-e035-464f-ac00-9e65bbd80a78.png" height="250">
+  <img alt="OS Code" src="https://user-images.githubusercontent.com/77539004/226191234-269ac220-e035-464f-ac00-9e65bbd80a78.png#gh-light-mode-only" height="250"/>
+  <img alt="OS Code" src="./assets/img/oscodeInverted.png#gh-dark-mode-only" height="250"/>
 </p>
 
 <h1 align="center" font-size="10">Welcome to the Ever-Growing Tech Community 🚀</h1>
-
 
 
 <div align="center"><h1>🙌 About Us</h1></div>
