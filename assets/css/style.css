@@ -1628,3 +1628,8 @@ a:hover i {
   color: var(--background-white);
   text-decoration: none;
 }
+#footer .social-links .discord:hover {
+  background: #7289DA;
+  color: var(--background-white);
+  text-decoration: none;
+}
