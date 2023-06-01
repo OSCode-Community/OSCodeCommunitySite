@@ -13,8 +13,6 @@
     }
   };
 
-
-
   /**
    * Easy event listener function
    */
@@ -134,7 +132,7 @@
   );
 
   /**
-   * Scroll with ofset on links with a class name .scrollto
+   * Scroll with offset on links with a class name .scrollto
    */
   on(
     "click",
@@ -157,7 +155,7 @@
   );
 
   /**
-   * Scroll with ofset on page load with hash links in the url
+   * Scroll with offset on page load with hash links in the url
    */
   window.addEventListener("load", () => {
     if (window.location.hash) {
@@ -203,7 +201,7 @@
   });
 
   /**
-   * Porfolio isotope and filter
+   * Portfolio isotope and filter
    */
   window.addEventListener("load", () => {
     let portfolioContainer = select(".portfolio-container");
@@ -308,19 +306,19 @@
   new PureCounter();
 })();
 
-// Home Page Text Animation 
-const spans = document.querySelectorAll('.word h1');
+// Home Page Text Animation
+const spans = document.querySelectorAll(".word h1");
 
 spans.forEach((span, idx) => {
-	span.addEventListener('click', (e) => {
-		e.target.classList.add('active');
-	});
-	span.addEventListener('animationend', (e) => {
-		e.target.classList.remove('active');
-	});
-	
-	// Initial animation
-	setTimeout(() => {
-		span.classList.add('active');
-	}, 750 * (idx+1))
+  span.addEventListener("click", (e) => {
+    e.target.classList.add("active");
+  });
+  span.addEventListener("animationend", (e) => {
+    e.target.classList.remove("active");
+  });
+
+  // Initial animation
+  setTimeout(() => {
+    span.classList.add("active");
+  }, 750 * (idx + 1));
 });
