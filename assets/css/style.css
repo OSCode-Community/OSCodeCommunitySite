@@ -868,6 +868,7 @@ section {
 
 .flex-child {
   flex: 1;
+  text-align: justify;
   /* border: 2px solid yellow; */
 }
 
