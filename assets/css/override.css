@@ -105,7 +105,15 @@
   padding: 20px 15px;
   transition: 0.3s ease-in-out;
 }
-
+.modifiedCount{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.modifyingCount{
+  margin: 0;
+  margin-top: 30px;
+}
 .faqs {
   transition: 0.3s ease-in-out;
 }
