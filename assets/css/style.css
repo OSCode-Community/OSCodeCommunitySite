@@ -42,6 +42,7 @@ body {
   /* font-family: 'Roboto', sans-serif; */
   font-family: "Montserrat", sans-serif;
   color: var(--body-color);
+  background-color: #E7E7E7;
 }
 
 a {
