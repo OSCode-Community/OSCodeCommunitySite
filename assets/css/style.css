@@ -390,8 +390,8 @@ h1 {
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
-  top: 0;
-  right: 0;
+  top: 70px;
+  right: -22px;
   left: 0;
   bottom: 0;
   background: var(--navbar-mobile-background-color);
@@ -1437,7 +1437,6 @@ a:hover i {
   bottom: 15px;
 }
 
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1604,17 +1603,24 @@ a:hover i {
 }
 
 #footer .social-links .twitter:hover {
-  background: #1DA1F2;
+  background: #1da1f2;
   color: var(--background-white);
   text-decoration: none;
 }
 #footer .social-links .facebook:hover {
-  background: #4267B2;
+  background: #4267b2;
   color: var(--background-white);
   text-decoration: none;
 }
 #footer .social-links .instagram:hover {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
   color: var(--background-white);
   text-decoration: none;
 }
@@ -1629,7 +1635,7 @@ a:hover i {
   text-decoration: none;
 }
 #footer .social-links .discord:hover {
-  background: #7289DA;
+  background: #7289da;
   color: var(--background-white);
   text-decoration: none;
 }
