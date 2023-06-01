@@ -45,7 +45,7 @@ body {
 }
 
 a {
-  color: var(--theme-color);
+  color: var(--body-color);
   text-decoration: none;
 }
 
