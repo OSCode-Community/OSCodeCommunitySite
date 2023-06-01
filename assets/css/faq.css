@@ -1,0 +1,77 @@
+/*--------------------------------------------------------------
+# Frequently Asked Questions
+--------------------------------------------------------------*/
+#faq {
+    padding-bottom: 0;
+    background-image: url("../img/abt-bg1.jpg");
+    background-size: cover;
+    position: relative;
+  }
+  #faq h1 {
+    color: var(--backtotop-btn-color) !important;
+    font-weight: bold;
+    text-shadow: 0 0 1px black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+  }
+  #faq hr {
+    margin-bottom: 50px;
+  }
+  .faq .faq-list {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .faq .faq-list li {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .faq .faq-list a {
+    display: block;
+    position: relative;
+    font-family: var(--backtotop-btn-color);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-right: 25px;
+    cursor: pointer;
+  }
+  
+  .faq .faq-list i {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .faq .faq-list p {
+    margin-bottom: 0;
+    padding: 10px 0 0 0;
+  }
+  
+  .faq .faq-list .icon-show {
+    display: none;
+  }
+  
+  .faq .faq-list a.collapsed {
+    color: #343a40;
+  }
+  
+  .faq .faq-list a.collapsed:hover {
+    color: var(--backtotop-btn-color);
+  }
+  
+  .faq .faq-list a.collapsed .icon-show {
+    display: inline-block;
+  }
+  
+  .faq .faq-list a.collapsed .icon-close {
+    display: none;
+  }
+  @media only screen and (max-width: 600px) {
+    #faq h1 {
+      font-size: 27px;
+    }
+  }
