@@ -72,7 +72,7 @@
   background-color: #5942e9;
 }
 .cntctBtn{
-  color: var(--Navbar-color);
+  color: white;
 }
 .cntctBtn:hover{
   background-color:#5942e9;
