@@ -11,7 +11,9 @@
   #about {
     background-image: url("/assets/img/background/s3.png");
   }
-
+.row{
+  margin-top: 20px;
+}
   #faq {
     background-image: none;
     margin-left: 50px;
