@@ -637,6 +637,7 @@ h1 {
 .left {
   -webkit-animation: leftarrow 0.6s infinite alternate ease-in-out;
   margin: 0 0 0 30px;
+  font-size: 1rem;
 }
 .hero {
   width: 900px;
@@ -868,6 +869,7 @@ section {
 
 .flex-child {
   flex: 1;
+  text-align: justify;
   /* border: 2px solid yellow; */
 }
 
