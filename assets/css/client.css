@@ -19,21 +19,52 @@
     background-color: var(--backtotop-btn-color);
   }
   
-  @media only screen and (min-width: 600px) {
+  /* @media only screen and (min-width: 600px) {
     .clients .swiper-slide {
       width: 100px !important;
       margin-right: 112px !important;
     }
+  } */
+
+  .clients .swiper-slide {
+    width: 100px !important;
+    margin-right: 112px !important;
   }
   
+  /* ----------------Infinite Image Carousel---------------------- */
   .clients .swiper-slide img {
-    opacity: 0.5;
     transition: 0.3s;
-    filter: grayscale(100);
   }
+
+  .slide-container {
+      position: relative;
+      margin-top: 3em;
+  }
+
+  .slide-image {
+    animation: scroll 20s linear infinite;
+
+    /* ------------Pausing infinite images slide on Hover------------------------- */
+    /* &:hover {
+      animation-play-state: paused;
+      transition: all 0.2s ease;
+    } */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
   .clients .swiper-slide img:hover {
-    opacity: 1;
-    filter: none;
+    scale: 1.18;
+    cursor: pointer;
+
   }
   .clients h1 {
     color: var(--backtotop-btn-color);
@@ -47,6 +78,7 @@
     width: 200px;
     object-fit: contain;
   }
+
   @media only screen and (max-width: 600px) {
     .clients h1 {
       font-size: 27px;
