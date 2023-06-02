@@ -12,7 +12,13 @@ align-items: flex-start;
   display: flex;
   justify-content: space-between;
 }
-
+.credits{
+  font-weight: 400;
+}
+.credits a{
+  font-weight: 800;
+    color: #ab6bff;
+}
 .modifiedFooter {
   display: flex;
   justify-content: space-between;
