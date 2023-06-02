@@ -1451,12 +1451,12 @@ a:hover i {
 }
 
 #footer .footer-top {
-  padding: 10px 0 30px 0;
+  /* padding: 10px 0 30px 0; */
   background: #1b1b1b;
 }
 
 #footer .footer-top .footer-contact {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 #footer .footer-top .footer-contact h3 {
@@ -1495,7 +1495,7 @@ a:hover i {
 }
 
 #footer .footer-top .footer-links {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 #footer .footer-top .footer-links ul {
