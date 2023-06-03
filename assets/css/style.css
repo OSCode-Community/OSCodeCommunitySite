@@ -42,6 +42,8 @@ body {
   /* font-family: 'Roboto', sans-serif; */
   font-family: "Montserrat", sans-serif;
   color: var(--body-color);
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -1445,6 +1447,8 @@ a:hover i {
 --------------------------------------------------------------*/
 
 #footer {
+  margin: auto;
+  width: 100%;
   color: var(--background-white);
   font-size: 14px;
   background: var(--background-black-lv1);

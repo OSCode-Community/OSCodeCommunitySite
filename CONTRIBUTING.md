@@ -1,8 +1,20 @@
-Thank you for taking the time to contribute to our project.
+# Contributing guidelines
+
+> :information_source: Before contributing, please make sure you have read the guidelines below. <br>
+If you're new to _git_ and/or _GitHub_, we suggest you go through [the GitHub Guides](https://guides.github.com/introduction/flow/).
+<br>
+
+Thank you for taking the time to contribute to our project. Please take a moment to read the following guidelines before contributing:
+
+> ⚠️IMPORTANT **Note** 
+>
+> **Pull Requests having no issue associated with them will not be accepted. Firstly get an issue assigned, whether it's already opened or raised by you, and then create a Pull Request.**
+
+> **An automated process has been implemented to ensure timely management of Issues on this platform. Issues that have been open for a duration exceeding 30 days will be automatically closed, so please plan accordingly.**
 
 ## How to Contribute 🤔
 
-## Step 1: Fork the Repository
+### Step 1: Fork the Repository
 
 Click on the "Fork" button.
 
@@ -11,7 +23,7 @@ By forking the repository, you will have your own version of the repository unde
 Once you have forked your repository, go to your profile inside the repository section you will find your forked repository.
 
 
-## Step 2: Clone the Forked Repository 
+### Step 2: Clone the Forked Repository 
 Once you locate your repository you need to clone it to your local machine.
 
 Click on the "Code" button located on the repository's page.
@@ -36,7 +48,7 @@ The yourUsername is nothing but your GitHub username.
 
 Congratulations! You have successfully cloned the repository to your local machine. You can now make changes, add new features, or fix issues in the codebase.
 
-## Step 3: Create a New Branch
+### Step 3: Create a New Branch
 After making the necessary changes, it's recommended to create a new branch for your changes. This helps keep your modifications separate from the main branch, making it easier to manage and review your contributions.
 
 Use the following command to create a new branch:
@@ -52,7 +64,7 @@ The git checkout -b branch-name command in Git creates a new branch with the spe
 **checkout branch-name** : switches to the branch branch-name.
 
 **-b** : this creates the branch if it not exists already of name branch-name. 
-## Step 4: Make Your Changes
+### Step 4: Make Your Changes
 
 Make the necessary changes or additions to the codebase.
 Once you have added changes in your local, its time to push them, for that run this command to bring the modification to the staging area.
@@ -73,7 +85,7 @@ and then run this command:
   git add .
 ```
 
-## Step 5: Commit Your Changes
+### Step 5: Commit Your Changes
 
 Commit your changes with a meaningful commit message using the following command:
 ``` bash
@@ -81,7 +93,7 @@ Commit your changes with a meaningful commit message using the following command
 ```
 Once you have committed your changes, it's time to push them to your forked repository on GitHub.
 
-## Step 6: Push Your Changes
+### Step 6: Push Your Changes
 
 Use the following command to push your changes:
 
@@ -90,7 +102,7 @@ git push origin branch-name
 ```
 Replace branch-name with the name of the branch you created earlier.
 
-## Step 7: Make a Pull Request
+### Step 7: Make a Pull Request
 
 After pushing your changes, open your forked repository on GitHub in your web browser.
 
@@ -104,9 +116,14 @@ Provide a clear and informative title and description for your pull request. Exp
 
 Review your pull request to ensure everything is correct, and then click on the "Create pull request" button to submit it.
 
-## End
+### Congrats!
 
-Your pull request will now be visible to the maintainers of the original repository. They will review your changes, provide feedback if necessary, and decide whether to merge your changes into the main branch.
+Your pull request will now be visible to the maintainers of the original repository. They will review your changes, provide feedback if necessary, and decide whether to merge them into the main branch.
 
 Congratulations! You have successfully created a pull request to contribute your changes to the repository. Remember to monitor the pull request for any updates or feedback from the maintainers.
 
+## Remarks ✅
+
+- If anything is missing or if you feel that something is not well described, please create [an issue](https://github.com/OSCode-Community/OSCodeCommunitySite/issues)
+- Any changes or suggestions to the existing content or repository are welcome.
+- No need to worry, if any changes are required, the maintainers will request them from you.

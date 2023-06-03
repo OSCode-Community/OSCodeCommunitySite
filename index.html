@@ -916,14 +916,17 @@
             </div>
           </div>
 
+
+          
+
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <form class="contactForm" id="contact_Form" action="mailto:oscode.community@gmail.com" method="post"
               enctype="text/plain" autocomplete="on">
               <div class="row form-group">
                 <div class="col form-group">
                   <div>
-                    <input type="text" autocomplete="email" class="form-control" name="email" id="email"
-                      placeholder="Your Email" />
+                    <input type="email" autocomplete="email" class="form-control" name="email" id="email"
+                      placeholder="Your Email" required />
                     <!-- <i class="fas fa-check-circle"></i> -->
                     <!-- <i class="fas fa-exclamation-circle"></i> -->
                   </div>
@@ -932,8 +935,8 @@
 
                 <div class="col form-group">
                   <div>
-                    <input type="text" autocomplete="name" name="name" class="form-control" id="name"
-                      placeholder="Your Name" />
+                    <input type="text" autocomplete="name" name="name" class="form-control" id="name" pattern="[a-zA-Z][a-zA-Z ]{2,}" title="Number Not Allowed"
+                      placeholder="Your Name"   required  />
                     <!-- <i class="fas fa-check-circle"></i> -->
                     <!-- <i class="fas fa-exclamation-circle"></i> -->
                   </div>
@@ -945,7 +948,7 @@
 
               <div class="col form-group">
                 <div><input type="text" autocomplete="subject" class="form-control" name="subject" id="subject"
-                    placeholder="Subject" />
+                    placeholder="Subject " required />
                   <!-- <i class="fas fa-check-circle"></i> -->
                   <!-- <i class="fas fa-exclamation-circle"></i> -->
                 </div>
@@ -960,7 +963,7 @@
 
               <div class="col form-group">
                 <div><textarea class="form-control" autocomplete="message" id="message" name="message" rows="5"
-                    placeholder="Message"></textarea>
+                    placeholder="Message" required ></textarea>
                   <!-- <i class="fas fa-check-circle"></i> -->
                   <!-- <i class="fas fa-exclamation-circle"></i> -->
                 </div>
