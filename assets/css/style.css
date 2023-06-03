@@ -1144,7 +1144,8 @@ a:hover i {
 .testimonials .testimonial-item:hover {
   cursor: pointer;
   transition: 0.4s ease-in-out;
-  box-shadow: 6px 6px 12px #16161c, -6px -6px 12px #7b7bff;
+  /* box-shadow: 6px 6px 12px #16161c, -6px -6px 12px #7b7bff; */
+  box-shadow: 4px 6px 6px #7549e0, -4px -4px 10px grey;
 }
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
