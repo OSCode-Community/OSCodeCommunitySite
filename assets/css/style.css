@@ -137,6 +137,7 @@ h1 {
   transition: all 0.5s;
   z-index: 997;
   padding: 11px 0;
+  opacity: 90%;
 }
 
 #header.header-scrolled {
@@ -562,7 +563,6 @@ h1 {
   position: relative;
   padding-top: 62px;
   text-align: center;
-  /* opacity: 2; */
 }
 
 #hero:before {
