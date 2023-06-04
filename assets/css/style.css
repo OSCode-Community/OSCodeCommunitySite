@@ -1456,7 +1456,7 @@ a:hover i {
 --------------------------------------------------------------*/
 
 #footer {
-  margin: auto;
+  margin: 0;
   width: 100%;
   color: var(--background-white);
   font-size: 14px;
