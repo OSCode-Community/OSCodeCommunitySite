@@ -4,6 +4,24 @@
 </p>
 
 <h1 align="center" font-size="10">Welcome to the Ever-Growing Tech Community 🚀</h1>
+<p align="center">
+<img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+<img src="https://forthebadge.com/images/badges/uses-brains.svg" />
+<img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
+ <br>
+ <img src="https://img.shields.io/github/repo-size/OSCode-Community/OSCodeCommunitySite?style=for-the-badge" />
+   <img src="https://img.shields.io/github/issues/OSCode-Community/OSCodeCommunitySite?style=for-the-badge" />
+   <img src="https://img.shields.io/github/issues-closed-raw/OSCode-Community/OSCodeCommunitySite?style=for-the-badge" />
+    <img src="https://img.shields.io/github/license/OSCode-Community/OSCodeCommunitySite?style=for-the-badge" />
+
+   <img src="https://img.shields.io/github/issues-pr/OSCode-Community/OSCodeCommunitySite?style=for-the-badge" />
+    <img src="https://img.shields.io/github/contributors/OSCode-Community/OSCodeCommunitySite?style=for-the-badge" />
+    <img src="https://img.shields.io/github/stars/OSCode-Community/OSCodeCommunitySite?style=for-the-badge" />
+
+   <img src="https://img.shields.io/github/issues-pr-closed-raw/OSCode-Community/OSCodeCommunitySite?style=for-the-badge" />
+   <img src="https://img.shields.io/github/forks/OSCode-Community/OSCodeCommunitySite?style=for-the-badge" />
+  <img src="https://img.shields.io/github/last-commit/OSCode-Community/OSCodeCommunitySite?style=for-the-badge" />
+ </p>
 
 
 
