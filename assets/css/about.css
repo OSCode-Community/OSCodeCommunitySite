@@ -76,6 +76,28 @@
     color: var(--background-white);
     padding-right: 10px;
   }
+
+  @media(max-width:1260px){
+    .whoweare{
+      width: 535px;
+      height: 451px;
+    }
+  }
+
+  @media(max-width:1130px){
+    .whoweare {
+      width: 477px;
+      height: 346px;
+  }
+  }
+
+  @media(max-width:991px){
+    .whoweare {
+      width: 543px;
+      height: 399px;
+  }
+  }
+  
   @media only screen and (max-width: 600px) {
     .abt-img {
       animation: float 4.5s ease-in-out infinite;
@@ -125,6 +147,20 @@
       }
     }
   }
+
+  @media(max-width:390px){
+    .whoweare {
+      height: 251px;
+      width: 301px;
+    }
+  }
+
+  @media (max-width: 340px){
+.whoweare {
+    height: 211px;
+    width: 243px;
+}
+}
   
   .abt-txt {
     margin-top: 40px;
