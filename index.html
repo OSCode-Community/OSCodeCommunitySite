@@ -12,6 +12,89 @@
       z-index: 999999;
     }
   </style>
+
+  </style>
+
+  <style>
+    #videoDiv {
+        width: 100%;
+        height: 550px;
+        position: relative;
+    }
+    
+    #video1 {
+        margin: auto;
+        display: block;
+        width: 1000px;
+        align-items: center;
+    }
+    
+    #videoMessage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .videoMessage-content {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: whitesmoke;
+        padding: 20px;
+        max-width: 600px;
+        width: 90%;
+        margin: auto;
+        /* margin-top: 500px; */
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4px;
+        border: none;
+        background-color: #f2f2f2;
+    }
+    
+    .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .info-box {
+        text-align: center;
+    }
+    
+    .info-box a {
+        color: white;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .info-box h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .info-box p {
+        font-size: 14px;
+        margin: 0;
+    }
+</style>
+  
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
@@ -60,6 +143,17 @@
 
   <!-- for overriding the nav css -->
   <link rel="stylesheet" href="/assets/css/override.css">
+
+<!-- Contact Us required Links -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
 
 </head>
 
@@ -814,90 +908,80 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div class="container" data-aos="fade-right">
-        <h1 class="text-center">Contact Us</h1>
-        <hr class="line hr-center">
-
-        <div class="row" data-aos="flip-left" data-aos-delay="100">
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="info-box">
-                  <!-- <i class="bx bx-map"></i> -->
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3295777128365!2d77.57881345058549!3d12.950750090824721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156bf4c356ed%3A0x3466b397b31dae21!2sOS-CODE%20headquarter!5e0!3m2!1sen!2sin!4v1679811939861!5m2!1sen!2sin"
-                    width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  <!-- ====> 100% height and auto width is the key to make any image responsive <==== -->
-                  <h3>Address</h3>
-                  <p>
-                    OS-CODE headquarter, Shanbough Krinshappa Ln, Upparahalli, <br>Mavalli, Bengaluru, Karnataka 560004
-                  </p>
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+        <div class="row">
+      <div id="videoDiv">
+          <video id="video1" preload="" autoplay="" muted="" playsinline="" loop="">
+              <source src="background.mp4" type="video/mp4">
+          </video>
+          <div id="videoMessage">
+              <div style="" class="videoMessage-content">
+                  <form>
+                    <div class="row">
+                      <div class="col">
+                      <div class="form-group">
+                          <label for="name">Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                      </div>
+                    </div>
+                    </div>
+                      <div class="form-group">
+                          <label for="college">College</label>
+                          <input type="text" class="form-control" id="college" placeholder="Enter your college">
+                      </div>
+                      <div class="form-group">
+                          <label for="message">Message</label>
+                          <textarea class="form-control" id="message" placeholder="Enter your message"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-success">Submit</button>
+                  </form>
+                  <!-- <div class="info-box">
+                      <a href="mailto:oscode.community@gmail.com?subject=Enquiry"><i class="bx bx-envelope"></i></a>
+                      <h3>Email Us</h3>
+                      <p>oscode.community@gmail.com</p>
+                  </div> -->
+                        <!-- <div class="info-box">
+                            <a href="tel:+91-7667109405"><i class="bx bx-phone-call"></i></a>
+                            <h3>Call Us</h3>
+                            <p>+91-7667109405<br>+91-7014122349</p>
+                        </div> -->
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <a href="mailto:oscode.community@gmail.com?subject=Enquiry"><i class="bx bx-envelope"></i></a>
-                  <h3>Email Us</h3>
-                  <p>oscode.community@gmail.com<br> <br></p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <a href="tel:+91-7667109405"><i class="bx bx-phone-call"></i></a>
-                  <h3>Call Us</h3>
-                  <p>+91-7667109405<br />+91-7014122349</p>
-                </div>
-              </div>
             </div>
-          </div>
-          <!-- <div class="col-lg-6 contact-img">
-            <img src="assets/img/contact.png" alt="contact us" style="margin-left: 100px;
-            margin-top: 75px; height: 400px;">
-          </div> -->
+            </div> <!--of row  -->
+          </div>    <!--of col-lg-6  -->
 
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <form action="mailto: https://oscode.community@gmail.com" method="post" enctype="text/plain" autocomplete="on">
+          <div class="emailUs Section">
+          <div style="color: white;" class="col-lg-6">
+            <!-- <div class="info-box mt-4"> -->
               <div class="row">
-                <div class="col form-group">
-                  <input type="email" autocomplete="mail" class="form-control" name="email" id="email"
-                    placeholder="Your Email" required />
-                </div>
-                <div class="col form-group">
-                  <input type="text" autocomplete="name" name="name" class="form-control" id="name"
-                    placeholder="Your Name" required />
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" autocomplete="subject" class="form-control" name="College" id="college"
-                  placeholder="College" required />
-              </div>
-              <div class="form-group">
-                <input type="text" autocomplete="subject" class="form-control" name="subject" id="subject"
-                  placeholder="Subject" required />
-                <!-- <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required /> -->
-              </div>
-              <!-- <div class="form-group">
-                <input type="password" class="form-control" name="password" id="password" placeholder="Enter password"
-                  required />
-              </div> -->
-              <div class="form-group">
-                <textarea class="form-control" autocomplete="message" name="message" rows="5" placeholder="Message"
-                  required></textarea>
-              </div>
-              <!-- <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  You don't have an account yet, please register!!
-                </div>
-              </div> -->
-              <div class="text-center white">
-                <button type="submit" class="btn get-started-btn msg-us">Message us</button>
-              </div>
-            </form>
-          </div>
+              <div class="col">
+              <a href="mailto:oscode.community@gmail.com?subject=Enquiry"></a>
+              <h3>Email Us</h3>
+              <p>oscode.community@gmail.com<br> <br></p>
+            </div>
+            
+           
+          
+          <!-- <div class="col-md-6"> -->
+            <!-- <div class="info-box mt-4"> -->
+              <div class="col">
+              <a href="tel:+91-7667109405"></a>
+              <h3>Call Us</h3>
+              <p>+91-7667109405<br />+91-7014122349</p>
+            </div>
+            </div>
+            
+          <!-- </div> -->
+        </div>    <!-- of col-lg-6 -->
+
+      </div>
         </div>
       </div>
     </section>
