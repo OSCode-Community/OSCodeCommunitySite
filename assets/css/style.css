@@ -202,6 +202,30 @@ h1 {
 .home-i {
   margin-left: 4px;
 }
+
+.get-started-btn-1{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJGIKThXroHH5g1ul1OQlG2jVw1O-Skp1hyg&usqp=CAU');
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #21beee;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 10px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.get-started-btn-1:hover {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJGIKThXroHH5g1ul1OQlG2jVw1O-Skp1hyg&usqp=CAU') ;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 5px #21beee,
+  0px 0px 10px #21beee,
+  0px 0px 20px #21beee,
+  0px 0px 40px #21beee;
+  color: #21beee;
+}
+
 /* .get-started-btn:hover {
   background: var(--get-started-btn-color);
   color: var(--background-black-lv1);
