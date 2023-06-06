@@ -1176,7 +1176,15 @@ a:hover i {
   background: var(--background-white);
   border-radius: 15px;
   transition: 0.4s ease-in-out;
+
 }
+
+@media only screen and (max-width: 370px) {
+  .testimonials .testimonial-item {
+    height: 490px;
+  }
+}
+
 .testimonials .testimonial-item:hover {
   cursor: pointer;
   transition: 0.4s ease-in-out;
