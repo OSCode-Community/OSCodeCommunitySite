@@ -27,9 +27,34 @@
     font-weight: bold;
     color: #000;
     font-size: 20px;
+  
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #54b3d6 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     transition: all 0.3s ease-in-out;
   }
-
-  /* #search-bar {
+  .faq .faq-list a:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+  }
+  .faq .faq-list a:hover {
+    background-position: 0;
+    font-size:28px;
+ }
+/* #search-bar {
           padding: 10px;
           font-size: 16px;
           border: 1px solid #ccc;
