@@ -1176,7 +1176,15 @@ a:hover i {
   background: var(--background-white);
   border-radius: 15px;
   transition: 0.4s ease-in-out;
+
 }
+
+@media only screen and (max-width: 370px) {
+  .testimonials .testimonial-item {
+    height: 490px;
+  }
+}
+
 .testimonials .testimonial-item:hover {
   cursor: pointer;
   transition: 0.4s ease-in-out;
@@ -1303,6 +1311,8 @@ a:hover i {
     rgb(181, 181, 253),
     rgb(209, 209, 245)
   );
+  box-shadow: 0 0 0 #7b7bff, 0 0 0 #7b7bff;
+  transition: box-shadow 0.4s ease-in-out;
 }
 .carousel .carousel-item {
   color: #fcfafa;
@@ -1316,8 +1326,7 @@ a:hover i {
   /* transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 }
 .carousel-inner:hover {
-  transition: 0.4s ease-in-out;
-  box-shadow: 6px 6px 12px #16161c, -6px -6px 12px #7b7bff;
+  box-shadow: 6px 6px 12px #7b7bff, -6px -6px 12px #7b7bff;
 }
 .carousel .img-box {
   width: 145px;
