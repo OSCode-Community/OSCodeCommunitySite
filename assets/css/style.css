@@ -15,7 +15,7 @@
   --scroll-bar-thumb-color: #7027f9;
   --backtotop-btn-color: #5942e9;
   --get-started-btn-color: #9385ed;
-}
+}  
 
 /* Customize Scrollbar*/
 ::-webkit-scrollbar {
@@ -183,6 +183,7 @@ h1 {
 /*--------------------------------------------------------------
 # Get Started Button
 --------------------------------------------------------------*/
+
 .get-started-btn {
   /* margin-left: 30px; */
   /* background-color: transparent; */
@@ -199,6 +200,14 @@ h1 {
   display: inline-block;
   font-family: "Roboto", sans-serif;
 }
+
+.msg-us{
+  color: #fff;
+  background-color: #285aeb;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
 .home-i {
   margin-left: 4px;
 }
@@ -234,6 +243,13 @@ h1 {
   background: var(--get-started-btn-color);
   color: var(--background-black-lv1);
 }
+
+.msg-us:hover{
+  background-color: #13d4fa;
+  color: #000000;
+  font-weight: bold;
+}
+
 .get-started-btn span {
   cursor: pointer;
   display: inline-block;

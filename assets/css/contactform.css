@@ -1,3 +1,21 @@
+.contact{
+    /* background-color: rgb(0, 0, 0); */
+    background-image: linear-gradient( to right, #0f0c29, #302b63, #24243e, rgb(69, 69, 107) );
+}
+
+.contact h1,
+.address a,h3,
+.oscodeEmail a,
+.oscodePhone a{
+    color: #f0ecec;
+}
+
+.mapArea iframe{
+    /* padding: 5px; */
+    border-radius: 10px;
+    border: 5px solid #afaeb5;
+}
+
 .modifiedAddress {
     display: flex;
     flex-direction: column;
@@ -11,12 +29,16 @@
     padding: 8px;
     border: 2px dotted #f8d4d5;
 }
-.form-group input{
+.form-group input,
+.form-group textarea{
     transition: 0.3s ease-in-out;
+    box-shadow: rgb(255, 255, 255) 0px 4px 6px -2px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px;
 }
-.form-group input:hover {
+
+.form-group input:hover,
+.form-group textarea:hover {
     transition: 0.3s ease-in-out;
-    box-shadow: rgba(137, 119, 212, 0.456) 0px 5px 10px;
+    /* box-shadow: rgba(137, 119, 212, 0.456) 0px 5px 10px; */
 }
 
 .address {
