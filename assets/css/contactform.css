@@ -14,7 +14,15 @@
 .form-group input{
     transition: 0.3s ease-in-out;
 }
+
+
+
 .form-group input:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(137, 119, 212, 0.456) 0px 5px 10px;
+}
+
+.form-group textarea:hover {
     transition: 0.3s ease-in-out;
     box-shadow: rgba(137, 119, 212, 0.456) 0px 5px 10px;
 }
