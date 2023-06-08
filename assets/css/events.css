@@ -498,3 +498,13 @@
   .modifyRow{
     margin-top: 20px;
   }
+
+  /* Added shadow effect on elements */
+  .col-12.col-md-6.col-lg-3.colImg {
+    border: 4px solid black;
+    margin: 14px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 8px 8px;
+
+  }
