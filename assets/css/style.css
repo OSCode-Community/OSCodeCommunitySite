@@ -1088,6 +1088,7 @@ hr.line {
   border-radius: 5px;
   width: 120px;
   opacity: 1;
+  margin: auto;
 }
 
 .counts {
@@ -1207,12 +1208,22 @@ hr.line {
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
+  border: 2px solid #471ed2;
+  padding: 10px;
 }
 
 .gallery::after {
   content: "";
   width: 250px;
 }
+
+/* Line: 1220-1224 contains code to move "Why Choose Us?" Section Text justified */
+.flex-child.gallery.right-tab {
+  /* width: 20%; */
+  text-align: justify;
+  letter-spacing: -1px;
+}
+
 .left-tab {
   width: 200px;
   width: 100%;
@@ -1248,9 +1259,9 @@ hr.line {
   /* border: 2px solid yellow; */
 }
 
-.flex-child:first-child {
+/* .flex-child:first-child { cut this out 
   margin-right: 20px;
-}
+} */
 .benefits {
   font-weight: 700;
   color: rgb(255, 156, 253);
@@ -1773,6 +1784,7 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   color: beige !important;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
+  text-align: center;
 }
 .count-box {
   background: linear-gradient(145deg, #0e034d, #240ab3);
@@ -1782,7 +1794,8 @@ box-shadow: rgba(247, 246, 246, 0.35) 0px 5px 15px;
   align-items: center;
   justify-content: center;
   border-spacing: 16px;
-  margin-top: 23px;
+  margin-top: 60px;
+  
 }
 .join .count-box {
   padding: 30px 30px 25px 30px;
