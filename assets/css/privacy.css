@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+}
+.logo1 {
+     padding: 5px;
+     width: 80px;    
+}
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.phead {
+    font-size: 30px;
+    color: #ffffff;
+    position: relative;
+    overflow: auto;
+    text-align: center;
+    /* background: url("./assets/img/background/bg9.jpg"); */
+    background-color: purple;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 0.3em;
+    letter-spacing: 2px;
+    font-family: 'Noto Serif', serif;
+}
+
+#main,
+#summary,
+#tableofcontents,
+#personal,
+#process,
+#share,
+#cookies,
+#social,
+#keep,
+#safe,
+#privacy-rights,
+#controls,
+#california,
+#updates,
+#notice,
+#review {
+    padding: 25px 50px 0px 70px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.privacy-img {
+    border-radius: 2%;
+    width: 550px;
+    height: 500px;
+    float: center;
+    margin-left: 100px;
+    max-width: 100%;
+}
+
+.flex-child {
+    flex: 1;
+    /* border: 2px solid yellow; */
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+p,
+li {
+    font-size: 17px;
+    text-align: left;
+}
+
+.concern {
+    padding-bottom: 10px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.ques {
+    padding-top: 30px;
+}
+
+.ptitle {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Noto Serif', serif;
+}
+
+.arrow {
+    list-style: none;
+    line-height: 2em;
+    font-size: 16px;
+}
+
+.arrow::before {
+    content: "\00BB";
+}
+
+.table-p {
+    line-height: 2em;
+    font-size: 16px;
+}
+
+.sub {
+    font-size: 20px;
+}
+
+ul.square {
+    list-style-type: square;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2b3adf;
+    color: white;
+}
+
+.credits a{
+    color: #8e2bdf;
+}
+
+@media only screen and (max-width: 600px) {
+    .privacy-img {
+        width: 300px;
+        height: 300px;
+        margin-left: 50px;
+    }
+
+    .flex-container {
+        display: block;
+    }
+
+    .flex-child {
+        flex: 0;
+    }
+
+    #main,
+    #summary,
+    #tableofcontents,
+    #personal,
+    #process,
+    #share,
+    #cookies,
+    #social,
+    #keep,
+    #safe,
+    #privacy-rights,
+    #controls,
+    #california,
+    #updates,
+    #notice,
+    #review {
+        font-size: medium;
+        line-height: 1.5;
+        padding: 30px;
+        margin: 0px;
+        height: 100%;
+
+    }
+}
