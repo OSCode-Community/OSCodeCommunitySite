@@ -914,12 +914,7 @@ section {
 }
 .benefits {
   font-weight: 700;
-  color:white;
-}
-.benefits:hover{
-  color: #471ED2;
-  transition:0.5s;
-  font-size:30px;
+  color: rgb(255, 156, 253);
 }
 .text-center {
   text-align: center;
