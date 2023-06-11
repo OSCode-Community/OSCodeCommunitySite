@@ -498,3 +498,16 @@
   .modifyRow{
     margin-top: 20px;
   }
+  /* Fix white space */
+  @media (max-width:713px){
+    .container.text-center.p.event-wrap.wrapping.aos-init.aos-animate {
+      display:flex;
+    flex-direction: column;
+    width:100%;
+      margin:0px;
+      padding:0px;
+      overflow: hidden;
+      box-sizing:border-box;
+  
+    }
+  }

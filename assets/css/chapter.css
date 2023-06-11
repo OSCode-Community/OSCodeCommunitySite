@@ -168,3 +168,17 @@
       max-height: 200px;
     }
   }
+
+  /* Fix white space */
+  @media (max-width:700px ){
+    section#hero.d-flex.align-items-center::before{
+      display:flex;
+  flex-direction: column;
+  width:100%;
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
+    box-sizing:border-box;
+
+    }
+  }
