@@ -16,6 +16,7 @@ hr.line {
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
   }
   .count-box {
     background: linear-gradient(145deg, #0e034d, #240ab3);

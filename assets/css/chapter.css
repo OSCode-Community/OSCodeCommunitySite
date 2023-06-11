@@ -26,7 +26,7 @@
   .faq .faq-list a {
     font-weight: bold;
     color: #000;
-    font-size: 20px;
+    font-size: 25px;
   
     background-image: linear-gradient(
       to right,
@@ -39,6 +39,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
      transition: all 0.3s ease-in-out;
+     background-color: #2a2a72;
+background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   }
   .faq .faq-list a:before {
     content: '';
@@ -49,10 +51,12 @@
     left: 0;
     width: 0;
     height: 3px;
+    background-color: #2a2a72;
+background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   }
   .faq .faq-list a:hover {
     background-position: 0;
-    font-size:28px;
+    /* font-size:28px; */
  }
 /* #search-bar {
           padding: 10px;

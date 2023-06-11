@@ -207,7 +207,7 @@
     color: var(--background-white);
     font-family: "Roboto", sans-serif;
     line-height: 1.5em;
-  }
+      }
   .demo a {
     /* position: absolute; These was causing scroll not be in center */
     /* bottom: 20px; */
