@@ -921,6 +921,12 @@ background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
 .benefits {
   font-weight: 700;
   color: #fff;
+  color:white;
+}
+.benefits:hover{
+  color: #471ED2;
+  transition:0.5s;
+  font-size:30px;
 }
 .text-center {
   text-align: center;
