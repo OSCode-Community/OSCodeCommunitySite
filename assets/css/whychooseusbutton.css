@@ -20,6 +20,9 @@
     /* purple color */
     z-index: -1;
     transition: left 0.7s;
+    background-color: #0cbaba;
+background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
   }
 
   .edit1:hover:before {
