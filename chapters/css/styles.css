@@ -113,7 +113,7 @@ p {
 }
 
 .section-spacer {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .cta__large {
@@ -420,10 +420,11 @@ p {
   -ms-flex-align: center;
   align-items: center;
   min-height: 550px;
+  margin-top: 30px;
 }
 
 .hero-content {
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 
 .hero-title__group {
@@ -433,7 +434,7 @@ p {
 .hero-title {
   font-size: 32px;
   line-height: 37px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .hero-title span {
@@ -452,7 +453,8 @@ p {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  animation: float 3.5s ease-in-out infinite;
+  /* animation: float 3.5s ease-in-out infinite; */
+  border-radius: 3%;
 }
 @keyframes float {
   0% {
