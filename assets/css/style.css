@@ -280,11 +280,22 @@ h1 {
   background-color: transparent;
 }
 
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li {
+  margin: 0 12px;
+}
+
 .navbar ul {
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
+  justify-content: center;
   align-items: center;
 }
 
@@ -306,31 +317,19 @@ h1 {
   transition: 0.3s;
 }
 
-.navbar > ul > li::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #5942e9;
-  display: block;
-  transition: 0.5s;
-  margin: auto;
-}
-.navbar > ul > li:hover::after {
-  width: 100%;
-}
-
-.navbar a i,
-.navbar a:focus i {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: 5px;
-}
-
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
   color: white;
+  background-color: #5942e9; /* Set the desired background color */
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.navbar a:hover {
   text-decoration: none;
 }
 
@@ -400,6 +399,7 @@ h1 {
 /**
 * Mobile Navigation 
 */
+
 .mobile-nav-toggle {
   color: var(--background-black-lv1);
   font-size: 28px;
