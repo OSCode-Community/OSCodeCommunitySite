@@ -16,12 +16,13 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #7027f9;
+    /* background-color: #7027f9; */
     /* purple color */
     z-index: -1;
     transition: left 0.7s;
-    background-color: #0cbaba;
-background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    background-color: #0cbaba; 
+    /* background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%); */
+    background-image: linear-gradient(315deg, #01e2e2 0%, #e31ef5 74%,rgb(153, 15, 112));
 
   }
 
