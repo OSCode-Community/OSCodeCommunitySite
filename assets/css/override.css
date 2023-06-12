@@ -50,7 +50,7 @@ align-items: flex-start;
 .navListAndContact {
   display: flex;
   align-items: center;
-  padding-right: 25px;
+  padding-right: 0;
 }
 
 .modified {
@@ -253,6 +253,9 @@ align-items: flex-start;
 .eventBody {
   background: rgb(151, 140, 255);
   background: linear-gradient(209deg, rgba(151, 140, 255, 1) 0%, rgba(198, 198, 255, 1) 56%, rgba(225, 208, 255, 1) 100%);
+background-color: #1fd1f9;
+background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+
 }
 
 .wrapping {
