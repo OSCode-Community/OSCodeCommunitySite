@@ -89,13 +89,13 @@ align-items: flex-start;
 }
 
 .msg-us {
-  color: #5942e9;
-  ;
+  color: white;
 }
 
 .msg-us:hover {
-  color: white;
-  background-color: #5942e9;
+  color: #322eac;
+  background-color: white;
+  box-shadow: whitesmoke 1px 3px 8px;
 }
 
 .cntctBtn {
