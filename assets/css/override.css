@@ -50,7 +50,7 @@ align-items: flex-start;
 .navListAndContact {
   display: flex;
   align-items: center;
-  padding-right: 0;
+  padding-right: 30px;
 }
 
 .modified {

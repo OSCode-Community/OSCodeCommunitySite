@@ -361,7 +361,7 @@ h1 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: var(--background-black-lv1);
+  color: var(--background-white);
   font-size: 28px;
   cursor: pointer;
   display: none;
