@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.login-container {
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    #0f0c29,
+    #302b63,
+    #24243e,
+    rgb(69, 69, 107)
+  );
+}
+
+.sign-in {
+  font-size: 40px;
+}
+
+.google {
+  width: 50%;
+  gap: 10px;
+  border: 2px solid #1877f2;
+  margin: 3% auto;
+  padding: 8px 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.googleicon {
+  width: 30px;
+}
+
+.or .or-line {
+  border-top: 1px solid #fff;
+  width: 100%;
+  margin: auto 10px;
+}
+
+.form-container {
+  width: 60%;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0 10px;
+  border-radius: 6px;
+  border: 2px solid #d8d8d8;
+  outline: none;
+}
+
+.form-container input[type="checkbox"] {
+  width: unset;
+}
+
+label[for="user-name"],
+label[for="password"],
+label[for="remember-me"] {
+  margin-top: 10px;
+}
+
+button.submit-button[type="submit"] {
+  background-color: #1877f2;
+  color: #fff;
+  border: 1px solid #1877f2;
+  border-radius: 10px;
+  padding: 12px 50px;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+button.submit-button[type="submit"]:hover {
+  background-color: transparent;
+  color: #1877f2;
+}
+
+@media screen and (max-width: 880px) {
+  .login-box {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-box .form-container {
+    padding: 0 7% 3%;
+  }
+  .form-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .google {
+    width: 60% !important;
+  }
+  .sign-in {
+    font-size: 30px;
+  }
+  .form-container {
+    width: 90%;
+  }
+}
