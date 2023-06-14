@@ -216,7 +216,7 @@ h1 {
   display: inline-block;
   transition: 0.3s;
 }
-.get-started-btn-1:hover {
+.active-get-started-btn-1 {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJGIKThXroHH5g1ul1OQlG2jVw1O-Skp1hyg&usqp=CAU') ;
   background-size: cover;
   background-position: center;
@@ -407,7 +407,7 @@ h1 {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 340px;
+  top: 380px;
   right: 70px;
   width: 200px;
   /* left: 2rem;  */
