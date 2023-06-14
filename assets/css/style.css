@@ -690,7 +690,7 @@ h1 {
   }
 
   #hero h2 {
-    font-size: 20px;
+    font-size: 16px;
     /* line-height: 24px; */
     margin: 10px;
   }
@@ -705,6 +705,37 @@ h1 {
   #hero {
     height: 120vh;
   }
+}
+
+
+@media (max-width: 400px){
+ #hero h2 {
+    font-size: 12px;
+    
+    margin: 10px;
+}
+
+
+@media (max-width:325px){
+  #hero h1 {
+    font-size: 34px;
+}
+
+#hero h2 {
+  font-size: 10px;
+  margin: 10px;
+}
+
+.left {
+  font-size: 0.6rem;
+}
+}
+.left {
+  /* -webkit-animation: leftarrow 0.6s infinite alternate ease-in-out; */
+  /* margin: 0 0 0 30px; */
+  font-size: 0.8rem;
+}
+
 }
 
 /*--------------------------------------------------------------
