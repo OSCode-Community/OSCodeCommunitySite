@@ -11,6 +11,7 @@
       position: fixed;
       z-index: 999999;
     }
+
     html,
     body {
       scroll-behavior: smooth;
@@ -60,7 +61,7 @@
   <link href="assets/css/about.css" rel="stylesheet" />
   <link href="assets/css/join_us.css" rel="stylesheet" />
   <link href="assets/css/faq.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/contactform.css">
+  <link href="/assets/css/contactform.css" rel="stylesheet" />
 
 
 
@@ -107,6 +108,7 @@
 
 
     </div>
+
     <nav class="navListAndContact">
 
       <div id="navbar" class="navbar order-last order-lg-0 me-4">
@@ -123,10 +125,24 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </div>
 
+
+    <div id="navbar" class="navbar order-last order-lg-0 me-4">
+      <ul class="nav-list">
+        <li><a class="nav-link scrollto active" style="text-decoration: none;" href="#hero">HOME</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#mainabout">ABOUT</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="chapters/chapter.html">CHAPTERS</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="https://blog.oscode.co.in/">BLOGS</a></li>
+        <li><a class="nav-link scrollto" href="events/events.html" style="text-decoration: none;">EVENTS</a></li>
+        <li><a class="nav-link scrollto" href="#contact" style="text-decoration: none;">CONTACT</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </div>
+    
+
       <!-- navbar list ends here -->
     </nav>
     <span>
-      <a href="#contact" class="get-started-btn-1 scrollto cntctBtn"></a>
+      <a href="/login/login.html" class="get-started-btn-1 scrollto cntctBtn"></a>
     </span>
   </header>
   <!-- End Header -->
@@ -237,7 +253,7 @@
           <h1 class="number">Numbers say it all!</h1>
         </div>
         <div class="hrCount">
-          <hr class="line">
+          <hr class="line hr-center">
         </div>
         <div class="row modifyingCount">
           <div class="col-lg-3 col-md-6">
@@ -319,9 +335,8 @@
                   </div>
                   <div class="flex-child gallery right-tab">
                     <h4 class="benefits">Upskill Students</h4>
-                    <p>We help students to get started with their lifelong journey of coding.
-                      Students will explore and learn what real-world Software
-                      development looks like.</p>
+                    <p>We help students to get started with their lifelong journey of coding. Students will explore and
+                      learn what real-world Software development looks like.</p>
                     <p>Problem-solving skills and interpersonal skills will be refined. Overall students will enjoy with
                       this collaborative journey of learning, practicing and sharing technical skills with our
                       enthusiastic community!!</p>
@@ -565,7 +580,7 @@
               our enthusiastic
               community!! by filling out this Google form 👇</p>
           </div>
-          <a href="https://forms.gle/w3SgHzXz4m9bynXL9" target="_blank">
+          <a href="https://forms.gle/w3SgHzXz4m9bynXL9" target="_blank" text-decoration:none;>
             <p class="benefits link">OSCode Community Student Form</p>
           </a>
         </div>
@@ -581,8 +596,14 @@
             <div class="col-lg-4 col-md-6 shrink">
 
               <div class="count-box">
-                <a href="https://github.com/OSCode-Community" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github github-box"></i>
+                <a 
+                   href="https://github.com/OSCode-Community" 
+                   target="_blank" 
+                   aria-label="Visit us on Github"
+                   title="Github (External Link)"
+                   rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github github-box"></i>
                   <p>Github</p>
                 </a>
               </div>
@@ -591,9 +612,14 @@
 
             <div class="col-lg-4 col-md-6 mt-5 mt-md-0 shrink">
               <div class="count-box">
-                <a href="https://discordapp.com/channels/945676223101698060/945680318248128543/946084270693318686"
-                  target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-discord discord-box"></i>
+                <a 
+                   href="https://discordapp.com/channels/945676223101698060/945680318248128543/946084270693318686"
+                   target="_blank" 
+                   aria-label="Join with us on Discord"
+                   title="Discord (External Link)"
+                   rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-discord discord-box"></i>
                   <p>Discord</p>
                 </a>
               </div>
@@ -602,8 +628,14 @@
 
             <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 shrink">
               <div class="count-box">
-                <a href="https://www.linkedin.com/company/oscode/" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-linkedin linkedin-box"></i>
+                <a 
+                   href="https://www.linkedin.com/company/oscode/" 
+                   target="_blank" 
+                   aria-label="Visit us on Linkedin"
+                   title="Linkedin (External Link)"
+                   rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-linkedin linkedin-box"></i>
                   <p>LinkedIn</p>
                 </a>
               </div>
@@ -613,9 +645,14 @@
           <div class="row join shrink  ml-auto mr-auto">
             <div class="col-lg-4 col-md-6">
               <div class="count-box">
-                <a href="https://instagram.com/os_code_community?igshid=YmMyMTA2M2Y=" target="_blank"
-                  rel="noopener noreferrer">
-                  <i class="bi bi-instagram instagram-box"></i>
+                <a 
+                   href="https://instagram.com/os_code_community?igshid=YmMyMTA2M2Y=" 
+                   target="_blank"
+                   aria-label="Visit us on Instagram"
+                   title="Instagram (External Link)"
+                   rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-instagram instagram-box"></i>
                   <p>Instagram</p>
                 </a>
               </div>
@@ -624,7 +661,13 @@
 
             <div class="col-lg-4 col-md-6 mt-5 mt-md-0 shrink">
               <div class="count-box">
-                <a href="https://twitter.com/OSCodeCommunity" target="_blank" rel="noopener noreferrer">
+                <a 
+                   href="https://twitter.com/OSCodeCommunity" 
+                   target="_blank" 
+                   aria-label="Visit us on Twitter"
+                   title="Twitter (External Link)"
+                   rel="noopener noreferrer"
+                  >
                   <i class="bi bi-twitter twitter-box"></i>
                   <p>Twitter</p>
                 </a>
@@ -633,7 +676,13 @@
 
             <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 shrink">
               <div class="count-box">
-                <a href="https://t.me/+yNBAO5cbFLk3NTA1" target="_blank" rel="noopener noreferrer">
+                <a 
+                   href="https://t.me/+yNBAO5cbFLk3NTA1" 
+                   target="_blank" 
+                   aria-label="Join with us on Telegram"
+                   title="Telegram (External Link)"
+                   rel="noopener noreferrer"
+                  >
                   <i class="bi bi-telegram telegram-box"></i>
                   <p>Telegram</p>
                 </a>
@@ -868,131 +917,121 @@
         </ul>
 
       </div>
-    </section><!-- End Frequently Asked Questions Section -->
+    </section>
+    <!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-right">
-        <h1 class="text-center">Contact Us</h1>
-        <hr class="line hr-center">
+          <h1 class="text-center">Contact Us</h1>
+          <hr class="line hr-center">
 
-        <div class="row" data-aos="flip-left" data-aos-delay="100">
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="info-box modifiedAddress">
-                  <div class="mapArea">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3295777128365!2d77.57881345058549!3d12.950750090824721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156bf4c356ed%3A0x3466b397b31dae21!2sOS-CODE%20headquarter!5e0!3m2!1sen!2sin!4v1679811939861!5m2!1sen!2sin"
-                      width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <!-- ====> 100% height and auto width is the key to make any image responsive <==== -->
+          <div class="row" data-aos="flip-left" data-aos-delay="100">
+              <div class="col-lg-6">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="info-box modifiedAddress">
+                              <div class="mapArea">
+                                  <iframe
+                                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3295777128365!2d77.57881345058549!3d12.950750090824721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156bf4c356ed%3A0x3466b397b31dae21!2sOS-CODE%20headquarter!5e0!3m2!1sen!2sin!4v1679811939861!5m2!1sen!2sin"
+                                      width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+                                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                  <!-- ====> 100% height and auto width is the key to make any image responsive <==== -->
+                              </div>
+                              <div class="address">
+                                  <h3>Address</h3>
+                                  <p>
+                                      <a href="https://goo.gl/maps/WP3QjyGRJSpaET56A" target="_blank">
+                                          OS-CODE headquarter, Shanbough Krinshappa Ln, Upparahalli, <br>Mavalli,
+                                          Bengaluru, Karnataka
+                                          560004
+                                      </a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6 ">
+                          <div class="info-box mt-4 modifiedMailPhone">
+                              <a href="mailto:oscode.community@gmail.com?subject=Enquiry"><i
+                                      class="bx bx-envelope"></i></a>
+                              <h3>Email Us</h3>
+                              <p><a href="mailto:oscode.community@gmail.com?subject=Enquiry"
+                                      style="text-decoration: none; color: #161616;">oscode.community@gmail.com</a><br>
+                                  <br>
+                              </p>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="info-box mt-4 modifiedMailPhone">
+                              <a href="tel:+91-7975954835"><i class="bx bx-phone-call"></i></a>
+                              <h3>Call Us</h3>
+                              <p>
+                                  <a href="tel:+91-7975954835"
+                                      style="text-decoration: none; color: #161616;">+91-7975954835<br /></a>
+                                  <a href="tel:+91-7014122349"
+                                      style="text-decoration: none; color: #161616;">+91-7014122349</a>
+                              </p>
+                          </div>
+                      </div>
                   </div>
-                  <div class="address">
-                    <h3>Address</h3>
-                    <p>
-                      <a href="https://goo.gl/maps/WP3QjyGRJSpaET56A" target="_blank">
-                        OS-CODE headquarter, Shanbough Krinshappa Ln, Upparahalli, <br>Mavalli, Bengaluru, Karnataka
-                        560004
-                      </a>
-                    </p>
-                  </div>
-                </div>
               </div>
-              <div class="col-md-6 ">
-                <div class="info-box mt-4 modifiedMailPhone">
-                  <a href="mailto:oscode.community@gmail.com?subject=Enquiry"><i class="bx bx-envelope"></i></a>
-                  <h3>Email Us</h3>
-                  <p><a href="mailto:oscode.community@gmail.com?subject=Enquiry"
-                      style="text-decoration: none; color: #161616;">oscode.community@gmail.com</a><br> <br></p>
-                </div>
+
+
+
+              <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                  <form class="contactForm" id="contact_Form" action="mailto:oscode.community@gmail.com" method="post"
+                      enctype="text/plain" autocomplete="on">
+                      <div class="row form-group">
+                          <div class="col form-group">
+                              <div>
+                                  <input type="email" autocomplete="email" class="form-control" name="email"
+                                      id="email" placeholder="Your Email" required />
+                                  <!-- <i class="fas fa-check-circle"></i> -->
+                                  <!-- <i class="fas fa-exclamation-circle"></i> -->
+                              </div>
+                              <div class="spandiv"><small class="small"></small></div>
+                          </div>
+
+                          <div class="col form-group">
+                              <div>
+                                  <input type="text" autocomplete="name" name="name" class="form-control" id="name"
+                                      pattern="[a-zA-Z][a-zA-Z ]{2,}" title="Number Not Allowed"
+                                      placeholder="Your Name" required />
+                                  <!-- <i class="fas fa-check-circle"></i> -->
+                                  <!-- <i class="fas fa-exclamation-circle"></i> -->
+                              </div>
+                              <div class="spandiv"><small class="small"></small></div>
+                          </div>
+                      </div>
+                      <div>
+                          <div class="col form-group">
+                              <div class="form-group">
+                                  <input type="text" autocomplete="subject" class="form-control" name="College"
+                                      id="college" placeholder="College" required />
+                              </div>
+                          </div>
+                          <div class="col form-group">
+                              <div><input type="text" autocomplete="subject" class="form-control" name="subject"
+                                      id="subject" placeholder="Subject " required />
+                              </div>
+                              <div class="spandiv" style="padding-top: 4px;"> <small class="small"></small></div>
+                          </div>
+
+                          <div class="col form-group">
+                              <div><textarea class="form-control" autocomplete="message" id="message" name="message"
+                                      rows="5" placeholder="Message" required></textarea>
+                              </div>
+                              <div class="spandiv" style="padding-top: 4px;"><small class="small"></small></div>
+                          </div>
+                          <div class="text-center white">
+                              <button type="submit" class="btn get-started-btn msg-us">Message us</button>
+                          </div>
+                  </form>
               </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4 modifiedMailPhone">
-                  <a href="tel:+91-7667109405"><i class="bx bx-phone-call"></i></a>
-                  <h3>Call Us</h3>
-                  <p><a href="tel:+91-7667109405"
-                      style="text-decoration: none; color: #161616;">+91-7667109405<br /></a><a
-                      href="tel:+91-7014122349" style="text-decoration: none; color: #161616;">+91-7014122349</a></p>
-                </div>
-              </div>
-            </div>
           </div>
-
-
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <form class="contactForm" id="contact_Form" action="mailto:oscode.community@gmail.com" method="post"
-              enctype="text/plain" autocomplete="on">
-              <div class="row form-group">
-                <div class="col form-group">
-                  <div>
-                    <input type="email" autocomplete="email" class="form-control" name="email" id="email"
-                      placeholder="Your Email" required />
-                    <!-- <i class="fas fa-check-circle"></i> -->
-                    <!-- <i class="fas fa-exclamation-circle"></i> -->
-                  </div>
-                  <div class="spandiv"><small class="small"></small></div>
-                </div>
-
-                <div class="col form-group">
-                  <div>
-                    <input type="text" autocomplete="name" name="name" class="form-control" id="name"
-                      pattern="[a-zA-Z][a-zA-Z ]{2,}" title="Number Not Allowed" placeholder="Your Name" required />
-                    <!-- <i class="fas fa-check-circle"></i> -->
-                    <!-- <i class="fas fa-exclamation-circle"></i> -->
-                  </div>
-                  <div class="spandiv"><small class="small"></small></div>
-                </div>
-              </div>
-              <div>
-              <div class="col form-group">
-                <div class="form-group">
-                  <input type="text" autocomplete="subject" class="form-control" name="College" id="college"
-                    placeholder="College" required />
-                </div>
-              </div>
-              <div class="col form-group">
-                <div><input type="text" autocomplete="subject" class="form-control" name="subject" id="subject"
-                    placeholder="Subject " required />
-                  <!-- <i class="fas fa-check-circle"></i> -->
-                  <!-- <i class="fas fa-exclamation-circle"></i> -->
-                </div>
-                <div class="spandiv" style="padding-top: 4px;"> <small class="small"></small></div>
-              </div>
-              <!-- <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required /> -->
-
-              <!-- <div class="form-group">
-                <input type="password" class="form-control" name="password" id="password" placeholder="Enter password"
-                  required />
-              </div> -->
-
-              <div class="col form-group">
-                <div><textarea class="form-control" autocomplete="message" id="message" name="message" rows="5"
-                    placeholder="Message" required></textarea>
-                  <!-- <i class="fas fa-check-circle"></i> -->
-                  <!-- <i class="fas fa-exclamation-circle"></i> -->
-                </div>
-                <div class="spandiv" style="padding-top: 4px;"><small class="small"></small></div>
-              </div>
-
-
-              <!-- <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  You don't have an account yet, please register!!
-                </div>
-              </div> -->
-              <div class="text-center white">
-                <button type="submit" class="btn get-started-btn msg-us">Message us</button>
-              </div>
-            </form>
-          </div>
-        </div>
       </div>
-    </section>
-    <!-- End Contact Section -->
+  </section>
+  <!-- End Contact Section -->
   </main>
   <!-- End #main -->
 
@@ -1007,7 +1046,7 @@
               OS-CODE headquarter, Shanbough<br>
               Krinshappa Ln Mavalli, <br>
               Bengaluru, Karnataka 560004<br>
-              <strong>Phone:</strong> +91-7667109405<br />
+              <strong>Phone:</strong> +91-7975954835<br />
             </p>
           </div>
 
@@ -1073,18 +1112,66 @@
     <div class="container py-4 modifiedFooter">
       <div class="social-links text-md-end pt-3 pt-md-0 socialLinkMod">
         <div class="textSocials">Stay in the loop?</div>
-        <a href="https://twitter.com/oscodecommunity" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100090940131222&mibextid=ZbWKwL" target="_blank"
-          class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/os_code_community/" target="_blank" class="instagram"><i
-            class="bx bxl-instagram"></i></a>
-        <a href="https://www.youtube.com/@oscodecommunity" target="_blank" class="youtube"><i
-            class="fab fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/company/oscode/" target="_blank" class="linkedin"><i
-            class="bx bxl-linkedin"></i></a>
-
-        <a href="https://discord.com/channels/945676223101698060" target="_blank" class="discord"><i class="fa-brands fa-discord"></i></a>
-
+        <a 
+           href="https://twitter.com/oscodecommunity" 
+           target="_blank" 
+           aria-label="Visit us on Twitter"
+           title="Twitter (External Link)"
+           rel="noopener noreferrer"
+           class="twitter"
+          >
+            <i class="bx bxl-twitter"></i>
+        </a>
+        <a 
+           href="https://www.facebook.com/profile.php?id=100090940131222&mibextid=ZbWKwL" 
+           target="_blank"
+           aria-label="Visit us on Facebook"
+           title="Facebook (External Link)"
+           rel="noopener noreferrer"
+           class="facebook"
+          >
+            <i class="bx bxl-facebook"></i>
+        </a>
+        <a 
+           href="https://www.instagram.com/os_code_community/" 
+           target="_blank" 
+           aria-label="Visit us on Instagram"
+           title="Instagram (External Link)"
+           rel="noopener noreferrer"
+           class="instagram"
+          >
+            <i class="bx bxl-instagram"></i>
+        </a>
+        <a 
+           href="https://www.youtube.com/@oscodecommunity" 
+           target="_blank" 
+           aria-label="Visit us on Youtube"
+           title="Linkedin (External Link)"
+           rel="noopener noreferrer"
+           class="youtube"
+          >
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a 
+           href="https://www.linkedin.com/company/oscode/" 
+           target="_blank" 
+           aria-label="Visit us on Linkedin"
+           title="Linkedin (External Link)"
+           rel="noopener noreferrer"
+           class="linkedin"
+          >
+            <i class="bx bxl-linkedin"></i>
+        </a>
+        <a 
+           href="https://discord.com/channels/945676223101698060" 
+           target="_blank" 
+           aria-label="Join with us on Discord"
+           title="Discord (External Link)"
+           rel="noopener noreferrer"
+           class="discord"
+          >
+           <i class="fa-brands fa-discord"></i>
+        </a>
       </div>
 
       <div class="me-md-auto text-md-start crMod">
@@ -1213,7 +1300,9 @@
   <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202304250101/show_ads_impl_fy2021.js"
     id="google_shimpl"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
   <script>
 
     var loader = document.getElementById("preloader");

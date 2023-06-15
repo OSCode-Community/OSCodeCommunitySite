@@ -1,3 +1,4 @@
+
 .modifiedAddress {
     display: flex;
     flex-direction: column;
@@ -50,4 +51,15 @@
     justify-content: center;
     word-wrap: break-word;
     row-gap: 10px;
+}
+
+@media screen and (max-width: 991px)  {
+    .contactForm{
+        margin-top: auto;
+    }      
+}
+@media screen and (max-width:767px){
+    .container-1 {
+   display: inline-flexbox;
+    }
 }
