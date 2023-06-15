@@ -896,7 +896,8 @@ section {
 }
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  position:relative;
 }
 .circle .nav-link {
   transition: 1s ease;
@@ -1525,6 +1526,24 @@ a:hover i {
   opacity: 1;
   bottom: 15px;
 }
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+@media (min-width:993px) and (max-width:1200px)
+{
+  .email{
+    display:flex;
+    position:relative;
+    margin: 10px 0px;
+  }
+  .phone{
+    position:relative;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Footer
