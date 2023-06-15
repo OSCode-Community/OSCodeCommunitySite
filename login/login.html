@@ -65,15 +65,15 @@
   <!-- login container -->
   <div class="login-container min-vh-100">
     <div
-      class="login-box text-white min-vh-100 w-50 d-flex flex-column align-items-center justify-content-center mx-auto mt-4">
-      <h1 class="sign-in text-center p-0">Log in to your account</h1>
+      class="login-box text-white d-flex flex-column align-items-center justify-content-center mx-auto">
+      <h1 class="sign-in text-center p-0">Login</h1>
 
       <!-- sign up with google -->
       <div class="google d-flex justify-content-center align-items-center ">
         <img class="googleicon" src="../assets/img/googleicon.png" alt="gogoleicon" />
         <div class="login-with-google">Login with Google</div>
       </div>
-      <div class="or w-50 mb-3 d-flex justify-content-center">
+      <div class="or mb-3 d-flex justify-content-center">
         <div class="or-line"></div> OR <div class="or-line"></div>
       </div>
 
@@ -81,14 +81,25 @@
       <form action="/index.html" method="get" class="form-container d-flex flex-column" onSubmit="handleSubmit()">
 
         <!-- inputs -->
-        <label for="user-name">User Name</label>
-        <input type="text" onChange="handleChange()" placeholder="Username" required />
-        <label for="password">Password</label>
-        <input type="password" onChange="handleChange()" placeholder="Password" required/>
+        <div class="user-box">
+          <input type="text" onChange="handleChange()"required />
+          <label for="user-name">User Name</label>
+        </div>
+
+        <div class="user-box">
+          <input type="password" onChange="handleChange()" required />
+          <label for="password">Password</label>
+        </div>
+
         <div class="remember-me">
-          <input type="checkbox" id="remember-me" />
+          <label class="switch" for="remember-me">
+            <input type="checkbox" id="remember-me" />
+            <div class="slider round"></div>
+          </label>
           <label for="remember-me"> Remember me</label>
         </div>
+
+        
 
         <!-- login button -->
         <div class="btn">
@@ -97,14 +108,15 @@
 
         <!-- forgot password & dont have account -->
         <div class="d-flex flex-column align-items-center justify-content-center">
-          <div class="mb-2">
+          <div class="mb-2 fyp">
             <a href="/login/login.html" class="text-white">
               Forgot Your password?
             </a>
           </div>
-          <div>
+          
+          <div class="dhaa">
             Don't have an account? 
-            <a href="/signup/signup.html" class="text-primary pl-2">
+            <a href="/signup/signup.html" class="pl-2 signup_link">
               Sign Up
             </a>
           </div>
