@@ -357,3 +357,29 @@
     color: #fff;
   }
   
+  /* Default styles for contact section */
+.contact-container {
+  padding: 60px 0;
+}
+
+.ContactSection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ContactSection .col-lg-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 40px 0;
+  }
+
+  .ContactSection .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
