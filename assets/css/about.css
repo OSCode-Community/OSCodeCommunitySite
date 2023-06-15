@@ -320,3 +320,40 @@
     width: 200px; /* increased length on hover */
   }
   
+  .ContactSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    transition: border-color 0.3s ease;
+  }
+  
+  .ContactSection:hover {
+    border-color:#5942e9; /* Replace with your desired hovering border color */
+    /* Add your creative hovering effect styles here */
+  }
+  
+  .boxes{
+    margin: 15px 0px;
+    
+  }
+  #youremail{
+    margin-top: 40px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    border-image: linear-gradient(to right, #007bff, #9921e8) 1;
+    border-image-slice: 3; /* width of the gradient border */
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, border 0.3s ease; /*border transition */
+    width: 500px;
+    border-radius: 4px; /*border radius */
+  }
+  
+  .btn:hover {
+    background: linear-gradient(to right, #9921e8, #007bff);
+    color: #fff;
+  }
+  

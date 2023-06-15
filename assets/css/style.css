@@ -1476,9 +1476,7 @@ a:hover i {
   background: #1b1b1b;
 }
 
-#footer .footer-top .footer-contact {
-  /* margin-bottom: 30px; */
-}
+
 
 #footer .footer-top .footer-contact h3 {
   font-size: 26px;
@@ -1513,10 +1511,6 @@ a:hover i {
   background: var(--backtotop-btn-color);
   bottom: 0;
   left: 0;
-}
-
-#footer .footer-top .footer-links {
-  /* margin-bottom: 30px; */
 }
 
 #footer .footer-top .footer-links ul {
