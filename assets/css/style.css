@@ -956,9 +956,9 @@ i {
   transition: all 0.2s linear;
 }
 
-a:hover i {
+/* a:hover i {
   transform: scale(1.3);
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio
