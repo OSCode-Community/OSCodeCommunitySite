@@ -15,7 +15,6 @@
   --scroll-bar-thumb-color: #7027f9;
   --backtotop-btn-color: #5942e9;
   --get-started-btn-color: #9385ed;
-  
 }
 
 /* Customize Scrollbar*/
@@ -279,6 +278,7 @@ h1 {
 .navbar {
   padding: 0;
   background-color: transparent;
+  display: contents;
 }
 
 .navbar li {
@@ -361,16 +361,16 @@ h1 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: var(--background-black-lv1);
   font-size: 28px;
   cursor: pointer;
   display: none;
   line-height: 0;
-  transition: 0.5s;
 }
 
 .mobile-nav-toggle.bi-x {
   color: var(--background-white);
+  margin-right: 10px;
+
 }
 
 @media (max-width: 991px) {
@@ -406,18 +406,17 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 380px;
-  right: 70px;
-  width: 200px;
-  /* left: 2rem;  */
+  position: fixed;
+  row-gap: 20px;
+  top: 490px;
+  right: 0;
+  width: 250px;
   transform: translateY(-135%);
   padding: 10px 0;
   background-color: var(--background-white);
   overflow-y: auto;
   transition: 0.3s;
   border-radius: 8px;
-  max-height: calc(100vh - 70px);
   -webkit-transform: translateY(-135%);
   -moz-transform: translateY(-135%);
   -ms-transform: translateY(-135%);
@@ -1316,11 +1315,7 @@ a:hover i {
   padding: 120px 0;
   color: var(--background-white);
   background: #0e034d;
-  background-image: linear-gradient(
-    #0e034d,
-    #0e034d
-  ); /* this is painted over the background-color */
-  background-size: 50% 50%;
+  background-size: 100%;
 }
 
 .section-bg1:before {

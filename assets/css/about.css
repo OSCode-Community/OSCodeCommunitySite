@@ -71,11 +71,7 @@
     }
   }
   /* Bootstrap toggle icon */
-  .bi-list::before {
-    content: "\f479";
-    color: var(--background-white);
-    padding-right: 10px;
-  }
+
 
   @media(max-width:1260px){
     .whoweare{
