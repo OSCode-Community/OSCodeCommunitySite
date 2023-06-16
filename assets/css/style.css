@@ -216,7 +216,7 @@ h1 {
   display: inline-block;
   transition: 0.3s;
 }
-.get-started-btn-1:hover {
+.active-get-started-btn-1 {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJGIKThXroHH5g1ul1OQlG2jVw1O-Skp1hyg&usqp=CAU') ;
   background-size: cover;
   background-position: center;
@@ -281,12 +281,17 @@ h1 {
   background-color: transparent;
 }
 
+.navbar li {
+  margin: 0 15px; /* Adjust the desired spacing here */
+}
+
 .navbar ul {
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
   align-items: center;
+  justify-content: center; /* Center the items horizontally */
 }
 
 .navbar li {
@@ -305,19 +310,25 @@ h1 {
   color: #fff;
   white-space: nowrap;
   transition: 0.3s;
+  position: relative; /* Add position relative */
 }
 
-.navbar > ul > li::after {
+.navbar a::after {
   content: "";
-  width: 0%;
-  height: 2px;
-  background: #5942e9;
-  display: block;
-  transition: 0.5s;
-  margin: auto;
-}
-.navbar > ul > li:hover::after {
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust the desired distance from text */
   width: 100%;
+  height: 2px;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after,
+.navbar .active::after,
+.navbar .active:focus::after,
+.navbar li:hover > a::after {
+  background: #5942e9; /* Change the desired underline color */
 }
 
 .navbar a i,
@@ -331,70 +342,18 @@ h1 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: white;
+  color: #5942e9;
   text-decoration: none;
+  transform: scale(1.1); /* Adjust the desired scale value */
 }
 
-.navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 30px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: var(--navbar-background-color);
-  box-shadow: 0px 0px 30px var(--navbar-box-shadow-color);
-  transition: 0.3s;
-}
-
-.navbar .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-}
-
-.navbar .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
-  color: var(--backtotop-btn-color);
-}
-
-.navbar .dropdown:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-
-.navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
-
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
+/* Enlarge text and underline on touch/hover effect */
+@media (hover: hover) and (pointer: fine) {
+  .navbar a:hover::after,
+  .navbar .active::after,
+  .navbar .active:focus::after,
+  .navbar li:hover > a::after {
+    background: #5942e9; /* Change the desired underline color */
   }
 }
 
@@ -448,7 +407,7 @@ h1 {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 340px;
+  top: 380px;
   right: 70px;
   width: 200px;
   /* left: 2rem;  */
@@ -691,7 +650,7 @@ h1 {
   }
 
   #hero h2 {
-    font-size: 20px;
+    font-size: 16px;
     /* line-height: 24px; */
     margin: 10px;
   }
@@ -706,6 +665,37 @@ h1 {
   #hero {
     height: 120vh;
   }
+}
+
+
+@media (max-width: 400px){
+ #hero h2 {
+    font-size: 12px;
+    
+    margin: 10px;
+}
+
+
+@media (max-width:325px){
+  #hero h1 {
+    font-size: 34px;
+}
+
+#hero h2 {
+  font-size: 10px;
+  margin: 10px;
+}
+
+.left {
+  font-size: 0.6rem;
+}
+}
+.left {
+  /* -webkit-animation: leftarrow 0.6s infinite alternate ease-in-out; */
+  /* margin: 0 0 0 30px; */
+  font-size: 0.8rem;
+}
+
 }
 
 /*--------------------------------------------------------------
@@ -906,7 +896,8 @@ section {
 }
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  position:relative;
 }
 .circle .nav-link {
   transition: 1s ease;
@@ -1252,8 +1243,8 @@ a:hover i {
 }
 
 .testimonials .testimonial-item p {
-  font-style: italic;
-  /* margin: 30px auto 15px auto; */
+  font-size: 16px;
+  font-family: fangsong;
 }
 
 .testimonials .swiper-pagination {
@@ -1278,6 +1269,43 @@ a:hover i {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
 }
+
+@media(max-width: 1199px){
+  .testimonials .testimonial-item h3{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .testimonials .testimonial-item h4{
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .testimonials .testimonial-item p{
+    font-size: 20px;
+    font-family: fangsong;
+  }
+}
+
+
+@media(max-width: 500px){
+  .testimonials .testimonial-item h3{
+    font-size: 19px;
+    font-weight: bold;
+  }
+  
+  .testimonials .testimonial-item h4{
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .testimonials .testimonial-item p{
+    font-size: 16px;
+    font-family: fangsong;
+  }
+}
+
+
 @media only screen and (max-width: 600px) {
   #achievement h1,
   #testimonials h1 {
@@ -1499,6 +1527,24 @@ a:hover i {
   opacity: 1;
   bottom: 15px;
 }
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+@media (min-width:993px) and (max-width:1200px)
+{
+  .email{
+    display:flex;
+    position:relative;
+    margin: 10px 0px;
+  }
+  .phone{
+    position:relative;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Footer
