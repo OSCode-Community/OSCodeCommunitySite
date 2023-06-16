@@ -2,8 +2,8 @@
 # Join us
 --------------------------------------------------------------*/
 #join-us {
-    /* background-color: #1b1b1b; */
-    background-image: linear-gradient(#0f0c29, #302b63, #24243e);
+    background-color: #1b1b1b;
+    /* background-image: linear-gradient(#0f0c29, #302b63, #24243e); */
   }
   #join-us .abt-txt {
     font-size: 18px;
