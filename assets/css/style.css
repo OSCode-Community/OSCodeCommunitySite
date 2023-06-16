@@ -1315,11 +1315,7 @@ a:hover i {
   padding: 120px 0;
   color: var(--background-white);
   background: #0e034d;
-  background-image: linear-gradient(
-    #0e034d,
-    #0e034d
-  ); /* this is painted over the background-color */
-  background-size: 50% 50%;
+  background-size: 100%;
 }
 
 .section-bg1:before {
