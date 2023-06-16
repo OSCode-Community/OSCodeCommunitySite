@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Reset Password</title>
 
   <!-- Favicons -->
   <link href="../assets/img/logo.jpeg" rel="icon" />
@@ -28,7 +28,7 @@
 
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/css/login.css">
+  <link rel="stylesheet" href="../assets/css/resetpass.css">
 
   <!-- for overriding the nav css -->
   <link rel="stylesheet" href="../assets/css/override.css">
@@ -58,75 +58,44 @@
     </div>
     </div>
     <span>
-      <a href="#" class="get-started-btn-1 active-get-started-btn-1 scrollto cntctBtn"></a>
+      <a href="/login/login.html" class="get-started-btn-1 active-get-started-btn-1 scrollto cntctBtn"></a>
     </span>
   </header>
 
-  <!-- login container -->
-  <div class="login-container min-vh-100">
+  <!-- resetpass container -->
+  <div class="resetpass-container min-vh-100">
     <div
-      class="login-box text-white d-flex flex-column align-items-center justify-content-center mx-auto">
-      <h1 class="sign-in text-center p-0">Login</h1>
+      class="resetpass-box text-white d-flex flex-column align-items-center justify-content-center mx-auto">
+      <h1 class="resetpasstxt text-center p-0">Reset Password</h1>      
 
-      <!-- sign up with google -->
-      <div class="google d-flex justify-content-center align-items-center ">
-        <img class="googleicon" src="../assets/img/googleicon.png" alt="gogoleicon" />
-        <div class="login-with-google">Login with Google</div>
-      </div>
-      <div class="or mb-3 d-flex justify-content-center">
-        <div class="or-line"></div> OR <div class="or-line"></div>
-      </div>
-
-      <!-- Login form -->
-      <form action="/index.html" method="get" class="form-container d-flex flex-column" onSubmit="handleSubmit()">
+      <!-- resetpass form -->
+      <form action="/login/login.html" method="get" class="form-container d-flex flex-column" onSubmit="handleSubmit()">
 
         <!-- inputs -->
+       
         <div class="user-box">
-          <input type="text" onChange="handleChange()"required />
-          <label for="user-name">User Name</label>
+          <input type="password" name="oldpass" onChange="handleChange()" required />
+          <label for="oldpass">Old Password</label>
         </div>
 
         <div class="user-box">
-          <input type="password" onChange="handleChange()" required />
-          <label for="password">Password</label>
+          <input type="password" name="newpass" onChange="handleChange()" required />
+          <label for="newpass">New Password</label>
         </div>
 
-        <div class="remember-me">
-          <label class="switch" for="remember-me">
-            <input type="checkbox" id="remember-me" />
-            <div class="slider round"></div>
-          </label>
-          <label for="remember-me"> Remember me</label>
-        </div>
-
-        
-
-        <!-- login button -->
+        <!-- reset pass button -->
         <div class="btn">
-          <button type="submit" class="submit-button">Login</button>
+          <button type="submit" class="submit-button cursor-pointer">
+            Confirm
+          </button>
         </div>
 
-        <!-- forgot password & dont have account -->
-        <div class="d-flex flex-column align-items-center justify-content-center">
-          <div class="mb-2 fyp">
-            <a href="/resetpass/resetpass.html" class="text-white">
-              Forgot Your password?
-            </a>
-          </div>
-          
-          <div class="dhaa">
-            Don't have an account? 
-            <a href="/signup/signup.html" class="pl-2 signup_link">
-              Sign Up
-            </a>
-          </div>
-        </div>
       </form>
     </div>
   </div>
 
   <!-- javascript -->
-  <script src="login.js"></script>
+  <script src="resetpass.js"></script>
 </body>
 
 </html>
