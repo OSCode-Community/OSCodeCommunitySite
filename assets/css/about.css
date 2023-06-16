@@ -12,9 +12,12 @@
   .whoweare {
     margin-top: 10px;
     margin-left: 20px;
-    width: 430px;
-    height: 300px;
-    border-radius: 48% 0 48% 48%;
+    padding-left: 15%;
+    padding-top: 20%;
+    padding-bottom: 15%;
+    width: 600px;
+    height: 500px;
+    border-radius: 50% 0 50% 50%;
     transition: all 0.4s;
     animation: action 0.7s infinite alternate;
   }
@@ -216,7 +219,7 @@
   }
   
   .about .content .about-btn:hover {
-    background: #8474eb;
+    background: #8474eb; 
     background: var(--backtotop-btn-color);
   }
   
