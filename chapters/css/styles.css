@@ -1220,6 +1220,18 @@ hr{
 #hidden {
   display: none;
 }
+/*--------------------------------------------------------------
+# Icons
+--------------------------------------------------------------*/
+i {
+  /* transition: all 0.2s linear; */
+  transition: all 0.1s linear;
+}
+
+a:hover i {
+  transform: scale(1.2);
+}
+
 
 /* Footer  */
 
@@ -1298,6 +1310,8 @@ hr{
   padding-top: 0;
 }
 
+
+
 #footer .footer-top .footer-links ul a {
   color: black;
   transition: 0.3s;
@@ -1328,6 +1342,7 @@ hr{
   height: 36px;
   transition: 0.3s;
 }
+
 
 #footer .social-links .twitter:hover {
   background: #1da1f2;
