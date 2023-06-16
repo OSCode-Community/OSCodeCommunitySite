@@ -483,10 +483,11 @@
   }
   
   .col-12 img {
-    opacity: 0.7;
+    opacity: 0.9;
     cursor: pointer;
     margin: 2rem;
     width: 100%;
+    border-radius: 10px;
   }
   
   .col-12 img:hover {
@@ -503,10 +504,10 @@
 
   /* Added shadow effect on elements */
   .col-12.col-md-6.col-lg-3.colImg {
-    border: 4px solid black;
+    border: 4px solid rgb(255, 255, 255);
     margin: 14px;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 10px;
-    box-shadow: 8px 8px;
-
+    box-shadow: rgb(116, 223, 250) 8px 8px 12px;
+   
   }
