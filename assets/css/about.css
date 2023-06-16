@@ -311,4 +311,12 @@
       transform: translate(0, 0) scale(1, 1);
     }
   }
+  hr.line {
+    width: 100px; /* initial length */
+    transition: width 0.3s ease; /* smooth transition */
+  }
+  
+  hr.line:hover {
+    width: 200px; /* increased length on hover */
+  }
   

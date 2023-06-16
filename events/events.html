@@ -38,10 +38,10 @@
     crossorigin="anonymous"></script>
 
   <!-- Template Main CSS File -->
-  
+
   <!-- <link href="/assets/css/events.css" rel="stylesheet" /> -->
-  <link href="/assets/css/style.css" rel="stylesheet"/>
-  <link href="/assets/css/events.css" rel="stylesheet"/>
+  <link href="/assets/css/style.css" rel="stylesheet" />
+  <link href="/assets/css/events.css" rel="stylesheet" />
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/37377042d1.js" crossorigin="anonymous"></script>
@@ -75,21 +75,25 @@
 
       <div id="navbar" class="navbar order-last order-lg-0 me-4">
         <ul>
-          <li><a class="nav-link scrollto " style="text-decoration: none;" href="https://www.oscode.co.in">HOME</a></li>
-          <li><a class="nav-link scrollto" style="text-decoration: none;" href="https://www.oscode.co.in/#mainabout">ABOUT</a></li>
+          <li><a class="nav-link scrollto " style="text-decoration: none;" href="/">HOME</a></li>
+          <li><a class="nav-link scrollto" style="text-decoration: none;"
+              href="/#mainabout">ABOUT</a></li>
           <li>
             <a class="nav-link scrollto" style="text-decoration: none;" href="/chapters/chapter.html">CHAPTERS</a>
           </li>
           <li><a class="nav-link scrollto" style="text-decoration: none;" href="https://blog.oscode.co.in/">BLOGS</a>
           </li>
-          <li class="active"><a href="events.html" style="text-decoration: none;">EVENTS</a></li>
+          <li><a class="nav-link scrollto active" href="events.html" style="text-decoration: none;">EVENTS</a></li>
+          <li><a class="nav-link scrollto" href="/#contact" style="text-decoration: none;">CONTACT</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </div>
-
+      <span>
+        <a href="/login/login.html" class="get-started-btn-1 scrollto cntctBtn"></a>
+      </span>
       <!-- navbar list ends here -->
 
-      <a href="https://www.oscode.co.in/#contact" class="get-started-btn scrollto cntctBtn">CONTACT US</a>
+      <!-- <a href="https://www.oscode.co.in/#contact" class="get-started-btn scrollto cntctBtn">CONTACT US</a> -->
 
     </div>
 
@@ -383,16 +387,16 @@
             </form> -->
             <ul>
               <li>
-                <i class="bx bx-chevron-right"></i> <a href="#mainabout">About us</a>
+                <i class="bx bx-chevron-right"></i> <a href="../index.html#mainabout">About us</a>
               </li>
               <li>
-                <i class="bx bx-chevron-right"></i> <a href="#benefits">Benefits</a>
+                <i class="bx bx-chevron-right"></i> <a href="../index.html#benefits">Benefits</a>
               </li>
               <li>
-                <i class="bx bx-chevron-right"></i><a href="#achievement">Accomplishments</a>
+                <i class="bx bx-chevron-right"></i><a href="../index.html#achievement">Accomplishments</a>
               </li>
               <li>
-                <i class="bx bx-chevron-right"></i> <a href="#faq">FAQ</a>
+                <i class="bx bx-chevron-right"></i> <a href="../index.html#faq">FAQ</a>
               </li>
             </ul>
           </div>
@@ -453,9 +457,9 @@
         data = data.slice().reverse();
         data.forEach((item) => {
           const cardHtml = `
-      
+
             <div class="card" data-aos="zoom-in" data-aos-delay="100">
-              
+
               <div class="for-image-div">
                 <img src="${item.image}" alt="" id="image-for-card">
               </div>
@@ -470,7 +474,7 @@
               <div id="event-p-div">
                 <p id="event-p">${item.description}</p>
               </div>
-         
+
             </div>`;
 
           cardsHtml += cardHtml;

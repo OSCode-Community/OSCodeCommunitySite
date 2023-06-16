@@ -27,8 +27,8 @@
 
 <div align="center"><h1>🙌 About Us</h1></div>
 
-+ We are a Multi-College Tech Community that helps college students to **Learn in Public** and **Engage** with similar-minded people. 
-+ We help local college communities to encourage this culture on their campus and help them build it. We help students by upskilling them in the domains of their interests by organizing **workshops, technical seminars, hackathons, project sessions, code-along, etc.**
++ We are a Multi-College Tech Community that helps college students to **Learn in Public** and **Engage** with like-minded people. 
++ We help local college communities to encourage the technical culture on their campus and help them build it. We help students by upskilling them in the domains of their interests by organizing **workshops, technical seminars, hackathons, project sessions, code-along, etc.**
 + We help students to get start with their **lifelong journey of coding.** Students will explore and learn what real-world Software development looks like - problem-solving skills and interpersonal **skills will be refined.** 
 + Overall students will enjoy with this **collaborative journey of learning**, practicing and sharing technical skills with our enthusiastic community!!
 
