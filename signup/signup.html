@@ -47,12 +47,12 @@
     <!-- navbar -->
     <div id="navbar" class="navbar order-last order-lg-0 me-4">
       <ul class="nav-list">
-        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#">HOME</a></li>
-        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#">ABOUT</a></li>
-        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#">CHAPTERS</a></li>
-        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#">BLOGS</a></li>
-        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#">EVENTS</a></li>
-        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#">CONTACT</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="/#hero">HOME</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="/#mainabout">ABOUT</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="/chapters/chapter.html">CHAPTERS</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="https://blog.oscode.co.in/">BLOGS</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="/events/events.html" >EVENTS</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="/#contact">CONTACT</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </div>
@@ -65,16 +65,16 @@
   <!-- signup container -->
   <div class="signup-container min-vh-100">
     <div
-      class="signup-box text-white min-vh-100 w-50 d-flex flex-column align-items-center justify-content-center mx-auto mt-4">
-      <h1 class="signuptxt text-center p-0">Create a new account</h1>
-      <p class="text-center fw-bolder p-0">It's quick and easy.</p>
+      class="signup-box text-white d-flex flex-column align-items-center justify-content-center mx-auto">
+      <h1 class="signuptxt text-center p-0">Sign Up</h1>
+      <!-- p class="text-center fw-bolder p-0">It's quick and easy.</p -->
 
       <!-- sign up with google -->
       <div class="google d-flex justify-content-center align-items-center ">
         <img class="googleicon" src="../assets/img/googleicon.png" alt="gogoleicon" />
         <div class="login-with-google">Sign Up with Google</div>
       </div>
-      <div class="or w-50 mb-3 d-flex justify-content-center">
+      <div class="or mb-3 d-flex justify-content-center">
         <div class="or-line"></div> OR <div class="or-line"></div>
       </div>
 
@@ -83,14 +83,26 @@
 
         <!-- inputs -->
         <div class="name d-flex w-100">
-          <input type="text" name="firstName" onChange="handleChange()" placeholder="First name" required />
-
-          <input type="text" name="surname" onChange="handleChange()" placeholder="Surname" required />
+          <div class="user-box name-part">
+            <input type="text" name="firstName" onChange="handleChange()" required />
+            <label for="firstName">First name</label>
+          </div>
+          
+          <div class="user-box name-part">
+            <input type="text" name="surname" onChange="handleChange()" required />
+            <label for="surname">Surname</label>
+          </div>
         </div>
 
-        <input type="email" onChange="handleChange()" placeholder="Email address" required />
+        <div class="user-box">
+          <input type="email" onChange="handleChange()" required />
+          <label for="email">Email address</label>
+        </div>
 
-        <input type="password" onChange="handleChange()" placeholder="New password" required />
+        <div class="user-box">
+          <input type="password" onChange="handleChange()" required />
+          <label for="password">Password</label>
+        </div>
 
         <!-- sign up button -->
         <div class="btn">
@@ -100,9 +112,9 @@
         </div>
 
         <!-- already account -->
-        <div class="text-center text-white">
+        <div class="ahaa">
           Already have an account?
-          <a href="/login/login.html" class="text-primary pl-2">Login</a>
+          <a href="/login/login.html" class="pl-2 login_link">Login</a>
         </div>
       </form>
     </div>
