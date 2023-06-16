@@ -134,13 +134,13 @@
     }
     .us {
       font-size: 44px;
-       margin-left: 10px; 
+       /*margin-left: 10px; */
       
     }
     .abt-txt,
     .p-hover {
       font-size: 16px;
-      margin-left: 20px; 
+      /*margin-left: 20px;*/ 
       line-height: normal;
       text-decoration: none;
       font-weight: normal !important;
