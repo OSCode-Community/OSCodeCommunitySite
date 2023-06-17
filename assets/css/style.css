@@ -373,6 +373,12 @@ h1 {
   color: var(--background-white);
 }
 
+@media (max-width: 2300px){
+  .nav-link{
+    margin-left: 50px;
+  }
+}
+
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
