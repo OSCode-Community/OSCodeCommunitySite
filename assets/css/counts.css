@@ -26,16 +26,14 @@ hr.line {
     width: 100%;
     position: relative;
     text-align: center;
+    box-shadow: 0px 2px 5px slateblue;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.4s all ease-in-out;
   }
   .counts .count-box:hover {
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    transition: 1s ease;
-    box-shadow: 0px 5px 15px darkblue;
+    /* box-shadow: 0 5px 10px #aaa; */
+    transform: scale(1.1);
   }
   .count-box > span {
     display: inline-block !important;
