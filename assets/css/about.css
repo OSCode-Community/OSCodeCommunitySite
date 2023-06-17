@@ -10,11 +10,14 @@
     padding-bottom: 80px;
   }
   .whoweare {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 20px;
-    width: 600px;
-    height: 500px;
-    border-radius: 48% 0 48% 48%;
+    padding-left: 15%;
+    padding-bottom: 15%;
+    width: 650px;
+    height: 480px;
+    border-radius: 0% 0% 0% 48%;
+    
     transition: all 0.4s;
     animation: action 0.7s infinite alternate;
   }
@@ -27,6 +30,16 @@
     text-shadow: 0 0 1px black;
     font-family: "Montserrat", sans-serif;
     font-size: 65px;
+    text-align: center;
+  }
+  hr.line {
+    border: 4px solid var(--backtotop-btn-color);
+    border-radius: 5px;
+    width: 120px;
+    opacity: 1;
+  }
+  .style{
+    padding-bottom: 35%;
   }
   .abt-img {
     margin-left: 150px;
@@ -37,7 +50,7 @@
     position: relative;
   
     background: radial-gradient(
-      circle at 75% 30%,
+      circle at 75% 40%,
       var(--background-white) 5px,
       aqua 8%,
       darkblue 60%,
@@ -118,6 +131,7 @@
         0 0 90px var(--background-white);
     }
     .whoweare {
+      
       height: 300px;
       width: 350px;
       margin-left: 10px;
@@ -125,12 +139,14 @@
     }
     .us {
       font-size: 44px;
-      /* margin-left: 10px; */
+       /*margin-left: 10px; */
+      
     }
+   
     .abt-txt,
     .p-hover {
       font-size: 16px;
-      /* margin-left: 20px; */
+      /*margin-left: 20px;*/ 
       line-height: normal;
       text-decoration: none;
       font-weight: normal !important;
@@ -168,6 +184,7 @@
     font: weight 5px;
   }
   .about .container {
+   
     position: relative;
     z-index: 10;
   }
@@ -205,7 +222,7 @@
   }
   
   .about .content .about-btn:hover {
-    background: #8474eb;
+    background: #8474eb; 
     background: var(--backtotop-btn-color);
   }
   
@@ -237,6 +254,7 @@
       #158ea3 50%,
       #000000 50%
     );
+    
     font-weight: 600;
     background-size: 200% 100%;
     background-position: -100%;
