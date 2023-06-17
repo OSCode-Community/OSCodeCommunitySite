@@ -13,11 +13,11 @@
     margin-top: 10px;
     margin-left: 20px;
     padding-left: 15%;
-    padding-top: 20%;
     padding-bottom: 15%;
-    width: 600px;
-    height: 500px;
-    border-radius: 50% 0 50% 50%;
+    width: 650px;
+    height: 480px;
+    border-radius: 0% 0% 0% 48%;
+    
     transition: all 0.4s;
     animation: action 0.7s infinite alternate;
   }
@@ -38,7 +38,9 @@
     width: 120px;
     opacity: 1;
   }
- 
+  .style{
+    padding-bottom: 35%;
+  }
   .abt-img {
     margin-left: 150px;
     animation: float 3.5s ease-in-out infinite;
@@ -140,6 +142,7 @@
        /*margin-left: 10px; */
       
     }
+   
     .abt-txt,
     .p-hover {
       font-size: 16px;
