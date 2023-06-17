@@ -1193,9 +1193,11 @@ a:hover i {
 
 .testimonials .testimonial-item:hover {
   cursor: pointer;
-  transition: 0.4s ease-in-out;
-  /* box-shadow: 6px 6px 12px #16161c, -6px -6px 12px #7b7bff; */
-  box-shadow: 4px 6px 6px #7549e0, -4px -4px 10px grey;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+  box-shadow: 0px 5px 15px darkblue;
 }
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
@@ -1364,7 +1366,12 @@ a:hover i {
   /* transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 }
 .carousel-inner:hover {
-  box-shadow: 6px 6px 12px #7b7bff, -6px -6px 12px #7b7bff;
+  cursor: pointer;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+  box-shadow: 0px 5px 15px #141443;
 }
 .carousel .img-box {
   width: 145px;
