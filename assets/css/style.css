@@ -1559,12 +1559,9 @@ a:hover i {
   background: #1b1b1b;
 }
 
-#footer .footer-top .footer-contact {
-  /* margin-bottom: 30px; */
-}
-
 #footer .footer-top .footer-contact h3 {
   font-size: 26px;
+  font-family: "Google Sans", sans-serif;
   line-height: 1;
   font-weight: 700;
 }
@@ -1577,6 +1574,7 @@ a:hover i {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
+  color: #a9a9a9;
   font-family: "Roboto", sans-serif;
 }
 
