@@ -85,7 +85,7 @@ h6{
     transform: translateZ(0);
     transition: transform 0.3s ease;
 }
-.main-img{
+.main-cont-img{
     width:40rem;
     filter: drop-shadow(12px 12px 12px rgba(0,0,0,0.7));
     transition: all 0.4s;
@@ -464,4 +464,35 @@ h2{
 ul{
   text-align: left;
   list-style-type:square;
+}
+
+
+
+@media screen and (max-width:420px){
+  h1{
+    font-size: 60px;
+  }
+  .col-l{
+    text-align: center;
+    padding: 2rem 5rem;
+  }
+  .main-cont-img{
+    width: 28rem;
+  }
+  div#lo-card{
+    margin:1rem ;
+  }
+  .ag-courses_item.lower{
+    margin:0 15px;
+  }
+  .misc-text{
+    padding:60% 15%;
+  }
+  h2{
+    font-size: 35px;
+  }
+  .col-lg-3{
+    margin-bottom: 4rem;
+    margin-left: 6rem;
+  }
 }
