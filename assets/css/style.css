@@ -398,7 +398,6 @@ h1 {
   top: 70px;
   right: 0;
   width: 200px;
-  /* transform: translateY(-135%); */
   padding: 10px 0;
   backdrop-filter: blur(1rem);
   background-color: var(--header-rgb-transparent-sc);
