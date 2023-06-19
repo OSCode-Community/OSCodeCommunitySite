@@ -11,6 +11,7 @@
   --header-rgb-transparent-sc: rgba(0, 0, 0, 50%);
   --navbar-mobile-background-color: rgba(0, 0, 0, 0.9);
   --theme-color: #8919e4;
+  --navtext-color:#ab6bff;
   --home-background-color: #4158d0;
   --scroll-bar-thumb-color: #7027f9;
   --backtotop-btn-color: #5942e9;
@@ -263,11 +264,12 @@ h1 {
 */
 .navbar {
   padding: 0;
+  display: contents;
   background-color: transparent;
 }
 
 .navbar li {
-  margin: 0 10px; /* Adjust the desired spacing here */
+  margin: 10px; /* Adjust the desired spacing here */
 }
 
 .navbar ul {
@@ -289,7 +291,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 12px;
+  padding: 5px 12px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   color: rgb(219, 219, 219);
@@ -393,35 +395,28 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 380px;
-  right: 70px;
+  position: fixed;
+  top: 70px;
+  right: 0;
   width: 200px;
-  /* left: 2rem;  */
-  transform: translateY(-135%);
   padding: 10px 0;
-  background-color: var(--background-white);
+  backdrop-filter: blur(1rem);
+  background-color: #010101b0;
   overflow-y: auto;
   transition: 0.3s;
   border-radius: 8px;
-  max-height: calc(100vh - 70px);
-  -webkit-transform: translateY(-135%);
-  -moz-transform: translateY(-135%);
-  -ms-transform: translateY(-135%);
-  -o-transform: translateY(-135%);
 }
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
-  padding: 10px 20px;
+  padding: 5px 20px;
   font-size: 15px;
-  color: var(--background-black-lv1);
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: var(--backtotop-btn-color);
+  color: var(--navtext-color);
 }
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
