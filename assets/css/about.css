@@ -329,6 +329,21 @@
       transform: translate(0, 0) scale(1, 1);
     }
   }
+  
+  .btn {
+    padding: 10px 20px;
+    border-image: linear-gradient(to right, #007bff, #9921e8) 1;
+    border-image-slice: 3; /* width of the gradient border */
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, border 0.3s ease; /*border transition */
+   
+    border-radius: 4px; /*border radius */
+  }
+  
+  .btn:hover {
+    background: linear-gradient(to right, #9921e8, #007bff);
+    color: #fff;
+  }
   hr.line {
     width: 100px; /* initial length */
     transition: width 0.3s ease; /* smooth transition */
@@ -337,4 +352,4 @@
   hr.line:hover {
     width: 200px; /* increased length on hover */
   }
-  
+ 
