@@ -8,22 +8,26 @@
 
 .login-container {
   position: relative;
-  width:100%;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
-  background-image: linear-gradient(
-    150deg,
-    #00a2e7,
-    #160078
-  );
+  background-image: linear-gradient(150deg, #00a2e7, #160078);
 }
 
-.login-box { 
+.login-box {
   padding: 40px 40px 30px 40px;
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
+
+/* .field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: 15px;
+  position: relative;
+  z-index: 2;
+} */
 
 .sign-in {
   font-size: 35px;
@@ -35,9 +39,9 @@
   gap: 10px;
   border: 2px solid #1877f2;
   margin-bottom: 10px;
-  padding:6px 8px;
+  padding: 6px 8px;
   border-radius: 6px;
-  font-size:14px;
+  font-size: 14px;
   cursor: pointer;
   letter-spacing: 1px;
   transition: all 0.3s;
@@ -49,15 +53,15 @@
   transition: all 0.3s;
 }
 
-.google:hover{
+.google:hover {
   background-color: #1877f2;
 }
-.google:hover .googleicon{
+.google:hover .googleicon {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.or{
-  width:230px;
+.or {
+  width: 230px;
 }
 .or .or-line {
   border-top: 1px solid #fff;
@@ -78,7 +82,7 @@
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border: none;
   border-bottom: 1px solid #fff;
   outline: none;
@@ -86,14 +90,14 @@
 }
 .form-container .user-box label {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
   letter-spacing: 1px;
   pointer-events: none;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .form-container .user-box input:focus ~ label,
@@ -104,10 +108,10 @@
   font-size: 14px;
 }
 
-.form-container .remember-me{
+.form-container .remember-me {
   display: flex;
   flex-direction: row;
-  gap:10px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -123,7 +127,7 @@
 }
 
 .remember-me .switch input {
-  display:none;
+  display: none;
 }
 
 .remember-me .slider {
@@ -134,7 +138,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .remember-me .slider:before {
@@ -144,7 +148,7 @@
   height: 9px;
   left: 4px;
   position: absolute;
-  transition: .3s;
+  transition: 0.3s;
   width: 9px;
 }
 
@@ -163,7 +167,6 @@
 .remember-me .slider.round:before {
   border-radius: 50%;
 }
-
 
 .form-container .remember-me label {
   margin: 0px;
@@ -194,24 +197,24 @@ button.submit-button[type="submit"]:hover {
   color: black;
   transform: translateY(-2px);
 }
-.form-container .fyp{
+.form-container .fyp {
   cursor: pointer;
   transition: color 0.3s, text-shadow 0.3s;
 }
-.form-container .fyp:hover{
+.form-container .fyp:hover {
   color: white;
   text-shadow: #e8f403 0px 0px 10px;
 }
-.form-container .fyp a{
+.form-container .fyp a {
   font-size: 16px;
   letter-spacing: 1px;
 }
-.form-container .dhaa{
+.form-container .dhaa {
   font-size: 16px;
   text-align: center;
   letter-spacing: 1px;
 }
-.form-container .signup_link{
+.form-container .signup_link {
   display: inline-block;
   color: cyan;
   font-size: 18px;
@@ -222,18 +225,18 @@ button.submit-button[type="submit"]:hover {
   transition: color 0.3s, text-shadow 0.3s;
 }
 
-.form-container .signup_link:hover{
+.form-container .signup_link:hover {
   color: white;
   text-shadow: #e8f403 0px 0px 10px;
 }
 
 @media only screen and (min-width: 580px) {
   .login-box {
-    position: absolute; 
+    position: absolute;
     top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    width:550px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
   }
 }
 @media only screen and (max-width: 580px) {
@@ -243,6 +246,6 @@ button.submit-button[type="submit"]:hover {
   .login-box {
     margin-top: 15px;
     margin-bottom: 25px;
-    width: calc( 100% - 30px );
+    width: calc(100% - 30px);
   }
 }
