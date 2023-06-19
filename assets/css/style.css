@@ -11,6 +11,7 @@
   --header-rgb-transparent-sc: rgba(0, 0, 0, 50%);
   --navbar-mobile-background-color: rgba(0, 0, 0, 0.9);
   --theme-color: #8919e4;
+  --navtext-color:#ab6bff;
   --home-background-color: #4158d0;
   --scroll-bar-thumb-color: #7027f9;
   --backtotop-btn-color: #5942e9;
@@ -400,7 +401,7 @@ h1 {
   width: 200px;
   padding: 10px 0;
   backdrop-filter: blur(1rem);
-  background-color: var(--header-rgb-transparent-sc);
+  background-color: #010101b0;
   overflow-y: auto;
   transition: 0.3s;
   border-radius: 8px;
@@ -415,7 +416,7 @@ h1 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: var(--backtotop-btn-color);
+  color: var(--navtext-color);
 }
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
