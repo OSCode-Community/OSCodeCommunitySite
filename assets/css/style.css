@@ -328,7 +328,7 @@ h1 {
 .navbar .active::after,
 .navbar .active:focus::after,
 .navbar li:hover > a::after {
-  background: #5942e9; /* Change the desired underline color */
+  background: #8a30ff; /* Change the desired underline color */
 }
 
 .navbar a i,
@@ -342,7 +342,7 @@ h1 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #5942e9;
+  color: #8a30ff;
   text-decoration: none;
   transform: scale(1.1); /* Adjust the desired scale value */
 }
@@ -353,7 +353,7 @@ h1 {
   .navbar .active::after,
   .navbar .active:focus::after,
   .navbar li:hover > a::after {
-    background: #5942e9; /* Change the desired underline color */
+    background: #8a30ff; /* Change the desired underline color */
   }
 }
 
