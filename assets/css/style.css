@@ -1591,11 +1591,12 @@ a:hover i {
   content: "";
   position: absolute;
   display: block;
+  left: 50%;
+  translate: -50%;
   width: 20px;
   height: 2px;
   background: var(--backtotop-btn-color);
   bottom: 0;
-  left: 0;
 }
 
 #footer .footer-top .footer-links {
@@ -1778,3 +1779,22 @@ a:hover i {
 .bottomPart a:hover::before {
   transform: scaleX(1);
 }
+
+  @media (max-width: 767px) {
+    /* Center align the footer for small devices */
+    footer {
+      text-align: center;
+    }
+    .footer-top {
+      text-align: center;
+    }
+    .footer-contact,
+    .footer-links {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .social-links .list1{
+      text-align: center;
+    }
+  }
+
