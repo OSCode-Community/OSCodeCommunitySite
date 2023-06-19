@@ -267,7 +267,7 @@ h1 {
 }
 
 .navbar li {
-  margin: 0 15px; /* Adjust the desired spacing here */
+  margin: 0 10px; /* Adjust the desired spacing here */
 }
 
 .navbar ul {
@@ -292,7 +292,8 @@ h1 {
   padding: 8px 12px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-  color: #fff;
+  color: rgb(219, 219, 219);
+  font-weight: 600;
   white-space: nowrap;
   transition: 0.3s;
   position: relative; /* Add position relative */
