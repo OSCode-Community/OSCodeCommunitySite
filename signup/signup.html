@@ -100,8 +100,12 @@
         </div>
 
         <div class="user-box">
-          <input type="password" onChange="handleChange()" required />
+          <input type="password" onChange="handleChange()" required id="password"/>
           <label for="password">Password</label>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <input type="checkbox" onclick="togglePassword()" />
+          <label style="margin-top: 5px; margin-left: 5px;">Show password</label>
         </div>
 
         <!-- sign up button -->

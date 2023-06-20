@@ -107,7 +107,7 @@
             </div>
             <div class="col-r col-lg-6">
                 <div class="parallax-container">
-                    <div class="parallax-image"><img  src="assets/img/main-image.png" class="main-img"></div>
+                    <div class="parallax-image"><img  src="assets/img/main-image.png" class="main-cont-img"></div>
                 </div>
             </div>
         </div>
@@ -269,7 +269,7 @@
         <div>
             <h1 class="resume-head">RESUME BUILDING</h1>
         </div>
-        <div>
+        <div class="resume--b">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="stack">
@@ -316,7 +316,7 @@
             <h1>Testimonials</h1>
             <hr>
         </div>
-        <div clas="row">
+        <div class="row">
             <!-- <div class="test-col col-1 col-lg-3">
                 <img class="test_img" src="assets/img/testimonials/meghaTours&Travels.jpeg">
                 <p class="test_para">
@@ -472,24 +472,24 @@
 
     <script>
         window.addEventListener('DOMContentLoaded', function() {
-        var parallaxImage = document.querySelector('.parallax-image');
-        var containerWidth = parallaxImage.offsetWidth;
-        var containerHeight = parallaxImage.offsetHeight;
+            var parallaxImage = document.querySelector('.parallax-image');
+            var containerWidth = parallaxImage.offsetWidth;
+            var containerHeight = parallaxImage.offsetHeight;
 
-        function updateTilt(event) {
-            var xPercentage = (event.clientX / containerWidth - 0.5) * -20; // Adjust the tilt sensitivity here
-            var yPercentage = (event.clientY / containerHeight - 0.5) * -20; // Adjust the tilt sensitivity here
-            var transformValue = 'perspective(1000px) translateX(' + xPercentage + 'px) translateY(' + yPercentage + 'px) rotateX(' + (-yPercentage / 2) + 'deg) rotateY(' + (xPercentage / 2) + 'deg)';
+            function updateTilt(event) {
+                var xPercentage = (event.clientX / containerWidth - 0.5) * -20; // Adjust the tilt sensitivity here
+                var yPercentage = (event.clientY / containerHeight - 0.5) * -20; // Adjust the tilt sensitivity here
+                var transformValue = 'perspective(1000px) translateX(' + xPercentage + 'px) translateY(' + yPercentage + 'px) rotateX(' + (-yPercentage / 2) + 'deg) rotateY(' + (xPercentage / 2) + 'deg)';
 
-            parallaxImage.style.transform = transformValue;
-        }
+                parallaxImage.style.transform = transformValue;
+            }
 
-        function resetTilt() {
-            parallaxImage.style.transform = 'perspective(1000px) translateX(0) translateY(0) rotateX(0) rotateY(0)';
-        }
+            function resetTilt() {
+                parallaxImage.style.transform = 'perspective(1000px) translateX(0) translateY(0) rotateX(0) rotateY(0)';
+            }
 
-        parallaxImage.addEventListener('mousemove', updateTilt);
-        parallaxImage.addEventListener('mouseleave', resetTilt);
+            parallaxImage.addEventListener('mousemove', updateTilt);
+            parallaxImage.addEventListener('mouseleave', resetTilt);
         });
     </script>
 </body>
