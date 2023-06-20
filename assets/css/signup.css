@@ -3,92 +3,176 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  --header-height: 70px;
 }
 
 .signup-container {
+  position: relative;
+  width:100%;
   font-family: "Montserrat", sans-serif;
   background-image: linear-gradient(
-    to right,
-    #0f0c29,
-    #302b63,
-    #24243e,
-    rgb(69, 69, 107)
+    150deg,
+    #00a2e7,
+    #160078
   );
 }
 
+.signup-box { 
+  padding: 40px 40px 30px 40px;
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
 .signuptxt {
-  font-size: 40px;
+  font-size: 35px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 
 .google {
-  width: 50%;
   gap: 10px;
   border: 2px solid #1877f2;
-  margin: 3% auto;
-  padding: 8px 0;
+  margin-bottom: 10px;
+  padding:6px 8px;
   border-radius: 6px;
+  font-size:14px;
   cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s;
 }
 
 .googleicon {
-  width: 30px;
+  width: 25px;
+  border-radius: 100px;
+  transition: all 0.3s;
 }
 
+.google:hover{
+  background-color: #1877f2;
+}
+.google:hover .googleicon{
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.or{
+  width:230px;
+}
 .or .or-line {
   border-top: 1px solid #fff;
   width: 100%;
   margin: auto 10px;
 }
 
-.form-container .name {
-  gap: 10px;
-}
-
-.form-container input {
+.form-container {
   width: 100%;
-  padding: 12px;
-  margin: 5px 0;
-  border-radius: 6px;
-  border: 2px solid #d8d8d8;
-  outline: none;
 }
 
-.signup-box .btn {
-  padding: 3% 0;
+.form-container .user-box {
+  position: relative;
+}
+
+.form-container .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.form-container .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.form-container .user-box input:focus ~ label,
+.form-container .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #d8b8ff;
+  font-size: 14px;
+}
+
+.form-container .name-part{
+  flex-grow: 1;
 }
 
 button.submit-button[type="submit"] {
-  background-color: #1877f2;
+  background-color: #7b2fff;
   color: #fff;
-  border: 1px solid #1877f2;
-  border-radius: 10px;
-  padding: 12px 50px;
-  margin-bottom: 8px;
+  border: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 45px;
+  padding: 12px 45px;
+  margin: 10px 0;
   transition: all 0.3s ease;
 }
 
 button.submit-button[type="submit"]:hover {
-  background-color: transparent;
-  color: #1877f2;
+  background-color: white;
+  box-shadow: 0px 0 20px 5px rgba(182, 139, 255, 0.6);
+  color: black;
+  transform: translateY(-2px);
 }
 
-@media screen and (max-width: 880px) {
+.form-container .ahaa{
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.form-container .login_link{
+  color: cyan;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.form-container .login_link:hover{
+  color: white;
+  text-shadow: #e8f403 0px 0px 10px;
+}
+
+@media only screen and (min-width: 580px) {
   .signup-box {
-    width: 100% !important;
+    position: absolute; 
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:550px;
+  }
+  .form-container .name {
+    gap:10px;
   }
 }
-
-@media screen and (max-width: 768px) {
-  .signup-box .form-container {
-    padding: 0 7% 3%;
+@media only screen and (max-width: 580px) {
+  .signup-container {
+    padding-top: var(--header-height);
   }
-}
-
-@media screen and (max-width: 500px) {
-  .google {
-    width: 60% !important;
+  .signup-box {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: calc( 100% - 30px );
   }
-  .signuptxt {
-    font-size: 30px;
+  .form-container .name {
+    flex-direction: column;
+    gap:0;
   }
 }

@@ -47,12 +47,12 @@
     <!-- navbar -->
     <div id="navbar" class="navbar order-last order-lg-0 me-4">
       <ul class="nav-list">
-        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#">HOME</a></li>
-        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#">ABOUT</a></li>
-        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#">CHAPTERS</a></li>
-        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#">BLOGS</a></li>
-        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#" >EVENTS</a></li>
-        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#">CONTACT</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="/#hero">HOME</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="/#mainabout">ABOUT</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="/chapters/chapter.html">CHAPTERS</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="https://blog.oscode.co.in/">BLOGS</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="/events/events.html" >EVENTS</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="/#contact">CONTACT</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </div>
@@ -65,15 +65,15 @@
   <!-- login container -->
   <div class="login-container min-vh-100">
     <div
-      class="login-box text-white min-vh-100 w-50 d-flex flex-column align-items-center justify-content-center mx-auto mt-4">
-      <h1 class="sign-in text-center p-0">Log in to your account</h1>
+      class="login-box text-white d-flex flex-column align-items-center justify-content-center mx-auto">
+      <h1 class="sign-in text-center p-0">Login</h1>
 
       <!-- sign up with google -->
       <div class="google d-flex justify-content-center align-items-center ">
         <img class="googleicon" src="../assets/img/googleicon.png" alt="gogoleicon" />
         <div class="login-with-google">Login with Google</div>
       </div>
-      <div class="or w-50 mb-3 d-flex justify-content-center">
+      <div class="or mb-3 d-flex justify-content-center">
         <div class="or-line"></div> OR <div class="or-line"></div>
       </div>
 
@@ -81,14 +81,36 @@
       <form action="/index.html" method="get" class="form-container d-flex flex-column" onSubmit="handleSubmit()">
 
         <!-- inputs -->
-        <label for="user-name">User Name</label>
-        <input type="text" onChange="handleChange()" placeholder="Username" required />
-        <label for="password">Password</label>
-        <input type="password" onChange="handleChange()" placeholder="Password" required/>
+        <div class="user-box">
+          <input type="text" onChange="handleChange()"required />
+          <label for="user-name">User Name</label>
+        </div>
+
+        <div>
+          <div class="user-box">
+            <input type="password" onChange="handleChange()" required id="password"/>     
+            <!-- <svg onclick="togglePassword()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye field-icon" viewBox="0 0 16 16">
+              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+            </svg> -->
+            <label for="password">Password</label>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <input type="checkbox" onclick="togglePassword()" />
+            <label style="margin-top: 5px; margin-left: 5px;">Show password</label>
+          </div>
+        </div>
+
         <div class="remember-me">
-          <input type="checkbox" id="remember-me" />
+          <label class="switch" for="remember-me">
+            <input type="checkbox" id="remember-me" />
+            <div class="slider round"></div>
+          </label>
           <label for="remember-me"> Remember me</label>
         </div>
+
+        
 
         <!-- login button -->
         <div class="btn">
@@ -97,14 +119,15 @@
 
         <!-- forgot password & dont have account -->
         <div class="d-flex flex-column align-items-center justify-content-center">
-          <div class="mb-2">
-            <a href="/login/login.html" class="text-white">
+          <div class="mb-2 fyp">
+            <a href="/resetpass/resetpass.html" class="text-white">
               Forgot Your password?
             </a>
           </div>
-          <div>
+          
+          <div class="dhaa">
             Don't have an account? 
-            <a href="/signup/signup.html" class="text-primary pl-2">
+            <a href="/signup/signup.html" class="pl-2 signup_link">
               Sign Up
             </a>
           </div>

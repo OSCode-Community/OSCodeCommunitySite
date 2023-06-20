@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signup</title>
+  <title>Reset Password</title>
 
   <!-- Favicons -->
   <link href="../assets/img/logo.jpeg" rel="icon" />
@@ -28,7 +28,7 @@
 
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/css/signup.css">
+  <link rel="stylesheet" href="../assets/css/resetpass.css">
 
   <!-- for overriding the nav css -->
   <link rel="stylesheet" href="../assets/css/override.css">
@@ -62,70 +62,40 @@
     </span>
   </header>
 
-  <!-- signup container -->
-  <div class="signup-container min-vh-100">
+  <!-- resetpass container -->
+  <div class="resetpass-container min-vh-100">
     <div
-      class="signup-box text-white d-flex flex-column align-items-center justify-content-center mx-auto">
-      <h1 class="signuptxt text-center p-0">Sign Up</h1>
-      <!-- p class="text-center fw-bolder p-0">It's quick and easy.</p -->
+      class="resetpass-box text-white d-flex flex-column align-items-center justify-content-center mx-auto">
+      <h1 class="resetpasstxt text-center p-0">Reset Password</h1>      
 
-      <!-- sign up with google -->
-      <div class="google d-flex justify-content-center align-items-center ">
-        <img class="googleicon" src="../assets/img/googleicon.png" alt="gogoleicon" />
-        <div class="login-with-google">Sign Up with Google</div>
-      </div>
-      <div class="or mb-3 d-flex justify-content-center">
-        <div class="or-line"></div> OR <div class="or-line"></div>
-      </div>
-
-      <!-- signup form -->
-      <form action="/index.html" method="get" class="form-container d-flex flex-column" onSubmit="handleSubmit()">
+      <!-- resetpass form -->
+      <form action="/login/login.html" method="get" class="form-container d-flex flex-column" onSubmit="handleSubmit()">
 
         <!-- inputs -->
-        <div class="name d-flex w-100">
-          <div class="user-box name-part">
-            <input type="text" name="firstName" onChange="handleChange()" required />
-            <label for="firstName">First name</label>
-          </div>
-          
-          <div class="user-box name-part">
-            <input type="text" name="surname" onChange="handleChange()" required />
-            <label for="surname">Surname</label>
-          </div>
+       
+        <div class="user-box">
+          <input type="password" name="oldpass" onChange="handleChange()" required />
+          <label for="oldpass">Old Password</label>
         </div>
 
         <div class="user-box">
-          <input type="email" onChange="handleChange()" required />
-          <label for="email">Email address</label>
+          <input type="password" name="newpass" onChange="handleChange()" required />
+          <label for="newpass">New Password</label>
         </div>
 
-        <div class="user-box">
-          <input type="password" onChange="handleChange()" required id="password"/>
-          <label for="password">Password</label>
-        </div>
-        <div style="display: flex; align-items: center;">
-          <input type="checkbox" onclick="togglePassword()" />
-          <label style="margin-top: 5px; margin-left: 5px;">Show password</label>
-        </div>
-
-        <!-- sign up button -->
+        <!-- reset pass button -->
         <div class="btn">
           <button type="submit" class="submit-button cursor-pointer">
-            Sign Up
+            Confirm
           </button>
         </div>
 
-        <!-- already account -->
-        <div class="ahaa">
-          Already have an account?
-          <a href="/login/login.html" class="pl-2 login_link">Login</a>
-        </div>
       </form>
     </div>
   </div>
 
   <!-- javascript -->
-  <script src="signup.js"></script>
+  <script src="resetpass.js"></script>
 </body>
 
 </html>

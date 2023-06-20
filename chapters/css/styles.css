@@ -1220,6 +1220,18 @@ hr{
 #hidden {
   display: none;
 }
+/*--------------------------------------------------------------
+# Icons
+--------------------------------------------------------------*/
+i {
+  /* transition: all 0.2s linear; */
+  transition: all 0.1s linear;
+}
+
+a:hover i {
+  transform: scale(1.2);
+}
+
 
 /* Footer  */
 
@@ -1298,6 +1310,8 @@ hr{
   padding-top: 0;
 }
 
+
+
 #footer .footer-top .footer-links ul a {
   color: black;
   transition: 0.3s;
@@ -1329,14 +1343,15 @@ hr{
   transition: 0.3s;
 }
 
+
 #footer .social-links .twitter:hover {
   background: #1da1f2;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 #footer .social-links .facebook:hover {
   background: #4267b2;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 #footer .social-links .instagram:hover {
@@ -1348,21 +1363,21 @@ hr{
     #d6249f 60%,
     #285aeb 90%
   );
-  color: black;
+  color: white;
   text-decoration: none;
 }
 #footer .social-links .youtube:hover {
-  background: white;
-  color: #c4302b;
+  background: #c4302b;
+  color: white;
   text-decoration: none;
 }
 #footer .social-links .linkedin:hover {
   background: #0072b1;
-  color: var(--background-white);
+  color: white;
   text-decoration: none;
 }
 #footer .social-links .discord:hover {
   background: #7289da;
-  color: var(--background-white);
+  color: white;
   text-decoration: none;
 }
