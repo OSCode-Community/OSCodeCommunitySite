@@ -387,76 +387,7 @@
     });
   </script>
 
-  <!-- Template Main JS File -->
 
-  <script src="../assets/js/main.js"></script>
-  <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202304250101/show_ads_impl_fy2021.js"
-    id="google_shimpl"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-    crossorigin="anonymous"></script>
-  <script>
-    const searchBar = document.getElementById("search-bar");
-    const results = document.getElementById("results");
-
-    const institutes = [
-      {
-        name: "Bangalore Institute of Technology",
-        url: "bit.html",
-      },
-      { name: "Dayananda Sagar University", url: "https://www.dsu.edu.in/" },
-      {
-        name: "S J C institute of technology",
-        url: "https://www.sjcit.ac.in/",
-      },
-      {
-        name: "Sambhram Institute of Technology",
-        url: "https://www.sambhram.org/",
-      },
-      {
-        name: "Sir M Vishwesariya Institute of Technology",
-        url: "https://www.sirmvit.edu/",
-      },
-      {
-        name: "Sri Krishna Institute of Technology",
-        url: "https://www.skit.ac.in/",
-      },
-      { name: "Vemana institute of technology", url: "https://vitb.ac.in/" },
-    ];
-
-    function searchInstitutes(searchTerm) {
-      results.innerHTML = "";
-
-      const filteredInstitutes = institutes.filter((institute) =>
-        institute.name.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-
-      filteredInstitutes.forEach((institute) => {
-        const li = document.createElement("li");
-        const link = document.createElement("a");
-        link.textContent = institute.name;
-        link.href = institute.url;
-        li.appendChild(link);
-        results.appendChild(li);
-      });
-
-      if (filteredInstitutes.length === 0) {
-        const li = document.createElement("li");
-        li.textContent = "No institutes found.";
-        results.appendChild(li);
-      }
-    }
-
-    searchBar.addEventListener("input", () => {
-      console.log(searchBar.value.length);
-
-      if (searchBar.value.length === 0) {
-        results.innerHTML = "";
-      } else {
-        searchInstitutes(searchBar.value);
-      }
-    });
 
 
   </script>
