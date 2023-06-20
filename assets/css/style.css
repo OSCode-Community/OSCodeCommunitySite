@@ -1591,7 +1591,7 @@ a:hover i {
   content: "";
   position: absolute;
   display: block;
-  left: 50%;
+  left: 3%;
   translate: -50%;
   width: 20px;
   height: 2px;
@@ -1790,7 +1790,7 @@ a:hover i {
     }
     .footer-contact,
     .footer-links {
-      text-align: center;
+      text-align: left;
       margin-bottom: 30px;
     }
     .social-links .list1{
