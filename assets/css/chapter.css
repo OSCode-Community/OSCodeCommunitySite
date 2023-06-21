@@ -172,3 +172,26 @@ background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
       max-height: 200px;
     }
   }
+  @keyframes rainbow {
+    0% {
+    background-position: 0% 50%;
+    }
+    100% {
+    background-position: 100% 50%;
+    }
+    }
+    .rainbow-text {
+    /* background-image: linear-gradient(to right,blue, purple, indigo ); */
+    background-image: linear-gradient(43deg, #21beee, #ee21d9 46%, #ee2121);
+    background-size: 200% auto;
+    animation: rainbow 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 0.3s ease;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    }
+    .rainbow-text:hover {
+    animation-play-state: paused;
+    font-size: 1.2em;
+    }
+    
