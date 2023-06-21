@@ -803,6 +803,7 @@ section {
   max-width: 1400px;
   margin: auto;
   padding: 0;
+  transition:0.5s;
 }
 
 .gallery img {
@@ -811,6 +812,14 @@ section {
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
+  box-shadow: 0 0 5px 5px hsl(294, 73%, 35%);
+  border-radius:5px;
+  display:block;
+
+}
+.gallery:hover{
+  transform:scale(1.1);
+  z-index:2;
 }
 
 .gallery::after {
