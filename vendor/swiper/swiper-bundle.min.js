@@ -3291,12 +3291,10 @@
   }
   function se(e, t) {
     return e.transformEl
-      ? t
-          .find(e.transformEl)
-          .css({
-            "backface-visibility": "hidden",
-            "-webkit-backface-visibility": "hidden",
-          })
+      ? t.find(e.transformEl).css({
+          "backface-visibility": "hidden",
+          "-webkit-backface-visibility": "hidden",
+        })
       : t;
   }
   function ae(e) {
