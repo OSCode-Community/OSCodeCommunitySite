@@ -1,6 +1,6 @@
 ## Closes
 
-Closes #issue_number 
+Closes #issue_number
 
 <!-- Replace <`issue_number`> with the Issue number to link it with this PR -->
 <!-- Example: Closes #1-->
@@ -29,12 +29,12 @@ Closes #issue_number
 - [ ] I have built and tested the changes, and they do not break or show any errors.
 
 <!--
-Thank you for contributing to OSCodeCommunitySite! 
+Thank you for contributing to OSCodeCommunitySite!
 
 Contributing Conventions:
 
 1. Include descriptive PR titles with [<component-name>] prepended.
 
-By following the community's contribution conventions upfront, the review process will 
+By following the community's contribution conventions upfront, the review process will
 be accelerated and your PR merged more quickly.
 -->
