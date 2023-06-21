@@ -14,6 +14,26 @@
 .row{
   margin-top: 20px;
 }
+.us{
+  margin:0;
+  padding:0;
+  text-transform:uppercase;
+  position:relative;
+  color:#c8c3d1;
+}
+.us:before{
+  content:"College_Chapters";
+  position:absolute;
+  color:#262626;
+  top:0;
+  left:0;
+  width:0%;
+  overflow:hidden;
+  transition:all 01s;
+}
+.us:hover:before{
+  width:100%;
+}
   #faq {
     background-image: none;
     margin-left: 50px;

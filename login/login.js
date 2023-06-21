@@ -2,10 +2,9 @@ const username = "";
 const password = "";
 
 const handleCahnge = (event) => {
-  if(event.target.type == "text") {
+  if (event.target.type == "text") {
     username = event.target.value;
-  }
-  else if(event.target.type == "password") {
+  } else if (event.target.type == "password") {
     password = event.target.value;
   }
 };
@@ -19,7 +18,6 @@ const passwordToggle = () => {
     passwordType = "password";
   }
 };
-
 
 function togglePassword() {
   var password = document.getElementById("password");
