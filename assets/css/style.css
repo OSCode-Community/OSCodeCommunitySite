@@ -192,7 +192,7 @@ h1 {
   text-transform: uppercase;
   display: inline-block;
   font-family: "Roboto", sans-serif;
- 
+  background-color: #5942e9;
 }
 .home-i {
   margin-left: 4px;
