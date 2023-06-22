@@ -509,13 +509,16 @@ ul{
   h2{
     font-size: 35px;
   }
-  .col-lg-3{
+  .col-res{
     margin-bottom: 4rem;
     margin-left: 5rem;
     width:80%;
   }
   .services-left-dec{
     left:0rem;
+  }
+  .test-col{
+    
   }
 }
 
