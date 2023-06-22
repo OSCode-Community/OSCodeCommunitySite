@@ -297,7 +297,6 @@ h1 {
   color: white;
   text-decoration: none;
 }
-
 .navbar .dropdown ul {
   display: block;
   position: absolute;
@@ -1638,24 +1637,7 @@ a:hover i {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--backtotop-btn-color);
 }
-.fa-angle-left, .fa-angle-right{
-  top: 50%;
-  height: 2.5rem;
-  width: 2.5rem;
-  cursor: pointer;
-  font-size: 2.25rem;
-  position:absolute;
-  text-align: center;
-  line-height: 50px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-  z-index: 20;
-}
 
-.fa-angle-right{
-  margin-left:  20rem;
-}
 
 #achievement h1,
 #testimonials h1 {
