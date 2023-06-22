@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    --header-height: 70px;
+  }
+  
+  .resetpass-container {
+    position: relative;
+    width:100%;
+    font-family: "Montserrat", sans-serif;
+    background-image: linear-gradient(
+      150deg,
+      #00a2e7,
+      #160078
+    );
+  }
+  
+  .resetpass-box { 
+    padding: 40px 40px 30px 40px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .resetpasstxt {
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+  
+  .form-container {
+    width: 100%;
+  }
+  
+  .form-container .user-box {
+    position: relative;
+  }
+  
+  .form-container .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .form-container .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .form-container .user-box input:focus ~ label,
+  .form-container .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #d8b8ff;
+    font-size: 14px;
+  }
+  
+  .form-container .name-part{
+    flex-grow: 1;
+  }
+  
+  button.submit-button[type="submit"] {
+    background-color: #7b2fff;
+    color: #fff;
+    border: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 45px;
+    padding: 12px 45px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+  }
+  
+  button.submit-button[type="submit"]:hover {
+    background-color: white;
+    box-shadow: 0px 0 20px 5px rgba(182, 139, 255, 0.6);
+    color: black;
+    transform: translateY(-2px);
+  }
+    
+  @media only screen and (min-width: 580px) {
+    .resetpass-box {
+      position: absolute; 
+      top: 50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      width:550px;
+    }
+   
+  }
+  @media only screen and (max-width: 580px) {
+    .resetpass-container {
+      padding-top: var(--header-height);
+    }
+    .resetpass-box {
+      margin-top: 15px;
+      margin-bottom: 25px;
+      width: calc( 100% - 30px );
+    }
+    
+  }
+  

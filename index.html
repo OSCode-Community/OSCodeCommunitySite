@@ -4,12 +4,17 @@
 <head>
   <style>
     #preloader {
-      background: #000000 url(/assets/img/gifs/OSCode.gif) no-repeat center center;
+      background: #000000 url(./assets/img/gifs/OSCode.gif) no-repeat center center;
       background-size: 60%;
       height: 100vh;
       width: 100%;
       position: fixed;
       z-index: 999999;
+    }
+
+    html,
+    body {
+      scroll-behavior: smooth;
     }
   </style>
   <meta charset="utf-8" />
@@ -51,15 +56,24 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/client.css" rel="stylesheet" />
+  <link href="assets/css/counts.css" rel="stylesheet" />
+  <link href="assets/css/about.css" rel="stylesheet" />
+  <link href="assets/css/join_us.css" rel="stylesheet" />
+  <link href="assets/css/faq.css" rel="stylesheet" />
+  <link href="/assets/css/contactform.css" rel="stylesheet" />
+  <link href="assets\css\gallery.css" rel="stylesheet" />
+
+
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/37377042d1.js" crossorigin="anonymous"></script>
 
   <!-- Why Choose Us button css -->
-  <link rel="stylesheet" href="/assets/css/whychooseusbutton.css">
+  <link rel="stylesheet" href="./assets/css/whychooseusbutton.css">
 
   <!-- for overriding the nav css -->
-  <link rel="stylesheet" href="/assets/css/override.css">
+  <link rel="stylesheet" href="./assets/css/override.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
@@ -67,7 +81,7 @@
 
 <body onload="myFunction()">
 
-  <!-- <div id="preloader"></div> -->
+  <div id="preloader"></div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="glassmorphic fixed-top d-flex align-items-center newFlex">
@@ -84,9 +98,9 @@
               d="M7465 13484 c-93 -8 -244 -26 -300 -35 -33 -5 -103 -16 -155 -24 -89 -13 -156 -27 -360 -74 -149 -34 -445 -121 -482 -141 -10 -6 -24 -10 -31 -10 -11 0 -132 -43 -192 -69 -11 -5 -45 -19 -75 -31 -30 -13 -75 -32 -100 -43 -25 -10 -54 -23 -65 -27 -107 -45 -407 -194 -489 -244 -33 -20 -68 -38 -78 -42 -10 -3 -18 -10 -18 -15 0 -5 -4 -9 -9 -9 -10 0 -166 -91 -231 -136 -158 -107 -344 -242 -405 -293 -17 -14 -51 -42 -75 -61 -72 -58 -134 -110 -150 -128 -8 -9 -60 -56 -115 -103 -102 -89 -268 -256 -385 -388 -36 -41 -69 -79 -75 -85 -24 -27 -103 -124 -130 -161 -16 -22 -34 -44 -41 -50 -15 -13 -125 -165 -198 -275 -16 -25 -32 -47 -35 -50 -4 -3 -11 -14 -17 -25 -7 -11 -51 -83 -100 -160 -48 -77 -105 -171 -126 -210 -71 -131 -208 -408 -208 -421 0 -8 -4 -14 -10 -14 -5 0 -10 -6 -10 -13 0 -8 -13 -41 -30 -75 -16 -34 -30 -69 -30 -77 0 -7 -5 -17 -10 -20 -5 -3 -10 -17 -10 -30 0 -13 -4 -25 -9 -27 -7 -3 -41 -90 -98 -253 -7 -22 -17 -47 -20 -55 -3 -8 -14 -42 -24 -75 -9 -33 -25 -85 -34 -115 -26 -92 -76 -281 -85 -329 -5 -25 -16 -77 -25 -116 -9 -38 -20 -95 -25 -125 -5 -30 -18 -111 -31 -180 -21 -119 -22 -156 -26 -780 l-4 -655 26 -190 c15 -104 30 -210 35 -235 18 -97 30 -158 50 -240 12 -47 28 -115 36 -151 8 -37 26 -104 40 -150 14 -46 30 -100 34 -119 4 -19 17 -60 28 -90 11 -30 28 -82 38 -115 9 -33 20 -64 24 -70 4 -5 15 -32 25 -60 9 -27 23 -63 30 -80 7 -16 18 -46 25 -65 17 -44 43 -106 85 -195 18 -38 36 -80 39 -92 4 -13 12 -23 17 -23 5 0 9 -5 9 -12 0 -16 63 -142 73 -146 4 -2 7 -10 7 -18 0 -13 18 -52 30 -64 3 -3 14 -23 26 -45 39 -74 59 -110 65 -115 4 -3 9 -15 13 -27 4 -13 12 -23 17 -23 5 0 9 -5 9 -12 0 -13 61 -111 72 -116 5 -2 8 -8 8 -14 0 -13 125 -200 162 -242 10 -11 18 -25 18 -32 0 -7 3 -14 8 -16 4 -1 36 -41 71 -88 36 -47 76 -99 90 -116 14 -18 36 -45 48 -60 96 -128 472 -512 664 -679 144 -125 387 -313 494 -382 28 -18 56 -37 62 -43 30 -25 229 -150 241 -150 6 0 12 -4 12 -10 0 -5 11 -12 25 -16 14 -3 25 -9 25 -13 0 -3 17 -15 38 -26 20 -11 39 -23 42 -26 5 -6 255 -138 341 -180 19 -10 47 -21 62 -24 15 -4 30 -11 33 -16 3 -5 14 -9 24 -9 10 0 20 -3 22 -7 2 -5 39 -23 83 -42 44 -18 99 -42 122 -52 24 -11 59 -19 78 -19 41 0 32 -18 115 210 33 91 64 174 69 185 5 11 28 72 51 135 23 63 45 124 50 135 5 11 23 58 40 105 17 47 34 94 39 105 5 11 16 39 25 63 9 23 23 61 32 85 9 23 20 51 25 62 9 22 35 95 49 136 4 15 15 42 23 60 9 19 23 54 31 79 35 104 47 137 60 165 8 17 22 50 31 75 9 25 21 53 26 62 5 10 9 27 9 38 0 11 3 20 8 20 4 0 19 36 32 80 14 44 28 80 33 80 4 0 7 5 7 11 0 6 16 51 35 100 39 100 91 235 137 354 17 44 39 99 49 122 11 24 19 47 19 52 0 5 7 22 15 38 8 15 33 74 55 131 22 57 46 119 55 138 31 70 44 101 70 169 26 67 43 107 99 224 36 76 34 85 -23 110 -27 11 -52 21 -55 21 -4 0 -29 11 -58 25 -28 14 -58 25 -65 25 -7 0 -13 3 -13 8 0 4 -17 16 -37 27 -48 25 -167 107 -171 117 -2 4 -7 8 -11 8 -26 0 -282 259 -315 319 -5 9 -12 18 -16 21 -18 13 -129 195 -180 294 -64 127 -91 191 -116 267 -9 30 -20 59 -25 64 -7 10 -75 266 -89 340 -62 313 -89 713 -70 1035 22 386 84 727 190 1050 39 118 121 330 164 423 20 43 36 84 36 92 0 7 4 15 9 17 5 2 25 37 45 78 63 131 150 277 261 441 69 100 192 268 205 279 3 3 28 32 55 65 28 33 53 62 58 63 4 2 7 8 7 13 0 13 406 419 419 419 5 0 11 3 13 8 2 4 32 31 68 60 36 29 76 62 89 73 13 11 27 16 31 12 4 -4 3 -79 -2 -165 -15 -227 5 -554 46 -743 112 -518 348 -901 722 -1170 57 -41 110 -75 118 -75 8 0 16 -4 18 -9 5 -13 133 -76 236 -115 86 -33 311 -142 322 -156 3 -4 21 -15 40 -26 19 -10 39 -23 45 -27 5 -4 48 -35 95 -69 46 -33 134 -111 195 -172 240 -243 365 -482 435 -831 18 -90 24 -402 10 -525 -18 -160 -40 -291 -60 -362 -5 -21 -14 -53 -19 -70 -22 -84 -69 -201 -124 -312 -33 -66 -63 -123 -66 -126 -4 -3 -22 -30 -41 -60 -19 -30 -37 -57 -40 -60 -3 -3 -30 -34 -60 -70 -102 -122 -221 -230 -342 -311 -34 -23 -65 -45 -68 -48 -9 -11 -197 -108 -307 -159 -39 -18 -74 -39 -76 -47 -3 -7 10 -46 30 -86 41 -86 55 -119 78 -174 27 -65 32 -78 53 -125 11 -25 35 -84 52 -130 33 -88 45 -116 85 -210 24 -56 49 -120 111 -283 19 -51 38 -101 43 -112 28 -64 41 -96 57 -145 11 -30 22 -56 27 -58 4 -2 7 -14 7 -26 0 -12 4 -26 8 -32 4 -5 17 -34 29 -64 11 -30 44 -116 72 -190 29 -74 56 -146 61 -160 14 -41 71 -193 85 -225 7 -16 38 -99 69 -183 32 -85 61 -161 65 -170 5 -10 39 -100 76 -202 37 -102 73 -198 80 -215 7 -16 25 -64 40 -105 15 -41 33 -88 40 -105 7 -16 32 -84 55 -150 24 -66 48 -123 54 -127 6 -4 21 -8 32 -8 20 0 107 30 146 51 10 5 25 9 33 9 8 0 15 5 15 10 0 6 5 10 12 10 6 0 41 14 77 31 36 17 86 39 111 50 98 40 352 175 358 190 2 5 12 9 22 9 9 0 23 7 30 15 6 8 22 17 33 21 12 4 55 29 96 55 41 27 76 49 78 49 3 0 26 14 51 32 69 46 98 66 150 101 26 17 49 34 52 37 3 4 21 18 41 31 75 50 169 123 169 131 0 4 4 8 10 8 11 0 29 14 100 78 26 23 61 52 76 65 84 65 442 418 549 541 33 38 65 74 70 80 72 79 308 389 371 486 16 25 31 47 35 50 9 8 69 98 69 104 0 2 18 32 40 65 22 33 40 65 40 71 0 5 4 10 9 10 5 0 13 10 17 23 4 12 9 24 13 27 3 3 24 39 45 80 22 41 48 87 58 102 10 14 18 33 18 42 0 9 4 16 8 16 4 0 14 17 21 38 8 20 17 39 20 42 12 10 31 50 31 65 0 8 5 15 10 15 6 0 10 5 10 10 0 6 17 47 39 93 21 45 42 93 46 107 4 14 20 52 36 85 44 95 138 355 169 465 7 25 15 52 18 60 30 82 102 367 133 530 79 405 92 598 86 1225 -4 419 -7 500 -26 640 -12 88 -26 180 -30 205 -5 25 -15 74 -21 110 -35 195 -66 320 -137 555 -25 83 -51 170 -58 195 -7 25 -21 65 -32 90 -11 25 -30 78 -43 118 -13 39 -27 72 -32 72 -4 0 -8 6 -8 13 0 12 -35 99 -102 251 -54 123 -213 427 -279 533 -22 34 -39 67 -39 73 0 5 -4 10 -10 10 -5 0 -10 5 -10 10 0 10 -154 246 -227 347 -60 82 -196 257 -213 273 -9 8 -42 48 -74 88 -32 40 -64 76 -70 80 -6 4 -37 37 -69 74 -70 81 -239 251 -335 337 -119 105 -124 110 -201 174 -41 33 -86 72 -100 85 -14 13 -38 31 -53 40 -16 9 -28 19 -28 23 0 4 -15 16 -32 28 -56 35 -70 45 -100 72 -17 15 -42 33 -56 40 -15 8 -29 17 -32 21 -6 7 -209 141 -230 152 -19 9 -38 20 -130 77 -106 66 -220 127 -410 221 -91 44 -173 85 -182 89 -10 5 -26 9 -37 9 -11 0 -21 3 -23 8 -3 7 -22 15 -229 96 -195 76 -532 182 -674 212 -211 44 -310 63 -380 73 -44 7 -102 16 -130 21 -163 30 -243 33 -770 35 -302 2 -568 1 -590 -1z" />
           </g>
         </svg> -->
-        <img class="logo1" src="../assets/img/logo.jpeg" width="60px" height="60px" alt="logo" />
+        <img class="logo1" src="assets/img/logo.jpeg" width="60px" height="60px" alt="logo" />
 
-        <!-- company name --> 
+        <!-- company name -->
 
         <h1 class="logo me-auto" id="landingPage"><a href="#">OS-CODE</a></h1>
 
@@ -97,27 +111,26 @@
 
 
     </div>
-    <div class="navListAndContact">
-
-      <div id="navbar" class="navbar order-last order-lg-0 me-4">
-        <ul>
-          <li><a class="nav-link scrollto active" style="text-decoration: none;" href="#hero">HOME</a></li>
-          <li><a class="nav-link scrollto" style="text-decoration: none;" href="#mainabout">ABOUT</a></li>
-          <li>
-            <a class="nav-link scrollto" style="text-decoration: none;" href="chapters/chapter.html">CHAPTERS</a>
-          </li>
-          <li><a class="nav-link scrollto" style="text-decoration: none;" href="https://blog.oscode.co.in/">BLOGS</a>
-          </li>
-          <li><a href="events/events.html" style="text-decoration: none;">EVENTS</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </div>
-
+    <i class="bi bi-list mobile-nav-toggle"></i>
+    <div id="navbar" class="navbar order-last order-lg-0 me-4">
+      <ul class="nav-list">
+        <li><a class="nav-link scrollto active" style="text-decoration: none;" href="#hero">HOME</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#mainabout">ABOUT</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="chapters/chapter.html">CHAPTERS</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="https://blog.oscode.co.in/">BLOGS</a></li>
+        <li><a class="nav-link scrollto" href="events/events.html" style="text-decoration: none;">EVENTS</a></li>
+        <li><a class="nav-link scrollto" href="#contact" style="text-decoration: none;">CONTACT</a></li>
+        <li>
+          <a href="/login/login.html">
+            <div class="get-started-btn-1 scrollto cntctBtn">
+              <i class="fa-regular fa-user"></i>
+            </div>
+          </a>
+        </li>
+      </ul>
       <!-- navbar list ends here -->
-
-      <a href="#contact" class="get-started-btn scrollto cntctBtn">CONTACT US</a>
-
     </div>
+
   </header>
   <!-- End Header -->
 
@@ -138,8 +151,10 @@
           <a href="#" class="get-started-btn scrollto left cntctBtn">Services<i
               class="bi bi-caret-right home-i"></i></a> -->
 
-          <a href="#join-us" class="get-started-btn scrollto left cntctBtn"><span>Get Started</span></a>
-          <a href="#" class="get-started-btn scrollto left cntctBtn"><span>Services</span></a>
+          <div class="get-btn">
+          <a href="#join-us" class="get-started-btn1 "><span>Get Started</span></a>
+          <a href="services.html" class="get-started-btn2 "><span>Services</span></a>
+            </div>
 
         </div>
       </div>
@@ -150,69 +165,76 @@
   <main id="main">
     <!-- ======= About Section ======= -->
     <section id="mainabout" class="clients">
+      <div class="us">
+        <h1> Who we are ?</h1>
+        <div class="hrCount">
+          <hr class="line hr-center">
+        </div>
+      </div>
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <!-- <h1>
+          <!--<h1>
             About Us
           </h1> -->
         </div>
-        <div class="row whoarewe" data-aos="fade-up" data-aos-delay="100">
+        <div class="row whoarewe" data-aos="fade-up" data-aos-delay="100" style="row-gap:70px;">
           <div class="col-lg-6">
-            <h1 class="us">Who we are ?</h1>
-            <hr class="line">
+            <!---- <div class="aboutus"> -->
             <div class="abt-txt">
-              <p class="p-hover">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                  class="h2 text-primary" height="0.8em" width="1em" xmlns="http://www.w3.org/2000/svg"
-                  style="flex-shrink: 0;">
-                  <path
-                    d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
-                  </path>
-                </svg>
-                We are a <strong>Multi-College Tech Community</strong> that helps college students to learn in
-                public and engage with similar-minded people.
-              </p>
-              <p class="p-hover">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                  class="h2 text-primary" height="0.8em" width="1em" xmlns="http://www.w3.org/2000/svg"
-                  style="flex-shrink: 0;">
-                  <path
-                    d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
-                  </path>
-                </svg>
+              <div class="style">
+                <p class="p-hover">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    class="h2 text-primary" height="0.8em" width="1em" xmlns="http://www.w3.org/2000/svg"
+                    style="flex-shrink: 0;">
+                    <path
+                      d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                    </path>
+                  </svg>
+                  We are a <strong>Multi-College Tech Community</strong> that helps college students to learn in
+                  public and engage with similar-minded people.
+                </p>
 
-                We help local college communities to encourage this culture on their campus and
-                help them to build it.
-              </p>
-              <p class="p-hover">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                  class="h2 text-primary" height="0.8em" width="1em" xmlns="http://www.w3.org/2000/svg"
-                  style="flex-shrink: 0;">
-                  <path
-                    d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
-                  </path>
-                </svg>
+                <p class="p-hover">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    class="h2 text-primary" height="0.8em" width="1em" xmlns="http://www.w3.org/2000/svg"
+                    style="flex-shrink: 0;">
+                    <path
+                      d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                    </path>
+                  </svg>
 
-                We help upskill in the domain of your interests by organizing
-                workshops, technical seminars, hackathons, project sessions, code-along, etc.
-              </p>
-              <p class="p-hover">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                  class="h2 text-primary" height="0.8em" width="1em" xmlns="http://www.w3.org/2000/svg"
-                  style="flex-shrink: 0;">
-                  <path
-                    d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
-                  </path>
-                </svg>
+                  We help local college communities to encourage this culture on their campus and
+                  help them to build it.
+                </p>
+                <p class="p-hover">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    class="h2 text-primary" height="0.8em" width="1em" xmlns="http://www.w3.org/2000/svg"
+                    style="flex-shrink: 0;">
+                    <path
+                      d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                    </path>
+                  </svg>
 
-                The Community aims to help individuals to Collaborate and Contribute to Open-Source Projects by
-                mentoring them at each stage of their Contribution.
-              </p>
+                  We help upskill in the domain of your interests by organizing
+                  workshops, technical seminars, hackathons, project sessions, code-along, etc.
+                </p>
+                <p class="p-hover">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    class="h2 text-primary" height="0.8em" width="1em" xmlns="http://www.w3.org/2000/svg"
+                    style="flex-shrink: 0;">
+                    <path
+                      d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                    </path>
+                  </svg>
 
+                  The Community aims to help individuals to Collaborate and Contribute to Open-Source Projects by
+                  mentoring them at each stage of their Contribution.
+                </p>
+              </div>
             </div>
           </div>
           <div class="col-lg-6">
-            <!-- <img class="abt-img" src="assets/img/abt1.jpg" alt="about-us"> -->
+            <!--<img class="abt-img" src="assets/img/abt1.jpg" alt="about-us"> -->
             <img class="whoweare" src="assets/img/abt.jpg" alt="about-us">
           </div>
         </div>
@@ -222,10 +244,14 @@
 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
-      <div class="container" data-aos="fade-up">
-        <h1 class="number">Numbers say it all!</h1>
-        <hr class="line">
-        <div class="row">
+      <div class="container modifiedCount" data-aos="fade-up">
+        <div class="firstCount">
+          <h1 class="number">Numbers say it all!</h1>
+        </div>
+        <div class="hrCount">
+          <hr class="line hr-center">
+        </div>
+        <div class="row modifyingCount">
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <i class="bi bi-people-fill"></i>
@@ -305,9 +331,8 @@
                   </div>
                   <div class="flex-child gallery right-tab">
                     <h4 class="benefits">Upskill Students</h4>
-                    <p>We help students to get started with their lifelong journey of coding.
-                      Students will explore and learn what real-world Software
-                      development looks like.</p>
+                    <p>We help students to get started with their lifelong journey of coding. Students will explore and
+                      learn what real-world Software development looks like.</p>
                     <p>Problem-solving skills and interpersonal skills will be refined. Overall students will enjoy with
                       this collaborative journey of learning, practicing and sharing technical skills with our
                       enthusiastic community!!</p>
@@ -541,6 +566,31 @@
     </section>
     <!-- End Achievement Section -->
 
+     <!--Gallery-->
+    <section id="gallery">
+    <div class="container" data-aos="fade-up">
+      <div class="section-header">
+        <h1 class="number text-center">Gallery</h1>
+        <hr class="line hr-center">
+      </div>
+      <div class="image-slideshow">
+        <div class="image fade">
+          <img src="https://i.ibb.co/7R9h3wZ/csg1.jpg" height=500>
+        </div>
+        <div class="image fade">
+          <img src="https://i.ibb.co/gRQLhDs/csg2.jpg"  height=500>
+        </div>
+        <div class="image fade">
+         <img src="https://i.ibb.co/6FkjN8w/csg3.jpg" height=500>
+        </div>
+        <div class="image fade">
+        <img src="https://i.ibb.co/fxnWnMf/csg5.jpg" height=500>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- End gallery Section -->
+
     <!-- ======= Join US Section ======= -->
     <section id="join-us" class="join section-bg1">
       <div class="container" data-aos="fade-up">
@@ -555,81 +605,87 @@
               our enthusiastic
               community!! by filling out this Google form 👇</p>
           </div>
-          <a href="https://forms.gle/w3SgHzXz4m9bynXL9" target="_blank">
+          <a href="https://forms.gle/w3SgHzXz4m9bynXL9" target="_blank" text-decoration:none;>
             <p class="benefits link">OSCode Community Student Form</p>
           </a>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100" style="margin-top: 10px;">
           <div class="abt-txt">
-            <h2 class="us" style="margin-bottom: 0px;"><i class="bi bi-chat-heart"></i> Reach us out
-              through...</h2>
+            <!-- <h2 class="us" style="margin-bottom: 0px;"><i class="bi bi-chat-heart"></i> Reach us out
+              through...</h2> -->
+            <h2 class="us" style="margin-bottom: 0px;"><i class="bi bi-chat-heart"></i> Contact us via..</h2>
           </div>
           <div class="row join ml-auto mr-auto">
-            
-              <div class="col-lg-4 col-md-6 shrink">
-                
-                <div class="count-box">
-                  <a href="https://github.com/OSCode-Community" target="_blank" rel="noopener noreferrer">
+
+            <div class="col-lg-4 col-md-6 shrink">
+
+              <div class="count-box">
+                <a href="https://github.com/OSCode-Community" target="_blank" aria-label="Visit us on Github"
+                  title="Github (External Link)" rel="noopener noreferrer">
                   <i class="bi bi-github github-box"></i>
                   <p>Github</p>
                 </a>
-                </div>
-            
-          </div>
+              </div>
 
-          <div class="col-lg-4 col-md-6 mt-5 mt-md-0 shrink">
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-5 mt-md-0 shrink">
               <div class="count-box">
                 <a href="https://discordapp.com/channels/945676223101698060/945680318248128543/946084270693318686"
-              target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-discord discord-box"></i>
-                <p>Discord</p>
-              </a>
+                  target="_blank" aria-label="Join with us on Discord" title="Discord (External Link)"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-discord discord-box"></i>
+                  <p>Discord</p>
+                </a>
               </div>
-            
-          </div>
 
-          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 shrink">
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 shrink">
               <div class="count-box">
-                <a href="https://www.linkedin.com/company/oscode/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-linkedin linkedin-box"></i>
-                <p>LinkedIn</p>
-              </a>
+                <a href="https://www.linkedin.com/company/oscode/" target="_blank" aria-label="Visit us on Linkedin"
+                  title="Linkedin (External Link)" rel="noopener noreferrer">
+                  <i class="bi bi-linkedin linkedin-box"></i>
+                  <p>LinkedIn</p>
+                </a>
               </div>
+            </div>
           </div>
-        </div>
 
-        <div class="row join shrink  ml-auto mr-auto">
+          <div class="row join shrink  ml-auto mr-auto">
             <div class="col-lg-4 col-md-6">
               <div class="count-box">
                 <a href="https://instagram.com/os_code_community?igshid=YmMyMTA2M2Y=" target="_blank"
-            rel="noopener noreferrer">
-                <i class="bi bi-instagram instagram-box"></i>
-                <p>Instagram</p>
-              </a>
+                  aria-label="Visit us on Instagram" title="Instagram (External Link)" rel="noopener noreferrer">
+                  <i class="bi bi-instagram instagram-box"></i>
+                  <p>Instagram</p>
+                </a>
               </div>
-          
-        </div>
 
-        <div class="col-lg-4 col-md-6 mt-5 mt-md-0 shrink">
-            <div class="count-box">
-              <a href="https://twitter.com/OSCodeCommunity" target="_blank" rel="noopener noreferrer">
-              <i class="bi bi-twitter twitter-box"></i>
-              <p>Twitter</p>
-            </a>
             </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 shrink">
-            <div class="count-box">
-              <a href="https://t.me/+yNBAO5cbFLk3NTA1" target="_blank" rel="noopener noreferrer">
-              <i class="bi bi-telegram telegram-box"></i>
-              <p>Telegram</p>
-            </a>
+            <div class="col-lg-4 col-md-6 mt-5 mt-md-0 shrink">
+              <div class="count-box">
+                <a href="https://twitter.com/OSCodeCommunity" target="_blank" aria-label="Visit us on Twitter"
+                  title="Twitter (External Link)" rel="noopener noreferrer">
+                  <i class="bi bi-twitter twitter-box"></i>
+                  <p>Twitter</p>
+                </a>
+              </div>
             </div>
+
+            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 shrink">
+              <div class="count-box">
+                <a href="https://t.me/+yNBAO5cbFLk3NTA1" target="_blank" aria-label="Join with us on Telegram"
+                  title="Telegram (External Link)" rel="noopener noreferrer">
+                  <i class="bi bi-telegram telegram-box"></i>
+                  <p>Telegram</p>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
       </div>
 
       <!-- <div class="row" data-aos="fade-up" data-aos-delay="100" style="margin-top: 10px;">
@@ -697,7 +753,7 @@
     <!-- End join-us Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <section id="testimonials" class="testimonials" style="display:none;">
       <div class="container" data-aos="fade-up">
         <h1 class="text-center">Testimonials</h1>
         <hr class="line hr-center">
@@ -857,7 +913,8 @@
         </ul>
 
       </div>
-    </section><!-- End Frequently Asked Questions Section -->
+    </section>
+    <!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -869,105 +926,112 @@
           <div class="col-lg-6">
             <div class="row">
               <div class="col-md-12">
-                <div class="info-box">
-                  <!-- <i class="bx bx-map"></i> -->
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3295777128365!2d77.57881345058549!3d12.950750090824721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156bf4c356ed%3A0x3466b397b31dae21!2sOS-CODE%20headquarter!5e0!3m2!1sen!2sin!4v1679811939861!5m2!1sen!2sin"
-                    width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  <!-- ====> 100% height and auto width is the key to make any image responsive <==== -->
-                  <h3>Address</h3>
-                  <p>
-                    OS-CODE headquarter, Shanbough Krinshappa Ln, Upparahalli, <br>Mavalli, Bengaluru, Karnataka 560004
+                <div class="info-box modifiedAddress">
+                  <div class="mapArea">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3295777128365!2d77.57881345058549!3d12.950750090824721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156bf4c356ed%3A0x3466b397b31dae21!2sOS-CODE%20headquarter!5e0!3m2!1sen!2sin!4v1679811939861!5m2!1sen!2sin"
+                      width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- ====> 100% height and auto width is the key to make any image responsive <==== -->
+                  </div>
+                  <div class="address">
+                    <h3>Address</h3>
+                    <p>
+                      <a href="https://goo.gl/maps/WP3QjyGRJSpaET56A" target="_blank">
+                        OS-CODE headquarter, Shanbough Krinshappa Ln, Upparahalli, <br>Mavalli,
+                        Bengaluru, Karnataka
+                        560004
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 ">
+                <div class="info-box mt-4 modifiedMailPhone">
+                  <a href="mailto:oscode.community@gmail.com?subject=Enquiry"><i class="bx bx-envelope"></i></a>
+                  <h3>Email Us</h3>
+                  <p class="email"><a href="mailto:oscode.community@gmail.com?subject=Enquiry"
+                      style="text-decoration: none; color: #161616;">oscode.community@gmail.com</a><br>
+                    <br>
                   </p>
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <a href="mailto:oscode.community@gmail.com?subject=Enquiry"><i class="bx bx-envelope"></i></a>
-                  <h3>Email Us</h3>
-                  <p><a href="mailto:oscode.community@gmail.com?subject=Enquiry"
-                      style="text-decoration: none; color: #161616;">oscode.community@gmail.com</a><br> <br></p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <a href="tel:+91-7667109405"><i class="bx bx-phone-call"></i></a>
+                <div class="info-box mt-4 modifiedMailPhone">
+                  <a href="tel:+91-7975954835"><i class="bx bx-phone-call"></i></a>
                   <h3>Call Us</h3>
-                  <p><a href="tel:+91-7667109405"
-                      style="text-decoration: none; color: #161616;">+91-7667109405<br /></a><a
-                      href="tel:+91-7014122349" style="text-decoration: none; color: #161616;">+91-7014122349</a></p>
+                  <p class="phone">
+                    <a href="tel:+91-7975954835" style="text-decoration: none; color: #161616;">+91-7975954835<br /></a>
+                    <a href="tel:+91-7014122349" style="text-decoration: none; color: #161616;">+91-7014122349</a>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <!-- <div class="col-lg-6 contact-img">
-            <img src="assets/img/contact.png" alt="contact us" style="margin-left: 100px;
-            margin-top: 75px; height: 400px;">
-          </div> -->
+
 
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <form class="contactForm" id="contact_Form" action="mailto:oscode.community@gmail.com" method="post" enctype="text/plain" autocomplete="on">
+            <form class="contactForm" id="contact_Form" action="mailto:oscode.community@gmail.com" method="post"
+              enctype="text/plain" autocomplete="on">
               <div class="row form-group">
                 <div class="col form-group">
                   <div>
-                  <input type="text"  autocomplete="email" class="form-control" name="email" id="email"
-                    placeholder="Your Email"/>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
+                    <input type="email" autocomplete="email" class="form-control" name="email" id="email" required />
+                    <label class="label-name">
+                      <span class="content-name">Email</span>
+                    </label>
+                    <!-- <i class="fas fa-check-circle"></i> -->
+                    <!-- <i class="fas fa-exclamation-circle"></i> -->
                   </div>
-                     <div class="spandiv"><small class="small"></small></div>
-                  </div>
+                  <div class="spandiv"><small class="small"></small></div>
+                </div>
 
                 <div class="col form-group">
                   <div>
-                    <input type="text"  autocomplete="name" name="name" class="form-control" id="name"
-                    placeholder="Your Name"/>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
+                    <input type="text" autocomplete="name" name="name" class="form-control" id="name"
+                      pattern="[a-zA-Z][a-zA-Z ]{2,}" title="Number Not Allowed" required />
+                    <label class="label-name">
+                      <span class="content-name">Name</span>
+                    </label>
+                    <!-- <i class="fas fa-check-circle"></i> -->
+                    <!-- <i class="fas fa-exclamation-circle"></i> -->
                   </div>
                   <div class="spandiv"><small class="small"></small></div>
-                  </div>
+                </div>
               </div>
-              
-            
-          
+              <div>
                 <div class="col form-group">
-                <div><input type="text"  autocomplete="subject" class="form-control" name="subject" id="subject"
-                  placeholder="Subject"/>
-                  <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
+                  <div class="form-group">
+                    <input type="text" autocomplete="subject" class="form-control" name="College" id="college"
+                      required />
+                    <label class="label-name">
+                      <span class="content-name">College</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col form-group">
+                  <div><input type="text" autocomplete="subject" class="form-control" name="subject" id="subject"
+                      required />
+                    <label class="label-name">
+                      <span class="content-name">Subject</span>
+                    </label>
                   </div>
                   <div class="spandiv" style="padding-top: 4px;"> <small class="small"></small></div>
-                  </div>
-                <!-- <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required /> -->
-          
-              <!-- <div class="form-group">
-                <input type="password" class="form-control" name="password" id="password" placeholder="Enter password"
-                  required />
-              </div> -->
-     
-              <div class="col form-group">
-                <div><textarea class="form-control" autocomplete="message" id="message" name="message" rows="5" placeholder="Message"
-                  ></textarea>
-                   <i class="fas fa-check-circle"></i>
-                     <i class="fas fa-exclamation-circle"></i>
-                  </div>
-                    <div class="spandiv" style="padding-top: 4px;"><small class="small"></small></div>
-                  </div>
-             
-                  
-              <!-- <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  You don't have an account yet, please register!!
                 </div>
-              </div> -->
-              <div class="text-center white">
-                <button type="submit" class="btn get-started-btn msg-us">Message us</button>
-              </div>
+
+                <div class="col form-group">
+                  <div><textarea class="form-control" autocomplete="message" id="message" name="message" rows="5"
+                      required></textarea>
+                    <label class="label-name">
+                      <span class="content-name">Message</span>
+                    </label>
+                  </div>
+                  <div class="spandiv" style="padding-top: 4px;"><small class="small"></small></div>
+                </div>
+                <div class="text-center white">
+                  <button type="submit" class="btn get-started-btn msg-us">Message us</button>
+                </div>
             </form>
           </div>
         </div>
@@ -980,15 +1044,15 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
-      <div class="container">
-        <div class="row">
+      <div class="container modifiedFooterTop">
+        <div class="row modifyRow">
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>OS-Code</h3>
             <p>
               OS-CODE headquarter, Shanbough<br>
               Krinshappa Ln Mavalli, <br>
               Bengaluru, Karnataka 560004<br>
-              <strong>Phone:</strong> +91-7667109405<br />
+              <strong>Phone:</strong> +91-7975954835<br />
             </p>
           </div>
 
@@ -1054,15 +1118,30 @@
     <div class="container py-4 modifiedFooter">
       <div class="social-links text-md-end pt-3 pt-md-0 socialLinkMod">
         <div class="textSocials">Stay in the loop?</div>
-        <a href="https://twitter.com/oscodecommunity" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100090940131222&mibextid=ZbWKwL" target="_blank" class="facebook"><i
-            class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/os_code_community/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.youtube.com/@oscodecommunity" target="_blank"  class="youtube"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/company/oscode/" target="_blank"  class="linkedin"><i class="bx bxl-linkedin"></i></a>
-
-        <a href="https://discord.com/channels/945676223101698060" target="_blank" class="discord"><i class="bi bi-discord"></i></a>
-
+        <a href="https://twitter.com/oscodecommunity" target="_blank" aria-label="Visit us on Twitter"
+          title="Twitter (External Link)" rel="noopener noreferrer" class="twitter">
+          <i class="bx bxl-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100090940131222&mibextid=ZbWKwL" target="_blank"
+          aria-label="Visit us on Facebook" title="Facebook (External Link)" rel="noopener noreferrer" class="facebook">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/os_code_community/" target="_blank" aria-label="Visit us on Instagram"
+          title="Instagram (External Link)" rel="noopener noreferrer" class="instagram">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@oscodecommunity" target="_blank" aria-label="Visit us on Youtube"
+          title="Linkedin (External Link)" rel="noopener noreferrer" class="youtube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/oscode/" target="_blank" aria-label="Visit us on Linkedin"
+          title="Linkedin (External Link)" rel="noopener noreferrer" class="linkedin">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+        <a href="https://discord.com/channels/945676223101698060" target="_blank" aria-label="Join with us on Discord"
+          title="Discord (External Link)" rel="noopener noreferrer" class="discord">
+          <i class="fa-brands fa-discord"></i>
+        </a>
       </div>
 
       <div class="me-md-auto text-md-start crMod">
@@ -1099,115 +1178,100 @@
     });
   </script>
 
- <!--JS contact form validation start-->
- <script>
-  const form = document.getElementById('contact_Form');
-  const useremail = document.getElementById('email');
-  const username = document.getElementById('name');
-  const subject = document.getElementById('subject');
-  const message = document.getElementById('message');
+  <!--JS contact form validation start-->
+  <!-- <script>
+    const form = document.getElementById('contact_Form');
+    const useremail = document.getElementById('email');
+    const username = document.getElementById('name');
+    const subject = document.getElementById('subject');
+    const message = document.getElementById('message');
 
-  form.addEventListener('submit',(e)=>{
-    if(checkInputs())
-    return true;
-    else
-    e.preventDefault();
+    form.addEventListener('submit', (e) => {
+      if (checkInputs())
+        return true;
+      else
+        e.preventDefault();
 
-  });
+    });
 
-  function checkInputs()
-  {
-       //get values from input fields
-       const emailval = useremail.value.trim();
-       const usernameval = username.value.trim();
-       const subjectval = subject.value.trim();
-       const messageval = message.value.trim();
+    function checkInputs() {
+      //get values from input fields
+      const emailval = useremail.value.trim();
+      const usernameval = username.value.trim();
+      const subjectval = subject.value.trim();
+      const messageval = message.value.trim();
 
-       if(emailval === '')
-       {
-          setErrorFor(useremail,'Please enter a Email');
-       }
-       else if(!validateEmail(emailval))
-       {
-         setErrorFor(useremail,'Enter a valid Email');
-       }
-       else
-       {
+      if (emailval === '') {
+        setErrorFor(useremail, 'Please enter a Email');
+      }
+      else if (!validateEmail(emailval)) {
+        setErrorFor(useremail, 'Enter a valid Email');
+      }
+      else {
         setSuccessFor(useremail);
-       }
-       
-       if(usernameval === '')
-       {
-          setErrorFor(username,'Please enter a name');
-       }else
-       {
+      }
+
+      if (usernameval === '') {
+        setErrorFor(username, 'Please enter a name');
+      } else {
         setSuccessFor(username);
-       }
+      }
 
-       
-       if(subjectval === '')
-       {
-          setErrorFor(subject,'Please enter a subject');
-       }else
-       {
+
+      if (subjectval === '') {
+        setErrorFor(subject, 'Please enter a subject');
+      } else {
         setSuccessFor(subject);
-       }
+      }
 
-       
-       if(messageval === '')
-       {
-          setErrorFor(message,'Please enter a message');
-       }else
-       {
+
+      if (messageval === '') {
+        setErrorFor(message, 'Please enter a message');
+      } else {
         setSuccessFor(message);
-       }
+      }
 
-       if(emailval !== '' && usernameval !== '' && subjectval !== '' && messageval !== '')
-       {
+      if (emailval !== '' && usernameval !== '' && subjectval !== '' && messageval !== '') {
         console.log("complete");
         return true;
-       }
-      
-  }
+      }
 
-  function validateEmail(mail) 
-  {
-     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
-    {
-      return true;
     }
-    return false;
-  }
-  
-  function setErrorFor(input,showerror)
-  {
-    let formControl = input.parentElement.parentElement;
-    const small = formControl.querySelector('small');
-    small.innerText = showerror;
 
-    formControl.classList.remove('success');
-    formControl.classList.add('error');
+    function validateEmail(mail) {
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+        return true;
+      }
+      return false;
+    }
 
-  }
+    function setErrorFor(input, showerror) {
+      let formControl = input.parentElement.parentElement;
+      const small = formControl.querySelector('small');
+      small.innerText = showerror;
 
-  function setSuccessFor(input)
-  {
-    let formControl = input.parentElement.parentElement;
-    formControl.classList.remove('error');
-    formControl.classList.add('success');
-  }
+      formControl.classList.remove('success');
+      formControl.classList.add('error');
 
-  //JS contact form validation end
+    }
 
-</script>
+    function setSuccessFor(input) {
+      let formControl = input.parentElement.parentElement;
+      formControl.classList.remove('error');
+      formControl.classList.add('success');
+    }
+
+  JS contact form validation end
+
+  </script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202304250101/show_ads_impl_fy2021.js"
     id="google_shimpl"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
     crossorigin="anonymous"></script>
   <script>
 

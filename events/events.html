@@ -2,16 +2,6 @@
 <html lang="en">
 
 <head>
-  <style>
-    #preloader {
-      background: #000000 url(OSCode.gif) no-repeat center center;
-      background-size: 60%;
-      height: 100vh;
-      width: 100%;
-      position: fixed;
-      z-index: 999999;
-    }
-  </style>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
@@ -48,17 +38,22 @@
     crossorigin="anonymous"></script>
 
   <!-- Template Main CSS File -->
+
+  <!-- <link href="/assets/css/events.css" rel="stylesheet" /> -->
   <link href="/assets/css/style.css" rel="stylesheet" />
+  <link href="/assets/css/events.css" rel="stylesheet" />
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/37377042d1.js" crossorigin="anonymous"></script>
 
   <!-- for overriding bootstrap css -->
   <link rel="stylesheet" href="/assets/css/override.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body class="eventBody">
+
   <!-- ======= Header ======= -->
   <header id="header" class="glassmorphic fixed-top d-flex align-items-center newFlex">
     <div class=" mainContainer container d-flex align-items-center">
@@ -70,7 +65,7 @@
 
         <!-- company name -->
 
-        <h1 class="logo me-auto"><a href="../index.html">OS-CODE</a></h1>
+        <h1 class="logo me-auto"><a href="https://www.oscode.co.in">OS-CODE</a></h1>
 
       </div>
 
@@ -79,25 +74,30 @@
     </div>
     <div class="navListAndContact">
 
-      <div id="navbar" class="navbar order-last order-lg-0">
+      <div id="navbar" class="navbar order-last order-lg-0 me-4">
         <ul>
-          <li><a class="nav-link scrollto " style="text-decoration: none;" href="/index.html">HOME</a></li>
-          <li><a class="nav-link scrollto" style="text-decoration: none;" href="/index.html#mainabout">ABOUT</a></li>
+          <li><a class="nav-link scrollto " style="text-decoration: none;" href="/">HOME</a></li>
+          <li><a class="nav-link scrollto" style="text-decoration: none;"
+              href="/#mainabout">ABOUT</a></li>
           <li>
             <a class="nav-link scrollto" style="text-decoration: none;" href="/chapters/chapter.html">CHAPTERS</a>
           </li>
           <li><a class="nav-link scrollto" style="text-decoration: none;" href="https://blog.oscode.co.in/">BLOGS</a>
           </li>
-          <li class="active"><a href="events.html" style="text-decoration: none;">EVENTS</a></li>
+          <li><a class="nav-link scrollto active" href="events.html" style="text-decoration: none;">EVENTS</a></li>
+          <li><a class="nav-link scrollto" href="/#contact" style="text-decoration: none;">CONTACT</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </div>
-
+      <span>
+        <a href="/login/login.html" class="get-started-btn-1 scrollto cntctBtn"></a>
+      </span>
       <!-- navbar list ends here -->
 
-      <a href="/index.html#contact" class="get-started-btn scrollto cntctBtn">CONTACT US</a>
+      <!-- <a href="https://www.oscode.co.in/#contact" class="get-started-btn scrollto cntctBtn">CONTACT US</a> -->
 
     </div>
+
   </header>
   <!-- End Header -->
 
@@ -125,84 +125,84 @@
 
   <!-- New image section -->
 
-  <div id="section07" class="container eventPage">
-    <div class="row d-flex flex-wrap align-items-center modifiedLook" data-toggle="modal" data-target="#lightbox">
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+  <div id="section07" class="container eventPage" >
+    <div class="row d-flex flex-wrap align-items-center modifiedLook" data-toggle="modal" data-target="#lightbox" style="align-items: center; justify-content: center;">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/14daysofcode.jpg" data-target="#indicators" data-slide-to="0"
           alt="14 days of code" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/7daysofcode.jpg" data-target="#indicators" data-slide-to="1"
           alt="7 days of code" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/arm_wrestling.jpg" data-target="#indicators" data-slide-to="2"
           alt="arm wrestler" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/bubble_wrestling.jpg" data-target="#indicators" data-slide-to="3"
           alt="bubble wrestler" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/crack_the_code.jpg" data-target="#indicators" data-slide-to="4"
           alt="crack the code" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/dumb_charades.jpg" data-target="#indicators" data-slide-to="5"
           alt="dumb character" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/foundation_stone.jpg" data-target="#indicators" data-slide-to="6"
           alt="foundation stone" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/HUSTLE1.jpg" data-target="#indicators" data-slide-to="7" alt="hustle1" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/HUSTLE2.jpg" data-target="#indicators" data-slide-to="8" alt="hustle2" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/hustle3.jpg" data-target="#indicators" data-slide-to="9" alt="hustle3" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/hustle4.png" data-target="#indicators" data-slide-to="10" alt="hustle4" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/Hustle5Poster.jpg" data-target="#indicators" data-slide-to="11" alt="hustle5" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/hustle6.jpg" data-target="#indicators" data-slide-to="12" alt="hustler6" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/hustle7.jpg" data-target="#indicators" data-slide-to="13" alt="hustle7" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/induction_program.jpg" data-target="#indicators" data-slide-to="14"
           alt="induction" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/king64.jpg" data-target="#indicators" data-slide-to="15" alt="king64" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/musical_chairs.jpg" data-target="#indicators" data-slide-to="16"
           alt="musical chair" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/orientation.jpg" data-target="#indicators" data-slide-to="17" alt="orientation" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/RC_car_race.jpg" data-target="#indicators" data-slide-to="18" alt="rc car" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/treasure_hunt.jpg" data-target="#indicators" data-slide-to="19" alt="treasure" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/tug_of_war.jpg" data-target="#indicators" data-slide-to="20" alt="tug of war" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/upstart.jpg" data-target="#indicators" data-slide-to="21" alt="upstart" />
       </div>
-      <div class="col-12 col-md-6 col-lg-3 colImg">
+      <div class="col-12 col-md-6 col-lg-3 colImg" data-aos="zoom-out-up">
         <img src="/assets/img/events/walkathon.jpg" data-target="#indicators" data-slide-to="22" alt="walkathon" />
       </div>
     </div>
@@ -333,15 +333,15 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+    <div class="footer-top" style="padding-left:20px;">
+      <div class="container modifiedFooterTop">
+        <div class="row modifyRow">
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>OS-Code</h3>
             <p>
-              OS-CODE headquarter, Shanbough<br />
-              Krinshappa Ln Mavalli, <br />
-              Bengaluru, Karnataka 560004<br />
+              OS-CODE headquarter, Shanbough<br>
+              Krinshappa Ln Mavalli, <br>
+              Bengaluru, Karnataka 560004<br>
               <strong>Phone:</strong> +91-7667109405<br />
             </p>
           </div>
@@ -350,8 +350,7 @@
             <h4>Useful Links</h4>
             <ul>
               <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="oscode.co.in">Home</a>
+                <i class="bx bx-chevron-right"></i> <a href="#hero">Home</a>
               </li>
               <li>
                 <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
@@ -377,8 +376,7 @@
                 <i class="bx bx-chevron-right"></i><a href="#">Web Development</a>
               </li>
               <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">App Development</a>
+                <i class="bx bx-chevron-right"></i> <a href="#">App Development</a>
               </li>
             </ul>
           </div>
@@ -390,19 +388,16 @@
             </form> -->
             <ul>
               <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="../index.html#about">About us</a>
+                <i class="bx bx-chevron-right"></i> <a href="../index.html#mainabout">About us</a>
               </li>
               <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="../index.html#benefits">Benefits</a>
+                <i class="bx bx-chevron-right"></i> <a href="../index.html#benefits">Benefits</a>
               </li>
               <li>
                 <i class="bx bx-chevron-right"></i><a href="../index.html#achievement">Accomplishments</a>
               </li>
               <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="../index.html#faq">FAQ</a>
+                <i class="bx bx-chevron-right"></i> <a href="../index.html#faq">FAQ</a>
               </li>
             </ul>
           </div>
@@ -410,18 +405,21 @@
       </div>
     </div>
 
-    <!-- ======================> Don't change this footer part <======================= -->
     <div class="container py-4 modifiedFooter">
       <div class="social-links text-md-end pt-3 pt-md-0 socialLinkMod">
         <div class="textSocials">Stay in the loop?</div>
-        <a href="https://twitter.com/oscodecommunity" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100090940131222&mibextid=ZbWKwL" class="facebook"><i
-            class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/os_code_community/" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.youtube.com/@oscodecommunity" class="youtube"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/company/oscode/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/oscodecommunity" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100090940131222&mibextid=ZbWKwL" target="_blank"
+          class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/os_code_community/" target="_blank" class="instagram"><i
+            class="bx bxl-instagram"></i></a>
+        <a href="https://www.youtube.com/@oscodecommunity" target="_blank" class="youtube"><i
+            class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/oscode/" target="_blank" class="linkedin"><i
+            class="bx bxl-linkedin"></i></a>
 
-        <a href="https://discord.com/channels/945676223101698060" class="discord"><i class="bi bi-discord"></i></a>
+        <a href="https://discord.com/channels/945676223101698060" target="_blank" class="discord"><i
+            class="bi bi-discord"></i></a>
 
       </div>
 
@@ -432,7 +430,6 @@
         <div class="credits">Designed by <a href="#">OS-Code</a></div>
       </div>
     </div>
-    <!-- ======================> <======================= -->
   </footer>
   <!-- End Footer -->
 
@@ -461,9 +458,9 @@
         data = data.slice().reverse();
         data.forEach((item) => {
           const cardHtml = `
-      
+
             <div class="card" data-aos="zoom-in" data-aos-delay="100">
-              
+
               <div class="for-image-div">
                 <img src="${item.image}" alt="" id="image-for-card">
               </div>
@@ -478,7 +475,7 @@
               <div id="event-p-div">
                 <p id="event-p">${item.description}</p>
               </div>
-         
+
             </div>`;
 
           cardsHtml += cardHtml;
@@ -488,6 +485,10 @@
       .catch((error) => {
         console.error("Error:", error);
       });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
 </body>
 

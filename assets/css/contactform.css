@@ -1,0 +1,101 @@
+
+.modifiedAddress {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.contact .info-box i {
+    font-size: 32px;
+    color: #5942e9;
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px dotted #f8d4d5;
+}
+
+.form-group input{
+    transition: 0.3s ease-in-out;
+}
+
+.form-group input:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(137, 119, 212, 0.456) 0px 5px 10px;
+}
+
+.form-group textarea:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(137, 119, 212, 0.456) 0px 5px 10px;
+}
+
+.address {
+    text-align: center;
+}
+
+.address p a {
+    transition: 0.3s ease-in-out;
+}
+
+.address p a:hover {
+    transition: 0.3s ease-in-out;
+}
+
+.contactForm{
+    margin-top: -160px;
+}
+
+.modifiedMailPhone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    row-gap: 10px;
+}
+
+.form-group label{
+    position: absolute;
+    bottom: 0px;
+    left: 25px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.content-name{
+    position: absolute;
+    top: 15px;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.5s ease;
+}
+
+.form-group  input:focus + .label-name .content-name,
+.form-group  textarea:focus + .label-name .content-name{
+    color: #86b7fe;
+    font-size: 12px;
+    transform: translateY(-15px)translateX(5px);
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+}
+.form-group input:valid + .label-name .content-name,
+.form-group  textarea:valid + .label-name .content-name{
+    color: black;
+    font-size: 12px;
+    transform: translateY(-15px)translateX(5px);
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color:white;
+    height: 20px;
+}
+
+@media screen and (max-width: 991px)  {
+    .contactForm{
+        margin-top: auto;
+    }      
+}
+@media screen and (max-width:767px){
+    .container-1 {
+   display: inline-flexbox;
+    }
+}
