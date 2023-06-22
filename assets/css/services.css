@@ -13,6 +13,18 @@ body{
 .navbar-light .navbar-brand{
     font-size: 20px;
     font-weight: bold;
+    display: inline-block;
+}
+
+.navbar-toggler{
+  float:right;
+  margin-top: 15px;
+}
+
+.navbar-collapse{
+  width: 50%;
+  float: right;
+  margin-top: 15px;
 }
 /* .nav-item:hover{
     
@@ -466,6 +478,12 @@ ul{
   list-style-type:square;
 }
 
+.services-left-dec{
+  position: absolute;
+  left:1rem;
+  top:40rem;
+}
+
 
 
 @media screen and (max-width:420px){
@@ -477,7 +495,7 @@ ul{
     padding: 2rem 5rem;
   }
   .main-cont-img{
-    width: 28rem;
+    width: 26rem;
   }
   div#lo-card{
     margin:1rem ;
@@ -493,7 +511,11 @@ ul{
   }
   .col-lg-3{
     margin-bottom: 4rem;
-    margin-left: 6rem;
+    margin-left: 5rem;
+    width:80%;
+  }
+  .services-left-dec{
+    left:0rem;
   }
 }
 
