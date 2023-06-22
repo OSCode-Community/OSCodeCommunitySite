@@ -32,8 +32,10 @@ hr.line {
     transition: 0.4s all ease-in-out;
   }
   .counts .count-box:hover {
-    /* box-shadow: 0 5px 10px #aaa; */
-    transform: scale(1.1);
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    transition: 1s ease;
   }
   .count-box > span {
     display: inline-block !important;
