@@ -1,1 +1,35 @@
+/*Gallery Section
+---------------------------*/
 
+.number {
+    color: rgb(253, 253, 253) !important;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    margin-top: -40px;
+  }
+#gallery {
+    background-image: linear-gradient(
+      to right,
+      #0f0c29,
+      #302b63,
+      #24243e,
+      rgb(69, 69, 107)
+    );
+  }
+.image-slideshow {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    }
+    .image-slideshow img {
+    width: 100%
+    }
+    .fade {
+    animation-name: fade;
+    animation-duration: 2s;
+    }
+    @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+    }
