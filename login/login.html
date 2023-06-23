@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <!-- Favicons -->
+  <link href="../assets/img/logo.jpeg" rel="icon" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Montserrat&family=Noto+Serif&family=Prompt:wght@500&family=Rajdhani:wght@500&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap Script -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/login.css">
+
+  <!-- for overriding the nav css -->
+  <link rel="stylesheet" href="../assets/css/override.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header" class="glassmorphic fixed-top d-flex align-items-center newFlex">
+    <div class=" mainContainer container d-flex align-items-center">
+      <div class="logoAndName">
+        <img class="logo1" src="../assets/img/logo.jpeg" width="60px" height="60px" alt="logo" />
+        <h1 class="logo me-auto" id="landingPage"><a href="#">OS-CODE</a></h1>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <div id="navbar" class="navbar order-last order-lg-0 me-4">
+      <ul class="nav-list">
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="/#hero">HOME</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="/#mainabout">ABOUT</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="/chapters/chapter.html">CHAPTERS</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="https://blog.oscode.co.in/">BLOGS</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="/events/events.html" >EVENTS</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="/#contact">CONTACT</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </div>
+    </div>
+    <span>
+      <a href="#" class="get-started-btn-1 active-get-started-btn-1 scrollto cntctBtn"></a>
+    </span>
+  </header>
+
+  <!-- login container -->
+  <div class="login-container min-vh-100">
+    <div
+      class="login-box text-white d-flex flex-column align-items-center justify-content-center mx-auto">
+      <h1 class="sign-in text-center p-0">Login</h1>
+
+      <!-- sign up with google -->
+      <div class="google d-flex justify-content-center align-items-center ">
+        <img class="googleicon" src="../assets/img/googleicon.png" alt="gogoleicon" />
+        <div class="login-with-google">Login with Google</div>
+      </div>
+      <div class="or mb-3 d-flex justify-content-center">
+        <div class="or-line"></div> OR <div class="or-line"></div>
+      </div>
+
+      <!-- Login form -->
+      <form action="/index.html" method="get" class="form-container d-flex flex-column" onSubmit="handleSubmit()">
+
+        <!-- inputs -->
+        <div class="user-box">
+          <input type="text" onChange="handleChange()"required />
+          <label for="user-name">User Name</label>
+        </div>
+
+        <div>
+          <div class="user-box">
+            <input type="password" onChange="handleChange()" required id="password"/>     
+            <!-- <svg onclick="togglePassword()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye field-icon" viewBox="0 0 16 16">
+              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+            </svg> -->
+            <label for="password">Password</label>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <input type="checkbox" onclick="togglePassword()" />
+            <label style="margin-top: 5px; margin-left: 5px;">Show password</label>
+          </div>
+        </div>
+
+        <div class="remember-me">
+          <label class="switch" for="remember-me">
+            <input type="checkbox" id="remember-me" />
+            <div class="slider round"></div>
+          </label>
+          <label for="remember-me"> Remember me</label>
+        </div>
+
+        
+
+        <!-- login button -->
+        <div class="btn">
+          <button type="submit" class="submit-button">Login</button>
+        </div>
+
+        <!-- forgot password & dont have account -->
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <div class="mb-2 fyp">
+            <a href="/resetpass/resetpass.html" class="text-white">
+              Forgot Your password?
+            </a>
+          </div>
+          
+          <div class="dhaa">
+            Don't have an account? 
+            <a href="/signup/signup.html" class="pl-2 signup_link">
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- javascript -->
+  <script src="login.js"></script>
+</body>
+
+</html>
