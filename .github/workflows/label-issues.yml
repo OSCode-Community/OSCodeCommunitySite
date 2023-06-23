@@ -1,0 +1,32 @@
+name: Add Labels to Issues
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-labels:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Add 'gssoc23' Label to Issue
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const issueNumber = context.payload.issue.number;
+            const label = 'gssoc23';
+            const addLabelParams = {
+              owner: owner,
+              repo: repo,
+              issue_number: issueNumber,
+              labels: [label]
+            };
+            await github.issues.addLabels(addLabelParams);
+            console.log(`Added the 'gssoc23' label to Issue #${issueNumber}.`);
