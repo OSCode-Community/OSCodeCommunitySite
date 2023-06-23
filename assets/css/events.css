@@ -2,9 +2,9 @@
 # Events
 --------------------------------------------------------------*/
 .card {
-    border-radius: 16px;
+    border-radius: 30px;
     width: 50%;
-    background: linear-gradient(145deg, #e5d9d9, #ffffff);
+    background: linear-gradient(145deg, #dc8484, #ffffff);
     box-shadow: 20px 20px 40px #bebebe, -20px -10px 40px #ffffff;
     margin-bottom: 200px;
   
@@ -15,8 +15,8 @@
   .card:hover {
     /* box-shadow: 20px 20px 40px #d970ea, -20px -20px 40px #a5b5c0; */
     box-shadow: 0 8px 16px var(--header-rgb-transparent),
-      0 4px 8px rgba(0, 0, 0, 0.2), 20px 20px 40px #d970ea,
-      -20px -20px 40px #a5b5c0;
+      0 4px 8px rgba(219, 26, 26, 0.593), 20px 20px 40px #82da95,
+      -20px -20px 40px #4991c1;
     transition: box-shadow 0.15s ease-in-out;
     margin-bottom: 50px;
   }
@@ -196,7 +196,7 @@
   #home {
     width: 100%;
     height: 100vh;
-    background: url("/assets/img/background/bg3.jpg") top center no-repeat;
+    background: url("/assets/img/background/eventsr1.jpg") top center no-repeat;
     background-size: cover;
     position: relative;
     padding-top: 2vh;
@@ -210,6 +210,11 @@
     font-family: "Roboto", sans-serif;
     line-height: 1.5em;
       }
+      .event-h1 {
+    color: var(--background-white);
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5em;
+      }
   .demo a {
     /* position: absolute; These was causing scroll not be in center */
     /* bottom: 20px; */
@@ -219,16 +224,16 @@
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     color: var(--background-white);
-    font: normal 400 20px/1 "Josefin Sans", sans-serif;
+    font: normal 500 20px/1 "Josefin Sans", sans-serif;
     letter-spacing: 0.1em;
     text-decoration: none;
-    transition: opacity 0.3s;
+    transition: opacity 0.5s;
   }
   
   .demo a:hover {
     opacity: 0.5;
-    color: #5d5aff;
-    /* font-weight: bold; */
+    color: #99c509;
+    font-weight: bold;
   }
   
   #home a {
@@ -309,8 +314,8 @@
     height:50px;
     width: 50px;
     padding: 50%;
-    border-radius: 50%;
-    background-color: #9a6af9;
+    border-radius: 90%;
+    background-color: #250134d6;
   }
   
   #section07 a span:nth-of-type(1) {
@@ -434,7 +439,7 @@
   }
   .vertical-tab .tab-content {
     color: var(--background-white);
-    background: #0b697e;
+    background: #98ba19;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -490,8 +495,8 @@
   }
   
   .col-12 img:hover {
-    opacity: 1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(91, 111, 9, 0.19);
   }
   
   .row{
@@ -501,12 +506,17 @@
     margin-top: 20px;
   }
 
-  /* Added shadow effect on elements */
+  /* Added shadow effect on elements*/
   .col-12.col-md-6.col-lg-3.colImg {
-    border: 4px solid black;
-    margin: 14px;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 8px 8px;
+    border: 4px solid rgb(235, 221, 221);
+    margin: 20px;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 5px 5px;
 
-  }
+  } 
+
+
+  
+  
+ 
