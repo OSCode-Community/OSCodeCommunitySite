@@ -11,7 +11,7 @@
   --header-rgb-transparent-sc: rgba(0, 0, 0, 50%);
   --navbar-mobile-background-color: rgba(0, 0, 0, 0.9);
   --theme-color: #8919e4;
-  --navtext-color:#ab6bff;
+  --navtext-color: #ab6bff;
   --home-background-color: #4158d0;
   --scroll-bar-thumb-color: #7027f9;
   --backtotop-btn-color: #5942e9;
@@ -180,7 +180,8 @@ h1 {
 # Get Started Button
 
 ----------------------------------------------------------------*/
-.get-started-btn1,.get-started-btn2 {
+.get-started-btn1,
+.get-started-btn2 {
   font-family: "Roboto", sans-serif;
   transform: translate(-50%, -50%);
   width: 150px;
@@ -252,7 +253,7 @@ h1 {
   right: -5px;
   left: -5px;
   z-index: -1;
-  background: linear-gradient(90deg, #027bb3, #f441a4, #700274,#027bb3 );
+  background: linear-gradient(90deg, #027bb3, #f441a4, #700274, #027bb3);
   background-size: 400%;
   border-radius: 40px;
   filter: blur(20px);
@@ -271,6 +272,15 @@ h1 {
   padding-left: 40%;
   gap: 2rem;
   color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+  .get-btn {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-left: 50%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1542,7 +1552,6 @@ a:hover i {
   bottom: 0;
 }
 
-
 #footer .footer-top .footer-links ul {
   list-style: none;
   padding: 0;
@@ -1719,20 +1728,20 @@ a:hover i {
   transform: scaleX(1);
 }
 
-  @media (max-width: 767px) {
-    /* Center align the footer for small devices */
-    footer {
-      text-align: center;
-    }
-    .footer-top {
-      text-align: center;
-    }
-    .footer-contact,
-    .footer-links {
-      text-align: left;
-      margin-bottom: 30px;
-    }
-    .social-links .list1{
-      text-align: center;
-    }
+@media (max-width: 767px) {
+  /* Center align the footer for small devices */
+  footer {
+    text-align: center;
   }
+  .footer-top {
+    text-align: center;
+  }
+  .footer-contact,
+  .footer-links {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .social-links .list1 {
+    text-align: center;
+  }
+}
