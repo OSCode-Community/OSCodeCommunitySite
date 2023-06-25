@@ -244,8 +244,17 @@ justify-content: center;
 .image-card:hover {
   transform: scale(1.1);
 }
+@media (max-width: 768px) {
 
-#heading1{
-  /* text-align: center; */
-  
+  /* *, ::after, ::before {
+    box-sizing: border-box;
+    width: inherit; */
+
+    .instituteImages,
+    .heading {
+      width: 100%;
+    }
+    #one, #two,#three{
+      display: block;
+    }
 }
