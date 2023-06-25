@@ -15,3 +15,16 @@ function handleChange(e) {
     }
   }
 }
+
+function togglePassword() {
+  var oldpassword = document.getElementById("oldpassword");
+  var newpassword = document.getElementById("newpassword");
+  if (oldpassword.type === "password" && newpassword.type === "password") {
+    oldpassword.type = "text";
+    newpassword.type = "text";
+  } else {
+    oldpassword.type = "password";
+    newpassword.type = "password";
+  }
+
+}
