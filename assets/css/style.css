@@ -807,7 +807,9 @@ section {
 .nav-pills .nav-link {
   color: whitesmoke;
   border: solid 2px #5b49ff;
+  padding-left: 20px;
   margin-bottom: 20px;
+  
   margin-top: 10px;
   min-width: 300px;
   box-shadow: 0px 0px 3px #5b49ff, 0px 0px 4px #5b49ff, 0px 0px 7px #5b49ff,
@@ -833,6 +835,8 @@ section {
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
+  margin-right: 72px;
+  margin-top: 10px;
 }
 
 .gallery::after {
@@ -847,6 +851,7 @@ section {
   object-fit: cover;
   border-radius: 10px;
   margin-left: 100px;
+ 
 }
 .right-tab {
   width: 300px;
@@ -868,7 +873,7 @@ section {
 
 .flex-child {
   flex: 1;
-  text-align: justify;
+ 
 }
 
 .flex-child:first-child {
