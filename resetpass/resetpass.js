@@ -26,5 +26,4 @@ function togglePassword() {
     oldpassword.type = "password";
     newpassword.type = "password";
   }
-
 }
