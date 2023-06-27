@@ -361,6 +361,67 @@ h1 {
     0px 0px 80px #ab6bffad;
   text-decoration: none;
 }
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: var(--navbar-background-color);
+  box-shadow: 0px 0px 30px var(--navbar-box-shadow-color);
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  color: var(--backtotop-btn-color);
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+
 
 /* Enlarge text and underline on touch/hover effect */
 @media (hover: hover) and (pointer: fine) {
@@ -756,7 +817,13 @@ section {
   -webkit-text-fill-color: transparent;
   padding-top: 5px;
 }
-
+.carousel-cell {
+ 
+  counter-increment: carousel-cell;
+}
+.carousel-cell:before {
+  display: block;
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -1130,7 +1197,14 @@ a:hover i {
     rgb(69, 69, 107)
   );
 }
-.testimonials-slider {
+.swiper{
+  display: flex;
+}
+.overflow-slider{
+  overflow: scroll;
+  white-space: nowrap;
+}
+.testimonialsslider {
   margin-top: 40px;
 }
 .testimonials .testimonials-carousel,
@@ -1172,7 +1246,9 @@ a:hover i {
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-
+.testimonials{
+  width: 100%;
+}
 .testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
@@ -1226,6 +1302,8 @@ a:hover i {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--backtotop-btn-color);
 }
+
+
 #achievement h1,
 #testimonials h1 {
   color: white !important;
