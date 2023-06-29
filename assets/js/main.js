@@ -275,6 +275,11 @@
       type: "bullets",
       clickable: true,
     },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+      color: "#5942e9",
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,
