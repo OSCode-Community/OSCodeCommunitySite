@@ -19,11 +19,30 @@
   </style>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
+  
   <title>OS-CODE</title>
   <meta name="description"
     content="Multi-College Tech Community empowering students to Learn in Public. Join us to connect with like-minded individuals and foster campus learning culture." />
   <link rel="canonical" href="/index.html" />
+
+  
+  <!-- Essential Meta Tags -->
+  <meta name="title" content="OS Code" />
+  <meta name="language" content="en">
+  <meta name="author" content="OS Code">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="7 days">
+  <meta name="keywords" content="os code, tech community, engage, upskilling, workshops, seminars, hackathons, projects, education, tech support, lifelong learning">
+
+  <!-- Twitter -->
+  <meta property="twitter:url" content="http://www.oscode.co.in/" />
+  <meta property="twitter:title" content="OS Code" />
+  <meta
+   property="twitter:description"
+   content="Welcome to OS Code, We empowering college students through a multi-college tech community to learn publicly and connect with like-minded individuals."
+  />
+
+
 
   <!-- Favicons -->
   <link href="assets/img/logo.jpeg" rel="icon" />
@@ -62,6 +81,7 @@
   <link href="assets/css/join_us.css" rel="stylesheet" />
   <link href="assets/css/faq.css" rel="stylesheet" />
   <link href="/assets/css/contactform.css" rel="stylesheet" />
+  <link href="assets\css\gallery.css" rel="stylesheet" />
 
 
 
@@ -73,6 +93,8 @@
 
   <!-- for overriding the nav css -->
   <link rel="stylesheet" href="./assets/css/override.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
 </head>
 
@@ -108,7 +130,7 @@
 
 
     </div>
-    <i class="bi bi-list mobile-nav-toggle"></i>
+    <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
     <div id="navbar" class="navbar order-last order-lg-0 me-4">
       <ul class="nav-list">
         <li><a class="nav-link scrollto active" style="text-decoration: none;" href="#hero">HOME</a></li>
@@ -116,7 +138,7 @@
         <li><a class="nav-link scrollto" style="text-decoration: none;" href="chapters/chapter.html">CHAPTERS</a></li>
         <li><a class="nav-link scrollto" style="text-decoration: none;" href="https://blog.oscode.co.in/">BLOGS</a></li>
         <li><a class="nav-link scrollto" href="events/events.html" style="text-decoration: none;">EVENTS</a></li>
-        <li><a class="nav-link scrollto" href="#contact" style="text-decoration: none;">CONTACT</a></li>
+        <li><a class="nav-link scrollto" href="contact/contact.html" style="text-decoration: none;">CONTACT</a></li>
         <li>
           <a href="/login/login.html">
             <div class="get-started-btn-1 scrollto cntctBtn">
@@ -148,9 +170,10 @@
           <a href="#" class="get-started-btn scrollto left cntctBtn">Services<i
               class="bi bi-caret-right home-i"></i></a> -->
 
-          <a href="#join-us" class="get-started-btn scrollto left cntctBtn"><span>Get Started</span></a>
-          <a href="services.html" class="get-started-btn scrollto left cntctBtn"><span>Services</span></a>
-
+          <div class="get-btn">
+           <a href="#join-us" class="get-started-btn1 "><span>Get Started</span></a>
+           <a href="services.html" class="get-started-btn2 "><span>Services</span></a>
+          </div>
         </div>
       </div>
     </div>
@@ -430,10 +453,9 @@
       <div class="container" data-aos="fade-up">
         <h1 class="text-center">Our Accomplishments</h1>
         <hr class="line hr-center">
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="testimonials-slider swiper overflowslider"  data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
-
+           
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item modifiedAccomp">
@@ -549,13 +571,43 @@
                 </div>
               </div>
             </div><!-- End testimonial item -->
+           
           </div>
+          
           <div class="swiper-pagination"></div>
-        </div>
-
+          <div class="swiper-button-prev" style= "color:#5942e9;"></div>
+          <div class="swiper-button-next" style= "color:#5942e9;"></div>
+            
+        
+    </div>
       </div>
     </section>
     <!-- End Achievement Section -->
+
+     <!--Gallery-->
+    <section id="gallery">
+    <div class="container" data-aos="fade-up">
+      <div class="section-header">
+        <h1 class="number text-center">Gallery</h1>
+        <hr class="line hr-center">
+      </div>
+      <div class="image-slideshow">
+        <div class="image fade">
+          <img src="https://i.ibb.co/7R9h3wZ/csg1.jpg" height=500>
+        </div>
+        <div class="image fade">
+          <img src="https://i.ibb.co/gRQLhDs/csg2.jpg"  height=500>
+        </div>
+        <div class="image fade">
+         <img src="https://i.ibb.co/6FkjN8w/csg3.jpg" height=500>
+        </div>
+        <div class="image fade">
+        <img src="https://i.ibb.co/fxnWnMf/csg5.jpg" height=500>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- End gallery Section -->
 
     <!-- ======= Join US Section ======= -->
     <section id="join-us" class="join section-bg1">
