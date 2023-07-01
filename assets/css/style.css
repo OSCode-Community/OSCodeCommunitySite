@@ -360,7 +360,6 @@ h1 {
   text-shadow: 0px 0px 20px #ab6bff, 0px 0px 40px #ab6bff, 0px 0px 60px #ab6bff,
     0px 0px 80px #ab6bffad;
   text-decoration: none;
-  transform: scale(1.1); /* Adjust the desired scale value */
 }
 
 /* Enlarge text and underline on touch/hover effect */
