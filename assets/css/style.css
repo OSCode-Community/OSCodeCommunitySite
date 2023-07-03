@@ -10,10 +10,13 @@
   --header-rgb-transparent: rgba(0, 0, 0, 0.4);
   --header-rgb-transparent-sc: rgba(0, 0, 0, 50%);
   --navbar-mobile-background-color: rgba(0, 0, 0, 0.9);
-  --theme-color: #8919e4;
-  --navtext-color: #ab6bff;
+
+
+  --theme-color: #dabcf3;
+
+
   --home-background-color: #4158d0;
-  --scroll-bar-thumb-color: #7027f9;
+  --scroll-bar-thumb-color: #11022c;
   --backtotop-btn-color: #5942e9;
   --get-started-btn-color: #9385ed;
 }
@@ -158,10 +161,14 @@ h1 {
   margin-right: 5px;
 }
 
-.logo:hover {
-  color: #21beee;
-  text-shadow: 0px 0px 5px #21beee, 0px 0px 10px #21beee, 0px 0px 20px #21beee,
-    0px 0px 40px #21beee;
+
+.logo:hover{
+  color: #8eee21;
+  text-shadow: 0px 0px 5px #c7eb38,
+  0px 0px 10px #4eed49,
+  0px 0px 20px #71e551,
+  0px 0px 40px #4df18c;
+
 }
 
 #header .logo a {
@@ -194,7 +201,7 @@ h1 {
   text-decoration: none;
   font-family: sans-serif;
   box-sizing: border-box;
-  background: linear-gradient(90deg, #033bf4, #9c0156, #c73bff, #033bf4);
+  background: linear-gradient(90deg, #62db44, #9c0156, #c73bff, #59e64f);
   background-size: 400%;
   border-radius: 30px;
   z-index: 1;
@@ -221,7 +228,7 @@ h1 {
   z-index: -1;
   background: linear-gradient(90deg, #027bb3, #f441a4, #700274, #027bb3);
   background-size: 400%;
-  border-radius: 40px;
+  border-radius: 50px;
   filter: blur(20px);
   opacity: 0;
   transition: 0.5s;
@@ -320,7 +327,7 @@ h1 {
   justify-content: space-between;
   padding: 5px 12px;
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   color: rgb(219, 219, 219);
   font-weight: 600;
   white-space: nowrap;
@@ -335,20 +342,21 @@ h1 {
   bottom: -2px; /* Adjust the desired distance from text */
   width: 100%;
   height: 2px;
-  background: transparent;
-  transition: 0.3s;
+  background:var(--scroll-bar-thumb-color) ;
+  transition: 0.5s;
 }
 
 .navbar a:hover::after,
 .navbar .active::after,
 .navbar .active:focus::after,
 .navbar li:hover > a::after {
-  background: #ab6bff; /* Change the desired underline color */
+  background: #f0e73f; /* Change the desired underline color */
+  animation: animate 1s reverse;
 }
 
 .navbar a i,
 .navbar a:focus i {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 0;
 }
 
@@ -356,10 +364,12 @@ h1 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
+
   color: #ab6bff;
   text-shadow: 0px 0px 20px #ab6bff, 0px 0px 40px #ab6bff, 0px 0px 60px #ab6bff,
     0px 0px 80px #ab6bffad;
   text-decoration: none;
+
 }
 
 /* Enlarge text and underline on touch/hover effect */
@@ -368,7 +378,7 @@ h1 {
   .navbar .active::after,
   .navbar .active:focus::after,
   .navbar li:hover > a::after {
-    background: #ab6bff; /* Change the desired underline color */
+    background: #89f546; /* Change the desired underline color */
   }
 }
 
@@ -577,7 +587,7 @@ h1 {
 }
 .home {
   background-color: var(--home-background-color);
-  background-image: linear-gradient(43deg, #21beee, #ee21d9 46%, #ee2121);
+  background-image: linear-gradient(43deg, #32c6f3, #b3f154 46%, #c30c0c);
   -webkit-animation: home_btn__VDNR5 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: home_btn__VDNR5 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -587,8 +597,8 @@ h1 {
 
 .css-15 {
   margin: 0px 0px 0.35em;
-  font-weight: 300;
-  font-size: 5rem;
+  font-weight: 350;
+  font-size: 8rem;
   line-height: 1.5;
   letter-spacing: -0.009em;
 }
@@ -738,7 +748,7 @@ section {
 
 .section-bg:before {
   content: "";
-  background: #1b1b1b;
+  background: #f1efef;
   position: absolute;
   bottom: 60px;
   top: 60px;
@@ -1158,7 +1168,9 @@ a:hover i {
 .testimonials .testimonial-item:hover {
   cursor: pointer;
   transition: 0.4s ease-in-out;
-  box-shadow: 4px 6px 6px #7549e0, -4px -4px 10px grey;
+
+  box-shadow: 6px 6px 12px #16161c, -6px -6px 12px #b4ff7b;
+
 }
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
@@ -1310,7 +1322,7 @@ a:hover i {
     rgb(181, 181, 253),
     rgb(209, 209, 245)
   );
-  box-shadow: 0 0 0 #7b7bff, 0 0 0 #7b7bff;
+  box-shadow: 0 0 0 #c5c5f4, 0 0 0 #7b7bff;
   transition: box-shadow 0.4s ease-in-out;
 }
 .carousel .carousel-item {
