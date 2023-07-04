@@ -83,7 +83,7 @@ h1 {
 .back-to-top {
   position: fixed;
   right: 15px;
-  bottom: 15px;
+  bottom: 100px;
   z-index: 996;
   background: var(--backtotop-btn-color);
   width: 40px;
