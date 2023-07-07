@@ -456,6 +456,9 @@ p {
   /* animation: float 3.5s ease-in-out infinite; */
   border-radius: 3%;
 }
+#scroll{
+   animation: float 3.5s ease-in-out infinite;
+}
 @keyframes float {
   0% {
     transform: translatey(0px);
@@ -718,8 +721,10 @@ hr{
 
 .card.hovercard{
   border: 0px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-
+  transition: box-shadow .35s;
+}
+.card.hovercard:hover {
+  box-shadow: 0 0 20px #2F5BE7; 
 }
 .card.hovercard .cardheader {
   background: #2F5BE7;
