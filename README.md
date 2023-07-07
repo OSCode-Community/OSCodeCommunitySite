@@ -25,10 +25,11 @@
 
 <div align="center"><h1>🙌 About Us</h1></div>
 
-- We are a Multi-College Tech Community that helps college students to **Learn in Public** and **Engage** with like-minded people.
-- We help local college communities to encourage the technical culture on their campus and help them build it. We help students by upskilling them in the domains of their interests by organizing **workshops, technical seminars, hackathons, project sessions, code-along, etc.**
-- We help students to get start with their **lifelong journey of coding.** Students will explore and learn what real-world Software development looks like - problem-solving skills and interpersonal **skills will be refined.**
-- Overall students will enjoy with this **collaborative journey of learning**, practicing and sharing technical skills with our enthusiastic community!!
+We are a multi-college tech community that supports college students in their quest for learning and facilitates connections with like-minded individuals. Our aim is to cultivate a thriving technical culture on college campuses and empower students to actively participate in building it.
+
+We offer a range of opportunities for students to enhance their skills and interests. Through **workshops, technical seminars, hackathons, project sessions, and collaborative coding sessions**, we empower students to upskill and dive into the world of software development. By engaging in these activities, students refine their problem-solving abilities and develop valuable interpersonal skills.
+
+Our community provides a platform for students to embark on an exciting and lifelong journey of coding. Together, we explore the intricacies of real-world software development, learn from one another, and share our technical knowledge. Join us in this collaborative adventure where **learning, practicing, and sharing technical skills** become an enjoyable and rewarding experience!
 
 <div align="center"><h1>💪 OSCode</h1></div>
 
@@ -44,7 +45,7 @@ Before making a contribution, check the <a href="https://github.com/OSCode-Commu
 
 ![GSSoC Logo](https://camo.githubusercontent.com/0eaaaece51cad6ed831cbaf77ad31538f241fd324eec3d5fc6fcec27543fca29/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a66714a61485f6f49534f523936674c67704a427757512e706e67)
 
-We are proud to be a part of GSSoC '23 (GirlScript Summer of Code)! Join us and be a part of this amazing programme.
+We are proud to be a part of GSSoC '23 (GirlScript Summer of Code)! Join us and be a part of this amazing program.
 </br> </br>
 <a href=""><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
 <a href=""><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
@@ -53,7 +54,7 @@ We are proud to be a part of GSSoC '23 (GirlScript Summer of Code)! Join us and 
 
 <div align="center"><h1>🧧 Code of Conduct</h1></div>
 
-Check out <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a> to know inclusive environment that respects all contributions.
+Check out the <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a> to familiarize yourself with an inclusive environment that respects and values all contributions.
 
 At OSCode, we value an inclusive environment that respects all contributions. To ensure a positive experience for everyone, please review our Code of Conduct.
 
@@ -65,7 +66,7 @@ This Community is <a href="https://github.com/OSCode-Community/OSCodeCommunitySi
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-- Create an issue of the project or a feature you would like to add to the project and get the task assigned for yourself. (An issue can be any feature or project that you think you could contribute to. ).
+- Create an issue on the project or a feature you would like to add to the project and get the task assigned for yourself. (An issue can be any feature or project that you think you could contribute to. ).
 
 - Fork the repo to your GitHub.<br/>
 
@@ -118,7 +119,7 @@ Before starting out, you'll need to install the following on your computer.
 7. Navigate to `http://localhost:5000/`
 
 <div align="center"><h1>💫 Opportunities We Offer</h1></div>
-     We are a Multi-College Tech Community that helps college students to learn in public and engage with similar-minded people
+     We are a Multi-College Tech Community that helps college students to learn in public and engage with like-minded individuals.
      
      We help local college communities to encourage this culture on their campus and help them to build it.
 
