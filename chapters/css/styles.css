@@ -1381,3 +1381,8 @@ a:hover i {
   color: white;
   text-decoration: none;
 }
+#footer .social-links .github:hover {
+  background: #c572da;
+  color: white;
+  text-decoration: none;
+}
