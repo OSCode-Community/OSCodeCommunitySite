@@ -9,6 +9,14 @@
   /* margin-top: 5.4%; */
 }
 
+
+ #about {
+    background-size:100% 100% ;
+    background-image: url("./image9.webp");
+    background-repeat: no-repeat;
+  }
+.row{
+=======
 #about {
   background-image: url("/assets/img/background/s3.png");
 }
