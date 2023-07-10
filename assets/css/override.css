@@ -4,28 +4,33 @@
   justify-content: space-between;
   height: 70px;
 }
-.modifyRow{
-align-items: flex-start;
+.modifyRow {
+  align-items: flex-start;
 }
 .mainContainer {
   margin: 0;
   display: flex;
   justify-content: space-between;
 }
-.credits{
+.credits {
   font-weight: 400;
 }
-.credits a{
+.credits a {
   font-weight: 800;
-    color: #ab6bff;
+  color: #ab6bff;
 }
 .modifiedFooter {
   display: flex;
   justify-content: space-between;
   flex-flow: row-reverse;
 }
-.modifiedFooterTop{
+.modifiedFooterTop {
   padding: 20px 0;
+}
+@media only screen and (max-width: 800px) {
+  .modifiedFooterTop {
+    padding: 10px 0;
+  }
 }
 .socialLinkMod {
   display: flex;
@@ -90,7 +95,6 @@ align-items: flex-start;
 
 .msg-us {
   color: #5942e9;
-  ;
 }
 
 .msg-us:hover {
@@ -113,12 +117,12 @@ align-items: flex-start;
   padding: 20px 15px;
   transition: 0.3s ease-in-out;
 }
-.modifiedCount{
+.modifiedCount {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 }
-.modifyingCount{
+.modifyingCount {
   margin: 0;
   margin-top: 30px;
 }
@@ -164,7 +168,6 @@ align-items: flex-start;
 }
 
 @media (max-width: 768px) {
-
   .container,
   .container-md,
   .container-sm {
@@ -173,13 +176,16 @@ align-items: flex-start;
     row-gap: 30px;
   }
 
+  .footer-padding {
+    padding-left: 2rem;
+  }
+
   .mainContainer {
     flex-direction: row;
   }
 }
 
 @media (max-width: 1060px) and (min-width: 768px) {
-
   .container,
   .container-md,
   .container-sm {
@@ -188,7 +194,6 @@ align-items: flex-start;
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
-
   .container,
   .container-md,
   .container-sm {
@@ -213,7 +218,7 @@ align-items: flex-start;
     justify-content: center;
     row-gap: 30px;
   }
-  .left-tab{
+  .left-tab {
     margin-left: 0;
   }
 }
@@ -252,10 +257,14 @@ align-items: flex-start;
 
 .eventBody {
   background: rgb(151, 140, 255);
-  background: linear-gradient(209deg, rgba(151, 140, 255, 1) 0%, rgba(198, 198, 255, 1) 56%, rgba(225, 208, 255, 1) 100%);
-background-color: #1fd1f9;
-background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
-
+  background: linear-gradient(
+    209deg,
+    rgba(151, 140, 255, 1) 0%,
+    rgba(198, 198, 255, 1) 56%,
+    rgba(225, 208, 255, 1) 100%
+  );
+  background-color: #1fd1f9;
+  background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
 }
 
 .wrapping {

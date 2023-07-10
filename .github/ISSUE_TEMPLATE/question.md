@@ -1,10 +1,9 @@
 ---
 name: General question
 about: Request information about the project; clarify behavior of the software
-title: ''
-labels: 'kind/question'
-assignees: ''
-
+title: ""
+labels: "kind/question"
+assignees: ""
 ---
 
 **How can we help?**
