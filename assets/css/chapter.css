@@ -9,7 +9,9 @@
   }
 
   #about {
-    background-image: url("./pexels-madison-inouye-1831234.jpg");
+    background-size:100% 100% ;
+    background-image: url("./image9.webp");
+    background-repeat: no-repeat;
   }
 .row{
   margin-top: 20px;
