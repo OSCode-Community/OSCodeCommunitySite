@@ -70,7 +70,7 @@ $(document).ready(function () {
           scrollTop: $($anchor.attr("href")).offset().top - 50,
         },
         1250,
-        "easeInOutExpo"
+        "easeInOutExpo",
       );
     event.preventDefault();
   });
@@ -150,7 +150,7 @@ $(document).ready(function () {
           index: "vimeo.com/",
           id: function (url) {
             var m = url.match(
-              /(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/
+              /(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/,
             );
             if (!m || !m[5]) return null;
             return m[5];
