@@ -64,7 +64,8 @@ h2,
 h3,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", serif;
+  margin-top: 50px;
 }
 h4 {
   font-family: "Roboto", sans-serif;
@@ -75,6 +76,7 @@ h4 {
 h1 {
   font-size: 50px;
   font-weight: 600;
+  margin-top: 70px;
 }
 
 /*--------------------------------------------------------------
