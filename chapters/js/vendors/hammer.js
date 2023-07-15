@@ -151,7 +151,7 @@
       return dest;
     },
     "extend",
-    "Use `assign`."
+    "Use `assign`.",
   );
 
   /**
@@ -166,7 +166,7 @@
       return extend(dest, src, true);
     },
     "merge",
-    "Use `assign`."
+    "Use `assign`.",
   );
 
   /**
@@ -469,7 +469,7 @@
         addEventListeners(
           getWindowForElement(this.element),
           this.evWin,
-          this.domHandler
+          this.domHandler,
         );
     },
 
@@ -485,7 +485,7 @@
         removeEventListeners(
           getWindowForElement(this.element),
           this.evWin,
-          this.domHandler
+          this.domHandler,
         );
     },
   };
@@ -589,7 +589,7 @@
     var overallVelocity = getVelocity(
       input.deltaTime,
       input.deltaX,
-      input.deltaY
+      input.deltaY,
     );
     input.overallVelocityX = overallVelocity.x;
     input.overallVelocityY = overallVelocity.y;
@@ -1150,7 +1150,7 @@
       uniqueArray(
         targetTouches.concat(changedTargetTouches),
         "identifier",
-        true
+        true,
       ),
       changedTargetTouches,
     ];
@@ -1433,7 +1433,7 @@
         touchMap[val] = cssSupports
           ? window.CSS.supports("touch-action", val)
           : true;
-      }
+      },
     );
     return touchMap;
   }
@@ -2014,7 +2014,7 @@
             this.tryEmit();
           },
           options.time,
-          this
+          this,
         );
       } else if (input.eventType & INPUT_END) {
         return STATE_RECOGNIZED;
@@ -2228,7 +2228,7 @@
                 this.tryEmit();
               },
               options.interval,
-              this
+              this,
             );
             return STATE_BEGAN;
           }
@@ -2243,7 +2243,7 @@
           this.state = STATE_FAILED;
         },
         this.options.interval,
-        this
+        this,
       );
       return STATE_FAILED;
     },
@@ -2270,7 +2270,7 @@
     options = options || {};
     options.recognizers = ifUndefined(
       options.recognizers,
-      Hammer.defaults.preset
+      Hammer.defaults.preset,
     );
     return new Manager(element, options);
   }
@@ -2424,7 +2424,7 @@
         item[2] && recognizer.recognizeWith(item[2]);
         item[3] && recognizer.requireFailure(item[3]);
       },
-      this
+      this,
     );
   }
 
