@@ -1,321 +1,332 @@
-
 #contact {
-    background-image: url("/assets/img/background/contact.jpg");
-    width: 100%;
-    height: 100%;
-    color: white;
-    padding-top: 100px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("/assets/img/background/contact.jpg");
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding-top: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #contact .contBox {
-    background-color: #000e47b5;
-    padding: 50px;
-    width: 95%;
+  background-color: #000e47b5;
+  padding: 50px;
+  width: 95%;
 }
 
 .title {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 hr {
-    border: 3px solid rgb(221, 245, 8);
-    border-radius: 5px;
-    width: 150px;
-    opacity: 1;
+  border: 3px solid rgb(221, 245, 8);
+  border-radius: 5px;
+  width: 150px;
+  opacity: 1;
 }
 
 .text-center {
-    padding-bottom: 0;
-    margin: 0;
+  padding-bottom: 0;
+  margin: 0;
 }
 
 .modifiedAddress {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
 .address {
-    text-align: left;
-    margin-top: 15px;
+  text-align: left;
+  margin-top: 15px;
 }
 
 .address a {
-    color: rgb(126, 124, 251);
-    transition: transform .5s ease-in-out;
+  color: rgb(126, 124, 251);
+  transition: transform 0.5s ease-in-out;
 }
 
 .address p {
-    transition: transform .5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .address p:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .contact .info-box i {
-    font-size: 32px;
-    color: #5942e9;
-    border-radius: 50%;
-    padding: 8px;
-    border: 2px dotted #fffdfd;
+  font-size: 32px;
+  color: #5942e9;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #fffdfd;
 }
 
-
 .modifiedMailPhone {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    word-wrap: break-word;
-    row-gap: 10px;
-    column-gap: 40px;
-    position: relative;
-    left: 170px;
-    top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  row-gap: 10px;
+  column-gap: 40px;
+  position: relative;
+  left: 170px;
+  top: 30px;
 }
 
 .modifiedMailPhone a:hover {
-    color: #3c20f0 !important ;
+  color: #3c20f0 !important ;
 }
- 
+
 .Cfr {
-    width: auto;
-    padding-right: 0 !important;
-    margin-right: 13px;
+  width: auto;
+  padding-right: 0 !important;
+  margin-right: 13px;
 }
 
-.Cfr .email , .Cfr .em {
-    margin-left: 15px;
+.Cfr .email,
+.Cfr .em {
+  margin-left: 15px;
 }
 
-.form-group input{
-    transition: 0.3s ease-in-out;
+.form-group input {
+  transition: 0.3s ease-in-out;
 }
 
 .form-group input:hover {
-    transition: 0.3s ease-in-out;
-    box-shadow: rgba(90, 90, 90, 0.659) 0px 5px 10px;
+  transition: 0.3s ease-in-out;
+  box-shadow: rgba(90, 90, 90, 0.659) 0px 5px 10px;
 }
 
 .form-group textarea:hover {
-    transition: 0.3s ease-in-out;
-    box-shadow: rgba(103, 103, 103, 0.592) 0px 5px 10px;
+  transition: 0.3s ease-in-out;
+  box-shadow: rgba(103, 103, 103, 0.592) 0px 5px 10px;
 }
 
-.contactForm{
-    padding: 30px 10px;
-    background-color: rgb(228, 227, 227);
-    border-radius: 10px;
-    box-shadow: rgb(1, 2, 34) 0px 10px 15px;
+.contactForm {
+  padding: 30px 10px;
+  background-color: rgb(228, 227, 227);
+  border-radius: 10px;
+  box-shadow: rgb(1, 2, 34) 0px 10px 15px;
 }
 
-.form-group label{
-    position: absolute;
-    bottom: 0px;
-    left: 25px;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    color: grey;
+.form-group label {
+  position: absolute;
+  bottom: 0px;
+  left: 25px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  color: grey;
 }
 
-.content-name{
-    position: absolute;
-    top: 15px;
-    bottom: 5px;
-    left: 0px;
-    transition: all 0.5s ease;
+.content-name {
+  position: absolute;
+  top: 15px;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.5s ease;
 }
 
-.form-group  input:focus + .label-name .content-name,
-.form-group  textarea:focus + .label-name .content-name{
-    color: #11034a;
-    font-size: 12px;
-    transform: translateY(-15px)translateX(5px);
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 10px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    outline: none !important;
-    outline-color: #fffdfd;
-    outline-style: none;
-    outline-offset: 0px ;
+.form-group input:focus + .label-name .content-name,
+.form-group textarea:focus + .label-name .content-name {
+  color: #11034a;
+  font-size: 12px;
+  transform: translateY(-15px) translateX(5px);
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  outline: none !important;
+  outline-color: #fffdfd;
+  outline-style: none;
+  outline-offset: 0px;
 }
 .form-group input:valid + .label-name .content-name,
-.form-group  textarea:valid + .label-name .content-name{
-    color: black;
-    font-size: 12px;
-    transform: translateY(-15px)translateX(5px);
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color:white;
-    height: 20px;
-    outline: none !important;
-    outline-color: #fffdfd;
-    outline-style: none;
-    outline-offset: 0px;
+.form-group textarea:valid + .label-name .content-name {
+  color: black;
+  font-size: 12px;
+  transform: translateY(-15px) translateX(5px);
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: white;
+  height: 20px;
+  outline: none !important;
+  outline-color: #fffdfd;
+  outline-style: none;
+  outline-offset: 0px;
 }
 
 .msg-us {
-    color: #fff !important;
-    padding: 12px 25px;
-    background-color: #5238d2;
-    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
-    box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
-    border-radius: 14px;
-    font-weight: bold;
-    font-size: 16px;
-    border: 0;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    cursor: pointer;
+  color: #fff !important;
+  padding: 12px 25px;
+  background-color: #5238d2;
+  background-image: radial-gradient(
+      93% 87% at 87% 89%,
+      rgba(0, 0, 0, 0.23) 0%,
+      transparent 86.18%
+    ),
+    radial-gradient(
+      66% 66% at 26% 20%,
+      rgba(255, 255, 255, 0.55) 0%,
+      rgba(255, 255, 255, 0) 69.79%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25),
+    inset 0px 3px 9px rgba(255, 255, 255, 0.3),
+    inset 0px 1px 1px rgba(255, 255, 255, 0.6),
+    inset 0px -8px 36px rgba(0, 0, 0, 0.3),
+    inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
-    .email {
-        display: flex;
-        position: relative;
-        margin: 0 0 0 15px !important;
-    }
+  .email {
+    display: flex;
+    position: relative;
+    margin: 0 0 0 15px !important;
+  }
 }
 
-@media screen and (max-width: 991px)  {
-    
-    .contactForm{
-        margin-top: auto;
-    }    
+@media screen and (max-width: 991px) {
+  .contactForm {
+    margin-top: auto;
+  }
 }
 
-@media screen and (max-width:767px){
-    h1:first-child {
-        font-size: 30px;
-    }
-   
-    .container-1 {
-   display: inline-flexbox;
-    }
+@media screen and (max-width: 767px) {
+  h1:first-child {
+    font-size: 30px;
+  }
 
-    .modifiedMailPhone {
-        position: relative;
-        display: block;
-        left: 35px;
-    }
+  .container-1 {
+    display: inline-flexbox;
+  }
+
+  .modifiedMailPhone {
+    position: relative;
+    display: block;
+    left: 35px;
+  }
 }
 
 /**
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-    color: var(--background-white);
-    font-size: 28px;
-    cursor: pointer;
-    display: none;
-    line-height: 0;
-    transition: 0.5s;
-    padding-right: 25px;
-  }
-  
-  .mobile-nav-toggle.bi-x {
-    color: var(--background-white);
-  }
-  
-  @media (max-width: 991px) {
-    .mobile-nav-toggle {
-      display: block;
-    }
-  
-    .navbar ul {
-      display: none;
-    }
-  }
-  
-  .navbar-mobile {
-    position: fixed;
-    overflow: hidden;
-    top: 70px;
-    right: -22px;
-    left: 0;
-    bottom: 0;
-    background: var(--navbar-mobile-background-color);
-    transition: 0.3s;
-    z-index: 999;
-  }
-  
-  .navbar-mobile .mobile-nav-toggle {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-  }
-  
-  .navbar-mobile ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 70px;
-    right: 0;
-    width: 200px;
-    padding: 10px 0;
-    backdrop-filter: blur(1rem);
-    background-color: #010101b0;
-    overflow-y: auto;
-    transition: 0.3s;
-    border-radius: 8px;
-  }
-  
-  .navbar-mobile a,
-  .navbar-mobile a:focus {
-    padding: 5px 20px;
-    font-size: 15px;
-  }
-  
-  .navbar-mobile a:hover,
-  .navbar-mobile .active,
-  .navbar-mobile li:hover > a {
-    color: var(--navtext-color);
-  }
-  .navbar-mobile .getstarted,
-  .navbar-mobile .getstarted:focus {
-    margin: 15px;
-  }
-  
-  .navbar-mobile .dropdown ul {
-    position: static;
-    display: none;
-    margin: 10px 20px;
-    padding: 10px 0;
-    z-index: 99;
-    opacity: 1;
-    visibility: visible;
-    background: var(--background-white);
-    box-shadow: 0px 0px 30px var(--navbar-box-shadow-color);
-  }
-  
-  .navbar-mobile .dropdown ul li {
-    min-width: 200px;
-  }
-  
-  .navbar-mobile .dropdown ul a {
-    padding: 10px 20px;
-  }
-  
-  .navbar-mobile .dropdown ul a i {
-    font-size: 12px;
-  }
-  
-  .navbar-mobile .dropdown ul a:hover,
-  .navbar-mobile .dropdown ul .active:hover,
-  .navbar-mobile .dropdown ul li:hover > a {
-    color: var(--backtotop-btn-color);
-  }
-  
-  .navbar-mobile .dropdown > .dropdown-active {
+  color: var(--background-white);
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+  padding-right: 25px;
+}
+
+.mobile-nav-toggle.bi-x {
+  color: var(--background-white);
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
     display: block;
   }
-  
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 70px;
+  right: -22px;
+  left: 0;
+  bottom: 0;
+  background: var(--navbar-mobile-background-color);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.navbar-mobile ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  width: 200px;
+  padding: 10px 0;
+  backdrop-filter: blur(1rem);
+  background-color: #010101b0;
+  overflow-y: auto;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 5px 20px;
+  font-size: 15px;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
+  color: var(--navtext-color);
+}
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: var(--background-white);
+  box-shadow: 0px 0px 30px var(--navbar-box-shadow-color);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
+  color: var(--backtotop-btn-color);
+}
+
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
