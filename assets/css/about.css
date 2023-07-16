@@ -79,7 +79,7 @@ hr.line {
 .bi-list::before {
   content: "\f479";
   color: var(--background-white);
-  padding-right: 30px;
+  /* padding-right: 30px; */
 }
 
 @media only screen and (max-width: 600px) {
