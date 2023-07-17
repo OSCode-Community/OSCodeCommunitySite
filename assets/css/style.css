@@ -84,7 +84,7 @@ h1 {
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
-  right: 15px;
+  right: 35px;
   bottom: 100px;
   z-index: 996;
   background: var(--backtotop-btn-color);
@@ -270,7 +270,7 @@ h1 {
 }
 .get-btn {
   display: flex;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 40%;
   padding-right: 50px;
   gap: 2rem;
@@ -545,11 +545,10 @@ h1 {
 }
 
 #hero h1 {
-  margin: 0;
   font-size: 4em;
   font-weight: 900;
   align-items: center;
-  margin-top: 0px;
+  margin-top: 50px;
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
 }
 
