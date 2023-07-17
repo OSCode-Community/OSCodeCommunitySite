@@ -59,7 +59,7 @@
             })(e) ||
             (function () {
               throw new TypeError(
-                "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
+                "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.",
               );
             })()
           );
@@ -110,7 +110,7 @@
                   setTimeout(function () {
                     e.setAttribute(
                       "data-purecounter-duration",
-                      t.duration / 1e3
+                      t.duration / 1e3,
                     );
                   }, t.pulse)),
                 clearInterval(i));
@@ -183,7 +183,7 @@
                               : "";
                         }
                         return a;
-                      }
+                      },
                     ));
               }
               var n;
@@ -192,7 +192,7 @@
               (e = t.formater
                 ? e.toLocaleString(n, r)
                 : parseInt(e).toString()),
-              t
+              t,
             )
           );
         }
@@ -270,7 +270,7 @@
                     function (t) {
                       l(e);
                     },
-                    { passive: !0 }
+                    { passive: !0 },
                   ));
           }
           function l(e) {
@@ -309,14 +309,14 @@
                           return t(
                             {},
                             r.replace("data-purecounter-", "").toLowerCase(),
-                            c(n)
+                            c(n),
                           );
-                        })
-                      )
-                    )
+                        }),
+                      ),
+                    ),
                   )
                 : {},
-              n
+              n,
             );
           }
           d();
