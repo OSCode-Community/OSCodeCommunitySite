@@ -49,6 +49,9 @@
 .faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-style: italic;
 }
 
 .faq .faq-list .icon-show {
@@ -56,7 +59,7 @@
 }
 
 .faq .faq-list a.collapsed {
-  color: #343a40;
+  color: #272728;
 }
 
 .faq .faq-list a.collapsed:hover {
