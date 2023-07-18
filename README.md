@@ -73,33 +73,45 @@ We welcome contributions through pull requests (PRs). To submit a PR, please fol
 ```sh
 git clone https://github.com/<your_github_username>/OSCodeCommunitySite.git
 ```
+
 3. Now go ahead and create a new branch and move to the branch
+
 ```sh
 git checkout -b fix-issue-<ISSUE-NUMBER>
 ```
+
 4. After you have added your changes, follow the following command chain
    Check the changed files
+
 ```sh
 git status -s
 ```
 
-  * Add all the files to the staging area
+- Add all the files to the staging area
+
 ```sh
 git add .
 ```
- or
+
+or
+
 ```sh
 git add <file_name1> <file_name2>
 ```
+
 5. Commit your changes
+
 ```sh
 git commit -m "<EXPLAIN-YOUR_CHANGES>"
 ```
+
 6. Push your changes
+
 ```sh
 git push origin fix-issue-<ISSUE-NUMBER>
 ```
-7. Open a Pull Request 
+
+7. Open a Pull Request
 
 - Make a pull request! (compare your branch with the owner main branch)
 
@@ -130,30 +142,43 @@ Before starting out, you'll need to install the following on your computer.
 
 1. Fork the repo
 2. Clone the repository
+
 ```sh
 git clone https://github.com/<your_github_username>/OSCodeCommunitySite.git
 ```
+
 3. Run the following command to change the working directory
+
 ```sh
 cd OSCodeCommunitySite
 ```
+
 4. Run the following command to install all the dependencies
+
 ```sh
 npm install
 ```
+
 or
+
 ```sh
 npm i
 ```
+
 5. Run the following command to install server
+
 ```sh
 npm install -g serve
 ```
+
 6. Run the following command to start the development server
+
 ```sh
 serve
 ```
+
 7. Navigate to
+
 ```sh
 [npm install -g serve](http://localhost:5000/)
 ```
