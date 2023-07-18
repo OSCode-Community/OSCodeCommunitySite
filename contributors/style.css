@@ -1,0 +1,57 @@
+#contributors-container {
+  margin-top: 10px;
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 1.8rem;
+}
+.contributor {
+  width: 26%;
+  border: 1px solid black;
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 20px 25px -5px rgb(15 23 42), 1px 3px 20px 0px rgb(15 23 42);
+}
+
+.contributor:hover {
+  scale: 1.02;
+  transition: ease-in-out;
+}
+
+.contributor img {
+  width: 60%;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contributor p {
+  font-size: 1.1rem;
+  padding: 1rem 0 0 0;
+}
+
+.contributor a {
+  width: 80%;
+  background-color: blueviolet;
+  padding: 0.4rem;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.contributor button {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .contributor {
+    width: 90%;
+  }
+}
