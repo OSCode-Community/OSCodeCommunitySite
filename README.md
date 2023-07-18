@@ -65,22 +65,41 @@ This Community is <a href="https://github.com/OSCode-Community/OSCodeCommunitySi
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-- Create an issue of the project or a feature you would like to add to the project and get the task assigned for yourself. (An issue can be any feature or project that you think you could contribute to. ).
+We welcome contributions through pull requests (PRs). To submit a PR, please follow these steps:
 
-- Fork the repo to your GitHub.<br/>
+1. Fork the Project
+2. Clone your forked repository
 
-- Clone the repo by going to your local Git client in a particular local folder in your local machine by using this command with your forked repository link in place of below-given link: <br/>
-  `git clone https://github.com/<GITHUB PROFILE NAME>/OSCodeCommunitySite.git`
-- Create a branch using below command.
-  `git branch <your branch name>`
-- Checkout to your branch.
-  `git checkout <your branch name>`
-- Add your code to your local machine folder.
-  `git add . `
-- Commit your changes.
-  `git commit -m"<add your message here>"`
-- Push your changes.
-  `git push  origin <your branch name>`
+```sh
+git clone https://github.com/<your_github_username>/OSCodeCommunitySite.git
+```
+3. Now go ahead and create a new branch and move to the branch
+```sh
+git checkout -b fix-issue-<ISSUE-NUMBER>
+```
+4. After you have added your changes, follow the following command chain
+   Check the changed files
+```sh
+git status -s
+```
+
+  * Add all the files to the staging area
+```sh
+git add .
+```
+ or
+```sh
+git add <file_name1> <file_name2>
+```
+5. Commit your changes
+```sh
+git commit -m "<EXPLAIN-YOUR_CHANGES>"
+```
+6. Push your changes
+```sh
+git push origin fix-issue-<ISSUE-NUMBER>
+```
+7. Open a Pull Request 
 
 - Make a pull request! (compare your branch with the owner main branch)
 
@@ -110,12 +129,34 @@ Before starting out, you'll need to install the following on your computer.
 <div align="center"><h1>🛠️ Installation</h1></div>
 
 1. Fork the repo
-2. Clone the repository `git clone `
-3. Run `cd ` to change the working directory
-4. Run `npm install or npm i` to install all the dependencies
-5. Run `npm install -g serve` to install serve
-6. Run `serve` to start the development server
-7. Navigate to `http://localhost:5000/`
+2. Clone the repository
+```sh
+git clone https://github.com/<your_github_username>/OSCodeCommunitySite.git
+```
+3. Run the following command to change the working directory
+```sh
+cd OSCodeCommunitySite
+```
+4. Run the following command to install all the dependencies
+```sh
+npm install
+```
+or
+```sh
+npm i
+```
+5. Run the following command to install server
+```sh
+npm install -g serve
+```
+6. Run the following command to start the development server
+```sh
+serve
+```
+7. Navigate to
+```sh
+[npm install -g serve](http://localhost:5000/)
+```
 
 <div align="center"><h1>💫 Opportunities We Offer</h1></div>
      We are a Multi-College Tech Community that helps college students to learn in public and engage with similar-minded people
