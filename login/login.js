@@ -1,29 +1,19 @@
-const username = "";
-const password = "";
+        let signupBtn= document.getElementById("signupBtn");
+        let loginBtn= document.getElementById("loginBtn");
+        let nameField= document.getElementById("nameField");
+        let title = document.getElementById("title");
 
-const handleCahnge = (event) => {
-  if (event.target.type == "text") {
-    username = event.target.value;
-  } else if (event.target.type == "password") {
-    password = event.target.value;
-  }
-};
+        loginBtn.onclick = function(){
+            nameField.style.maxHeight="0";
+            title.innerHTML ="Login";
+            signupBtn.classList.add("disable");
+            loginBtn.classList.remove("disable");
+        }
 
-const passwordType = "password";
-
-const passwordToggle = () => {
-  if (passwordType === "password") {
-    passwordType = "text";
-  } else {
-    passwordType = "password";
-  }
-};
-
-function togglePassword() {
-  var password = document.getElementById("password");
-  if (password.type === "password") {
-    password.type = "text";
-  } else {
-    password.type = "password";
-  }
-}
+        signupBtn.onclick = function(){
+            nameField.style.maxHeight="60px";
+            title.innerHTML ="Sign Up";
+            signupBtn.classList.remove("disable");
+            loginBtn.classList.add("disable");
+        }
+        
