@@ -209,12 +209,12 @@ li {
 }
 .ag-courses-item_link {
   display: block;
-  padding: 30px 20px;
+  padding: 5px 20px;
   background-color: #fff;
   text-decoration: none;
 
   overflow: hidden;
-  height: 32rem;
+  height: 34rem;
   position: relative;
 }
 .ag-courses-item_link:hover,
