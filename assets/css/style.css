@@ -1695,6 +1695,14 @@ a:hover i {
   color: var(--background-white);
   text-decoration: none;
 }
+#footer .social-links .github:hover {
+  background: #010409;
+  color: var(--background-white);
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
 .bottomPart {
   text-align: center;
   font-weight: bold;
