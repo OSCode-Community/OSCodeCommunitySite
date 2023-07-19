@@ -106,11 +106,11 @@
     const hideBacktotop = () => {
       backtotop.style.visibility = "hidden";
     };
-  
+
     const showBacktotop = () => {
       backtotop.style.visibility = "visible";
     };
-  
+
     window.addEventListener("load", () => {
       toggleBacktotop();
       if (window.scrollY === 0) {
@@ -119,7 +119,7 @@
         showBacktotop();
       }
     });
-  
+
     onscroll(document, () => {
       toggleBacktotop();
       if (window.scrollY === 0) {
