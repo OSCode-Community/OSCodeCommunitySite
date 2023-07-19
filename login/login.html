@@ -15,8 +15,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Montserrat&family=Noto+Serif&family=Prompt:wght@500&family=Rajdhani:wght@500&display=swap"
     rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f05c71c35c.js" crossorigin="anonymous"></script>
-
 
   <!-- Bootstrap Script -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -65,43 +63,82 @@
   </header>
 
   <!-- login container -->
-    <div class="container256">
+  <div class="login-container min-vh-100">
+    <div
+      class="login-box text-white d-flex flex-column align-items-center justify-content-center mx-auto">
+      <h1 class="sign-in text-center p-0">Login</h1>
 
-        <div class="form-box">
+      <!-- sign up with google -->
+      <div id="googleLogin" class="google d-flex justify-content-center align-items-center ">
+        <img class="googleicon" src="../assets/img/googleicon.png" alt="gogoleicon" />
+        <div class="login-with-google">Login with Google</div>
+      </div>
+      <div class="or mb-3 d-flex justify-content-center">
+        <div class="or-line"></div> OR <div class="or-line"></div>
+      </div>
 
-            <!-- <span class="icon-close"><i class="fa-solid fa-xmark"></i></span> -->
+      <!-- Login form -->
+      <form class="form-container d-flex flex-column">
 
-            <h1 id="title">Sign Up</h1>
-            <form>
-                <div class="input-group">
-                    <div class="input-field" id="nameField">
-                        <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Name">
-                    </div>
-                    <div class="input-field">
-                        <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <div class="input-field">
-                        <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="Password">
-                    </div>
-                    <p>Forgot password ? <a href="#">Click Here!</a></p>
-
-        
-                </div>
-                <div class="btn-field">
-                    <button type="button" id="signupBtn">Sign up</button>
-                    <button type="button" id="loginBtn" class="disable">Login</button>
-                </div> 
-                <br>
-                <p class="link"> Create an account by agree to our <a href="#">Terms & Conditions</a></p>
-            </form>
+        <!-- inputs -->
+        <div class="user-box">
+          <input id="email" type="email" required />
+          <label for="email">User Email</label>
         </div>
+
+        <div>
+          <div class="user-box">
+            <input type="password" id="password" required />     
+            <!-- <svg onclick="togglePassword()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye field-icon" viewBox="0 0 16 16">
+              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+            </svg> -->
+            <label for="password">Password</label>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <input id="togglePassword" type="checkbox" />
+            <label style="margin-top: 5px; margin-left: 5px;">Show password</label>
+          </div>
+        </div>
+
+        <div class="remember-me">
+          <label class="switch" for="remember-me">
+            <input type="checkbox" id="remember-me" />
+            <div class="slider round"></div>
+          </label>
+          <label for="remember-me"> Remember me</label>
+        </div>
+
+        <!-- error message -->
+        <div id="error-msg" class="text-danger font-weight-bold"></div>
+
+        <!-- login button -->
+        <div class="mx-auto">
+          <button id="login" type="submit" class="submit-button">Login</button>
+        </div>
+
+        <!-- forgot password & dont have account -->
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <div class="mb-2 fyp">
+            <a href="/resetpass/resetpass.html" class="text-white">
+              Forgot Your password?
+            </a>
+          </div>
+          
+          <div class="dhaa">
+            Don't have an account? 
+            <a href="/signup/signup.html" class="pl-2 signup_link">
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </form>
     </div>
+  </div>
 
   <!-- javascript -->
-  <script src="login.js"></script>
+  <script src="login.js" type="module"></script>
 </body>
 
 </html>
