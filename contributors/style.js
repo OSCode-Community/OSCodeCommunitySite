@@ -1,6 +1,6 @@
 async function getContributors() {
   await fetch(
-    "https://api.github.com/repos/OSCode-Community/OSCodeCommunitySite/contributors?per_page=100"
+    "https://api.github.com/repos/OSCode-Community/OSCodeCommunitySite/contributors?per_page=100",
   )
     .then((response) => response.json())
     .then((contributors) => {
