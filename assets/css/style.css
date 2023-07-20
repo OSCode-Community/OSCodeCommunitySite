@@ -1515,7 +1515,9 @@ a:hover i {
 #footer .footer-top {
   background: #1b1b1b;
 }
-
+.footer-contact{
+  margin-top: -50px;
+}
 #footer .footer-top .footer-contact h3 {
   font-size: 26px;
   font-family: "Google Sans", sans-serif;
