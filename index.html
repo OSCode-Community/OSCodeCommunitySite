@@ -80,7 +80,7 @@
   <link href="assets/css/about.css" rel="stylesheet" />
   <link href="assets/css/join_us.css" rel="stylesheet" />
   <link href="assets/css/faq.css" rel="stylesheet" />
-  <link href="/assets/css/contactform.css" rel="stylesheet" />
+  <link href="assets/css/contactform.css" rel="stylesheet" />
   <link href="assets\css\gallery.css" rel="stylesheet" />
 
 
@@ -935,7 +935,7 @@
         <h1 class="text-center">Contact Us</h1>
         <hr class="line hr-center">
 
-        <div class="row" data-aos="flip-left" data-aos-delay="100">
+        <div class="row border border-3 rounded" data-aos="flip-left" data-aos-delay="100">
           <div class="col-lg-6">
             <div class="row">
               <div class="col-md-12">
@@ -959,10 +959,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 ">
+              <div class="col-md-6 px-3">
                 <div class="info-box mt-4 modifiedMailPhone">
                   <a href="mailto:oscode.community@gmail.com?subject=Enquiry"><i class="bx bx-envelope"></i></a>
-                  <h3>Email Us</h3>
+                  <h3 class="mt-2">Email Us</h3>
                   <p class="email"><a href="mailto:oscode.community@gmail.com?subject=Enquiry"
                       style="text-decoration: none; color: #161616;">oscode.community@gmail.com</a><br>
                     <br>
@@ -972,7 +972,7 @@
               <div class="col-md-6">
                 <div class="info-box mt-4 modifiedMailPhone">
                   <a href="tel:+91-7975954835"><i class="bx bx-phone-call"></i></a>
-                  <h3>Call Us</h3>
+                  <h3 class="mt-2"">Call Us</h3>
                   <p class="phone">
                     <a href="tel:+91-7975954835" style="text-decoration: none; color: #161616;">+91-7975954835<br /></a>
                     <a href="tel:+91-7014122349" style="text-decoration: none; color: #161616;">+91-7014122349</a>
@@ -988,25 +988,25 @@
             <form class="contactForm" id="contact_Form" action="mailto:oscode.community@gmail.com" method="post"
               enctype="text/plain" autocomplete="on">
               <div class="row form-group">
-                <div class="col form-group">
+                <div class="col form-group px-2">
                   <div>
-                    <input type="email" autocomplete="email" class="form-control" name="email" id="email" required />
                     <label class="label-name">
                       <span class="content-name">Email</span>
                     </label>
+                    <input type="email" autocomplete="email" class="form-control" name="email" id="email" required />
                     <!-- <i class="fas fa-check-circle"></i> -->
                     <!-- <i class="fas fa-exclamation-circle"></i> -->
                   </div>
                   <div class="spandiv"><small class="small"></small></div>
                 </div>
 
-                <div class="col form-group">
+                <div class="col form-group px-2">
                   <div>
-                    <input type="text" autocomplete="name" name="name" class="form-control" id="name"
-                      pattern="[a-zA-Z][a-zA-Z ]{2,}" title="Number Not Allowed" required />
                     <label class="label-name">
                       <span class="content-name">Name</span>
                     </label>
+                    <input type="text" autocomplete="name" name="name" class="form-control" id="name"
+                      pattern="[a-zA-Z][a-zA-Z ]{2,}" title="Number Not Allowed" required />
                     <!-- <i class="fas fa-check-circle"></i> -->
                     <!-- <i class="fas fa-exclamation-circle"></i> -->
                   </div>
@@ -1016,29 +1016,31 @@
               <div>
                 <div class="col form-group">
                   <div class="form-group">
-                    <input type="text" autocomplete="subject" class="form-control" name="College" id="college"
-                      required />
                     <label class="label-name">
                       <span class="content-name">College</span>
                     </label>
+                    <input type="text" autocomplete="subject" class="form-control" name="College" id="college"
+                      required />
                   </div>
                 </div>
                 <div class="col form-group">
-                  <div><input type="text" autocomplete="subject" class="form-control" name="subject" id="subject"
-                      required />
+                  <div>
                     <label class="label-name">
                       <span class="content-name">Subject</span>
                     </label>
+                    <input type="text" autocomplete="subject" class="form-control" name="subject" id="subject"
+                      required />
                   </div>
                   <div class="spandiv" style="padding-top: 4px;"> <small class="small"></small></div>
                 </div>
 
                 <div class="col form-group">
-                  <div><textarea class="form-control" autocomplete="message" id="message" name="message" rows="5"
-                      required></textarea>
+                  <div>
                     <label class="label-name">
                       <span class="content-name">Message</span>
                     </label>
+                    <textarea class="form-control" autocomplete="message" id="message" name="message" rows="5"
+                      required></textarea>
                   </div>
                   <div class="spandiv" style="padding-top: 4px;"><small class="small"></small></div>
                 </div>
