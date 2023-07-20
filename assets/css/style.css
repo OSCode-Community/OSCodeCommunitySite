@@ -358,7 +358,8 @@ h1 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover > a {
+.navbar li:hover > a,
+.navbar a:hover .cntctBtn {
   color: #aa7fe2;
   text-shadow: 0px 0px 20px #ab6bff, 0px 0px 40px #ab6bff, 0px 0px 60px #ab6bff,
     0px 0px 80px #ab6bffad;

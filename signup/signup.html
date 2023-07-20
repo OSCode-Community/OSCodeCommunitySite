@@ -70,7 +70,7 @@
       <!-- p class="text-center fw-bolder p-0">It's quick and easy.</p -->
 
       <!-- sign up with google -->
-      <div class="google d-flex justify-content-center align-items-center ">
+      <div id="googleSignup" class="google d-flex justify-content-center align-items-center ">
         <img class="googleicon" src="../assets/img/googleicon.png" alt="gogoleicon" />
         <div class="login-with-google">Sign Up with Google</div>
       </div>
@@ -79,38 +79,40 @@
       </div>
 
       <!-- signup form -->
-      <form action="/index.html" method="get" class="form-container d-flex flex-column" onSubmit="handleSubmit()">
+      <form class="form-container d-flex flex-column">
 
         <!-- inputs -->
         <div class="name d-flex w-100">
           <div class="user-box name-part">
-            <input type="text" name="firstName" onChange="handleChange()" required />
+            <input id="f_name" type="text" required />
             <label for="firstName">First name</label>
           </div>
           
           <div class="user-box name-part">
-            <input type="text" name="surname" onChange="handleChange()" required />
+            <input id="s_name" type="text" required />
             <label for="surname">Surname</label>
           </div>
         </div>
 
         <div class="user-box">
-          <input type="email" onChange="handleChange()" required />
+          <input id="email" type="email" required />
           <label for="email">Email address</label>
         </div>
 
         <div class="user-box">
-          <input type="password" onChange="handleChange()" required id="password"/>
+          <input id="password" type="password" required />
           <label for="password">Password</label>
         </div>
         <div style="display: flex; align-items: center;">
-          <input type="checkbox" onclick="togglePassword()" />
+          <input id="togglePassword" type="checkbox" />
           <label style="margin-top: 5px; margin-left: 5px;">Show password</label>
         </div>
 
+        <div id="error-msg" class="text-danger font-weight-bold"></div>
+
         <!-- sign up button -->
-        <div class="btn">
-          <button type="submit" class="submit-button cursor-pointer">
+        <div class="mx-auto">
+          <button id="signUp" type="submit" class="submit-button">
             Sign Up
           </button>
         </div>
@@ -125,7 +127,7 @@
   </div>
 
   <!-- javascript -->
-  <script src="signup.js"></script>
+  <script src="signup.js" type="module"></script>
 </body>
 
 </html>

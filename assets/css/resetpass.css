@@ -29,6 +29,7 @@
     font-size: 25px;
     letter-spacing: 1px;
     margin-bottom: 40px;
+    margin-top: unset;
   }
   
   .form-container {

@@ -29,6 +29,7 @@
   font-size: 35px;
   letter-spacing: 1px;
   margin-bottom: 20px;
+  margin-top: unset;
 }
 
 .google {
