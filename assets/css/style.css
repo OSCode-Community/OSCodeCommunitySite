@@ -1710,16 +1710,16 @@ a:hover i {
   text-decoration: none;
   transform: rotateY(360deg);
 }
-#footer .social-links .youtube:hover {
+#footer .social-links .youtube {
   background: var(--background-white);
   color: #c4302b;
   text-decoration: none;
-  transform: rotateY(360deg);
 }
-#footer .social-links .youtube {
+#footer .social-links .youtube:hover {
   color: var(--background-white);
   background-color: #c4302b;
   text-decoration: none;
+  transform: rotateY(360deg);
 }
 #footer .social-links .linkedin {
   color: #0072b1;
