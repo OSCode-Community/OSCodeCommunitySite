@@ -121,7 +121,7 @@ h2  {
     padding-top: 7vh;
     flex-direction: column;
     justify-content: space-between;
-  }
+}
   .event-h2 {
     color: var(--background-white);
     font-family: "Roboto", sans-serif;
@@ -512,6 +512,16 @@ h2  {
   .row{
     margin-top: 20vh;
   }
+  
   .modifyRow{
     margin-top: 20px;
+    display: flex;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .modifyRow{
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
   }
