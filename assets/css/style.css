@@ -1652,21 +1652,49 @@ a:hover i {
   color: var(--background-white);
   line-height: 1;
   padding: 8px 0;
-  border-radius: 4px;
+  border-radius: 50%;
   text-align: center;
   width: 36px;
   height: 36px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 #footer .social-links .twitter:hover {
   background: #1da1f2;
   color: var(--background-white);
   text-decoration: none;
+  transform: rotateY(360deg);
+}
+#footer .social-links .twitter{
+  color: #1da1f2;
+  background: var(--background-white);
+  text-decoration: none;
+}
+#footer .social-links .whatsapp {
+  color: #4adf4f;
+  background-color: var(--background-white);
+  text-decoration: none;
+}
+#footer .social-links .whatsapp:hover {
+  background: #4adf4f;
+  color: var(--background-white);
+  text-decoration: none;
+  transform: rotateY(360deg);
+}
+#footer .social-links .facebook {
+  color: #4267b2;
+  background-color: var(--background-white);
+  text-decoration: none;
 }
 #footer .social-links .facebook:hover {
   background: #4267b2;
   color: var(--background-white);
+  text-decoration: none;
+  transform: rotateY(360deg);
+}
+#footer .social-links .instagram{
+  color: #d6249f;
+  background-color: var(--background-white);
   text-decoration: none;
 }
 #footer .social-links .instagram:hover {
@@ -1680,28 +1708,51 @@ a:hover i {
   );
   color: var(--background-white);
   text-decoration: none;
+  transform: rotateY(360deg);
 }
-#footer .social-links .youtube:hover {
+#footer .social-links .youtube {
   background: var(--background-white);
   color: #c4302b;
+  text-decoration: none;
+}
+#footer .social-links .youtube:hover {
+  color: var(--background-white);
+  background-color: #c4302b;
+  text-decoration: none;
+  transform: rotateY(360deg);
+}
+#footer .social-links .linkedin {
+  color: #0072b1;
+  background-color: var(--background-white);
   text-decoration: none;
 }
 #footer .social-links .linkedin:hover {
   background: #0072b1;
   color: var(--background-white);
   text-decoration: none;
+  transform: rotateY(360deg);
+}
+#footer .social-links .discord {
+  color: #7289da;
+  background-color: var(--background-white);
+  text-decoration: none;
 }
 #footer .social-links .discord:hover {
   background: #7289da;
   color: var(--background-white);
+  text-decoration: none;
+  transform: rotateY(360deg);
+}
+#footer .social-links .github {
+  color: #010409;
+  background-color: var(--background-white);
   text-decoration: none;
 }
 #footer .social-links .github:hover {
   background: #010409;
   color: var(--background-white);
   text-decoration: none;
-  font-size: 1.3rem;
-  transition: 0.3s;
+  transform: rotateY(360deg);
 }
 
 .bottomPart {
