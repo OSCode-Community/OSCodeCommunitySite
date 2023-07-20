@@ -1147,14 +1147,9 @@ a:hover i {
   margin: 30px 15px;
   height: 400px;
   position: relative;
-  box-shadow: rgba(195, 90, 240, 0.4) 5px 5px, rgba(195, 90, 240, 0.3) 10px 10px,
-    rgba(195, 90, 240, 0.2) 15px 15px, rgba(195, 90, 240, 0.1) 20px 20px,
-    rgba(195, 90, 240, 0.05) 25px 25px;
-  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px; */
   background: var(--background-white);
   border-radius: 15px;
-  transition: 2s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 @media only screen and (max-width: 370px) {
@@ -1165,16 +1160,11 @@ a:hover i {
 
 .testimonials .testimonial-item:hover {
   cursor: pointer;
-  transition: 1s ease-in-out;
-  /* box-shadow: 4px 6px 6px #7549e0, -4px -4px 10px grey; */
-  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
-    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
-    rgba(240, 46, 170, 0.05) 25px 25px;
-  transform: scale(0.9);
+  transition: 0.4s ease-in-out;
+  box-shadow: 4px 6px 6px #7549e0, -4px -4px 10px grey;
 }
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
-  height: 100px;
   border-radius: 10px;
   border: 6px solid var(--background-white);
   float: left;
@@ -1185,21 +1175,13 @@ a:hover i {
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-.testimonials .testimonial-item .testimonial-img:hover {
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  transition: 0.5s ease-in-out;
-  transform: scale(1.1);
- 
-}
+
 .testimonials .testimonial-item h3 {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: bold;
   margin: 25px 0 5px 0;
-  color: #401cc2;
+
+  color: #111;
 }
 
 .testimonials .testimonial-item h4 {
@@ -1209,8 +1191,8 @@ a:hover i {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
+  color: #fceaea;
   font-size: 26px;
-  color: #a48ff1;
 }
 
 .testimonials .testimonial-item .quote-icon-left {
@@ -1421,7 +1403,6 @@ a:hover i {
     width: 100%;
   }
 }
-
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -1534,9 +1515,7 @@ a:hover i {
 #footer .footer-top {
   background: #1b1b1b;
 }
-.footer-contact {
-  margin-top: -50px;
-}
+
 #footer .footer-top .footer-contact h3 {
   font-size: 26px;
   font-family: "Google Sans", sans-serif;
@@ -1686,7 +1665,7 @@ a:hover i {
   text-decoration: none;
   transform: rotateY(360deg);
 }
-#footer .social-links .twitter {
+#footer .social-links .twitter{
   color: #1da1f2;
   background: var(--background-white);
   text-decoration: none;
@@ -1713,7 +1692,7 @@ a:hover i {
   text-decoration: none;
   transform: rotateY(360deg);
 }
-#footer .social-links .instagram {
+#footer .social-links .instagram{
   color: #d6249f;
   background-color: var(--background-white);
   text-decoration: none;
@@ -1826,4 +1805,14 @@ a:hover i {
   .social-links .list1 {
     text-align: center;
   }
+  .textSocials{
+    display: block;
+    width: 100%;
+  }
+}
+
+.socialLinkMod{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
