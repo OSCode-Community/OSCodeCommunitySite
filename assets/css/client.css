@@ -13,7 +13,7 @@
     border: 1px solid var(--backtotop-btn-color);
   }
   .clients-slider {
-    margin-top: 40px;
+    padding-top: 50px;
   }
   .clients .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--backtotop-btn-color);
@@ -33,6 +33,7 @@
   }
   .clients .swiper-slide img:hover {
     opacity: 1;
+    transform: scale(1.2);
     filter: none;
   }
   .clients h1 {
