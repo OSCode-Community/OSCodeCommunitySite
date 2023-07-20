@@ -58,16 +58,6 @@
   text-align: center;
   padding: 1rem 0 0 0;
 }
-
-.contributor a {
-  width: 80%;
-  background-color: blueviolet;
-  padding: 0.4rem;
-  color: white;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-}
 .cname {
   color: rgb(2, 2, 70);
   font-size: 20px;
@@ -75,13 +65,32 @@
   font-weight:800;
 }
 .contributor button {
+  align-items: center;
   background-color: blueviolet;
-  color: white;
-  border: none;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 2em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (max-width: 800px) {
   .contributor {
     width: 90%;
   }
+}
+
+.contributor button:hover{
+  background-image: linear-gradient(to right, #243b55, #141e30);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.2);
 }
