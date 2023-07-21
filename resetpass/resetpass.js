@@ -16,7 +16,6 @@ function handleChange(e) {
   }
 }
 
-
 togglePassword.addEventListener("click", (e) => {
   if (document.getElementById("password").type == "password") {
     document.getElementById("password").type = "text";
