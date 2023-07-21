@@ -1589,6 +1589,9 @@ a:hover i {
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
   color: var(--background-white);
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+  transition: 0.5s;
 }
 
 #footer .footer-newsletter {
