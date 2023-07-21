@@ -15,3 +15,20 @@ function handleChange(e) {
     }
   }
 }
+
+
+togglePassword.addEventListener("click", (e) => {
+  if (document.getElementById("password").type == "password") {
+    document.getElementById("password").type = "text";
+  } else {
+    document.getElementById("password").type = "password";
+  }
+});
+
+togglePassword.addEventListener("click", (e) => {
+  if (document.getElementById("password1").type == "password") {
+    document.getElementById("password1").type = "text";
+  } else {
+    document.getElementById("password1").type = "password";
+  }
+});
