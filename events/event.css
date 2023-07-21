@@ -115,7 +115,7 @@ h2  {
 #home {
     width: 100%;
     height: 100vh;
-    background: url("/assets/img/background/bg3.jpg") top center no-repeat;
+    background: url("/assets/img/background/bg3.webp") top center no-repeat;
     background-size: cover;
     position: relative;
     padding-top: 7vh;
@@ -383,14 +383,14 @@ h2  {
   }
   
   .for-bg {
-    /* background-image: url("../img/background/s1.png");
+    /* background-image: url("../img/background/s1.webp");
     background-repeat: repeat-y;
     /* width: 1000px;
       height: 1000px; */
     /* background-size: 100vw auto;  
       background: linear-gradient(180deg, #b9b3b8, 5%, #390244, 50%, #1b011d);
   */
-    background-image: url("../img/background/event2.jpg");
+    background-image: url("../img/background/event2.webp");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no no-repeat;

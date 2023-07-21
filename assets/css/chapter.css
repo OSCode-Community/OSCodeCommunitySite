@@ -1,6 +1,6 @@
 #hero {
     background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.2)),
-        url("/assets/img/background/peopleImg.jpg");
+        url("/assets/img/background/peopleImg.webp");
     padding: 0;
     height: 400px;
     padding-top: 100px;
@@ -10,7 +10,7 @@
 }
 
 #about {
-    background-image: url("/assets/img/background/s3.png");
+    background-image: url("/assets/img/background/s3.webp");
     background-size: cover;
 }
 
@@ -141,7 +141,7 @@
     padding: 10px 0px 10px 40px;
     border-radius: 9999px;
     border: solid 1px #333;
-    background-image: url("/assets/img/search.png");
+    background-image: url("/assets/img/search.webp");
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: 3% 50%;
