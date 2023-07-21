@@ -1,3 +1,9 @@
+
+.modifiedAddress {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
 #contact {
   background-image: url("/assets/img/background/contact.webp");
   width: 100%;
@@ -73,16 +79,35 @@ hr {
 .address p:hover {
   transform: scale(1.05);
   font-size: 16px;
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
+
 }
 
 .contact .info-box i {
-  font-size: 32px;
-  color: #5942e9;
-  border-radius: 50%;
-  padding: 8px;
-  border: 2px dotted #fffdfd;
+    font-size: 32px;
+    color: #5942e9;
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px dotted #f8d4d5;
+    height: fit-content;
+    width: fit-content;
 }
+
+.form-group input{
+    transition: 0.3s ease-in-out;
+}
+
+.form-group input:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(137, 119, 212, 0.456) 0px 5px 10px;
+}
+
+.form-group textarea:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(137, 119, 212, 0.456) 0px 5px 10px;
+}
+
+.address {
+    text-align: center;
 
 .modifiedMailPhone {
   display: flex;
@@ -281,115 +306,85 @@ hr {
     left: 35px;
   }
 }
-
-/**
-* Mobile Navigation 
-*/
-.mobile-nav-toggle {
-  color: var(--background-white);
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
-  padding-right: 25px;
+.modifiedMailPhone:hover{
+    transform: rotateY(360deg);
+    background-color: #b8adde14;
+    border-radius: 50%;
+}
+.modifiedMailPhone p a{
+    color:aqua;
+}
+.address p a {
+    transition: 0.3s ease-in-out;
 }
 
-.mobile-nav-toggle.bi-x {
-  color: var(--background-white);
+.address p a:hover {
+    transition: 0.3s ease-in-out;
 }
 
-@media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-
-  .navbar ul {
-    display: none;
-  }
+.contactForm{
+    margin-top: -160px;
 }
 
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 70px;
-  right: -22px;
-  left: 0;
-  bottom: 0;
-  background: var(--navbar-mobile-background-color);
-  transition: 0.3s;
-  z-index: 999;
+.modifiedMailPhone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    row-gap: 10px;
+    transition: 0.3s ease-in;
 }
 
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 20px;
-  right: 30px;
+
+.form-group label{
+    position: absolute;
+    bottom: 0px;
+    left: 25px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
 
-.navbar-mobile ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 70px;
-  right: 0;
-  width: 200px;
-  padding: 10px 0;
-  backdrop-filter: blur(1rem);
-  background-color: #010101b0;
-  overflow-y: auto;
-  transition: 0.3s;
-  border-radius: 8px;
+.content-name{
+    position: absolute;
+    top: 15px;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.5s ease;
 }
 
-.navbar-mobile a,
-.navbar-mobile a:focus {
-  padding: 5px 20px;
-  font-size: 15px;
+.form-group  input:focus + .label-name .content-name,
+.form-group  textarea:focus + .label-name .content-name{
+    color: #86b7fe;
+    font-size: 12px;
+    transform: translateY(-15px)translateX(5px);
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+}
+.form-group input:valid + .label-name .content-name,
+.form-group  textarea:valid + .label-name .content-name{
+    color: black;
+    font-size: 12px;
+    transform: translateY(-15px)translateX(5px);
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color:white;
+    height: 20px;
 }
 
-.navbar-mobile a:hover,
-.navbar-mobile .active,
-.navbar-mobile li:hover > a {
-  color: var(--navtext-color);
+@media screen and (max-width: 991px)  {
+    .contactForm{
+        margin-top: auto;
+    }      
 }
-.navbar-mobile .getstarted,
-.navbar-mobile .getstarted:focus {
-  margin: 15px;
-}
-
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: var(--background-white);
-  box-shadow: 0px 0px 30px var(--navbar-box-shadow-color);
+@media screen and (max-width:767px){
+    .container-1 {
+   display: inline-flexbox;
+    }
 }
 
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
-
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover > a {
-  color: var(--backtotop-btn-color);
-}
-
-.navbar-mobile .dropdown > .dropdown-active {
-  display: block;
+input[type=text]{
+    border-radius: 5px;
 }
