@@ -160,12 +160,16 @@
       font-weight: 200;
     }
   }
-  .con-box{
+
+.con-box{
     padding: 2px 0;
     font-size: 18px;
     box-shadow: 5px 5px 7px 0px #0000003f;
     position: relative; /*nearesr common ancestor to .git-box::before*/
     z-index: 1;
+    padding: 1.6rem 0;
+    border-radius: .6rem;
+    overflow: hidden;
 }
 .git-box::before{
     content:"";
