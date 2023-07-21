@@ -2,7 +2,8 @@
 ---------------------------*/
 
 .number {
-  text-shadow: 2px 2px 3px rgb(77, 76, 76);
+  color:rgb(157, 0, 255);
+  text-shadow: 2px 2px 3px rgb(166, 0, 255);
   font-size: 40px;
   margin-top: 40px;
   letter-spacing: 1.5px;
