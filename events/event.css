@@ -53,6 +53,7 @@ h2  {
     margin: 26px;
     padding: 12px;
     width: 10rem;
+        height: 200px;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -99,6 +100,7 @@ h2  {
 #events .container .event_box .card-body {
     margin: 0; 
     padding: 10px 5px;
+
 }
 
 
