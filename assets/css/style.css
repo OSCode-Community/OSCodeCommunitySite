@@ -1656,7 +1656,7 @@ a:hover i {
 }
 
 .socialIcons {
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: space-evenly;
 }
