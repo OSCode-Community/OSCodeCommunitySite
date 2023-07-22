@@ -1177,7 +1177,6 @@ a:hover i {
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-
 .testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
@@ -1648,6 +1647,35 @@ a:hover i {
 .social-links {
   margin-bottom: 10px;
   padding-bottom: -50px;
+  display: flex;
+  width: 40%;
+}
+
+.textSocials {
+  width: 35%;
+}
+
+.socialIcons {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 800px){
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+  
+  .textSocials {
+    width: 35%;
+  }
+  
+  .socialIcons {
+    width: 100%;
+  }
 }
 
 #footer .social-links a {
@@ -1664,7 +1692,7 @@ a:hover i {
   transition: 0.5s;
 }
 
-#footer .social-links .tooltip{
+#footer .social-links .tooltip {
   position: absolute;
   top: 0;
   line-height: 1.5;
@@ -1679,7 +1707,7 @@ a:hover i {
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-#footer .social-links .tooltip::before{
+#footer .social-links .tooltip::before {
   position: absolute;
   content: "";
   height: 8px;
@@ -1691,7 +1719,7 @@ a:hover i {
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-#footer .social-links .icon:hover .tooltip{
+#footer .social-links .icon:hover .tooltip {
   top: -45px;
   left: -20px;
   opacity: 1;
