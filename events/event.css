@@ -518,10 +518,41 @@ h2  {
     display: flex;
   }
 
+  .social-links {
+    margin-bottom: 10px;
+    padding-bottom: -50px;
+    display: flex;
+    width: 50%;
+  }
+  
+  .textSocials {
+    width: 35%;
+  }
+  
+  .socialIcons {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   @media only screen and (max-width: 800px) {
     .modifyRow{
       margin-top: 20px;
       display: flex;
       flex-direction: column;
+    }
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
+    }
+    
+    .textSocials {
+      width: 35%;
+    }
+    
+    .socialIcons {
+      width: 100%;
     }
   }
