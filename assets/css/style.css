@@ -298,7 +298,7 @@ h1 {
   background-color: transparent;
 }
 
-.navbar li {
+.navbar li a{
   margin: 10px; /* Adjust the desired spacing here */
 }
 
