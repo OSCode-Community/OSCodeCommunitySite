@@ -53,6 +53,7 @@ h2  {
     margin: 26px;
     padding: 12px;
     width: 10rem;
+        height: 200px;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -99,6 +100,7 @@ h2  {
 #events .container .event_box .card-body {
     margin: 0; 
     padding: 10px 5px;
+
 }
 
 
@@ -525,3 +527,46 @@ h2  {
       flex-direction: column;
     }
   }
+  .flip-container {
+    perspective: 1000px;
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 1;
+
+}
+
+.back {
+    transform: rotateY(180deg);
+ 
+}
+
+/* Add other styles for the card content as needed */
+
+
