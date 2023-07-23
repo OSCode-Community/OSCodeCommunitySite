@@ -622,7 +622,7 @@ h1 {
   }
 }
 #hero .btn-get-started:hover {
-  background: transparent;
+   background-image: linear-gradient(to bottom, #55ceff, #5fc7fd, #68c0f9, #72b9f5, #7bb2f0, #75b6f3, #6fbbf6, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
   border-color: var(--background-white);
   color: var(--background-white);
   border: 2px solid var(--backtotop-btn-color);
@@ -1506,6 +1506,7 @@ a:hover i {
 
 #footer {
   margin: 0;
+  padding-top: 40px;
   width: 100%;
   color: var(--background-white);
   font-size: 14px;
