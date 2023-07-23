@@ -1518,6 +1518,7 @@ a:hover i {
 }
 
 #footer .footer-top .footer-contact h3 {
+  margin-top: 0px;
   font-size: 26px;
   font-family: "Google Sans", sans-serif;
   line-height: 1;
