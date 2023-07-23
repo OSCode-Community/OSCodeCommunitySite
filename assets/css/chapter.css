@@ -287,3 +287,16 @@ body {
   position: relative;
   justify-content: center;
 }
+
+.modifyRow {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 800px) {
+  .modifyRow {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
