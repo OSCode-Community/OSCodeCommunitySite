@@ -1934,9 +1934,3 @@ a:hover i {
     width: 100%;
   }
 }
-
-.socialLinkMod{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
