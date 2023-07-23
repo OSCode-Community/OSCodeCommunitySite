@@ -281,11 +281,12 @@ p {
 .custom-menu .nav-item .nav-link {
   padding: 20px 15px;
   text-transform: capitalize;
-  color: #637282;
+  color: #92a6be;
+  font-weight: 500;
 }
 
 .custom-menu .nav-item .nav-link:hover {
-  color: #1b2733;
+  color: #c2d9ef;
 }
 .nav-item {
   font-weight: bold;
@@ -1425,4 +1426,46 @@ a:hover i {
   background: #7289da;
   color: white;
   text-decoration: none;
+}
+
+.logoo{
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background-color:#1a023b ;
+  transition: 0.2s;
+}
+
+
+
+.logoo :hover{
+  color: #21beee;
+  text-shadow: 0px 0px 5px #21beee, 0px 0px 10px #21beee, 0px 0px 20px #21beee,
+    0px 0px 40px #21beee;
+}
+
+
+.navbar li {
+  margin: 10px; 
+  color:whitesmoke;
+  /* Adjust the desired spacing here */
+} 
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center; 
+  /* Center the items horizontally */
+}
+.navbar a:hover::after,
+.navbar .active::after,
+.navbar .active:focus::after,
+.navbar li:hover > a::after {
+  background: #4a326b; /* Change the desired underline color */
+}
+.navbar{
+  background: #1a023b; 
 }
