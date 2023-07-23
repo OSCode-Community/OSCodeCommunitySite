@@ -180,7 +180,7 @@ serve
 7. Navigate to
 
 ```sh
-[npm install -g serve](http://localhost:5000/)
+[npm install -g serve](http://localhost:3000/)
 ```
 
 <div align="center"><h1>💫 Opportunities We Offer</h1></div>
