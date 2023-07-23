@@ -759,7 +759,11 @@ hr {
 
 .card.hovercard {
   border: 0px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.card.hovercard:hover {
+  border: 0px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 .card.hovercard .cardheader {
   background: #2f5be7;
@@ -786,6 +790,16 @@ hr {
   -moz-border-radius: 50%;
   border-radius: 50%;
   border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.card.hovercard .avatar img:hover{
+  width: 150px;
+  height: 150px; 
+  max-width: 150px;
+  max-height: 150px;
+  border: 5px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease; 
 }
 
 .card.hovercard .info {
