@@ -1651,10 +1651,6 @@ a:hover i {
   width: 40%;
 }
 
-.textSocials {
-  width: 35%;
-}
-
 .socialIcons {
   width: 80%;
   display: flex;
@@ -1665,16 +1661,8 @@ a:hover i {
   .social-links {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 24rem;
     gap: 1rem;
-  }
-  
-  .textSocials {
-    width: 35%;
-  }
-  
-  .socialIcons {
-    width: 100%;
   }
 }
 
@@ -1684,12 +1672,14 @@ a:hover i {
   background: #2b2b2b;
   color: var(--background-white);
   line-height: 1;
-  padding: 8px 0;
   border-radius: 50%;
   text-align: center;
   width: 36px;
   height: 36px;
   transition: 0.5s;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
 }
 
 #footer .social-links .tooltip {
