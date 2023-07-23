@@ -443,10 +443,37 @@ h2 {
 }
 
 .social-links {
-  float: right;
-  width: 50%;
   margin-bottom: 10px;
   padding-bottom: -50px;
+  display: flex;
+  width: 50%;
+}
+
+.textSocials {
+  width: 35%;
+}
+
+.socialIcons {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 800px){
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+  
+  .textSocials {
+    width: 35%;
+  }
+  
+  .socialIcons {
+    width: 100%;
+  }
 }
 
 ul {
