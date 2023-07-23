@@ -53,6 +53,7 @@ h2  {
     margin: 26px;
     padding: 12px;
     width: 10rem;
+        height: 200px;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -99,6 +100,7 @@ h2  {
 #events .container .event_box .card-body {
     margin: 0; 
     padding: 10px 5px;
+
 }
 
 
@@ -115,7 +117,7 @@ h2  {
 #home {
     width: 100%;
     height: 100vh;
-    background: url("/assets/img/background/bg3.jpg") top center no-repeat;
+    background: url("/assets/img/background/bg3.webp") top center no-repeat;
     background-size: cover;
     position: relative;
     padding-top: 7vh;
@@ -383,14 +385,14 @@ h2  {
   }
   
   .for-bg {
-    /* background-image: url("../img/background/s1.png");
+    /* background-image: url("../img/background/s1.webp");
     background-repeat: repeat-y;
     /* width: 1000px;
       height: 1000px; */
     /* background-size: 100vw auto;  
       background: linear-gradient(180deg, #b9b3b8, 5%, #390244, 50%, #1b011d);
   */
-    background-image: url("../img/background/event2.jpg");
+    background-image: url("../img/background/event2.webp");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no no-repeat;
@@ -518,10 +520,41 @@ h2  {
     display: flex;
   }
 
+  .social-links {
+    margin-bottom: 10px;
+    padding-bottom: -50px;
+    display: flex;
+    width: 50%;
+  }
+  
+  .textSocials {
+    width: 35%;
+  }
+  
+  .socialIcons {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   @media only screen and (max-width: 800px) {
     .modifyRow{
       margin-top: 20px;
       display: flex;
       flex-direction: column;
+    }
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
+    }
+    
+    .textSocials {
+      width: 35%;
+    }
+    
+    .socialIcons {
+      width: 100%;
     }
   }

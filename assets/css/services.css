@@ -112,7 +112,7 @@ h6 {
   background-position-x: center;
   background-position-y: bottom;
   background-repeat: no-repeat;
-  background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-04.png);
+  background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-04.webp);
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
@@ -443,10 +443,37 @@ h2 {
 }
 
 .social-links {
-  float: right;
-  width: 50%;
   margin-bottom: 10px;
   padding-bottom: -50px;
+  display: flex;
+  width: 50%;
+}
+
+.textSocials {
+  width: 35%;
+}
+
+.socialIcons {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 800px){
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+  
+  .textSocials {
+    width: 35%;
+  }
+  
+  .socialIcons {
+    width: 100%;
+  }
 }
 
 ul {
