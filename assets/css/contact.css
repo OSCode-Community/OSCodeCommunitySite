@@ -134,7 +134,7 @@ hr {
 .msg-us {
   color: #fff !important;
   padding: 12px 25px;
-  background-color: #5238d2;
+  background-color: blue;
   background-image: radial-gradient(
       93% 87% at 87% 89%,
       rgba(0, 0, 0, 0.23) 0%,
@@ -160,7 +160,7 @@ hr {
   touch-action: manipulation;
   cursor: pointer;
 }
-
+  
 @media (min-width: 993px) and (max-width: 1200px) {
   .email {
     display: flex;
