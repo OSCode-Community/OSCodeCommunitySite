@@ -33,11 +33,10 @@
   }
 }
 .socialLinkMod {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 10px;
-  margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 3px;
+    margin-bottom: 0;
 }
 
 .crMod {
