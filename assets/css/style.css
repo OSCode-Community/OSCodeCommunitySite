@@ -824,9 +824,7 @@ section {
   min-width: 300px;
   box-shadow: 0px 0px 3px #5b49ff, 0px 0px 4px #5b49ff, 0px 0px 7px #5b49ff,
     0px 0px 13px #5b49ff;
-  color:#2906a7;
-  font-size:medium;
-  text-shadow: #000000;
+  color: #ffffff;
 }
 
 .gallery {
@@ -890,7 +888,7 @@ section {
 }
 .benefits {
   font-weight: 700;
-  color:#5942e9;
+  color: #fff;
 }
 .text-center {
   text-align: center;
@@ -1122,6 +1120,15 @@ a:hover i {
   padding: 0;
 }
 
+.benefit-head{
+  color: var(--backtotop-btn-color) !important;
+  font-weight: bold;
+  text-shadow: 0 0 1px black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 65px;
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 # Achievements
 --------------------------------------------------------------*/
@@ -1177,6 +1184,7 @@ a:hover i {
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+
 .testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
@@ -1589,9 +1597,6 @@ a:hover i {
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
   color: var(--background-white);
-  text-decoration: underline;
-  text-decoration-color: #ffffff;
-  transition: 0.5s;
 }
 
 #footer .footer-newsletter {
@@ -1648,35 +1653,6 @@ a:hover i {
 .social-links {
   margin-bottom: 10px;
   padding-bottom: -50px;
-  display: flex;
-  width: 40%;
-}
-
-.textSocials {
-  width: 35%;
-}
-
-.socialIcons {
-  width: 80%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-@media only screen and (max-width: 800px){
-  .social-links {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-  }
-  
-  .textSocials {
-    width: 35%;
-  }
-  
-  .socialIcons {
-    width: 100%;
-  }
 }
 
 #footer .social-links a {
@@ -1691,97 +1667,6 @@ a:hover i {
   width: 36px;
   height: 36px;
   transition: 0.5s;
-}
-
-#footer .social-links .tooltip {
-  position: absolute;
-  top: 0;
-  line-height: 1.5;
-  font-size: 14px;
-  background-color: #ffffff;
-  color: #ffffff;
-  padding: 5px 8px;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-#footer .social-links .tooltip::before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background-color: #ffffff;
-  bottom: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-#footer .social-links .icon:hover .tooltip {
-  top: -45px;
-  left: -20px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-#footer .twitter:hover,
-#footer .twitter:hover .tooltip,
-#footer .twitter:hover .tooltip::before {
-  background-color: #46c1f6;
-  color: #ffffff;
-}
-
-#footer .instagram:hover,
-#footer .instagram:hover .tooltip,
-#footer .instagram:hover .tooltip::before {
-  background-color: #e1306c;
-  color: #ffffff;
-}
-
-#footer .github:hover,
-#footer .github:hover .tooltip,
-#footer .github:hover .tooltip::before {
-  background-color: #333333;
-  color: #ffffff;
-}
-
-#footer .youtube:hover,
-#footer .youtube:hover .tooltip,
-#footer .youtube:hover .tooltip::before {
-  background-color: #de463b;
-  color: #ffffff;
-}
-
-#footer .linkedin:hover,
-#footer .linkedin:hover .tooltip,
-#footer .linkedin:hover .tooltip::before {
-  background-color: #003288;
-  color: #ffffff;
-}
-
-#footer .facebook:hover,
-#footer .facebook:hover .tooltip,
-#footer .facebook:hover .tooltip::before {
-  background-color: #3b5999;
-  color: #ffffff;
-}
-
-#footer .discord:hover,
-#footer .discord:hover .tooltip,
-#footer .discord:hover .tooltip::before {
-  background-color: #3b5999;
-  color: #ffffff;
-}
-
-#footer .whatsapp:hover,
-#footer .whatsapp:hover .tooltip,
-#footer .whatsapp:hover .tooltip::before {
-  background: #4adf4f;
-  color: #ffffff;
 }
 
 #footer .social-links .twitter:hover {
