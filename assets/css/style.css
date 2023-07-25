@@ -298,7 +298,7 @@ h1 {
   background-color: transparent;
 }
 
-.navbar li {
+.navbar li a{
   margin: 10px; /* Adjust the desired spacing here */
 }
 
@@ -1531,6 +1531,10 @@ a:hover i {
   font-family: "Google Sans", sans-serif;
   line-height: 1;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: -.75rem;
 }
 
 #footer .footer-top .footer-contact h3 span {
@@ -1819,10 +1823,4 @@ a:hover i {
     display: block;
     width: 100%;
   }
-}
-
-.socialLinkMod{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
 }

@@ -72,6 +72,7 @@
 
 .form-container .user-box {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .form-container .user-box input {
@@ -79,7 +80,7 @@
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   border: none;
   border-bottom: 1px solid #fff;
   outline: none;
@@ -176,4 +177,12 @@ button.submit-button[type="submit"]:hover {
     flex-direction: column;
     gap:0;
   }
+}
+
+
+
+.user-box .error-msg
+{
+  color: red;
+  margin-top: -10px;
 }
