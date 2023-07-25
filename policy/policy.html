@@ -11,6 +11,47 @@
           position: fixed;
           z-index: 999999;
         }
+        .back-to-top {
+            position: fixed;
+            right: 35px;
+            bottom: 100px;
+            z-index: 996;
+            background: #5942e9;
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            transition: all 0.4s;
+            animation: action 1s infinite alternate;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes action {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-15px);
+        }
+        }
+
+        .back-to-top i {
+        font-size: 28px;
+        color:white;
+        line-height: 0;
+        }
+
+        .back-to-top:hover {
+        background: #2100f3;
+        color:white;
+        text-decoration: none;
+        }
+
+        .back-to-top.active {
+        visibility: visible;
+        opacity: 1;
+        }
       </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,11 +62,12 @@
         content="Multi-College Tech Community empowering students to Learn in Public. Join us to connect with like-minded individuals and foster campus learning culture." />
     <link rel="canonical" href="/index.html" />
     <link href="/assets/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/css/privacy.css">
+    <link rel="stylesheet" href="../assets/css//privacy.css">
 
     <!-- Favicons -->
-    <link href="/assets/img/logo.webp" rel="icon" />
-
+    <link href="/assets/img/logo.jpeg" rel="icon" />
+    
+    <script src="https://kit.fontawesome.com/37377042d1.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +76,7 @@
 
 <body>
     <div class="phead">
-        <!-- <a href="/index.html"><img class="logo1" align="left" src="/assets/img/logo.webp"  height="80px" alt="logo" /></a> -->
+        <!-- <a href="/index.html"><img class="logo1" align="left" src="/assets/img/logo.jpeg"  height="80px" alt="logo" /></a> -->
         <h1>Privacy Policy</h1>
     </div>
     <section id="main">
@@ -63,7 +105,7 @@
             </div>
 
             <div class="flex-child green">
-                <img src="/assets/img/pol.webp" alt="privacy-img" class="privacy-img">
+                <img src="/assets/img/pol.jpg" alt="privacy-img" class="privacy-img">
             </div>
         </div>
     </section>
@@ -155,7 +197,7 @@
                 </ol>
             </div>
             <div class="flex-child green">
-                <img src="/assets/img/privacy.webp" alt="privacy-img" class="privacy-img">
+                <img src="/assets/img/privacy.jpg" alt="privacy-img" class="privacy-img">
             </div>
         </div>
     </section>
@@ -690,6 +732,7 @@
         </div>
     </footer>
     <!-- End Footer -->
+    <a href="#" class="back-to-top flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up"></i></a>
 </body>
 
 </html>

@@ -215,49 +215,29 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  
 }
-.feature-card:hover {
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    background-image: linear-gradient(to right, #decba4, #3e5151);
-}
+
 .feature-card .feature-card__body,
 .feature-card .u-icon {
   -webkit-box-flex: 1;
   -ms-flex: 1;
-  align-items: center;
   flex: 1;
-  font-size: 17px;
-  color: #000;
-  font-weight: 500;
 }
 
 .feature-card .u-icon {
   margin-right: 20px;
-  text-align: center;
-  align-items: center;
 }
 .feature-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: #4b0404;
-  font-family: cursive;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
 .content-card__body {
   padding: 10px;
-  font-family: cursive;
 }
 
 .mfp-bg {
-
-  background-color: rgba(0, 36, 72, 0.5);
-
+  background-color: rgba(27, 39, 51, 0.5);
 }
 
 .mfp-iframe {
@@ -301,11 +281,12 @@ p {
 .custom-menu .nav-item .nav-link {
   padding: 20px 15px;
   text-transform: capitalize;
-  color: #637282;
+  color: #92a6be;
+  font-weight: 500;
 }
 
 .custom-menu .nav-item .nav-link:hover {
-  color: #1b2733;
+  color: #c2d9ef;
 }
 .nav-item {
   font-weight: bold;
@@ -776,9 +757,14 @@ hr {
 
 /*team card stying*/
 
+
 .card.hovercard {
   border: 0px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.card.hovercard:hover {
+  border: 0px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 .card.hovercard .cardheader {
   background: #2f5be7;
@@ -805,6 +791,16 @@ hr {
   -moz-border-radius: 50%;
   border-radius: 50%;
   border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.card.hovercard .avatar img:hover{
+  width: 150px;
+  height: 150px; 
+  max-width: 150px;
+  max-height: 150px;
+  border: 5px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease; 
 }
 
 .card.hovercard .info {
@@ -1431,22 +1427,45 @@ a:hover i {
   color: white;
   text-decoration: none;
 }
-.card_outer {
-  height: 420px;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  transition: all 0.5s ease-in-out;
+
+.logoo{
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background-color:#1a023b ;
+  transition: 0.2s;
 }
-.card_outer:hover {
-  transform: scale(0.9);
-  /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+
+
+.logoo :hover{
+  color: #21beee;
+  text-shadow: 0px 0px 5px #21beee, 0px 0px 10px #21beee, 0px 0px 20px #21beee,
+    0px 0px 40px #21beee;
+}
+
+
+.navbar li {
+  margin: 10px; 
+  color:whitesmoke;
+  /* Adjust the desired spacing here */
+} 
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center; 
+  /* Center the items horizontally */
+}
+.navbar a:hover::after,
+.navbar .active::after,
+.navbar .active:focus::after,
+.navbar li:hover > a::after {
+  background: #4a326b; /* Change the desired underline color */
+}
+.navbar{
+  background: #1a023b; 
 }

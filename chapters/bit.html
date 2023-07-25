@@ -29,6 +29,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
 
@@ -37,9 +39,33 @@
       class="navbar navbar-expand-lg fixed-top custom-menu custom-menu__light"
     >
       <div class="container">
-        <a class="navbar-brand" href="../index.html">
-          <img data-src="images/OS-Code.webp" height="60" alt="College Logo" />
-        </a>
+        <div style="display: flex">
+          <a class="logoo" class="navbar-brand" href="../index.html">
+            <!-- <img  data-src="images/OS-Code.webp" height="60" alt="College Logo"> -->
+            <img
+            style="border-radius:8px;"
+              class="logo1"
+              src="../assets/img/logo.webp"
+              width="50px"
+              height="50px"
+              alt="logo"
+            
+            />
+          </a>
+          <p
+            style="
+              
+              color: #fff;
+              font-weight: 700;
+              font-size: 20px;
+              margin-top: 15px;
+              margin-left: 8px;
+            "
+          >
+            OS-CODE
+          </p>
+        </div>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -58,16 +84,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-lg-auto">
-            <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
-            <li class="nav-item">
+            <li style="color: #fff; font-size: 17px; font-weight: 500;" class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+            <li style="color: #fff; font-size: 17px; font-weight: 500;" class="nav-item">
               <a class="nav-link" href="#about_us">About</a>
             </li>
-            <li class="nav-item">
+            <li style="color: #fff; font-size: 17px; font-weight: 500;" class="nav-item">
               <a href="#events" class="nav-link">Events</a>
             </li>
-            <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+            <li style="color: #fff; font-size: 17px; font-weight: 500;" class="nav-item"><a href="#team" class="nav-link">Team</a></li>
           </ul>
-          <div class="custom-menu__right">
+          <div  style="margin-left: 10px;" class="custom-menu__right">
             <a href="#footer" class="event-btn nav-link">Contact Us !</a>
           </div>
         </div>
@@ -126,10 +152,10 @@
 
         <div class="row">
           <div class="col-md-4 col-12">
-            <div class="feature-card card_outer">
+            <div class="feature-card">
               <div class="feature-card__body">
                 <i class="fas fa-rocket ghost-blue"></i>
-                <h4 class="feature-title" >Concept of OS-Code</h4>
+                <h4 class="feature-title">Concept of OS-Code</h4>
                 <p>
                   OS-Code is a Multi-College Tech Community that helps college
                   students to learn in public and engage with similar-minded
@@ -144,7 +170,7 @@
             </div>
           </div>
           <div class="col-md-4 col-12">
-            <div class="feature-card card_outer">
+            <div class="feature-card">
               <div class="feature-card__body">
                 <i class="fas fa-lightbulb ghost-green"></i>
                 <h4 class="feature-title">Why OS-Code?</h4>
@@ -165,7 +191,7 @@
             </div>
           </div>
           <div class="col-md-4 col-12">
-            <div class="feature-card card_outer m-0">
+            <div class="feature-card m-0">
               <div class="feature-card__body">
                 <i class="fas fa-users ghost-red"></i>
                 <h4 class="feature-title">Target audience</h4>
