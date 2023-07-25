@@ -15,31 +15,35 @@
   flex-direction: column;
   align-items: center;
   border: none;
-  transition: 3s ease-in-out;
+  transition: 1s ease-in-out;
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
     rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
     rgba(240, 46, 170, 0.05) 25px 25px;
   background-image: linear-gradient(to right, #9796f0, #d7c7fb);
   /* background-image: linear-gradient(to right, #b6d8ff, #83a4d4); */
   margin-bottom: 20px;
+  background-image: linear-gradient(to bottom, #d16ba5, #cb73b9, #c17dcc, #b387de, #a192ed, #9693f2, #8a94f7, #7b96fc, #798efa, #7786f8, #777ef5, #7775f2);
 }
 
 .contributor:hover {
-  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
-    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
-    rgba(240, 46, 170, 0.05) 0px 25px;
-  transform: scale(0.9);
+  /* box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
+    rgba(156, 46, 240, 0.2) 0px 15px, rgba(140, 46, 240, 0.1) 0px 20px,
+    rgba(46, 182, 240, 0.05) 0px 25px; */
+    filter: drop-shadow(0px 0px 2px white);
+  transform: scale(1.1);
   background-image: linear-gradient();
   /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    transform: rotateY(360deg);
+    background-image: linear-gradient(to right bottom, #cd6bd1, #a092fb, #65b2ff, #2eccff, #45e0ff, #57e8f9, #6df0f2, #84f7ec, #8cf6dd, #97f4ce, #a5f2bf, #b3efb1);
 }
 
 .contributor img {
   width: 60%;
-  transition: all 2s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-radius: 50%;
   /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
   margin-right: 10px;
@@ -55,6 +59,20 @@
 .contributor p {
   font-size: 1.1rem;
   text-align: center;
+  padding: 1rem 0 0 0;
+}
+.contributor p .contri {
+  font-size: 1.1rem;
+  text-align: center;
+  color: rgb(49, 255, 3);
+  font-weight: bold;
+  padding: 1rem 0 0 0;
+}
+.contributor:hover p .contri {
+  font-size: 1.1rem;
+  text-align: center;
+  color: rgb(255, 3, 3);
+  font-weight: bold;
   padding: 1rem 0 0 0;
 }
 .cname {
@@ -81,6 +99,7 @@
   white-space: nowrap;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition-duration: 1s;
 }
 
 @media only screen and (max-width: 800px) {
