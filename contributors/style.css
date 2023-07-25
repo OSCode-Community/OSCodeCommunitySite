@@ -1,6 +1,5 @@
 #contributors-container {
   margin-top: -10px;
-  margin-bottom: 2rem;
   width: 100%;
   background-image: linear-gradient(to right, #141e30, #243b55);
   display: flex;
@@ -86,11 +85,30 @@
 
 @media only screen and (max-width: 800px) {
   .contributor {
-    width: 90%;
+    width: 40%;
   }
 }
 
 .contributor button:hover{
   background-image: linear-gradient(to right, #243b55, #141e30);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:400px){
+  span{
+    font-size: 2rem;
+  }
+  .contributor{
+    width: 80%;
+  }
+}
+@media (min-width:400px) and (max-width:800px){
+  span{
+    font-size: 3rem;
+  }
+}
+@media (min-width: 800px){
+  span{
+    font-size: 5rem;
+  }
 }
