@@ -1531,10 +1531,11 @@ a:hover i {
   font-family: "Google Sans", sans-serif;
   line-height: 1;
   font-weight: 700;
-  display: flex;
+  display: inline-block;
   align-items: center;
   margin-bottom: 1rem;
   margin-top: -.75rem;
+  margin-left: 12px;
 }
 
 #footer .footer-top .footer-contact h3 span {
@@ -1544,6 +1545,7 @@ a:hover i {
 #footer .footer-top .footer-contact p {
   font-size: 14px;
   line-height: 24px;
+  margin-top: 10px;
   margin-bottom: 0;
   color: #a9a9a9;
   font-family: "Roboto", sans-serif;
