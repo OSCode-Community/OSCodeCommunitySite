@@ -757,7 +757,6 @@ hr {
 
 /*team card stying*/
 
-
 .card.hovercard {
   border: 0px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -793,14 +792,14 @@ hr {
   border: 5px solid rgba(255, 255, 255, 0.5);
 }
 
-.card.hovercard .avatar img:hover{
+.card.hovercard .avatar img:hover {
   width: 150px;
-  height: 150px; 
+  height: 150px;
   max-width: 150px;
   max-height: 150px;
   border: 5px solid rgba(255, 255, 255, 1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 
 .card.hovercard .info {
@@ -1287,18 +1286,20 @@ a:hover i {
 #footer {
   margin: 0;
   width: 100%;
-  color: black;
+  color: rgb(241, 235, 235);
   font-size: 14px;
   font-weight: bold;
+  background: #1a023b;
   padding-top: 24px;
   padding-bottom: 30px;
 }
 #footer img {
   height: 35px;
   width: 35px;
+  color: white;
 }
 #footer .footer-top {
-  background: white;
+  background: #1a023b;
 }
 
 #footer .footer-top .footer-contact h3 {
@@ -1306,9 +1307,11 @@ a:hover i {
   line-height: 1;
   font-weight: 700;
 }
-
+.footer-contact {
+  margin-top: 20px;
+}
 #footer .footer-top .footer-contact h3 span {
-  color: black;
+  color: rgb(245, 237, 237);
 }
 
 #footer .footer-top .footer-contact p {
@@ -1322,6 +1325,7 @@ a:hover i {
   font-weight: bold;
   position: relative;
   padding-top: 5px;
+  color: #b1b8f8;
   padding-bottom: 5px;
 }
 
@@ -1340,11 +1344,12 @@ a:hover i {
   list-style: none;
   padding: 0;
   margin: 0;
+  color: white;
 }
 
 #footer .footer-top .footer-links ul i {
   padding-right: 3px;
-  color: black;
+  color: rgb(246, 240, 240);
   font-size: 10px;
   line-height: 1;
 }
@@ -1353,6 +1358,7 @@ a:hover i {
   padding: 10px 0;
   display: flex;
   align-items: center;
+  color: white;
 }
 
 #footer .footer-top .footer-links ul li:first-child {
@@ -1360,18 +1366,20 @@ a:hover i {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: black;
+  color: rgb(216, 219, 252);
   transition: 0.3s;
+  margin-top: 6px;
   display: inline-block;
   line-height: 1;
 }
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: blue;
+  color: rgb(127, 127, 255);
 }
 
 .social-links {
+  margin-top: 20px;
   margin-bottom: 10px;
   padding-bottom: -50px;
 }
@@ -1379,8 +1387,7 @@ a:hover i {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: white;
-  color: black;
+  color: white;
   line-height: 1;
   padding: 8px 0;
   border-radius: 4px;
@@ -1427,37 +1434,36 @@ a:hover i {
   color: white;
   text-decoration: none;
 }
-
-.logoo{
+.copyright {
+  padding-top: 20px;
+}
+.logoo {
   font-size: 30px;
   margin: 0;
   padding: 0;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  background-color:#1a023b ;
+  background-color: #1a023b;
   transition: 0.2s;
 }
 
-
-
-.logoo :hover{
+.logoo :hover {
   color: #21beee;
   text-shadow: 0px 0px 5px #21beee, 0px 0px 10px #21beee, 0px 0px 20px #21beee,
     0px 0px 40px #21beee;
 }
 
-
 .navbar li {
-  margin: 10px; 
-  color:whitesmoke;
+  margin: 10px;
+  color: whitesmoke;
   /* Adjust the desired spacing here */
-} 
+}
 
 .navbar ul {
   display: flex;
   list-style: none;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   /* Center the items horizontally */
 }
 .navbar a:hover::after,
@@ -1466,6 +1472,6 @@ a:hover i {
 .navbar li:hover > a::after {
   background: #4a326b; /* Change the desired underline color */
 }
-.navbar{
-  background: #1a023b; 
+.navbar {
+  background: #1a023b;
 }
