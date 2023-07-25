@@ -7,18 +7,20 @@ body {
      padding: 5px;
      width: 80px;    
 }
-a:link {
+a{
     text-decoration: none;
-    color: blue;
+    color: rgb(36, 138, 240);
+    transition: 0.5s ease-in;
 }
 
 a:visited {
     text-decoration: none;
-    color: blue;
+    color: rgb(141, 27, 255);
 }
 
 a:hover {
     text-decoration: underline;
+    color: cyan;
 }
 
 .phead {
@@ -27,7 +29,7 @@ a:hover {
     position: relative;
     overflow: auto;
     text-align: center;
-    /* background: url("./assets/img/background/bg9.webp"); */
+    /* background: url("./assets/img/background/bg9.jpg"); */
     background-color: purple;
 }
 
@@ -57,7 +59,7 @@ h3 {
 #updates,
 #notice,
 #review {
-    padding: 25px 50px 0px 70px;
+    /* padding: 25px 50px 0px 70px; */
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -67,10 +69,12 @@ h3 {
 
 .privacy-img {
     border-radius: 2%;
-    width: 550px;
+    width: 500px;
     height: 500px;
     float: center;
-    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 100%;
 }
 
@@ -142,6 +146,8 @@ ul.square {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    overflow-x: scroll;
+    display: flex;
 }
 
 #customers td,
@@ -174,7 +180,7 @@ ul.square {
     .privacy-img {
         width: 300px;
         height: 300px;
-        margin-left: 50px;
+        /* margin-left: 50px; */
     }
 
     .flex-container {
@@ -203,9 +209,61 @@ ul.square {
     #review {
         font-size: medium;
         line-height: 1.5;
-        padding: 30px;
+        /* padding: 30px; */
+        padding-left: 10px;
+        padding-right: 5px;
         margin: 0px;
         height: 100%;
+        word-wrap: break-word;
+    }
+}
 
+@media (max-width: 400px){
+    h1{
+        font-size: 30px;
+        letter-spacing: 0.8px;
+        line-height:2.5rem;
+    }
+    .ptitle{
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height:1.75rem;
+    }
+    ul{
+        padding-left: 0;
+    }
+    a{
+        font-size: small;
+    }
+    .privacy-img{
+        height: 100%;
+    }
+    #main,
+    #summary,
+    #tableofcontents,
+    #personal,
+    #process,
+    #share,
+    #cookies,
+    #social,
+    #keep,
+    #safe,
+    #privacy-rights,
+    #controls,
+    #california,
+    #updates,
+    #notice,
+    #review {
+        font-size: 12px;
+        line-height: 1.5;
+        /* padding: 30px; */
+        padding-left: 10px;
+        padding-right: 5px;
+        margin: 0px;
+        height: 100%;
+        word-wrap: break-word;
+    }
+    li{
+       font-size: 15px; 
     }
 }
