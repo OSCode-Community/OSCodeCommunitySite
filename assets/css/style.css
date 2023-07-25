@@ -1657,6 +1657,8 @@ a:hover i {
 .social-links {
   margin-bottom: 10px;
   padding-bottom: -50px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 #footer .social-links a {
@@ -1670,6 +1672,10 @@ a:hover i {
   text-align: center;
   width: 36px;
   height: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   transition: 0.5s;
 }
 
