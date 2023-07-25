@@ -1519,11 +1519,14 @@ a:hover i {
 }
 
 #footer .footer-top .footer-contact h3 {
-  margin-top: 0px;
   font-size: 26px;
   font-family: "Google Sans", sans-serif;
   line-height: 1;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: -.75rem;
 }
 
 #footer .footer-top .footer-contact h3 span {
