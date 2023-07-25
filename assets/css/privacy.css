@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     line-height: 2;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
 }
 .logo1 {
      padding: 5px;
@@ -31,6 +33,7 @@ a:hover {
     text-align: center;
     /* background: url("./assets/img/background/bg9.jpg"); */
     background-color: purple;
+    padding-bottom: 0rem;
 }
 
 h1,
@@ -41,6 +44,12 @@ h3 {
     line-height: 0.3em;
     letter-spacing: 2px;
     font-family: 'Noto Serif', serif;
+}
+
+h1 {
+    line-height: 4rem;
+    margin: unset;
+    margin: 2rem;
 }
 
 #main,
@@ -59,7 +68,7 @@ h3 {
 #updates,
 #notice,
 #review {
-    /* padding: 25px 50px 0px 70px; */
+    padding: 25px 50px 0px 70px;
     font-family: 'Montserrat', sans-serif;
 }
 
