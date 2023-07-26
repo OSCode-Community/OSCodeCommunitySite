@@ -21,7 +21,7 @@ googleLogin.addEventListener("click", (e) => {
       // The signed-in user info.
       const user = result.user;
       console.log(user);
-      
+
       const userDetails = {
         uid: user.uid,
         email: user.email,
