@@ -46,9 +46,19 @@ googleLogin.addEventListener("click", (e) => {
       const token = credential.accessToken;
       // The signed-in user info.
       const user = result.user;
+      console.log(user);
+      
+      const userDetails = {
+        uid: user.uid,
+        email: user.email,
+        displayName: user.displayName,
+        photoURL: user.photoURL,
+      };
+      localStorage.setItem("userDetails", JSON.stringify(userDetails));
+      window.location.href = "/login/profile.html";
 
       // Redirecting to the home page
-      window.location.href = "/";
+      // window.location.href = "/";
     })
     .catch((error) => {
       // Handle Errors here.
