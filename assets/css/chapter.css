@@ -6,17 +6,12 @@
   padding-top: 100px;
   padding-bottom: 50px;
   justify-content: center;
-  /* margin-top: 5.4%; */
 }
 
 #about {
   background-image: url("/assets/img/background/s3.webp");
   background-size: cover;
 }
-
-/* .row {
-  margin-top: 20px;
-} */
 
 .hidden {
   opacity: 0;
@@ -56,35 +51,6 @@
   align-items: center;
 }
 
-/* .us:before {
-    content: "College Chapters";
-    position: absolute;
-    color: #262626;
-    top: 0;
-    left: 0;
-    width: 0%;
-    overflow: hidden;
-    transition: all 01s;
-} */
-
-/* .us:hover:before {
-    width: 100%;
-} */
-
-/* @media only screen and (max-width: 800px) {
-    .us {
-        word-break: break-all;
-    }
-
-    .us:before {
-        width: 100%;
-        transition: none;
-    }
-
-    .us:hover:before {
-        width: 0;
-    }
-} */
 .quotee {
   color: #040008;
   font-size: 25px;
@@ -221,27 +187,7 @@ a:hover {
   background-color: rgba(131, 128, 128, 0.7);
 }
 
-/* input {
-      width: 400px;
-      height: 40px;
-    }
-
-    button {
-      height: 40px;
-      width: 40px;
-    } */
-
 @media screen and (max-width: 600px) {
-  /* input {
-        width: 250px;
-        height: 30px;
-      }
-
-      button {
-        height: 30px;
-        width: 30px;
-      } */
-
   #results {
     margin-left: 10px;
     max-width: 350px;
@@ -316,4 +262,12 @@ body {
     display: flex;
     flex-direction: column;
   }
+}
+.socialIcons {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+.socialIcons a {
+  margin: 5px;
 }
