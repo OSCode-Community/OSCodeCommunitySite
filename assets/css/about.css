@@ -295,3 +295,9 @@ hr.line {
 hr.line:hover {
   width: 200px; /* increased length on hover */
 }
+
+@media (max-width: 500px){
+  .whoweare{
+    padding: 0;
+  }
+}
