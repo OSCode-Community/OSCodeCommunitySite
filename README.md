@@ -61,6 +61,8 @@ At OSCode, we value an inclusive environment that respects all contributions. To
 
 This Community is <a href="https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/LICENSE">Licensed</a> under MIT license.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 <div align="center"><h1>🚀 Getting Started</h1></div>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
