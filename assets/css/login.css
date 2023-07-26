@@ -261,7 +261,7 @@ button.submit-button[type="submit"]:hover {
     width: calc(100% - 30px);
   }
 }
-.user-box .error-msg {
-  color: red;
-  margin-top: -10px;
+
+#googleLogin:active {
+  transform: scale(0.9);
 }
