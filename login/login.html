@@ -162,12 +162,14 @@
           <div class="user-box">
             <input id="email" type="email" required />
             <label for="email">User Email</label>
+            <span class="error-msg" id="emailerr"></span>
           </div>
 
           <div>
             <div class="user-box">
               <input type="password" id="password" required />
               <label for="password">Password</label>
+              <span class="error-msg" id="passworderr"></span>
             </div>
 
             <div style="display: flex; align-items: center">
@@ -191,7 +193,7 @@
 
           <!-- login button -->
           <div class="mx-auto">
-            <button id="login" type="submit" class="submit-button">
+            <button id="login" type="submit" class="submit-button" onclick="validateForm()">
               Login
             </button>
           </div>
@@ -228,5 +230,52 @@
         }
       });
     </script>
+    <script>
+       
+       var email = document.getElementById("email");
+      var password = document.getElementById("password");
+      var emailerr = document.getElementById("emailerr");
+      var passwderr = document.getElementById("passworderr");
+    
+      function validEmail(mail) 
+    {
+     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+      { return true;}
+       return false;
+    }
+      function validateForm(){
+        console.log("called");
+           // Validation check
+       if(email.value=='')
+      { emailerr.innerText = "*Email is required!"; }
+      else if(!validEmail(email.value))
+      { emailerr.innerText = "*Enter valid email!";}
+      else if(password.value =='')
+      { emailerr.innerText = ""; passwderr.innerText = "*Password is required!";}
+      else
+      {
+         emailerr.innerText =""; passwderr.innerText="";
+         signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          const date = new Date();
+
+          // Update database and redirect to the homepage
+          update(ref(database, "users/" + user.uid), {
+            last_login: date,
+          }).then(() => (window.location.href = "/"));
+        })
+        .catch((error) => {
+          // Handle errors here
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          document.getElementById("error-msg").innerHTML = errorMessage;
+        });
+      }
+    }
+
+    </script>
+          
   </body>
 </html>
