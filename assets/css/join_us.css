@@ -49,11 +49,12 @@
     margin: auto;
     margin-top: 7px;
     text-align: center;
-    background-color: #0088cc;
+    background: linear-gradient(145deg, #0e034d, #240ab3);
     width: fit-content;
     padding: 20px;
     border-radius: 10px;
     transition: 0.5s;
+    color: white;
   }
   .link:hover{
     transform: scale(1.1);
