@@ -1154,7 +1154,7 @@ a:hover i {
   box-sizing: content-box;
   padding: 30px;
   margin: 30px 15px;
-  height: 400px;
+  /* height: 400px; */
   position: relative;
   background: var(--background-white);
   border-radius: 15px;
@@ -1163,7 +1163,8 @@ a:hover i {
 
 @media only screen and (max-width: 370px) {
   .testimonials .testimonial-item {
-    height: 490px;
+    /* height: 490px; */
+    padding: 10px;
   }
 }
 
@@ -1531,11 +1532,10 @@ a:hover i {
   font-family: "Google Sans", sans-serif;
   line-height: 1;
   font-weight: 700;
-  display: inline-block;
+  display: flex;
   align-items: center;
   margin-bottom: 1rem;
   margin-top: -.75rem;
-  margin-left: 12px;
 }
 
 #footer .footer-top .footer-contact h3 span {
@@ -1545,7 +1545,6 @@ a:hover i {
 #footer .footer-top .footer-contact p {
   font-size: 14px;
   line-height: 24px;
-  margin-top: 10px;
   margin-bottom: 0;
   color: #a9a9a9;
   font-family: "Roboto", sans-serif;
