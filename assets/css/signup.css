@@ -50,13 +50,11 @@
   width: 25px;
   border-radius: 100px;
   transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .google:hover {
   background-color: #1877f2;
-}
-.google:hover .googleicon {
-  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .or {
