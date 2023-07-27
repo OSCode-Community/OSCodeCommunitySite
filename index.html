@@ -120,6 +120,7 @@
       <!-- logo and name together -->
 
       <div class="logoAndName">
+        <div class="alan-btn"></div>
 
         <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="50pt" viewBox="0 0 1600.000000 1600.000000"
           preserveAspectRatio="xMidYMid meet">
@@ -848,7 +849,7 @@
     <section id="faq" class="faq">
       <div class="container" data-aos="fade-up">
         <h1 class="text-center">Frequently Asked Questions</h1>
-        <hr class="line hr-center">
+        <hr class="line hr-center " style="color: white;">
 
         <ul class="faq-list accordion" data-aos="fade-up">
           <div class="faqs">
@@ -1194,6 +1195,24 @@
 
   <!-- Auto-Typing -->
   <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+
+
+  <script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "4cc35fadda67f87264a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+    left: '50px',
+      bottom: '50px',
+
+    onCommand: function (commandData) {
+      if (commandData.command === "go:back") {
+        //call client code that will react on the received command
+      }
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+</script>
 
   <!-- Setup and start animation! -->
   <script>

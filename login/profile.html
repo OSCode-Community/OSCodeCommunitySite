@@ -167,6 +167,7 @@
 
     <!-- Profile Information Section -->
     <div class="container mx-auto mt-8 ">
+      <div class="alan-btn"></div>
         <div class="max-w-3xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
             <div class="p-4 bg-gray-800">
                 <!-- User's Display Picture -->
@@ -221,6 +222,21 @@
         document.getElementById("email").innerText = userDetails.email;
         document.getElementById("photoURL").src = userDetails.photoURL;
     </script>
+      <script type="text/javascript"
+      src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+     <script>
+       var alanBtnInstance = alanBtn({
+         key: "4cc35fadda67f87264a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+         left: '50px',
+      bottom: '50px',
+         onCommand: function (commandData) {
+           if (commandData.command === "go:back") {
+             //call client code that will react on the received command
+           }
+         },
+         rootEl: document.getElementById("alan-btn"),
+       });
+     </script>
 </body>
 
 </html>
