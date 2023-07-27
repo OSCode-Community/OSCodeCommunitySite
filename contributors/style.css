@@ -126,7 +126,7 @@
     font-size: 3rem;
   }
 }
-@media (min-width: 800px){
+@media (max-width: 800px){
   span{
     font-size: 5rem;
   }
