@@ -5,19 +5,22 @@
   background-image: url("../img/background/abt-bg1.webp");
   background-size: cover;
   position: relative;
-  padding-top: 0px;
+  padding-top: 0;
   padding-bottom: 80px;
 }
+
 .whoweare {
   width: 100%;
   border-radius: 0% 0% 0% 48%;
-  padding: 40px ;
+  padding: 40px;
   transition: all 0.4s;
   animation: action 0.7s infinite alternate;
 }
+
 .text-primary {
   color: var(--backtotop-btn-color) !important;
 }
+
 .us {
   color: var(--backtotop-btn-color) !important;
   font-weight: bold;
@@ -26,12 +29,14 @@
   font-size: 65px;
   text-align: center;
 }
+
 hr.line {
   border: 4px solid var(--backtotop-btn-color);
   border-radius: 5px;
   width: 120px;
   opacity: 1;
 }
+
 .abt-img {
   margin-left: 150px;
   animation: float 3.5s ease-in-out infinite;
@@ -39,7 +44,6 @@ hr.line {
   width: 430px;
   border-radius: 50%;
   position: relative;
-
   background: radial-gradient(
     circle at 75% 40%,
     var(--background-white) 5px,
@@ -54,13 +58,13 @@ hr.line {
 
 @keyframes float {
   0% {
-    transform: translatey(0px);
+    transform: translateY(0px);
   }
   50% {
-    transform: translatey(-80px);
+    transform: translateY(-80px);
   }
   100% {
-    transform: translatey(0px);
+    transform: translateY(0px);
   }
 }
 
@@ -69,11 +73,11 @@ hr.line {
   100% {
     transform: scale(0.5);
   }
-
   50% {
     transform: scale(1);
   }
 }
+
 /* Bootstrap toggle icon */
 .bi-x,
 .bi-list::before {
@@ -88,7 +92,6 @@ hr.line {
     height: 300px;
     width: 300px;
     margin-right: 80px;
-
     background: radial-gradient(
       circle at 65% 35%,
       var(--background-white) 5px,
@@ -113,23 +116,25 @@ hr.line {
     text-decoration: none;
     font-weight: normal !important;
   }
+
   @keyframes float {
     0% {
-      transform: translatey(0px);
+      transform: translateY(0px);
     }
     50% {
-      transform: translatey(-50px);
+      transform: translateY(-50px);
     }
     100% {
-      transform: translatey(0px);
+      transform: translateY(0px);
     }
   }
 }
 
 .abt-txt {
   font-size: 16px;
-  font: weight 5px;
+  font-weight: 500; /* corrected font-weight property */
 }
+
 .about .container {
   position: relative;
   z-index: 10;
@@ -192,6 +197,7 @@ hr.line {
   font-size: 15px;
   color: #e5e3e3;
 }
+
 .p-hover {
   background-image: linear-gradient(
     to right,
@@ -200,7 +206,6 @@ hr.line {
     #158ea3 50%,
     #000000 50%
   );
-
   font-weight: 600;
   background-size: 200% 100%;
   background-position: -100%;
@@ -208,6 +213,7 @@ hr.line {
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
+
 .p-hover:before {
   content: "";
   background: var(--backtotop-btn-color);
@@ -218,12 +224,15 @@ hr.line {
   font-weight: 500;
   font-size: 50px;
 }
+
 .p-hover:hover {
   background-position: 0;
 }
+
 .p-hover:hover::before {
   width: 100%;
 }
+
 @media (max-width: 1200px) {
   .about .content {
     padding-right: 0;
@@ -242,14 +251,17 @@ hr.line {
   border-radius: 50%;
   animation: float 2s ease-in-out infinite;
 }
+
 .bubble img {
   display: block;
   max-width: 100%;
 }
+
 .bubble {
   position: relative;
   display: inline-block;
 }
+
 .bubble:before,
 .bubble:after {
   content: "";
@@ -258,9 +270,11 @@ hr.line {
   box-shadow: inset 0px 0px 2px 0px var(--background-black);
   border-radius: 50%;
 }
+
 .think {
   margin-left: 200px;
 }
+
 @keyframes float {
   0% {
     transform: translate(0, 0) scale(1, 1);
@@ -279,7 +293,6 @@ hr.line {
   border-image-slice: 3; /* width of the gradient border */
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease, border 0.3s ease; /*border transition */
-
   border-radius: 4px; /*border radius */
 }
 
@@ -287,6 +300,7 @@ hr.line {
   background: linear-gradient(to right, #9921e8, #007bff);
   color: #fff;
 }
+
 hr.line {
   width: 100px; /* initial length */
   transition: width 0.3s ease; /* smooth transition */
