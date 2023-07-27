@@ -1680,6 +1680,12 @@ a:hover i {
   transition: 0.5s;
 }
 
+#footer .social-links .whatsapp {
+  color: #4adf4f;
+  background-color: var(--background-white);
+  text-decoration: none;
+}
+
 #footer .social-links .twitter:hover {
   background: #1da1f2;
   color: var(--background-white);
