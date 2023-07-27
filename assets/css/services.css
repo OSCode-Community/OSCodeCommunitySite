@@ -299,7 +299,7 @@ li {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1145px) {
   .ag-format-container {
     width: 96%;
   }
