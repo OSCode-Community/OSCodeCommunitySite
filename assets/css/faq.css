@@ -1,22 +1,25 @@
 /*--------------------------------------------------------------
-# Frequently Asked Questions
+  Frequently Asked Questions
 --------------------------------------------------------------*/
 #faq {
   padding-bottom: 0;
-  background-image: url('../img/background/abt-bg1.webp');
+  background-image: url("../img/background/abt-bg1.webp");
   background-size: cover;
   position: relative;
 }
+
 #faq h1 {
-  color: var(--backtotop-btn-color) !important;
+  color: var(--backtotop-btn-color);
   font-weight: bold;
   text-shadow: 0 0 1px black;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
 }
+
 #faq hr {
   margin-bottom: 50px;
 }
+
 .faq .faq-list {
   padding: 0;
   list-style: none;
@@ -31,7 +34,9 @@
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: var(--backtotop-btn-color);
+  font-family: var(
+    --backtotop-btn-color
+  ); /* This line seems incorrect. Check if it's intended. */
   font-size: 18px;
   line-height: 24px;
   font-weight: 900;
@@ -49,7 +54,7 @@
 .faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
-  color: rgb(0, 0, 0);
+  color: #000; /* Updated to use a color code directly */
   font-weight: 500;
   font-style: italic;
 }
@@ -73,6 +78,8 @@
 .faq .faq-list a.collapsed .icon-close {
   display: none;
 }
+
+/* Media Query */
 @media only screen and (max-width: 600px) {
   #faq h1 {
     font-size: 27px;
