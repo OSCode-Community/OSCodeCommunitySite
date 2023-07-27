@@ -87,7 +87,7 @@
           </h1>
         </div>
       </div>
-
+      <div class="alan-btn"></div>
       <div class="navListAndContact">
         <i class="bi bi-list mobile-nav-toggle"></i>
         <div id="navbar" class="navbar order-last order-lg-0 me-4">
@@ -298,6 +298,21 @@
 
     <!-- Template Main JS File -->
     <script src="../assets/js/main.js"></script>
+    <script type="text/javascript"
+    src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+   <script>
+     var alanBtnInstance = alanBtn({
+       key: "4cc35fadda67f87264a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+       left: '50px',
+      bottom: '50px',
+       onCommand: function (commandData) {
+         if (commandData.command === "go:back") {
+           //call client code that will react on the received command
+         }
+       },
+       rootEl: document.getElementById("alan-btn"),
+     });
+   </script>
     <script src="./style.js"></script>
   </body>
 </html>
