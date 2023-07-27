@@ -313,6 +313,7 @@ li {
     width: 96%;
   }
 }
+
 @media only screen and (max-width: 639px) {
   .ag-courses_item {
     -ms-flex-preferred-size: 100%;
