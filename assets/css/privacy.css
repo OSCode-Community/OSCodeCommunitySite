@@ -189,6 +189,28 @@ img {
   mix-blend-mode: lighten;
 }
 
+@media (min-width: 35em) {
+  #main,
+  #summary,
+  #tableofcontents,
+  #personal,
+  #process,
+  #share,
+  #cookies,
+  #social,
+  #keep,
+  #safe,
+  #privacy-rights,
+  #controls,
+  #california,
+  #updates,
+  #notice,
+  #review {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .privacy-img {
     width: 300px;
