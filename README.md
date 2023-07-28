@@ -50,10 +50,10 @@ Before making a contribution, check the <a href="https://github.com/OSCode-Commu
 
 We are proud to be a part of GSSoC '23 (GirlScript Summer of Code)! Join us and be a part of this amazing programme.
 </br> </br>
-<a href=""><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
-<a href=""><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
-<a href=""><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
-<a href=""><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103"></a>
+<a href=""><img src="https://forthebadge.com/images/badges/open-source.svg"></a>
+<a href=""><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3?style=for-the-badge"></a>
+<a href=""><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow&style=for-the-badge"></a>
+<a href=""><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103&style=for-the-badge"></a>
 
 <div align="center"><h1>🧧 Code of Conduct</h1></div>
 
