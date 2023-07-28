@@ -106,7 +106,7 @@
 }
 
 .faq .faq-list li {
-  margin: 0;
+  margin: 1rem 0;
   padding: 0;
   padding: 20px 15px;
   transition: 0.3s ease-in-out;
