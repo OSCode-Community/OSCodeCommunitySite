@@ -120,6 +120,7 @@
       <!-- logo and name together -->
 
       <div class="logoAndName">
+        <div class="alan-btn"></div>
 
         <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="50pt" viewBox="0 0 1600.000000 1600.000000"
           preserveAspectRatio="xMidYMid meet">
@@ -144,13 +145,13 @@
     <i class="bi bi-list mobile-nav-toggle"></i>
     <div id="navbar" class="navbar order-last order-lg-0 me-4">
       <ul class="nav-list">
-        <li><a class="nav-link scrollto active"  style="text-decoration: none;" href="#hero">HOME</a></li>
-        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#mainabout">ABOUT</a></li>
-        <li><a class="nav-link scrollto" style="text-decoration: none;" href="chapters/chapter.html">CHAPTERS</a></li>
-        <li><a class="nav-link scrollto" style="text-decoration: none;" href="https://blog.oscode.co.in/">BLOGS</a></li>
-        <li><a class="nav-link scrollto" href="assets/gallery.html" style="text-decoration: none;">GALLERY</a></li>
-        <li><a class="nav-link scrollto" href="http://127.0.0.1:5500/events/events.html" style="text-decoration: none;">EVENTS</a></li>
-        <li><a class="nav-link scrollto" href="contact/contact.html" style="text-decoration: none;">CONTACT</a></li>
+        <li><a class="nav-link scrollto active" href="#hero">HOME</a></li>
+        <li><a class="nav-link scrollto" href="#mainabout">ABOUT</a></li>
+        <li><a class="nav-link scrollto" href="chapters/chapter.html">CHAPTERS</a></li>
+        <li><a class="nav-link scrollto" href="https://blog.oscode.co.in/">BLOGS</a></li>
+        <li><a class="nav-link scrollto" href="assets/gallery.html">GALLERY</a></li>
+        <li><a class="nav-link scrollto" href="events/events.html">EVENTS</a></li>
+        <li><a class="nav-link scrollto" href="contact/contact.html">CONTACT</a></li>
         <li>
           <a
             class="nav-link scrollto"
@@ -160,7 +161,7 @@
           >
         </li>
         <li>
-          <a href="/login/login.html">
+          <a href="./login/login.html">
             <div class="get-started-btn-1 scrollto cntctBtn">
               <i class="fa-regular fa-user"></i>
             </div>
@@ -570,7 +571,7 @@
               <div class="testimonial-wrap">
                 <div class="testimonial-item modifiedAccomp">
                   <div class="upperPart">
-                    <img src="./assets/img/achievement/team.jpg" class="testimonial-img" alt="">
+                    <img src="./assets/img/achievement/team.webp" class="testimonial-img" alt="">
                     <div class="textUpperPart">
                       <h3>Amazing community</h3>
                       <h4>Learing & building together</h4>
@@ -848,7 +849,7 @@
     <section id="faq" class="faq">
       <div class="container" data-aos="fade-up">
         <h1 class="text-center">Frequently Asked Questions</h1>
-        <hr class="line hr-center">
+        <hr class="line hr-center " style="color: white;">
 
         <ul class="faq-list accordion" data-aos="fade-up">
           <div class="faqs">
@@ -1082,7 +1083,7 @@
                 <i class="bx bx-chevron-right"></i> <a href="#hero">Home</a>
               </li>
               <li>
-                <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                <i class="bx bx-chevron-right"></i> <a href="services.html">Services</a>
               </li>
               <li>
                 <i class="bx bx-chevron-right"></i>
@@ -1194,6 +1195,24 @@
 
   <!-- Auto-Typing -->
   <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+
+
+  <script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "4cc35fadda67f87264a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+    left: '50px',
+      bottom: '50px',
+
+    onCommand: function (commandData) {
+      if (commandData.command === "go:back") {
+        //call client code that will react on the received command
+      }
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+</script>
 
   <!-- Setup and start animation! -->
   <script>

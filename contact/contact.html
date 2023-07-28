@@ -58,7 +58,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="glassmorphic fixed-top d-flex align-items-center newFlex">
     <div class=" mainContainer container d-flex align-items-center">
-
+      <div class="alan-btn"></div>
       <!-- logo and name together -->
 
       <div class="logoAndName">
@@ -235,8 +235,9 @@
         
         <div class="col-lg-3 col-md-6 footer-contact">
           <a href="#">
-              <img src="../assets/img/logo.webp" height="40px" style="transform:scale(1.1);">
+              <img src="../assets/img/logo.webp" height="40px"">
             </a>
+          <br/>
             <h3 >  <!-- 
               <img class="logo1" src="../assets/img/logo.webp" width="60px" height="60px" alt="logo" /> -->
               OS-Code
@@ -367,6 +368,21 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+  <script type="text/javascript"
+  src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+ <script>
+   var alanBtnInstance = alanBtn({
+     key: "4cc35fadda67f87264a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+     left: '50px',
+      bottom: '50px',
+     onCommand: function (commandData) {
+       if (commandData.command === "go:back") {
+         //call client code that will react on the received command
+       }
+     },
+     rootEl: document.getElementById("alan-btn"),
+   });
+ </script>
   <script>
     const container = document.getElementById("card");
     const url = "./events.json";

@@ -1,4 +1,6 @@
-* {
+*, 
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -37,7 +39,8 @@
 
 .google {
   gap: 10px;
-  border: 2px solid #243b55;
+  border: none;
+  outline: 2px solid #243b55;
   box-shadow: #568dcd 0px 25px 20px -20px;
   margin-bottom: 10px;
   padding: 6px 8px;
@@ -45,24 +48,22 @@
   font-size: 14px;
   cursor: pointer;
   letter-spacing: 1px;
-  transition: all 0.3s;
+  transition: .3s ease;
 }
 
 .googleicon {
   width: 25px;
   border-radius: 100px;
   transition: all 0.3s;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .google:hover {
   background: #243b55;
-  border: none;
+  outline: none;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-.google:hover .googleicon {
-  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .or {
@@ -176,9 +177,9 @@
 }
 
 .form-container .remember-me label {
-  margin: 0px;
+  margin: 0;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 1px;
 }
 

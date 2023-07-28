@@ -1,3 +1,4 @@
+/* Global styles */
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -5,10 +6,13 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
 }
+
+/* Logo styles */
 .logo1 {
   padding: 5px;
   width: 80px;
 }
+
 a {
   text-decoration: none;
   color: rgb(36, 138, 240);
@@ -25,6 +29,7 @@ a:hover {
   color: cyan;
 }
 
+/* Page header styles */
 .phead {
   font-size: 30px;
   color: #ffffff;
@@ -35,6 +40,7 @@ a:hover {
   padding-bottom: 0rem;
 }
 
+/* Heading styles */
 h1,
 h2,
 h3 {
@@ -51,6 +57,7 @@ h1 {
   margin: 2rem;
 }
 
+/* Section styles */
 #main,
 #summary,
 #tableofcontents,
@@ -71,10 +78,12 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
+/* Flex container styles */
 .flex-container {
   display: flex;
 }
 
+/* Privacy image styles */
 .privacy-img {
   border-radius: 2%;
   width: 500px;
@@ -94,12 +103,14 @@ h1 {
   margin-right: 20px;
 }
 
+/* Paragraph and list item styles */
 p,
 li {
   font-size: 17px;
   text-align: left;
 }
 
+/* Specific element styles */
 .concern {
   padding-bottom: 10px;
 }
@@ -149,6 +160,7 @@ ul.square {
   text-align: center;
 }
 
+/* Table styles */
 #customers {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -211,6 +223,7 @@ img {
   }
 }
 
+/* Media queries */
 @media only screen and (max-width: 600px) {
   .privacy-img {
     width: 300px;

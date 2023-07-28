@@ -1,10 +1,11 @@
-/*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
+/*-------------------------------
+ # CLIENTS
+---------------------------------*/
 .clients .swiper-pagination {
   margin-top: 40px;
   position: relative;
 }
+
 .clients .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
@@ -12,9 +13,12 @@
   opacity: 1;
   border: 1px solid var(--backtotop-btn-color);
 }
+
 .clients-slider {
   padding-top: 50px;
 }
+
+
 .clients .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--backtotop-btn-color);
 }
@@ -31,16 +35,20 @@
   filter: grayscale(100);
   cursor: pointer;
 }
+
 .clients .swiper-slide img {
   transition: 0.5s;
 }
+
 .clients .swiper-slide:hover {
   opacity: 1;
   filter: none;
 }
+
 .clients .swiper-slide:hover > img {
   transform: scale(1.2) rotateY(360deg);
 }
+
 .clients h1 {
   color: var(--backtotop-btn-color);
   text-shadow: 0 0 1px black;
@@ -48,11 +56,13 @@
   font-size: 40px;
   font-weight: bold;
 }
+
 .enlarge {
   height: 60px;
   width: 200px;
   object-fit: contain;
 }
+
 @media only screen and (max-width: 600px) {
   .clients h1 {
     font-size: 27px;

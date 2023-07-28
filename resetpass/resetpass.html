@@ -122,6 +122,7 @@
         ></a>
       </span>
     </header>
+    <div class="alan-btn"></div>
 
     <!-- resetpass container -->
     <div class="resetpass-container min-vh-100">
@@ -176,9 +177,25 @@
           </div>
         </form>
       </div>
+      
     </div>
 
     <!-- javascript -->
     <script src="resetpass.js"></script>
+    <script type="text/javascript"
+    src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+   <script>
+     var alanBtnInstance = alanBtn({
+       key: "4cc35fadda67f87264a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+       left: '50px',
+      bottom: '50px',
+       onCommand: function (commandData) {
+         if (commandData.command === "go:back") {
+           //call client code that will react on the received command
+         }
+       },
+       rootEl: document.getElementById("alan-btn"),
+     });
+   </script>
   </body>
 </html>
