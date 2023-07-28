@@ -297,3 +297,10 @@ body {
 .socialIcons a {
   margin: 5px;
 }
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+  margin-right: 150px;
+}
