@@ -42,7 +42,11 @@ Before making a contribution, check the <a href="https://github.com/OSCode-Commu
 
 <div align="center"> <h1>✨ GSSoC '23 </h1> </div>
 
-![GSSoC Logo](https://camo.githubusercontent.com/0eaaaece51cad6ed831cbaf77ad31538f241fd324eec3d5fc6fcec27543fca29/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a66714a61485f6f49534f523936674c67704a427757512e706e67)
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
+  <img alt="Girlscript Summer of Code" width=100% src="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
+</picture>
 
 We are proud to be a part of GSSoC '23 (GirlScript Summer of Code)! Join us and be a part of this amazing programme.
 </br> </br>
@@ -180,7 +184,7 @@ serve
 7. Navigate to
 
 ```sh
-[npm install -g serve](http://localhost:5000/)
+[npm install -g serve](http://localhost:3000/)
 ```
 
 <div align="center"><h1>💫 Opportunities We Offer</h1></div>

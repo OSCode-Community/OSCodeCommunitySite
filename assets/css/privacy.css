@@ -1,46 +1,62 @@
+/* Global styles */
 body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 2;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
 }
+
+/* Logo styles */
 .logo1 {
-     padding: 5px;
-     width: 80px;    
+  padding: 5px;
+  width: 80px;
 }
-a:link {
-    text-decoration: none;
-    color: blue;
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: rgb(36, 138, 240);
+  transition: 0.5s ease-in;
 }
 
 a:visited {
-    text-decoration: none;
-    color: blue;
+  color: rgb(141, 27, 255);
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+  color: cyan;
 }
 
+/* Page header styles */
 .phead {
-    font-size: 30px;
-    color: #ffffff;
-    position: relative;
-    overflow: auto;
-    text-align: center;
-    /* background: url("./assets/img/background/bg9.webp"); */
-    background-color: purple;
+  font-size: 30px;
+  color: #ffffff;
+  position: relative;
+  overflow: auto;
+  text-align: center;
+  background-color: purple;
+  padding-bottom: 0rem;
 }
 
+/* Heading styles */
 h1,
 h2,
 h3 {
-    font-weight: bold;
-    font-size: 2.5rem;
-    line-height: 0.3em;
-    letter-spacing: 2px;
-    font-family: 'Noto Serif', serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 0.3em;
+  letter-spacing: 2px;
+  font-family: "Noto Serif", serif;
 }
 
+h1 {
+  line-height: 4rem;
+  margin: 2rem;
+}
+
+/* Section styles */
 #main,
 #summary,
 #tableofcontents,
@@ -57,155 +73,214 @@ h3 {
 #updates,
 #notice,
 #review {
-    padding: 25px 50px 0px 70px;
-    font-family: 'Montserrat', sans-serif;
+  padding: 25px 50px 0px 70px;
+  font-family: "Montserrat", sans-serif;
 }
 
+/* Flex container styles */
 .flex-container {
-    display: flex;
+  display: flex;
 }
 
+/* Privacy image styles */
 .privacy-img {
-    border-radius: 2%;
-    width: 550px;
-    height: 500px;
-    float: center;
-    margin-left: 100px;
-    max-width: 100%;
+  border-radius: 2%;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
 }
 
 .flex-child {
-    flex: 1;
-    /* border: 2px solid yellow; */
+  flex: 1;
 }
 
 .flex-child:first-child {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
+/* Paragraph and list item styles */
 p,
 li {
-    font-size: 17px;
-    text-align: left;
+  font-size: 17px;
+  text-align: left;
 }
 
+/* Specific element styles */
 .concern {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .ques {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .ptitle {
-    font-weight: bold;
-    font-size: 30px;
-    font-family: 'Noto Serif', serif;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Noto Serif", serif;
 }
 
 .arrow {
-    list-style: none;
-    line-height: 2em;
-    font-size: 16px;
+  list-style: none;
+  line-height: 2em;
+  font-size: 16px;
 }
 
 .arrow::before {
-    content: "\00BB";
+  content: "\00BB";
 }
 
 .table-p {
-    line-height: 2em;
-    font-size: 16px;
+  line-height: 2em;
+  font-size: 16px;
 }
 
 .sub {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 ul.square {
-    list-style-type: square;
+  list-style-type: square;
 }
 
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
+/* Table styles */
 #customers {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
 }
 
 #customers td,
 #customers th {
-    border: 1px solid #ddd;
-    padding: 8px;
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
 #customers tr:nth-child(even) {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 #customers tr:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 #customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #2b3adf;
-    color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #2b3adf;
+  color: white;
 }
 
-.credits a{
-    color: #8e2bdf;
-}
-
+/* Media queries */
 @media only screen and (max-width: 600px) {
-    .privacy-img {
-        width: 300px;
-        height: 300px;
-        margin-left: 50px;
-    }
+  .privacy-img {
+    width: 300px;
+    height: 300px;
+  }
 
-    .flex-container {
-        display: block;
-    }
+  .flex-container {
+    display: block;
+  }
 
-    .flex-child {
-        flex: 0;
-    }
+  .flex-child {
+    flex: 0;
+  }
 
-    #main,
-    #summary,
-    #tableofcontents,
-    #personal,
-    #process,
-    #share,
-    #cookies,
-    #social,
-    #keep,
-    #safe,
-    #privacy-rights,
-    #controls,
-    #california,
-    #updates,
-    #notice,
-    #review {
-        font-size: medium;
-        line-height: 1.5;
-        padding: 30px;
-        margin: 0px;
-        height: 100%;
+  #main,
+  #summary,
+  #tableofcontents,
+  #personal,
+  #process,
+  #share,
+  #cookies,
+  #social,
+  #keep,
+  #safe,
+  #privacy-rights,
+  #controls,
+  #california,
+  #updates,
+  #notice,
+  #review {
+    font-size: medium;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin: 0px;
+    height: 100%;
+    word-wrap: break-word;
+  }
+}
 
-    }
+@media (max-width: 400px) {
+  h1 {
+    font-size: 30px;
+    letter-spacing: 0.8px;
+    line-height: 2.5rem;
+  }
+
+  .ptitle {
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 1.75rem;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  a {
+    font-size: small;
+  }
+
+  .privacy-img {
+    height: 100%;
+  }
+
+  #main,
+  #summary,
+  #tableofcontents,
+  #personal,
+  #process,
+  #share,
+  #cookies,
+  #social,
+  #keep,
+  #safe,
+  #privacy-rights,
+  #controls,
+  #california,
+  #updates,
+  #notice,
+  #review {
+    font-size: 12px;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin: 0px;
+    height: 100%;
+    word-wrap: break-word;
+  }
+
+  li {
+    font-size: 15px;
+  }
 }

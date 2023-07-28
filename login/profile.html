@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+    
+        <!-- Favicons -->
+        <link href="../assets/img/logo.webp" rel="icon" />
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+    
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+
+        <link
+          href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Montserrat&family=Noto+Serif&family=Prompt:wght@500&family=Rajdhani:wght@500&display=swap"
+          rel="stylesheet"
+        />
+    
+        <!-- Bootstrap Script -->
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+          crossorigin="anonymous"
+        ></script>
+    
+        <!-- Template Main CSS File -->
+        <link rel="stylesheet" href="../assets/css/style.css" />
+        <link rel="stylesheet" href="../assets/css/login.css" />
+    
+        <!-- for overriding the nav css -->
+        <link rel="stylesheet" href="../assets/css/override.css" />
+        <style>
+          @keyframes glowing {
+              0% {
+                  color: #ff84c1;
+              }
+              50% {
+                  color: #cf6af9;
+              }
+              100% {
+                  color: #ff84c1;
+              }
+          }
+  
+          .glowing-text {
+              animation: glowing 2s linear infinite;
+          }
+      </style>
+      </head>
+
+<body style="background-color: #03023d;">
+
+
+    <header
+    id="header"
+    class="glassmorphic fixed-top d-flex align-items-center newFlex mb-8"
+  >
+    <div class="mainContainer container d-flex align-items-center">
+      <div class="logoAndName">
+        <img
+          class="logo1"
+          src="../assets/img/logo.webp"
+          width="60px"
+          height="60px"
+          alt="logo"
+        />
+        <h1 class="logo me-auto" id="landingPage"><a href="#">OS-CODE</a></h1>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <div id="navbar" class="navbar order-last order-lg-0 me-4">
+      <ul class="nav-list">
+        <li>
+          <a
+            class="nav-link scrollto"
+            style="text-decoration: none"
+            href="/#hero"
+            >HOME</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link scrollto"
+            style="text-decoration: none"
+            href="/#mainabout"
+            >ABOUT</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link scrollto"
+            style="text-decoration: none"
+            href="/chapters/chapter.html"
+            >CHAPTERS</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link scrollto"
+            style="text-decoration: none"
+            href="https://blog.oscode.co.in/"
+            >BLOGS</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link scrollto"
+            style="text-decoration: none"
+            href="/events/events.html"
+            >EVENTS</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link scrollto"
+            style="text-decoration: none"
+            href="/contributors/contributor.html"
+            >CONTRIBUTORS</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link scrollto"
+            style="text-decoration: none"
+            href="/#contact"
+            >CONTACT</a
+          >
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </div>
+    <span>
+      <a
+        href="#"
+        class="get-started-btn-1 active-get-started-btn-1 scrollto cntctBtn"
+      ></a>
+    </span>
+  </header>
+
+
+    <!-- Navbar -->
+   
+    <br>
+<br>
+<br>
+<br>
+
+
+    <!-- Profile Information Section -->
+    <div class="container mx-auto mt-8 ">
+      <div class="alan-btn"></div>
+        <div class="max-w-3xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="p-4 bg-gray-800">
+                <!-- User's Display Picture -->
+                <div class="flex justify-center">
+                    <img id="photoURL" src="" alt="Profile Picture" class="w-32 h-32 rounded-full">
+                </div>
+                <!-- User's Name -->
+                <h2 id="userName" class="text-center text-3xl font-semibold text-white"></h2>
+                <!-- User's Role -->
+                <h2 id="userName" class="text-center text-2xl font-semibold mt-4 glowing-text">Web Developer</h2>
+                <!-- User's Email -->
+                <p id="email" class="text-center text-white"></p>
+
+                <!-- Projects Section -->
+                <h3 class="text-2xl font-semibold mt-8 text-white ">Projects</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- AI Chatbot Project -->
+                    <div class="bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 p-4 rounded-md shadow-md">
+                        <h4 class="text-xl font-semibold text-gray-800">AI Chatbot</h4>
+                        <p class="text-gray-600 mt-2">An open-source AI-powered chatbot that uses natural language processing to understand and respond to user queries.</p>
+                        <a href="#!" class="text-blue-500 mt-4 inline-block">View Project</a>
+                    </div>
+                    <!-- Web Scraping Project -->
+                    <div class="bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 p-4 rounded-md shadow-md">
+                        <h4 class="text-xl font-semibold text-gray-800">Web Scraping</h4>
+                        <p class="text-gray-600 mt-2">A web scraping library written in Python that allows users to extract data from websites and save it in various formats such as CSV or JSON.</p>
+                        <a href="#!" class="text-blue-500 mt-4 inline-block">View Project</a>
+                    </div>
+                </div>
+                
+
+                <!-- Social Media Links -->
+                <div class="flex justify-center mt-4 space-x-8">
+                    <a href="#!"><i class="fab fa-facebook"></i></a>
+                    <a href="#!"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        // Retrieve user details from localStorage
+        const userDetails = JSON.parse(localStorage.getItem("userDetails"));
+ console.log(userDetails)
+        // Update the profile page with user data
+        // document.getElementById("displayName").innerText = userDetails.displayName;
+        document.getElementById("userName").innerText = userDetails.displayName;
+        document.getElementById("email").innerText = userDetails.email;
+        document.getElementById("photoURL").src = userDetails.photoURL;
+    </script>
+      <script type="text/javascript"
+      src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+     <script>
+       var alanBtnInstance = alanBtn({
+         key: "4cc35fadda67f87264a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+         left: '50px',
+      bottom: '50px',
+         onCommand: function (commandData) {
+           if (commandData.command === "go:back") {
+             //call client code that will react on the received command
+           }
+         },
+         rootEl: document.getElementById("alan-btn"),
+       });
+     </script>
+</body>
+
+</html>

@@ -4,14 +4,56 @@
 <head>
     <style>
         #preloader {
-          background: #000000 url(OSCode.gif) no-repeat center center;
-          background-size: 60%;
-          height: 100vh;
-          width: 100%;
-          position: fixed;
-          z-index: 999999;
+            background: #000 url(https://www.oscode.co.in/assets/img/gifs/OSCode.gif) no-repeat center center;
+            background-size: 60%;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 999999;
         }
-      </style>
+        .back-to-top {
+            position: fixed;
+            right: 2.15rem;
+            bottom: 3rem;
+            z-index: 999;
+            background: #5942e9;
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            transition: all 0.4s;
+            animation: action 1s infinite alternate;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @keyframes action {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-15px);
+            }
+        }
+        
+        .back-to-top i {
+            font-size: 28px;
+            color: white;
+            line-height: 0;
+        }
+        
+        .back-to-top:hover {
+            background: #a95ea9 !important;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .back-to-top.active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,11 +63,12 @@
         content="Multi-College Tech Community empowering students to Learn in Public. Join us to connect with like-minded individuals and foster campus learning culture." />
     <link rel="canonical" href="/index.html" />
     <link href="/assets/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/css/privacy.css">
+    <link rel="stylesheet" href="../assets/css//privacy.css">
 
     <!-- Favicons -->
     <link href="/assets/img/logo.webp" rel="icon" />
-
+    
+    <script src="https://kit.fontawesome.com/37377042d1.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,9 +76,12 @@
 </head>
 
 <body>
+    <div id="preloader" aria-live="polite" aria-label="OS CODE Preloader"></div>
+    
     <div class="phead">
-        <!-- <a href="/index.html"><img class="logo1" align="left" src="/assets/img/logo.webp"  height="80px" alt="logo" /></a> -->
+        <!-- <a href="/index.html"><img class="logo1" align="left" src="/assets/img/logo.jpeg"  height="80px" alt="logo" /></a> -->
         <h1>Privacy Policy</h1>
+        <div class="alan-btn"></div>
     </div>
     <section id="main">
         <p>Last updated April 10, 2023</p>
@@ -63,7 +109,7 @@
             </div>
 
             <div class="flex-child green">
-                <img src="/assets/img/pol.webp" alt="privacy-img" class="privacy-img">
+                <img src="../assets/img/pol.webp" alt="privacy-img" class="privacy-img">
             </div>
         </div>
     </section>
@@ -155,7 +201,7 @@
                 </ol>
             </div>
             <div class="flex-child green">
-                <img src="/assets/img/privacy.webp" alt="privacy-img" class="privacy-img">
+                <img src="../assets/img/privacy.webp" alt="privacy-img" class="privacy-img">
             </div>
         </div>
     </section>
@@ -690,6 +736,22 @@
         </div>
     </footer>
     <!-- End Footer -->
+    <a href="#" class="back-to-top flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up"></i></a>
+    <script type="text/javascript"
+    src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+   <script>
+     var alanBtnInstance = alanBtn({
+       key: "4cc35fadda67f87264a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+       left: '50px',
+      bottom: '50px',
+       onCommand: function (commandData) {
+         if (commandData.command === "go:back") {
+           //call client code that will react on the received command
+         }
+       },
+       rootEl: document.getElementById("alan-btn"),
+     });
+   </script>
 </body>
 
 </html>

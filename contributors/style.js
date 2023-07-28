@@ -1,6 +1,6 @@
 async function getContributors() {
   await fetch(
-    "https://api.github.com/repos/OSCode-Community/OSCodeCommunitySite/contributors?per_page=100",
+    "https://api.github.com/repos/OSCode-Community/OSCodeCommunitySite/contributors?per_page=100"
   )
     .then((response) => response.json())
     .then((contributors) => {
@@ -15,7 +15,8 @@ async function getContributors() {
             <p >
             <span class="cname"> ${contributor.login} </span> 
             <br>
-             Contributions: ${contributor.contributions}</p>
+             <span class="contri">Contributions: ${contributor.contributions} </span>
+             </p>
             <a style="color: white" href="${contributor.html_url}" target="_blank" rel="noreferrer">
                 <button>Profile</button>
             </a>

@@ -108,6 +108,14 @@
             <a
               class="nav-link scrollto"
               style="text-decoration: none"
+              href="/contributors/contributor.html"
+              >CONTRIBUTORS</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link scrollto"
+              style="text-decoration: none"
               href="/#contact"
               >CONTACT</a
             >
@@ -122,7 +130,7 @@
         ></a>
       </span>
     </header>
-
+    <div class="alan-btn"></div>
     <!-- login container -->
     <div class="login-container min-vh-100">
       <div
@@ -137,7 +145,7 @@
         >
           <img
             class="googleicon"
-            src="../assets/img/googleicon.webp"
+            src="https://cdn-icons-png.flaticon.com/512/720/720255.png"
             alt="gogoleicon"
           />
           <div class="login-with-google">Login with Google</div>
@@ -154,16 +162,14 @@
           <div class="user-box">
             <input id="email" type="email" required />
             <label for="email">User Email</label>
+            <span class="error-msg" id="emailerr"></span>
           </div>
 
           <div>
             <div class="user-box">
               <input type="password" id="password" required />
-              <!-- <svg onclick="togglePassword()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye field-icon" viewBox="0 0 16 16">
-              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-            </svg> -->
               <label for="password">Password</label>
+              <span class="error-msg" id="passworderr"></span>
             </div>
 
             <div style="display: flex; align-items: center">
@@ -187,7 +193,7 @@
 
           <!-- login button -->
           <div class="mx-auto">
-            <button id="login" type="submit" class="submit-button">
+            <button id="login" type="submit" class="submit-button" onclick="validateForm()">
               Login
             </button>
           </div>
@@ -224,5 +230,66 @@
         }
       });
     </script>
+    <script>
+       
+       var email = document.getElementById("email");
+      var password = document.getElementById("password");
+      var emailerr = document.getElementById("emailerr");
+      var passwderr = document.getElementById("passworderr");
+    
+      function validEmail(mail) 
+    {
+     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+      { return true;}
+       return false;
+    }
+      function validateForm(){
+        console.log("called");
+           // Validation check
+       if(email.value=='')
+      { emailerr.innerText = "*Email is required!"; }
+      else if(!validEmail(email.value))
+      { emailerr.innerText = "*Enter valid email!";}
+      else if(password.value =='')
+      { emailerr.innerText = ""; passwderr.innerText = "*Password is required!";}
+      else
+      {
+         emailerr.innerText =""; passwderr.innerText="";
+         signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          const date = new Date();
+
+          // Update database and redirect to the homepage
+          update(ref(database, "users/" + user.uid), {
+            last_login: date,
+          }).then(() => (window.location.href = "/"));
+        })
+        .catch((error) => {
+          // Handle errors here
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          document.getElementById("error-msg").innerHTML = errorMessage;
+        });
+      }
+    }
+
+    </script>
+         <script type="text/javascript"
+         src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+        <script>
+          var alanBtnInstance = alanBtn({
+            key: "4cc35fadda67f87264a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+            left: '50px',
+      bottom: '50px',
+            onCommand: function (commandData) {
+              if (commandData.command === "go:back") {
+                //call client code that will react on the received command
+              }
+            },
+            rootEl: document.getElementById("alan-btn"),
+          });
+        </script>   
   </body>
 </html>
