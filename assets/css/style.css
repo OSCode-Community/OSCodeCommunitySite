@@ -1833,6 +1833,16 @@ a:hover i {
   transform: scaleX(1);
 }
 
+.card-text {
+  font-weight: 600 !important;
+  font-family: sans-serif !important;
+  font-size: 1rem;
+}
+
+.event_box {
+  min-height: 200px !important;
+}
+
 @media (max-width: 767px) {
   /* Center align the footer for small devices */
   footer {
