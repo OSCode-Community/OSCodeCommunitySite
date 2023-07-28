@@ -13,7 +13,6 @@ body {
   width: 80px;
 }
 
-/* Link styles */
 a {
   text-decoration: none;
   color: rgb(36, 138, 240);
@@ -21,6 +20,7 @@ a {
 }
 
 a:visited {
+  text-decoration: none;
   color: rgb(141, 27, 255);
 }
 
@@ -53,6 +53,7 @@ h3 {
 
 h1 {
   line-height: 4rem;
+  margin: unset;
   margin: 2rem;
 }
 
@@ -87,6 +88,7 @@ h1 {
   border-radius: 2%;
   width: 500px;
   height: 500px;
+  float: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,7 +125,7 @@ span {
 
 .ptitle {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2.25rem;
   font-family: "Noto Serif", serif;
 }
 
@@ -186,7 +188,39 @@ ul.square {
   padding-bottom: 12px;
   text-align: left;
   background-color: #2b3adf;
-  color: white;
+  color: #fff;
+}
+
+.credits a {
+  color: #8e2bdf;
+}
+
+img {
+  object-fit: contain;
+  width: 100% !important;
+  mix-blend-mode: lighten;
+}
+
+@media (min-width: 35em) {
+  #main,
+  #summary,
+  #tableofcontents,
+  #personal,
+  #process,
+  #share,
+  #cookies,
+  #social,
+  #keep,
+  #safe,
+  #privacy-rights,
+  #controls,
+  #california,
+  #updates,
+  #notice,
+  #review {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
 }
 
 /* Media queries */
@@ -236,25 +270,20 @@ ul.square {
     letter-spacing: 0.8px;
     line-height: 2.5rem;
   }
-
   .ptitle {
     font-size: 20px;
     letter-spacing: 0;
     line-height: 1.75rem;
   }
-
   ul {
     padding-left: 0;
   }
-
   a {
     font-size: small;
   }
-
   .privacy-img {
     height: 100%;
   }
-
   #main,
   #summary,
   #tableofcontents,
@@ -279,7 +308,6 @@ ul.square {
     height: 100%;
     word-wrap: break-word;
   }
-
   li {
     font-size: 15px;
   }

@@ -1,6 +1,17 @@
 body {
   background-image: linear-gradient(to bottom, #121b2a 5%, #120e25) !important;
 }
+
+
+#preloader {
+  background: #000 url(https://www.oscode.co.in/assets/img/gifs/OSCode.gif) no-repeat center center;
+  background-size: 60%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+}
+
 #contributors-container {
   margin-top: -10px;
   width: 100%;
@@ -10,6 +21,7 @@ body {
   row-gap: 1.8rem;
   padding-bottom: 3rem;
 }
+
 .contributor {
   width: 26%;
   cursor: pointer;
