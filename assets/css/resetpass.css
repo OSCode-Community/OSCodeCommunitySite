@@ -41,7 +41,8 @@
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
   border: none;
   border-bottom: 1px solid #fff;
   outline: none;
@@ -111,4 +112,8 @@ button.submit-button[type="submit"]:hover {
     margin: 15px;
     width: calc(100% - 30px);
   }
+}
+.user-box .error-msg {
+  color: red;
+  margin-top: -10px;
 }

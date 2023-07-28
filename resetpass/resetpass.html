@@ -149,6 +149,7 @@
               id="password"
             />
             <label for="oldpass">Old Password</label>
+            <span class="error-msg" id="passworderr"></span>
           </div>
 
           <div class="user-box">
@@ -160,6 +161,7 @@
               id="password1"
             />
             <label for="newpass">New Password</label>
+            <span class="error-msg" id="password1err"></span>
           </div>
 
           <div style="display: flex; align-items: center">
@@ -171,7 +173,7 @@
 
           <!-- reset pass button -->
           <div class="btn">
-            <button type="submit" class="submit-button cursor-pointer">
+            <button type="submit" class="submit-button cursor-pointer" onclick="handleSubmit()">
               Confirm
             </button>
           </div>
