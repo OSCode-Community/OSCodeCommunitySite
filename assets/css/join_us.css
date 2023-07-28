@@ -123,6 +123,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .join .con-box:hover {
@@ -147,6 +149,7 @@
 }
 
 .shrink .con-box {
+  margin-bottom: 20px;
   transition: 1s ease;
 }
 
