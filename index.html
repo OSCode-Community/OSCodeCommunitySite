@@ -120,7 +120,6 @@
       <!-- logo and name together -->
 
       <div class="logoAndName">
-        <div class="alan-btn"></div>
 
         <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="50pt" viewBox="0 0 1600.000000 1600.000000"
           preserveAspectRatio="xMidYMid meet">
@@ -145,13 +144,13 @@
     <i class="bi bi-list mobile-nav-toggle"></i>
     <div id="navbar" class="navbar order-last order-lg-0 me-4">
       <ul class="nav-list">
-        <li><a class="nav-link scrollto active" href="#hero">HOME</a></li>
-        <li><a class="nav-link scrollto" href="#mainabout">ABOUT</a></li>
-        <li><a class="nav-link scrollto" href="chapters/chapter.html">CHAPTERS</a></li>
-        <li><a class="nav-link scrollto" href="https://blog.oscode.co.in/">BLOGS</a></li>
-        <li><a class="nav-link scrollto" href="assets/gallery.html">GALLERY</a></li>
-        <li><a class="nav-link scrollto" href="events/events.html">EVENTS</a></li>
-        <li><a class="nav-link scrollto" href="contact/contact.html">CONTACT</a></li>
+        <li><a class="nav-link scrollto active"  style="text-decoration: none;" href="#hero">HOME</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="#mainabout">ABOUT</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="chapters/chapter.html">CHAPTERS</a></li>
+        <li><a class="nav-link scrollto" style="text-decoration: none;" href="https://blog.oscode.co.in/">BLOGS</a></li>
+        <li><a class="nav-link scrollto" href="assets/gallery.html" style="text-decoration: none;">GALLERY</a></li>
+        <li><a class="nav-link scrollto" href="http://127.0.0.1:5500/events/events.html" style="text-decoration: none;">EVENTS</a></li>
+        <li><a class="nav-link scrollto" href="contact/contact.html" style="text-decoration: none;">CONTACT</a></li>
         <li>
           <a
             class="nav-link scrollto"
@@ -364,7 +363,7 @@
               <div class="tab-pane fade show active" id="v-pills-link1" role="tabpanel"
                 aria-labelledby="v-pills-link1-tab">
 
-                <div class="flex-container">
+                <div class="flex-container animator">
                   <div class="flex-child gallery left-tab">
                     <img src="./assets/img/benefit/upskill.webp" alt="upskill students">
                   </div>
@@ -380,7 +379,7 @@
               </div>
 
               <div class="tab-pane fade" id="v-pills-link2" role="tabpanel" aria-labelledby="v-pills-link2-tab">
-                <div class="flex-container">
+                <div class="flex-container animator">
                   <div class="flex-child gallery left-tab">
                     <img src="./assets/img/benefit/hire.webp" alt="hire Talents">
                   </div>
@@ -398,7 +397,7 @@
               </div>
 
               <div class="tab-pane fade" id="v-pills-link3" role="tabpanel" aria-labelledby="v-pills-link3-tab">
-                <div class="flex-container">
+                <div class="flex-container animator">
                   <div class="flex-child gallery left-tab">
                     <img src="./assets/img/benefit/seminars.webp" alt="hackathons & seminars">
                   </div>
@@ -416,7 +415,7 @@
               </div>
 
               <div class="tab-pane fade" id="v-pills-link4" role="tabpanel" aria-labelledby="v-pills-link4-tab">
-                <div class="flex-container">
+                <div class="flex-container animator">
                   <div class="flex-child gallery left-tab">
                     <img src="./assets/img/benefit/ideation.webp" alt="ideation seeding">
                   </div>
@@ -571,7 +570,7 @@
               <div class="testimonial-wrap">
                 <div class="testimonial-item modifiedAccomp">
                   <div class="upperPart">
-                    <img src="./assets/img/achievement/team.webp" class="testimonial-img" alt="">
+                    <img src="./assets/img/achievement/team.jpg" class="testimonial-img" alt="">
                     <div class="textUpperPart">
                       <h3>Amazing community</h3>
                       <h4>Learing & building together</h4>
@@ -849,7 +848,7 @@
     <section id="faq" class="faq">
       <div class="container" data-aos="fade-up">
         <h1 class="text-center">Frequently Asked Questions</h1>
-        <hr class="line hr-center " style="color: white;">
+        <hr class="line hr-center">
 
         <ul class="faq-list accordion" data-aos="fade-up">
           <div class="faqs">
@@ -992,9 +991,9 @@
                 <div class="col form-group px-2">
                   <div>
                     <label class="label-name">
-                      <span class="content-name"></span>
+                      <span class="content-name">Email</span>
                     </label>
-                    <input type="email" autocomplete="email" class="form-control" placeholder="Email" name="email" id="email" required />
+                    <input type="email" autocomplete="email" class="form-control" name="email" id="email" required />
                     <!-- <i class="fas fa-check-circle"></i> -->
                     <!-- <i class="fas fa-exclamation-circle"></i> -->
                   </div>
@@ -1004,9 +1003,9 @@
                 <div class="col form-group px-2">
                   <div>
                     <label class="label-name">
-                      <span class="content-name"></span>
+                      <span class="content-name">Name</span>
                     </label>
-                    <input type="text" autocomplete="name" name="name" placeholder="Name" class="form-control" id="name"
+                    <input type="text" autocomplete="name" name="name" class="form-control" id="name"
                       pattern="[a-zA-Z][a-zA-Z ]{2,}" title="Number Not Allowed" required />
                     <!-- <i class="fas fa-check-circle"></i> -->
                     <!-- <i class="fas fa-exclamation-circle"></i> -->
@@ -1018,18 +1017,18 @@
                 <div class="col form-group">
                   <div class="form-group">
                     <label class="label-name">
-                      <span class="content-name"></span>
+                      <span class="content-name">College</span>
                     </label>
-                    <input type="text" autocomplete="subject" placeholder="College" class="form-control" name="College" id="college"
+                    <input type="text" autocomplete="subject" class="form-control" name="College" id="college"
                       required />
                   </div>
                 </div>
                 <div class="col form-group">
                   <div>
                     <label class="label-name">
-                      <span class="content-name"></span>
+                      <span class="content-name">Subject</span>
                     </label>
-                    <input type="text" autocomplete="subject" placeholder="Subject" class="form-control" name="subject" id="subject"
+                    <input type="text" autocomplete="subject" class="form-control" name="subject" id="subject"
                       required />
                   </div>
                   <div class="spandiv" style="padding-top: 4px;"> <small class="small"></small></div>
@@ -1038,9 +1037,9 @@
                 <div class="col form-group">
                   <div>
                     <label class="label-name">
-                      <span class="content-name"></span>
+                      <span class="content-name">Message</span>
                     </label>
-                    <textarea class="form-control" autocomplete="message" placeholder="Message" id="message" name="message" rows="5"
+                    <textarea class="form-control" autocomplete="message" id="message" name="message" rows="5"
                       required></textarea>
                   </div>
                   <div class="spandiv" style="padding-top: 4px;"><small class="small"></small></div>
@@ -1083,7 +1082,7 @@
                 <i class="bx bx-chevron-right"></i> <a href="#hero">Home</a>
               </li>
               <li>
-                <i class="bx bx-chevron-right"></i> <a href="services.html">Services</a>
+                <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
               </li>
               <li>
                 <i class="bx bx-chevron-right"></i>
@@ -1195,24 +1194,6 @@
 
   <!-- Auto-Typing -->
   <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
-
-
-  <script type="text/javascript"
- src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
-<script>
-  var alanBtnInstance = alanBtn({
-    key: "4cc35fadda67f87264a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
-    left: '50px',
-      bottom: '50px',
-
-    onCommand: function (commandData) {
-      if (commandData.command === "go:back") {
-        //call client code that will react on the received command
-      }
-    },
-    rootEl: document.getElementById("alan-btn"),
-  });
-</script>
 
   <!-- Setup and start animation! -->
   <script>
