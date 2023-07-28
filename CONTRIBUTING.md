@@ -141,3 +141,57 @@ Congratulations! You have successfully created a pull request to contribute your
 - If anything is missing or if you feel that something is not well described, please create [an issue](https://github.com/OSCode-Community/OSCodeCommunitySite/issues)
 - Any changes or suggestions to the existing content or repository are welcome.
 - No need to worry, if any changes are required, the maintainers will request them from you.
+
+### Commit Message Guidelines using Commitlint
+
+We follow a standardized commit message format using Commitlint to ensure consistency and clarity in our commit history. Each commit message should adhere to the following guidelines:
+
+1. **Type**: The commit type must be one of the following:
+
+   - `feat`: A new feature or enhancement.
+   - `fix`: A bug fix.
+   - `docs`: Documentation changes.
+   - `style`: Code style changes (e.g., formatting, semicolons).
+   - `refactor`: Code refactorings with no feature changes or bug fixes.
+   - `test`: Adding or improving tests.
+   - `chore`: General maintenance tasks, build changes, etc.
+
+2. **Scope** (Optional): The scope provides context for the commit, indicating the specific part of the project being affected. Use a short description in lowercase (e.g., `auth`, `navbar`, `README`).
+
+3. **Description**: A brief and meaningful description of the changes made. Start with a capital letter and use the imperative mood (e.g., "Add new feature" instead of "Added new feature").
+
+4. **Issue reference** (Optional): Include the issue number associated with the commit (e.g., `#123`).
+
+### Examples:
+
+#### Valid Commit Messages:
+
+- `feat: Add user authentication feature`
+- `fix(auth): Resolve login page redirect issue`
+- `docs: Update installation instructions`
+- `style: Format code according to project guidelines`
+- `refactor(navbar): Improve responsiveness`
+- `test: Add unit tests for API endpoints`
+- `chore: Update dependencies to latest versions`
+- `fix: Handle edge case in data processing (#456)`
+
+#### Invalid Commit Messages:
+
+- `Added new stuff`
+- `Fixed a bug`
+- `Updated code`
+- `auth feature update`
+- `chore: fixed some stuff`
+
+### Commit Example with Commitlint:
+
+```bash
+git commit -m "feat(auth): Implement user signup process (#789)"
+```
+
+Remember to run `commitlint` before pushing your changes to ensure your commit messages meet the guidelines.
+
+By following these guidelines, we can maintain a clean commit history that is easy to understand and helps us effectively track changes. If you have any questions or need further assistance, feel free to ask! Happy contributing!
+
+
+
