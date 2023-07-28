@@ -19,12 +19,36 @@
   color: var(--background-white);
   text-align: center;
   letter-spacing: 0.18em;
-}
+} 
+  
+  .link:hover {
+    background-color: #4158d0;
+    background-image: linear-gradient(43deg, #ee21d9, #21eecf 46%, #ee2121);
+    -webkit-animation: home_btn__VDNR5 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: home_btn__VDNR5 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @media only screen and (max-width: 600px) {
+    #join-us h1 {
+      font-size: 27px;
+    }
+    #join-us h2 {
+      font-size: 23px;
+      font-weight: 200;
+    }
+  }
 
-#join-us h1 {
-  color: beige;
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
+.con-box{
+    padding: 2px 0;
+    font-size: 18px;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    position: relative; /*nearesr common ancestor to .git-box::before*/
+    z-index: 1;
+    padding: 1.6rem 0;
+    border-radius: .6rem;
+    overflow: hidden;
 }
 
 #join-us h2 {
