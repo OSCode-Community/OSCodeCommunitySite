@@ -92,7 +92,7 @@
   border: none;
   border-bottom: 1px solid #fff;
   outline: none;
-  box-shadow: rgba(247, 240, 240, 0.728) 0px 25px 20px -20px;
+  box-shadow: rgba(247, 240, 240, 0.728) 0px 2px 180px 1px;
   background: transparent;
 }
 .form-container .user-box label {
