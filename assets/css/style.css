@@ -1535,7 +1535,7 @@ a:hover i {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
-  margin-top: -.75rem;
+  margin-top: 0.75rem;
 }
 
 #footer .footer-top .footer-contact h3 span {
