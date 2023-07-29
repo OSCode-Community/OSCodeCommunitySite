@@ -212,8 +212,12 @@ serve
 <a href="https://discord.gg/P3xqtSU8zU">
   <img src="https://img.icons8.com/color/2x/discord--v2.png" height="50px"></img>
 </a>
-<a href="https://github.com/OSCode-Community">
-  <img src="https://img.icons8.com/ios-glyphs/2x/github.png" height="50px"></img>
+<a href="https://github.com/OSCode-Community"> 
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/OSCode-Community/OSCodeCommunitySite/assets/92252895/78134206-b1b5-4d42-a966-3f031fc7a3a8">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/OSCode-Community/OSCodeCommunitySite/assets/92252895/670b51a1-6efc-4305-b0a4-5a26b3abd421">
+    <img height="50px" src="https://github.com/OSCode-Community/OSCodeCommunitySite/assets/92252895/78134206-b1b5-4d42-a966-3f031fc7a3a8">
+  </picture>
 </a>
 <a href="https://twitter.com/OSCodeCommunity">
   <img src="https://img.icons8.com/fluency/2x/twitter.png" height="50px"></img>
