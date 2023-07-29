@@ -3,14 +3,12 @@
 --------------------------------------------------------------*/
 #faq {
   padding-bottom: 40px;
-  /* background-image: url("../img/background/abt-bg1.webp"); */
   background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   background-size: cover;
   position: relative;
 }
 
 #faq h1 {
-  /* color: var(--backtotop-btn-color); */
   color: white;
   font-weight: bold;
   text-shadow: 0 0 1px rgb(204, 201, 201);
@@ -28,31 +26,31 @@
 .faq .faq-list {
   padding: 0;
   list-style: none;
+  display: grid;
+  gap: 0.5rem;
 }
 .line {
   color: #eee;
 }
 .faq .faq-list li {
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+  box-shadow:
+    rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  /* border-bottom: 1px solid #eee; */
   margin-bottom: 20px;
   padding-bottom: 20px;
+}
+.faq .faq-list li:hover {
+  transform: scale(1.025);
 }
 
 .faq .faq-list a {
   display: block;
+  transition: 0.2s ease;
   color: white;
-  /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
   position: relative;
-  font-family: var(
-    --backtotop-btn-color
-  ); /* This line seems incorrect. Check if it's intended. */
   font-size: 18px;
   line-height: 24px;
   font-weight: 900;
@@ -69,10 +67,9 @@
 
 .faq .faq-list p {
   margin-bottom: 0;
-  padding: 10px 0 0 0;
-  color: #d1c6c6; /* Updated to use a color code directly */
+  color: #fffa;
   font-weight: 400;
-  /* font-style: italic; */
+  margin-top: 1.55rem;
 }
 
 .faq .faq-list .icon-show {
@@ -84,13 +81,8 @@
   font-weight: 400;
 }
 
-.faq .faq-list a.collapsed:hover {
-  color: var(--backtotop-btn-color);
-  /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+.faq .faq-list li a:hover {
+  color: white;
 }
 
 .faq .faq-list a.collapsed .icon-show {
