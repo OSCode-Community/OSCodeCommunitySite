@@ -1,3 +1,4 @@
+/* Contact section */
 #contact {
   background-image: url("/assets/img/background/contact.webp");
   width: 100%;
@@ -31,6 +32,7 @@ hr {
   margin: 0;
 }
 
+/* Address section */
 .modifiedAddress {
   display: flex;
   flex-direction: column;
@@ -51,13 +53,16 @@ hr {
   transition: transform 0.8s ease-in-out;
 }
 
-.address p:hover , .modifiedMailPhone a:hover {
+.address p:hover,
+.modifiedMailPhone a:hover {
   transform: scale(1.02);
 }
-.address a:hover{
+
+.address a:hover {
   color: #cce6aa;
 }
 
+/* Contact information */
 .contact .info-box i {
   font-size: 32px;
   color: #a99ef1;
@@ -80,15 +85,17 @@ hr {
   transition: 0.6s;
 }
 
-.modifiedMailPhone a:first-of-type :hover { 
-  color: #cce6aa !important ;
+.modifiedMailPhone a:first-of-type:hover {
+  color: #cce6aa !important;
   background-color: #a99ef1;
   border-radius: 50%;
 }
+
 .modifiedMailPhone a:hover {
-  color: #cce6aa !important ;
+  color: #cce6aa !important;
 }
 
+/* Contact form */
 .Cfr {
   width: auto;
   padding-right: 0 !important;
@@ -160,7 +167,8 @@ hr {
   touch-action: manipulation;
   cursor: pointer;
 }
-  
+
+/* Media Queries */
 @media (min-width: 993px) and (max-width: 1200px) {
   .email {
     display: flex;
@@ -191,9 +199,7 @@ hr {
   }
 }
 
-/**
-* Mobile Navigation 
-*/
+/* Mobile Navigation */
 .mobile-nav-toggle {
   color: var(--background-white);
   font-size: 28px;
@@ -264,6 +270,7 @@ hr {
 .navbar-mobile li:hover > a {
   color: var(--navtext-color);
 }
+
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;

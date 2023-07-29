@@ -1154,7 +1154,7 @@ a:hover i {
   box-sizing: content-box;
   padding: 30px;
   margin: 30px 15px;
-  height: 400px;
+  /* height: 400px; */
   position: relative;
   background: var(--background-white);
   border-radius: 15px;
@@ -1163,7 +1163,8 @@ a:hover i {
 
 @media only screen and (max-width: 370px) {
   .testimonials .testimonial-item {
-    height: 490px;
+    /* height: 490px; */
+    padding: 10px;
   }
 }
 
@@ -1657,6 +1658,23 @@ a:hover i {
 .social-links {
   margin-bottom: 10px;
   padding-bottom: -50px;
+  display: flex;
+  width: 40%;
+}
+
+.socialIcons {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 800px){
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    gap: 1rem;
+  }
 }
 
 #footer .social-links a {
@@ -1665,12 +1683,24 @@ a:hover i {
   background: #2b2b2b;
   color: var(--background-white);
   line-height: 1;
-  padding: 8px 0;
   border-radius: 50%;
   text-align: center;
   width: 36px;
   height: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   transition: 0.5s;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+}
+
+#footer .social-links .whatsapp {
+  color: #4adf4f;
+  background-color: var(--background-white);
+  text-decoration: none;
 }
 
 #footer .social-links .twitter:hover {
@@ -1803,6 +1833,16 @@ a:hover i {
   transform: scaleX(1);
 }
 
+.card-text {
+  font-weight: 600 !important;
+  font-family: sans-serif !important;
+  font-size: 1rem;
+}
+
+.event_box {
+  min-height: 200px !important;
+}
+
 @media (max-width: 767px) {
   /* Center align the footer for small devices */
   footer {
@@ -1824,3 +1864,21 @@ a:hover i {
     width: 100%;
   }
 }
+
+
+.animator{
+  animation: aka 8s infinite cubic-bezier(0.23, 1, 0.320, 1);
+}
+@keyframes aka{
+  0%{
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(20px);
+  }
+}
+
+

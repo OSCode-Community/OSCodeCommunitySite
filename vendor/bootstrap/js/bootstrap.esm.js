@@ -271,7 +271,7 @@ const execute = (callback) => {
 const executeAfterTransition = (
   callback,
   transitionElement,
-  waitForTransition = true,
+  waitForTransition = true
 ) => {
   if (!waitForTransition) {
     execute(callback);
@@ -314,7 +314,7 @@ const getNextActiveElement = (
   list,
   activeElement,
   shouldGetNext,
-  isCycleAllowed,
+  isCycleAllowed
 ) => {
   const listLength = list.length;
   let index = list.indexOf(activeElement); // if the element does not exist in the list return an element
@@ -462,7 +462,7 @@ function findHandler(events, callable, delegationSelector = null) {
   return Object.values(events).find(
     (event) =>
       event.callable === callable &&
-      event.delegationSelector === delegationSelector,
+      event.delegationSelector === delegationSelector
   );
 }
 
@@ -486,7 +486,7 @@ function addHandler(
   originalTypeEvent,
   handler,
   delegationFunction,
-  oneOff,
+  oneOff
 ) {
   if (typeof originalTypeEvent !== "string" || !element) {
     return;
@@ -495,7 +495,7 @@ function addHandler(
   let [isDelegated, callable, typeEvent] = normalizeParameters(
     originalTypeEvent,
     handler,
-    delegationFunction,
+    delegationFunction
   ); // in case of mouseenter or mouseleave wrap the handler within a function that checks for its DOM position
   // this prevents the handler from being dispatched the same way as mouseover or mouseout does
 
@@ -520,7 +520,7 @@ function addHandler(
   const previousFunction = findHandler(
     handlers,
     callable,
-    isDelegated ? handler : null,
+    isDelegated ? handler : null
   );
 
   if (previousFunction) {
@@ -530,7 +530,7 @@ function addHandler(
 
   const uid = makeEventUid(
     callable,
-    originalTypeEvent.replace(namespaceRegex, ""),
+    originalTypeEvent.replace(namespaceRegex, "")
   );
   const fn = isDelegated
     ? bootstrapDelegationHandler(element, handler, callable)
@@ -548,7 +548,7 @@ function removeHandler(
   events,
   typeEvent,
   handler,
-  delegationSelector,
+  delegationSelector
 ) {
   const fn = findHandler(events[typeEvent], handler, delegationSelector);
 
@@ -571,7 +571,7 @@ function removeNamespacedHandlers(element, events, typeEvent, namespace) {
         events,
         typeEvent,
         event.callable,
-        event.delegationSelector,
+        event.delegationSelector
       );
     }
   }
@@ -600,7 +600,7 @@ const EventHandler = {
     const [isDelegated, callable, typeEvent] = normalizeParameters(
       originalTypeEvent,
       handler,
-      delegationFunction,
+      delegationFunction
     );
     const inNamespace = typeEvent !== originalTypeEvent;
     const events = getElementEvents(element);
@@ -618,7 +618,7 @@ const EventHandler = {
         events,
         typeEvent,
         callable,
-        isDelegated ? handler : null,
+        isDelegated ? handler : null
       );
       return;
     }
@@ -629,7 +629,7 @@ const EventHandler = {
           element,
           events,
           elementEvent,
-          originalTypeEvent.slice(1),
+          originalTypeEvent.slice(1)
         );
       }
     }
@@ -644,7 +644,7 @@ const EventHandler = {
           events,
           typeEvent,
           event.callable,
-          event.delegationSelector,
+          event.delegationSelector
         );
       }
     }
@@ -736,7 +736,7 @@ const Data = {
       console.error(
         `Bootstrap doesn't allow more than one instance per element. Bound instance: ${
           Array.from(instanceMap.keys())[0]
-        }.`,
+        }.`
       );
       return;
     }
@@ -820,7 +820,7 @@ const Manipulator = {
 
     const attributes = {};
     const bsKeys = Object.keys(element.dataset).filter(
-      (key) => key.startsWith("bs") && !key.startsWith("bsConfig"),
+      (key) => key.startsWith("bs") && !key.startsWith("bsConfig")
     );
 
     for (const key of bsKeys) {
@@ -835,7 +835,7 @@ const Manipulator = {
 
   getDataAttribute(element, key) {
     return normalizeData(
-      element.getAttribute(`data-bs-${normalizeDataKey(key)}`),
+      element.getAttribute(`data-bs-${normalizeDataKey(key)}`)
     );
   },
 };
@@ -862,7 +862,7 @@ class Config {
 
   static get NAME() {
     throw new Error(
-      'You have to implement the static method "NAME", for each component!',
+      'You have to implement the static method "NAME", for each component!'
     );
   }
 
@@ -900,7 +900,7 @@ class Config {
 
       if (!new RegExp(expectedTypes).test(valueType)) {
         throw new TypeError(
-          `${this.constructor.NAME.toUpperCase()}: Option "${property}" provided type "${valueType}" but expected type "${expectedTypes}".`,
+          `${this.constructor.NAME.toUpperCase()}: Option "${property}" provided type "${valueType}" but expected type "${expectedTypes}".`
         );
       }
     }
@@ -1013,7 +1013,7 @@ const enableDismissTrigger = (component, method = "hide") => {
       const instance = component.getOrCreateInstance(target); // Method argument is left, for Alert and only, as it doesn't implement the 'hide' method
 
       instance[method]();
-    },
+    }
   );
 };
 
@@ -1058,7 +1058,7 @@ class Alert extends BaseComponent {
     this._queueCallback(
       () => this._destroyElement(),
       this._element,
-      isAnimated,
+      isAnimated
     );
   } // Private
 
@@ -1131,7 +1131,7 @@ class Button extends BaseComponent {
     // Toggle class and sync the `aria-pressed` attribute with the return value of the `.toggle()` method
     this._element.setAttribute(
       "aria-pressed",
-      this._element.classList.toggle(CLASS_NAME_ACTIVE$3),
+      this._element.classList.toggle(CLASS_NAME_ACTIVE$3)
     );
   } // Static
 
@@ -1158,7 +1158,7 @@ EventHandler.on(
     const button = event.target.closest(SELECTOR_DATA_TOGGLE$5);
     const data = Button.getOrCreateInstance(button);
     data.toggle();
-  },
+  }
 );
 /**
  * jQuery
@@ -1179,7 +1179,7 @@ defineJQueryPlugin(Button);
 const SelectorEngine = {
   find(selector, element = document.documentElement) {
     return [].concat(
-      ...Element.prototype.querySelectorAll.call(element, selector),
+      ...Element.prototype.querySelectorAll.call(element, selector)
     );
   },
 
@@ -1248,7 +1248,7 @@ const SelectorEngine = {
       .map((selector) => `${selector}:not([tabindex^="-"])`)
       .join(",");
     return this.find(focusables, element).filter(
-      (el) => !isDisabled(el) && isVisible(el),
+      (el) => !isDisabled(el) && isVisible(el)
     );
   },
 };
@@ -1363,29 +1363,29 @@ class Swipe extends Config {
     }
 
     execute(
-      direction > 0 ? this._config.rightCallback : this._config.leftCallback,
+      direction > 0 ? this._config.rightCallback : this._config.leftCallback
     );
   }
 
   _initEvents() {
     if (this._supportPointerEvents) {
       EventHandler.on(this._element, EVENT_POINTERDOWN, (event) =>
-        this._start(event),
+        this._start(event)
       );
       EventHandler.on(this._element, EVENT_POINTERUP, (event) =>
-        this._end(event),
+        this._end(event)
       );
 
       this._element.classList.add(CLASS_NAME_POINTER_EVENT);
     } else {
       EventHandler.on(this._element, EVENT_TOUCHSTART, (event) =>
-        this._start(event),
+        this._start(event)
       );
       EventHandler.on(this._element, EVENT_TOUCHMOVE, (event) =>
-        this._move(event),
+        this._move(event)
       );
       EventHandler.on(this._element, EVENT_TOUCHEND, (event) =>
-        this._end(event),
+        this._end(event)
       );
     }
   }
@@ -1484,7 +1484,7 @@ class Carousel extends BaseComponent {
     this._swipeHelper = null;
     this._indicatorsElement = SelectorEngine.findOne(
       SELECTOR_INDICATORS,
-      this._element,
+      this._element
     );
 
     this._addEventListeners();
@@ -1538,7 +1538,7 @@ class Carousel extends BaseComponent {
 
     this._interval = setInterval(
       () => this.nextWhenVisible(),
-      this._config.interval,
+      this._config.interval
     );
   }
 
@@ -1594,14 +1594,14 @@ class Carousel extends BaseComponent {
   _addEventListeners() {
     if (this._config.keyboard) {
       EventHandler.on(this._element, EVENT_KEYDOWN$1, (event) =>
-        this._keydown(event),
+        this._keydown(event)
       );
     }
 
     if (this._config.pause === "hover") {
       EventHandler.on(this._element, EVENT_MOUSEENTER$1, () => this.pause());
       EventHandler.on(this._element, EVENT_MOUSELEAVE$1, () =>
-        this._maybeEnableCycle(),
+        this._maybeEnableCycle()
       );
     }
 
@@ -1634,7 +1634,7 @@ class Carousel extends BaseComponent {
 
       this.touchTimeout = setTimeout(
         () => this._maybeEnableCycle(),
-        TOUCHEVENT_COMPAT_WAIT + this._config.interval,
+        TOUCHEVENT_COMPAT_WAIT + this._config.interval
       );
     };
 
@@ -1671,13 +1671,13 @@ class Carousel extends BaseComponent {
 
     const activeIndicator = SelectorEngine.findOne(
       SELECTOR_ACTIVE,
-      this._indicatorsElement,
+      this._indicatorsElement
     );
     activeIndicator.classList.remove(CLASS_NAME_ACTIVE$2);
     activeIndicator.removeAttribute("aria-current");
     const newActiveIndicator = SelectorEngine.findOne(
       `[data-bs-slide-to="${index}"]`,
-      this._indicatorsElement,
+      this._indicatorsElement
     );
 
     if (newActiveIndicator) {
@@ -1695,7 +1695,7 @@ class Carousel extends BaseComponent {
 
     const elementInterval = Number.parseInt(
       element.getAttribute("data-bs-interval"),
-      10,
+      10
     );
     this._config.interval = elementInterval || this._config.defaultInterval;
   }
@@ -1714,7 +1714,7 @@ class Carousel extends BaseComponent {
         this._getItems(),
         activeElement,
         isNext,
-        this._config.wrap,
+        this._config.wrap
       );
 
     if (nextElement === activeElement) {
@@ -1764,7 +1764,7 @@ class Carousel extends BaseComponent {
       activeElement.classList.remove(
         CLASS_NAME_ACTIVE$2,
         orderClassName,
-        directionalClassName,
+        directionalClassName
       );
       this._isSliding = false;
       triggerEvent(EVENT_SLID);
@@ -1873,7 +1873,7 @@ EventHandler.on(
     carousel.prev();
 
     carousel._maybeEnableCycle();
-  },
+  }
 );
 EventHandler.on(window, EVENT_LOAD_DATA_API$3, () => {
   const carousels = SelectorEngine.find(SELECTOR_DATA_RIDE);
@@ -1939,7 +1939,7 @@ class Collapse extends BaseComponent {
     for (const elem of toggleList) {
       const selector = getSelectorFromElement(elem);
       const filterElement = SelectorEngine.find(selector).filter(
-        (foundElement) => foundElement === this._element,
+        (foundElement) => foundElement === this._element
       );
 
       if (selector !== null && filterElement.length) {
@@ -1991,7 +1991,7 @@ class Collapse extends BaseComponent {
         .map((element) =>
           Collapse.getOrCreateInstance(element, {
             toggle: false,
-          }),
+          })
         );
     }
 
@@ -2124,11 +2124,11 @@ class Collapse extends BaseComponent {
   _getFirstLevelChildren(selector) {
     const children = SelectorEngine.find(
       CLASS_NAME_DEEPER_CHILDREN,
-      this._config.parent,
+      this._config.parent
     ); // remove children if greater depth
 
     return SelectorEngine.find(selector, this._config.parent).filter(
-      (element) => !children.includes(element),
+      (element) => !children.includes(element)
     );
   }
 
@@ -2188,7 +2188,7 @@ EventHandler.on(
         toggle: false,
       }).toggle();
     }
-  },
+  }
 );
 /**
  * jQuery
@@ -2306,7 +2306,7 @@ class Dropdown extends BaseComponent {
     const showEvent = EventHandler.trigger(
       this._element,
       EVENT_SHOW$5,
-      relatedTarget,
+      relatedTarget
     );
 
     if (showEvent.defaultPrevented) {
@@ -2370,7 +2370,7 @@ class Dropdown extends BaseComponent {
     const hideEvent = EventHandler.trigger(
       this._element,
       EVENT_HIDE$5,
-      relatedTarget,
+      relatedTarget
     );
 
     if (hideEvent.defaultPrevented) {
@@ -2408,7 +2408,7 @@ class Dropdown extends BaseComponent {
     ) {
       // Popper virtual elements require a getBoundingClientRect method
       throw new TypeError(
-        `${NAME$a.toUpperCase()}: Option "reference" provided type "object" without a required "getBoundingClientRect" method.`,
+        `${NAME$a.toUpperCase()}: Option "reference" provided type "object" without a required "getBoundingClientRect" method.`
       );
     }
 
@@ -2418,7 +2418,7 @@ class Dropdown extends BaseComponent {
   _createPopper() {
     if (typeof Popper === "undefined") {
       throw new TypeError(
-        "Bootstrap's dropdowns require Popper (https://popper.js.org)",
+        "Bootstrap's dropdowns require Popper (https://popper.js.org)"
       );
     }
 
@@ -2437,7 +2437,7 @@ class Dropdown extends BaseComponent {
     this._popper = Popper.createPopper(
       referenceElement,
       this._menu,
-      popperConfig,
+      popperConfig
     );
   }
 
@@ -2534,7 +2534,7 @@ class Dropdown extends BaseComponent {
   _selectMenuItem({ key, target }) {
     const items = SelectorEngine.find(
       SELECTOR_VISIBLE_ITEMS,
-      this._menu,
+      this._menu
     ).filter((element) => isVisible(element));
 
     if (!items.length) {
@@ -2546,7 +2546,7 @@ class Dropdown extends BaseComponent {
       items,
       target,
       key === ARROW_DOWN_KEY$1,
-      !items.includes(target),
+      !items.includes(target)
     ).focus();
   } // Static
 
@@ -2620,7 +2620,7 @@ class Dropdown extends BaseComponent {
     const isInput = /input|textarea/i.test(event.target.tagName);
     const isEscapeEvent = event.key === ESCAPE_KEY$2;
     const isUpOrDownEvent = [ARROW_UP_KEY$1, ARROW_DOWN_KEY$1].includes(
-      event.key,
+      event.key
     );
 
     if (!isUpOrDownEvent && !isEscapeEvent) {
@@ -2639,7 +2639,7 @@ class Dropdown extends BaseComponent {
         SelectorEngine.next(this, SELECTOR_DATA_TOGGLE$3)[0] ||
         SelectorEngine.findOne(
           SELECTOR_DATA_TOGGLE$3,
-          event.delegateTarget.parentNode,
+          event.delegateTarget.parentNode
         );
     const instance = Dropdown.getOrCreateInstance(getToggleButton);
 
@@ -2668,13 +2668,13 @@ EventHandler.on(
   document,
   EVENT_KEYDOWN_DATA_API,
   SELECTOR_DATA_TOGGLE$3,
-  Dropdown.dataApiKeydownHandler,
+  Dropdown.dataApiKeydownHandler
 );
 EventHandler.on(
   document,
   EVENT_KEYDOWN_DATA_API,
   SELECTOR_MENU,
-  Dropdown.dataApiKeydownHandler,
+  Dropdown.dataApiKeydownHandler
 );
 EventHandler.on(document, EVENT_CLICK_DATA_API$3, Dropdown.clearMenus);
 EventHandler.on(document, EVENT_KEYUP_DATA_API, Dropdown.clearMenus);
@@ -2685,7 +2685,7 @@ EventHandler.on(
   function (event) {
     event.preventDefault();
     Dropdown.getOrCreateInstance(this).toggle();
-  },
+  }
 );
 /**
  * jQuery
@@ -2731,19 +2731,19 @@ class ScrollBarHelper {
     this._setElementAttributes(
       this._element,
       PROPERTY_PADDING,
-      (calculatedValue) => calculatedValue + width,
+      (calculatedValue) => calculatedValue + width
     ); // trick: We adjust positive paddingRight and negative marginRight to sticky-top elements to keep showing fullwidth
 
     this._setElementAttributes(
       SELECTOR_FIXED_CONTENT,
       PROPERTY_PADDING,
-      (calculatedValue) => calculatedValue + width,
+      (calculatedValue) => calculatedValue + width
     );
 
     this._setElementAttributes(
       SELECTOR_STICKY_CONTENT,
       PROPERTY_MARGIN,
-      (calculatedValue) => calculatedValue - width,
+      (calculatedValue) => calculatedValue - width
     );
   }
 
@@ -2785,7 +2785,7 @@ class ScrollBarHelper {
         .getPropertyValue(styleProperty);
       element.style.setProperty(
         styleProperty,
-        `${callback(Number.parseFloat(calculatedValue))}px`,
+        `${callback(Number.parseFloat(calculatedValue))}px`
       );
     };
 
@@ -2968,7 +2968,7 @@ class Backdrop extends Config {
     executeAfterTransition(
       callback,
       this._getElement(),
-      this._config.isAnimated,
+      this._config.isAnimated
     );
   }
 }
@@ -3035,10 +3035,10 @@ class FocusTrap extends Config {
     EventHandler.off(document, EVENT_KEY$5); // guard against infinite focus loop
 
     EventHandler.on(document, EVENT_FOCUSIN$2, (event) =>
-      this._handleFocusin(event),
+      this._handleFocusin(event)
     );
     EventHandler.on(document, EVENT_KEYDOWN_TAB, (event) =>
-      this._handleKeydown(event),
+      this._handleKeydown(event)
     );
     this._isActive = true;
   }
@@ -3207,7 +3207,7 @@ class Modal extends BaseComponent {
     this._queueCallback(
       () => this._hideModal(),
       this._element,
-      this._isAnimated(),
+      this._isAnimated()
     );
   }
 
@@ -3348,7 +3348,7 @@ class Modal extends BaseComponent {
   _triggerBackdropTransition() {
     const hideEvent = EventHandler.trigger(
       this._element,
-      EVENT_HIDE_PREVENTED$1,
+      EVENT_HIDE_PREVENTED$1
     );
 
     if (hideEvent.defaultPrevented) {
@@ -3462,7 +3462,7 @@ EventHandler.on(
 
     const data = Modal.getOrCreateInstance(target);
     data.toggle(this);
-  },
+  }
 );
 enableDismissTrigger(Modal);
 /**
@@ -3726,7 +3726,7 @@ EventHandler.on(
 
     const data = Offcanvas.getOrCreateInstance(target);
     data.toggle(this);
-  },
+  }
 );
 EventHandler.on(window, EVENT_LOAD_DATA_API$2, () => {
   for (const selector of SelectorEngine.find(OPEN_SELECTOR)) {
@@ -3735,7 +3735,7 @@ EventHandler.on(window, EVENT_LOAD_DATA_API$2, () => {
 });
 EventHandler.on(window, EVENT_RESIZE, () => {
   for (const element of SelectorEngine.find(
-    "[aria-modal][class*=show][class*=offcanvas-]",
+    "[aria-modal][class*=show][class*=offcanvas-]"
   )) {
     if (getComputedStyle(element).position !== "fixed") {
       Offcanvas.getOrCreateInstance(element).hide();
@@ -3790,7 +3790,7 @@ const allowedAttribute = (attribute, allowedAttributeList) => {
     if (uriAttributes.has(attributeName)) {
       return Boolean(
         SAFE_URL_PATTERN.test(attribute.nodeValue) ||
-          DATA_URL_PATTERN.test(attribute.nodeValue),
+          DATA_URL_PATTERN.test(attribute.nodeValue)
       );
     }
 
@@ -3859,7 +3859,7 @@ function sanitizeHtml(unsafeHtml, allowList, sanitizeFunction) {
     const attributeList = [].concat(...element.attributes);
     const allowedAttributes = [].concat(
       allowList["*"] || [],
-      allowList[elementName] || [],
+      allowList[elementName] || []
     );
 
     for (const attribute of attributeList) {
@@ -3977,7 +3977,7 @@ class TemplateFactory extends Config {
           selector,
           entry: content,
         },
-        DefaultContentType,
+        DefaultContentType
       );
     }
   }
@@ -4120,7 +4120,7 @@ class Tooltip extends BaseComponent {
   constructor(element, config) {
     if (typeof Popper === "undefined") {
       throw new TypeError(
-        "Bootstrap's tooltips require Popper (https://popper.js.org)",
+        "Bootstrap's tooltips require Popper (https://popper.js.org)"
       );
     }
 
@@ -4188,13 +4188,13 @@ class Tooltip extends BaseComponent {
     EventHandler.off(
       this._element.closest(SELECTOR_MODAL),
       EVENT_MODAL_HIDE,
-      this._hideModalHandler,
+      this._hideModalHandler
     );
 
     if (this._element.getAttribute("data-bs-original-title")) {
       this._element.setAttribute(
         "title",
-        this._element.getAttribute("data-bs-original-title"),
+        this._element.getAttribute("data-bs-original-title")
       );
     }
 
@@ -4214,7 +4214,7 @@ class Tooltip extends BaseComponent {
 
     const showEvent = EventHandler.trigger(
       this._element,
-      this.constructor.eventName(EVENT_SHOW$2),
+      this.constructor.eventName(EVENT_SHOW$2)
     );
     const shadowRoot = findShadowRoot(this._element);
 
@@ -4238,7 +4238,7 @@ class Tooltip extends BaseComponent {
       container.append(tip);
       EventHandler.trigger(
         this._element,
-        this.constructor.eventName(EVENT_INSERTED),
+        this.constructor.eventName(EVENT_INSERTED)
       );
     }
 
@@ -4257,7 +4257,7 @@ class Tooltip extends BaseComponent {
     const complete = () => {
       EventHandler.trigger(
         this._element,
-        this.constructor.eventName(EVENT_SHOWN$2),
+        this.constructor.eventName(EVENT_SHOWN$2)
       );
 
       if (this._isHovered === false) {
@@ -4277,7 +4277,7 @@ class Tooltip extends BaseComponent {
 
     const hideEvent = EventHandler.trigger(
       this._element,
-      this.constructor.eventName(EVENT_HIDE$2),
+      this.constructor.eventName(EVENT_HIDE$2)
     );
 
     if (hideEvent.defaultPrevented) {
@@ -4313,7 +4313,7 @@ class Tooltip extends BaseComponent {
 
       EventHandler.trigger(
         this._element,
-        this.constructor.eventName(EVENT_HIDDEN$2),
+        this.constructor.eventName(EVENT_HIDDEN$2)
       );
     };
 
@@ -4333,7 +4333,7 @@ class Tooltip extends BaseComponent {
   _getTipElement() {
     if (!this.tip) {
       this.tip = this._createTipElement(
-        this._newContent || this._getContentForTemplate(),
+        this._newContent || this._getContentForTemplate()
       );
     }
 
@@ -4402,7 +4402,7 @@ class Tooltip extends BaseComponent {
   _initializeOnDelegatedTarget(event) {
     return this.constructor.getOrCreateInstance(
       event.delegateTarget,
-      this._getDelegateConfig(),
+      this._getDelegateConfig()
     );
   }
 
@@ -4426,7 +4426,7 @@ class Tooltip extends BaseComponent {
     return Popper.createPopper(
       this._element,
       tip,
-      this._getPopperConfig(attachment),
+      this._getPopperConfig(attachment)
     );
   }
 
@@ -4485,7 +4485,7 @@ class Tooltip extends BaseComponent {
             // Otherwise, Popper mixes up the width and height dimensions since the initial arrow style is for top placement
             this._getTipElement().setAttribute(
               "data-popper-placement",
-              data.state.placement,
+              data.state.placement
             );
           },
         },
@@ -4512,7 +4512,7 @@ class Tooltip extends BaseComponent {
             const context = this._initializeOnDelegatedTarget(event);
 
             context.toggle();
-          },
+          }
         );
       } else if (trigger !== TRIGGER_MANUAL) {
         const eventIn =
@@ -4535,7 +4535,7 @@ class Tooltip extends BaseComponent {
             ] = true;
 
             context._enter();
-          },
+          }
         );
         EventHandler.on(
           this._element,
@@ -4549,7 +4549,7 @@ class Tooltip extends BaseComponent {
             ] = context._element.contains(event.relatedTarget);
 
             context._leave();
-          },
+          }
         );
       }
     }
@@ -4563,7 +4563,7 @@ class Tooltip extends BaseComponent {
     EventHandler.on(
       this._element.closest(SELECTOR_MODAL),
       EVENT_MODAL_HIDE,
-      this._hideModalHandler,
+      this._hideModalHandler
     );
   }
 
@@ -4934,7 +4934,7 @@ class ScrollSpy extends BaseComponent {
       SELECTOR_TARGET_LINKS,
       (event) => {
         const observableSection = this._observableSections.get(
-          event.target.hash,
+          event.target.hash
         );
 
         if (observableSection) {
@@ -4952,7 +4952,7 @@ class ScrollSpy extends BaseComponent {
 
           root.scrollTop = height;
         }
-      },
+      }
     );
   }
 
@@ -4964,7 +4964,7 @@ class ScrollSpy extends BaseComponent {
     };
     return new IntersectionObserver(
       (entries) => this._observerCallback(entries),
-      options,
+      options
     );
   } // The logic of selection
 
@@ -5017,7 +5017,7 @@ class ScrollSpy extends BaseComponent {
     this._observableSections = new Map();
     const targetLinks = SelectorEngine.find(
       SELECTOR_TARGET_LINKS,
-      this._config.target,
+      this._config.target
     );
 
     for (const anchor of targetLinks) {
@@ -5028,7 +5028,7 @@ class ScrollSpy extends BaseComponent {
 
       const observableSection = SelectorEngine.findOne(
         anchor.hash,
-        this._element,
+        this._element
       ); // ensure that the observableSection exists & is visible
 
       if (isVisible(observableSection)) {
@@ -5061,14 +5061,14 @@ class ScrollSpy extends BaseComponent {
     if (target.classList.contains(CLASS_NAME_DROPDOWN_ITEM)) {
       SelectorEngine.findOne(
         SELECTOR_DROPDOWN_TOGGLE$1,
-        target.closest(SELECTOR_DROPDOWN),
+        target.closest(SELECTOR_DROPDOWN)
       ).classList.add(CLASS_NAME_ACTIVE$1);
       return;
     }
 
     for (const listGroup of SelectorEngine.parents(
       target,
-      SELECTOR_NAV_LIST_GROUP,
+      SELECTOR_NAV_LIST_GROUP
     )) {
       // Set triggered links parents as active
       // With both <ul> and <nav> markup a parent is the previous sibling of any nav ancestor
@@ -5082,7 +5082,7 @@ class ScrollSpy extends BaseComponent {
     parent.classList.remove(CLASS_NAME_ACTIVE$1);
     const activeNodes = SelectorEngine.find(
       `${SELECTOR_TARGET_LINKS}.${CLASS_NAME_ACTIVE$1}`,
-      parent,
+      parent
     );
 
     for (const node of activeNodes) {
@@ -5181,7 +5181,7 @@ class Tab extends BaseComponent {
     this._setInitialAttributes(this._parent, this._getChildren());
 
     EventHandler.on(this._element, EVENT_KEYDOWN, (event) =>
-      this._keydown(event),
+      this._keydown(event)
     );
   } // Getters
 
@@ -5248,7 +5248,7 @@ class Tab extends BaseComponent {
     this._queueCallback(
       complete,
       element,
-      element.classList.contains(CLASS_NAME_FADE$1),
+      element.classList.contains(CLASS_NAME_FADE$1)
     );
   }
 
@@ -5281,14 +5281,14 @@ class Tab extends BaseComponent {
     this._queueCallback(
       complete,
       element,
-      element.classList.contains(CLASS_NAME_FADE$1),
+      element.classList.contains(CLASS_NAME_FADE$1)
     );
   }
 
   _keydown(event) {
     if (
       ![ARROW_LEFT_KEY, ARROW_RIGHT_KEY, ARROW_UP_KEY, ARROW_DOWN_KEY].includes(
-        event.key,
+        event.key
       )
     ) {
       return;
@@ -5302,7 +5302,7 @@ class Tab extends BaseComponent {
       this._getChildren().filter((element) => !isDisabled(element)),
       event.target,
       isNext,
-      true,
+      true
     );
 
     if (nextActiveElement) {
@@ -5446,7 +5446,7 @@ EventHandler.on(
     }
 
     Tab.getOrCreateInstance(this).show();
-  },
+  }
 );
 /**
  * Initialize on focus
@@ -5639,16 +5639,16 @@ class Toast extends BaseComponent {
 
   _setListeners() {
     EventHandler.on(this._element, EVENT_MOUSEOVER, (event) =>
-      this._onInteraction(event, true),
+      this._onInteraction(event, true)
     );
     EventHandler.on(this._element, EVENT_MOUSEOUT, (event) =>
-      this._onInteraction(event, false),
+      this._onInteraction(event, false)
     );
     EventHandler.on(this._element, EVENT_FOCUSIN, (event) =>
-      this._onInteraction(event, true),
+      this._onInteraction(event, true)
     );
     EventHandler.on(this._element, EVENT_FOCUSOUT, (event) =>
-      this._onInteraction(event, false),
+      this._onInteraction(event, false)
     );
   }
 

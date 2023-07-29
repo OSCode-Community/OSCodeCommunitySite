@@ -8,7 +8,9 @@
     <meta name="description"
     content="Multi-College Tech Community empowering students to Learn in Public. Join us to connect with like-minded individuals and foster campus learning culture." />
     <link rel="canonical" href="/index.html" />
-
+    <link rel="stylesheet" type="text/css" href="path/to/slick.css">
+    <script src="path/to/jquery.min.js"></script>
+    <script src="path/to/slick.min.js"></script>
     <!-- Favicons -->
     <link href="assets/img/logo.webp" rel="icon" />
 
@@ -18,7 +20,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Montserrat&family=Noto+Serif&family=Prompt:wght@500&family=Rajdhani:wght@500&display=swap"
         rel="stylesheet">
+<!-- Include Slick Carousel CSS -->
+<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" /> -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 
+<!-- Include jQuery (required by Slick Carousel) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include Slick Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- Vendor CSS Files -->
     <link href="vendor/aos/aos.css" rel="stylesheet" />
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -143,8 +153,7 @@
         </div>
         <div class="row">
             <div class="col-l col-lg-6">
-                <h5>Your Vision</h5>
-                <h1 class="heading">Our Passion</h1>
+                <h1 class="heading">Your Vision <br> Our Passion</h1>
                 <p>Our Technical expertise that helps your needs thrieve</p>
                 <a href="#our-services"><button class="btn btn-dark">Get Started</button></a>
             </div>
@@ -159,13 +168,17 @@
 
     <!-- OUR SERVICES -->
 
-    <div id="our-services">
-        <img src="assets/img/services-left-dec.webp" style="position: absolute;left:1rem;top:40rem; width: 21rem;">
+    <div id="our-services" style="margin-bottom: -500px;">
+        <img src="assets/img/services-left-dec.webp" style="position: absolute;left:1rem;top:40rem; width: 18rem;">
         <div>
             <h1>OUR SERVICES</h1>
         </div>
+        <div class="ag-courses_box">
         <div class="ag-format-container">
-            <div class="ag-courses_box">
+           
+            <div class="ag-courses-slider" id="ag-courses-slider">
+                <!-- Your existing course items here --> 
+               
                 <div class="ag-courses_item">
                     <a href="#" class="ag-courses-item_link">
                     <div class="ag-courses-item_bg"></div>
@@ -287,6 +300,8 @@
                 </div>
               
             </div>
+              </div>
+           
         </div>
     </div>
 
@@ -454,13 +469,13 @@
                     <i class="bx bx-chevron-right"></i> <a href="#resume_building">Resume Building</a>
                 </li>
                 <li>
-                    <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                    <i class="bx bx-chevron-right"></i> <a href="#lo-card">Web Design</a>
                 </li>
                 <li>
-                    <i class="bx bx-chevron-right"></i><a href="#">Web Development</a>
+                    <i class="bx bx-chevron-right"></i><a href="#lo-card">Web Development</a>
                 </li>
                 <li>
-                    <i class="bx bx-chevron-right"></i> <a href="#">App Development</a>
+                    <i class="bx bx-chevron-right"></i> <a href="#lo-card">App Development</a>
                 </li>
                 </ul>
             </div>
@@ -524,7 +539,36 @@
         </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<!-- Include Slick Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+          $('#ag-courses-slider').slick({
+            slidesToShow: 3, // The number of slides to show at a time
+            slidesToScroll: 1, // The number of slides to scroll at a time
+            autoplay: true, // Set to true for auto-play
+            autoplaySpeed: 2000, // Auto-play speed in milliseconds (3 seconds)
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 2,
+                }
+              },
+              {
+                breakpoint: 576,
+                settings: {
+                  slidesToShow: 1,
+                }
+              }
+            ]
+          });
+        });
+      </script>
+      
     <script>
         window.addEventListener('DOMContentLoaded', function() {
             var parallaxImage = document.querySelector('.parallax-image');

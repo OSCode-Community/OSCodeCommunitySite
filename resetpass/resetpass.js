@@ -1,9 +1,23 @@
 const oldpass = "";
 const newpass = "";
-
+var password = document.getElementById("password");
+var password1 = document.getElementById("password1");
+var passwderr = document.getElementById("passworderr");
+var passwd1err = document.getElementById("password1err");
 function handleSubmit(e) {
-  e.preventDefault();
-  // PostData();
+  console.log("called");
+  // Validation check
+  if (password.value == "") {
+    passwderr.innerText = "*Old password is required!";
+  } else if (password1.value == "") {
+    passwderr.innerText = "";
+    passwd1err.innerText = "*New password is required!";
+  } else {
+    // PostData();
+    passwd1err.innerText = "";
+    password.value = "";
+    password1.value = "";
+  }
 }
 
 function handleChange(e) {

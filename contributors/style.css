@@ -1,76 +1,94 @@
+body {
+  background-image: linear-gradient(to bottom, #121b2a 5%, #120e25) !important;
+}
+
+
+#preloader {
+  background: #000 url(https://www.oscode.co.in/assets/img/gifs/OSCode.gif) no-repeat center center;
+  background-size: 60%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+}
+
 #contributors-container {
   margin-top: -10px;
   width: 100%;
-  background-image: linear-gradient(to right, #141e30, #243b55);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   row-gap: 1.8rem;
+  padding-bottom: 3rem;
 }
+
 .contributor {
   width: 26%;
+  cursor: pointer;
   padding: 1.5rem 1rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: none;
-  transition: 3s ease-in-out;
-  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
-    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
-    rgba(240, 46, 170, 0.05) 25px 25px;
-  background-image: linear-gradient(to right, #9796f0, #d7c7fb);
-  /* background-image: linear-gradient(to right, #b6d8ff, #83a4d4); */
+  transition: .3s ease;
+  box-shadow:
+    rgba(77, 163, 255, 0.4) 5px 5px,
+    rgba(46, 76, 240, 0.3) 10px 10px,
+    rgba(52, 46, 240, 0.2) 15px 15px,
+    rgba(46, 95, 240, 0.1) 20px 20px,
+    rgba(46, 85, 240, 0.05) 25px 25px;
   margin-bottom: 20px;
+  background: linear-gradient(145deg, #0e034d, #240ab3);
 }
 
 .contributor:hover {
-  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
-    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
-    rgba(240, 46, 170, 0.05) 0px 25px;
-  transform: scale(0.9);
-  background-image: linear-gradient();
-  /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+  filter: drop-shadow(0px 0px 2px white) brightness(1.25);
+  transform: scale(1.05);
 }
 
 .contributor img {
   width: 60%;
-  transition: all 2s ease-in-out;
+  transition: 0.3s ease-in;
   border-radius: 50%;
-  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+  overflow: hidden;
   margin-right: 10px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow:
+    rgba(0, 0, 0, 0.09) 0px 2px 5px,
+    rgba(0, 0, 0, 0.08) 0px 8px 5px,
+    rgba(0, 0, 0, 0.095) 0px 8px 14px,
+    rgba(0, 0, 0, 0.07) 0px 16px 18px,
+    rgba(0, 0, 0, 0.092) 0px 35px 16px;
 }
 .contributor img :hover {
   transform: scale(0.8);
 }
 .contributor p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
-  padding: 1rem 0 0 0;
+  padding-top: 1rem;
+}
+.contributor p .contri {
+  font-size: 1rem;
+  text-align: center;
+  color: #ddd !important;
+  font-weight: 300 !important;
+  font-size: 1rem !important;
+  padding-top: 1rem;
 }
 .cname {
-  color: rgb(2, 2, 70);
+  color: white;
   font-size: 20px;
   font-family: cursive;
-  font-weight:800;
+  font-weight: 800;
 }
 .contributor button {
   align-items: center;
-  background-color: blueviolet;
+  background: #5942e9;
   border: 0;
   border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   font-size: 20px;
   justify-content: center;
@@ -80,7 +98,10 @@
   padding: 3px;
   white-space: nowrap;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
 }
 
 @media only screen and (max-width: 800px) {
@@ -89,26 +110,27 @@
   }
 }
 
-.contributor button:hover{
+.contributor button:hover {
   background-image: linear-gradient(to right, #243b55, #141e30);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.2),
+    0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width:400px){
-  span{
+@media (max-width: 400px) {
+  span {
     font-size: 2rem;
   }
-  .contributor{
+  .contributor {
     width: 80%;
   }
 }
-@media (min-width:400px) and (max-width:800px){
-  span{
+@media (min-width: 400px) and (max-width: 800px) {
+  span {
     font-size: 3rem;
   }
 }
-@media (min-width: 800px){
-  span{
-    font-size: 5rem;
-  }
+@media (max-width: 800px) {
+  span {
+    font-size: 1rem;
 }

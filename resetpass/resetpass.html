@@ -122,6 +122,7 @@
         ></a>
       </span>
     </header>
+    <div class="alan-btn"></div>
 
     <!-- resetpass container -->
     <div class="resetpass-container min-vh-100">
@@ -148,6 +149,7 @@
               id="password"
             />
             <label for="oldpass">Old Password</label>
+            <span class="error-msg" id="passworderr"></span>
           </div>
 
           <div class="user-box">
@@ -159,6 +161,7 @@
               id="password1"
             />
             <label for="newpass">New Password</label>
+            <span class="error-msg" id="password1err"></span>
           </div>
 
           <div style="display: flex; align-items: center">
@@ -170,15 +173,37 @@
 
           <!-- reset pass button -->
           <div class="btn">
-            <button type="submit" class="submit-button cursor-pointer">
+            <button type="submit" class="submit-button cursor-pointer" onclick="handleSubmit()">
               Confirm
             </button>
           </div>
         </form>
       </div>
+      
     </div>
 
     <!-- javascript -->
     <script src="resetpass.js"></script>
+    <script type="text/javascript"
+    src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+   <script>
+     var alanBtnInstance = alanBtn({
+       key: "4cc35fadda67f87264a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+       left: '50px',
+      bottom: '50px',
+      onCommand: function (commandData) {
+        if (commandData && commandData.command === 'openURL') {
+          if (commandData.target === '_blank') {
+            window.open(commandData.url, '_newtab' + Math.floor(Math.random() * 999999));
+          } else {
+            window.location.href = commandData.url;
+          }
+        }
+
+      },
+
+       rootEl: document.getElementById("alan-btn"),
+     });
+   </script>
   </body>
 </html>
