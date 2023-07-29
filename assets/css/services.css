@@ -586,6 +586,12 @@ button:hover {
   /* Adjust the right position */
 }
 
+.resumeContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 800px) {
   .slick-prev,
   .slick-next {
@@ -598,5 +604,9 @@ button:hover {
 
   .slick-next {
     right: 10%;
+  }
+
+  .resumeContainer {
+    flex-direction: column;
   }
 }
