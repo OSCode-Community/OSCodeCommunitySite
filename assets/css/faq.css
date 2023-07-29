@@ -28,24 +28,21 @@
   list-style: none;
   display: grid;
   gap: 0.5rem;
-}
-.line {
-  color: #eee;
-}
-.faq .faq-list li {
   box-shadow:
     rgba(0, 0, 0, 0.09) 0px 2px 1px,
     rgba(0, 0, 0, 0.09) 0px 4px 2px,
     rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
 }
-.faq .faq-list li:hover {
-  transform: scale(1.025);
+.line {
+  color: #eee;
 }
-
+.faqs:hover {
+  transition: 0.3s ease-in-out !important;
+  box-shadow: rgb(0, 0, 0) 0px 8px 15px !important;
+  transform: scale(1.025) !important;
+}
 .faq .faq-list a {
   display: block;
   transition: 0.2s ease;
