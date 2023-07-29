@@ -1,8 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-import { getDatabase } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+import { getDatabase, getAuth } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
 
-// web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDqOmdqmsGNhDOrjy_xEIjZ-JnKq7gMBlE",
   authDomain: "my-noob-7739a.firebaseapp.com",
@@ -14,9 +12,22 @@ const firebaseConfig = {
   measurementId: "G-SLHR6BV766",
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
-const auth = getAuth();
+let app;
+let database;
+let auth;
 
-export { database, auth };
+try {
+  // Initialize Firebase
+  app = initializeApp(firebaseConfig);
+  database = getDatabase(app);
+  auth = getAuth();
+} catch (error) {
+  console.error("Error initializing Firebase:", error.message);
+}
+
+// Export the initialized database and auth if they were successfully initialized
+if (database && auth) {
+  export { database, auth };
+} else {
+  console.error("Firebase initialization failed.");
+}
