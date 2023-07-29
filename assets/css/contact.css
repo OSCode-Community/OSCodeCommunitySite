@@ -85,14 +85,38 @@ hr {
   transition: 0.6s;
 }
 
-.modifiedMailPhone a:first-of-type:hover {
-  color: #cce6aa !important;
-  background-color: #a99ef1;
-  border-radius: 50%;
+.modifiedMailPhone > a:hover {
+  backgroundr: #a99ef1;
+  border-radius: 5rem;
 }
 
 .modifiedMailPhone a:hover {
   color: #cce6aa !important;
+}
+
+.modifiedMailPhone h3 {
+  font-weight: 600;
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
+}
+
+.modifiedMailPhone {
+  display: grid !important;
+  place-items: center !important;
+  width: 100% !important;
+}
+
+.address p a {
+  color: #eee !important;
+}
+
+.phone {
+  width: 100%;
+  text-align: center;
+  display: grid;
+  gap: 0.5rem;
+  place-items: center;
 }
 
 /* Contact form */
@@ -153,11 +177,13 @@ hr {
       rgba(255, 255, 255, 0) 69.79%,
       rgba(255, 255, 255, 0) 100%
     );
-  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25),
+  box-shadow:
+    inset -3px -3px 9px rgba(255, 255, 255, 0.25),
     inset 0px 3px 9px rgba(255, 255, 255, 0.3),
     inset 0px 1px 1px rgba(255, 255, 255, 0.6),
     inset 0px -8px 36px rgba(0, 0, 0, 0.3),
-    inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+    inset 0px 1px 5px rgba(255, 255, 255, 0.6),
+    2px 19px 31px rgba(0, 0, 0, 0.2);
   border-radius: 14px;
   font-weight: bold;
   font-size: 16px;
