@@ -38,6 +38,10 @@ RESPONSIVES
   .custom-menu .current {
     color: #2FE7B1;
   }
+  .custom-menu__light
+  {
+    color: #00e5ff;
+  }
   /* team SLIDER */
   .team-slider__indicators {
     display: -webkit-box;
