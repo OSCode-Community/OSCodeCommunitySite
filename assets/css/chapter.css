@@ -1,7 +1,8 @@
 #hero {
-  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.2)),
-    url("/assets/img/background/peopleImg.webp");
-  padding: 0;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), 
+                                    rgba(4, 9, 30, 0.2)),
+                    url("/assets/img/background/peopleImg.webp");
+  padding: unset;
   height: 400px;
   padding-top: 100px;
   padding-bottom: 50px;
@@ -9,18 +10,19 @@
 }
 
 #about {
-  background-image: url("/assets/img/background/s3.webp");
-  background-size: cover;
+  background: center/cover url("/assets/img/background/s3.webp");
 }
 
 .hidden {
   opacity: 0;
   transform: scale(0.2);
+  visibility: hidden;
   transition: all 1s ease-in-out;
 }
 
 .show {
   opacity: 1;
+  visibility: visible;
   transform: scale(1);
   animation: slide 1.5s ease-in-out;
 }
@@ -60,7 +62,6 @@
 }
 #faq {
   background-image: none;
-  /* margin-left: 50px; */
 }
 
 .text-clg {
@@ -97,16 +98,7 @@
 
 .faq .faq-list a:hover {
   background-position: 0;
-  /* font-size:28px; */
 }
-
-/* #search-bar {
-          padding: 10px;
-          font-size: 16px;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          width: 300px;
-      } */
 
 .input {
   width: 250px;
@@ -160,12 +152,12 @@ a:hover {
 }
 
 #results li:hover {
-  background-color: #9b999c;
+  background: #9b999c;
   font-weight: bolder;
 }
 
 #results li.active {
-  background-color: #78a4f1;
+  background: #78a4f1;
 }
 
 #results li a {
@@ -179,12 +171,12 @@ a:hover {
 }
 
 #results::-webkit-scrollbar-track {
-  background-color: rgba(204, 204, 204, 0.4);
+  background: rgba(204, 204, 204, 0.4);
   backdrop-filter: blur(4px);
 }
 
 #results::-webkit-scrollbar-thumb {
-  background-color: rgba(131, 128, 128, 0.7);
+  background: rgba(131, 128, 128, 0.7);
 }
 
 @media screen and (max-width: 600px) {
@@ -213,8 +205,6 @@ body {
   box-shadow:
     rgba(0, 0, 0, 0.09) 0px 2px 1px,
     rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
   background: linear-gradient(145deg, #0e034d, #240ab3);
   padding: 1rem;
@@ -231,8 +221,6 @@ body {
   scale: 1.025;
   box-shadow:
     rgba(92, 109, 249, 0.83) 5px 5px,
-    rgba(92, 168, 249, 0.3) 10px 10px,
-    rgba(92, 117, 249, 0.2) 15px 15px,
     rgba(141, 92, 249, 0.1) 20px 20px,
     rgba(249, 115, 92, 0.05) 25px 25px;
 }
@@ -292,8 +280,32 @@ body {
 .socialIcons {
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
 }
+
 .socialIcons a {
   margin: 5px;
+}
+
+@media (min-width: 35em) {
+  .card img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .card-title,
+  .card-text {
+    text-align: center !important;
+  }
+  .card {
+    padding: 1rem !important;
+  }
+  .card > div > div {
+    height: unset;
+  }
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+  margin-right: 150px;
 }
