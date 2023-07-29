@@ -4,8 +4,7 @@
                     url("/assets/img/background/peopleImg.webp");
   padding: unset;
   height: 400px;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 100px 0 50px 0;
   justify-content: center;
 }
 
@@ -287,10 +286,6 @@ body {
 }
 
 @media (min-width: 35em) {
-  .card img {
-    width: 100% !important;
-    height: 100% !important;
-  }
   .card-title,
   .card-text {
     text-align: center !important;
@@ -301,6 +296,7 @@ body {
   .card > div > div {
     height: unset;
   }
+}
 
 #footer .footer-top h4 {
   font-size: 16px;
