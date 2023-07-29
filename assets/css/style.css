@@ -1671,8 +1671,8 @@ a:hover i {
 @media only screen and (max-width: 800px){
   .social-links {
     display: flex;
-    flex-direction: column;
-    width: 24rem;
+    flex-direction: row;
+    width: 100%;
     gap: 1rem;
   }
 }
@@ -1864,3 +1864,21 @@ a:hover i {
     width: 100%;
   }
 }
+
+
+.animator{
+  animation: aka 8s infinite cubic-bezier(0.23, 1, 0.320, 1);
+}
+@keyframes aka{
+  0%{
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(20px);
+  }
+}
+
+

@@ -329,10 +329,16 @@
         left: "50px",
         bottom: "50px",
         onCommand: function (commandData) {
-          if (commandData.command === "go:back") {
-            //call client code that will react on the received command
+        if (commandData && commandData.command === 'openURL') {
+          if (commandData.target === '_blank') {
+            window.open(commandData.url, '_newtab' + Math.floor(Math.random() * 999999));
+          } else {
+            window.location.href = commandData.url;
           }
-        },
+        }
+
+      },
+
         rootEl: document.getElementById("alan-btn"),
       });
     </script>

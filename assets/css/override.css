@@ -5,6 +5,7 @@
   height: 70px;
 }
 .modifyRow {
+  display: flex;
   align-items: flex-start;
 }
 .mainContainer {
@@ -24,19 +25,28 @@
   justify-content: space-between;
   flex-flow: row-reverse;
 }
+
+.socialLinkMod {
+  display: flex;
+  justify-content: center;
+  column-gap: 3px;
+  margin-bottom: 0;
+}
+
 .modifiedFooterTop {
   padding: 20px 0;
 }
 @media only screen and (max-width: 800px) {
+  .modifyRow {
+    flex-direction: column;
+  }
   .modifiedFooterTop {
     padding: 10px 0;
   }
-}
-.socialLinkMod {
+  .socialLinkMod {
     display: flex;
-    justify-content: center;
-    column-gap: 3px;
-    margin-bottom: 0;
+    /* flex-direction: column; */
+  }
 }
 
 .crMod {
@@ -106,7 +116,7 @@
 }
 
 .faq .faq-list li {
-  margin: 0;
+  margin: 1rem 0;
   padding: 0;
   padding: 20px 15px;
   transition: 0.3s ease-in-out;
@@ -291,20 +301,20 @@
   flex-direction: column;
   row-gap: 10px;
 }
-@media (max-width: 400px){
-  .upperPart{
+@media (max-width: 400px) {
+  .upperPart {
     margin-top: 0;
     padding-top: 0;
     flex-direction: column;
   }
-  .testimonials .testimonial-item .testimonial-img{
+  .testimonials .testimonial-item .testimonial-img {
     width: 80%;
   }
-  .testimonials .testimonial-item{
+  .testimonials .testimonial-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size:x-small;
+    font-size: x-small;
     line-height: normal;
   }
 }
