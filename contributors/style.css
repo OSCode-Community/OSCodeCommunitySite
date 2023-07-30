@@ -10,7 +10,7 @@ body {
   margin-top: 50px;
   text-align: center;
   padding: 5rem 0 3rem;
-  color: #fff;
+  color: #91ddf4;
   font-family: "Poppins", sans-serif;
   letter-spacing: .35rem;
   word-spacing: .35rem;
@@ -39,7 +39,8 @@ body {
 }
 
 .contributor {
-  width: 26%;
+  width: 24%;
+  margin-left: 20px;
   cursor: pointer;
   padding: 1.5rem 1rem;
   border-radius: 10px;
@@ -48,18 +49,21 @@ body {
   align-items: center;
   border: none;
   transition: .3s ease;
-  box-shadow:
-    rgba(77, 163, 255, 0.4) 5px 5px,
-    rgba(46, 76, 240, 0.3) 10px 10px,
-    rgba(52, 46, 240, 0.2) 15px 15px,
-    rgba(46, 95, 240, 0.1) 20px 20px,
-    rgba(46, 85, 240, 0.05) 25px 25px;
   margin-bottom: 20px;
   background: linear-gradient(145deg, #0e034d, #240ab3);
+
+  /* New box-shadow */
+  box-shadow:
+  rgba(77, 163, 255, 0.4) 5px 5px,
+  rgba(46, 76, 240, 0.3) 10px 10px,
+  rgba(52, 46, 240, 0.2) 15px 15px,
+  rgba(46, 95, 240, 0.1) 20px 20px,
+  rgba(46, 85, 240, 0.05) 25px 25px;
+;
 }
 
+
 .contributor:hover {
-  filter: drop-shadow(0px 0px 2px white) brightness(1.25);
   transform: scale(1.05);
 }
 
@@ -76,8 +80,8 @@ body {
     rgba(0, 0, 0, 0.07) 0px 16px 18px,
     rgba(0, 0, 0, 0.092) 0px 35px 16px;
 }
-.contributor img :hover {
-  transform: scale(0.8);
+.contributor img:hover {
+  transform: scale(1.1);
 }
 .contributor p {
   font-size: 1rem;
