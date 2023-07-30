@@ -273,6 +273,20 @@
   background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
 }
 
+.faqs {
+  background-color: #677480;
+  background-image: linear-gradient(315deg, #3a4045 0%, #8693ab 74%);
+}
+
+.faq .faq-list a {
+  cursor: pointer;
+  font-weight: 600 !important;
+}
+
+.faq .faq-list p {
+  color: #fffc;
+}
+
 .wrapping {
   display: flex;
   align-items: center;
