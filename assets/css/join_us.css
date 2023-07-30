@@ -188,108 +188,61 @@
 }
 
 .git-box:hover::before {
+  background-color: #21D4FD;
   background-image: linear-gradient(
-    to right,
-    #d16ba5,
-    #c777b9,
-    #ba83ca,
-    #aa8fd8,
-    #9a9ae1,
-    #8f99e6,
-    #8299eb,
-    #7299f0,
-    #668df5,
-    #5f80f9,
-    #5c72fb,
-    #5f62fb
+     19deg, 
+     #21D4FD 0%, 
+     #B721FF 100%
   );
   transform: scaleX(1);
 }
 
 .discord-container:hover::before {
+  background-color: #21D4FD;
   background-image: linear-gradient(
-    to right,
-    #b39bf8,
-    #91afff,
-    #76bfff,
-    #6ccdfd,
-    #78d7f2,
-    #61d2f2,
-    #43ccf3,
-    #00c7f4,
-    #00aeff,
-    #008fff,
-    #0066ff,
-    #4f11ff
+     19deg, 
+     #21D4FD 0%, 
+     #B721FF 100%
   );
   transform: scaleX(1);
 }
 
 .linkedin-container:hover::before {
+  background-color: #21D4FD;
   background-image: linear-gradient(
-    to right,
-    #a3ace0,
-    #95a2e3,
-    #8699e6,
-    #7590e8,
-    #6287eb,
-    #547feb,
-    #4578ea,
-    #3270ea,
-    #2867e6,
-    #1d5ee3,
-    #1055de,
-    #004cda
+     19deg, 
+     #21D4FD 0%, 
+     #B721FF 100%
   );
   transform: scaleX(1);
 }
 
 .instagram-container:hover::before {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
+  background-color: #21D4FD;
+  background-image: linear-gradient(
+     19deg, 
+     #21D4FD 0%, 
+     #B721FF 100%
   );
   transform: scaleX(1);
 }
 
 .twitter-container:hover::before {
+  background-color: #21D4FD;
   background-image: linear-gradient(
-    to right,
-    #75f3f0,
-    #62e7f6,
-    #5bdafa,
-    #61ccfa,
-    #6fbdf5,
-    #6ab2f5,
-    #6ba6f4,
-    #7299f0,
-    #668df5,
-    #5f80f9,
-    #5c72fb,
-    #5f62fb
+     19deg, 
+     #21D4FD 0%, 
+     #B721FF 100%
   );
   transform: scaleX(1);
 }
 
 .tele-container:hover::before {
+  background-color: #21D4FD;
   background-image: linear-gradient(
-    to right,
-    #9ba9f8,
-    #7cb9ff,
-    #57c7ff,
-    #30d4ff,
-    #17e0ff,
-    #10ddfa,
-    #08dbf5,
-    #00d8f0,
-    #00c8ee,
-    #00b7ea,
-    #00a6e3,
-    #0094da
+     19deg, 
+     #21D4FD 0%, 
+     #B721FF 100%
   );
   transform: scaleX(1);
 }
