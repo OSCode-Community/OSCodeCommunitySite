@@ -311,13 +311,41 @@ hr.line {
   color: #fff;
 }
 
+/* Button style */
 .msg-us {
-  background: linear-gradient(145deg, #0e034d, #240ab3) !important;
-  box-shadow:
-    inset 0 0 4px white,
-    0 5px 10px #0007,
-    0 5px 10px white !important;
+  box-shadow: white 0px 0px 4px inset, rgba(0, 0, 0, 0.467) 0px 5px 10px, white 0px 5px 10px !important;
+  background: linear-gradient(145deg, rgb(14, 3, 77), rgb(36, 10, 179)) !important;
+  transition: all 0.3s ease;
+  transform: translateY(0);
 }
+
+/* Hover effect */
+.msg-us:hover {
+  box-shadow: white 0px 0px 2px inset, rgba(0, 0, 0, 0.467) 0px 10px 20px, white 0px 10px 20px !important;
+  transform: translateY(-2px);
+  background: linear-gradient(90deg,
+      #8A2BE2, /* Blue Violet */
+      #1e90ff, /* Dodger blue */
+      #00bfff, /* Deep sky blue */
+      #87cefa, /* Light sky blue */
+      #b0e0e6  /* Powder blue */
+  ) !important;
+  background-size: 200% 100%;
+  background-position: 0 50%;
+  animation: slide-right 5s linear infinite;
+}
+
+/* Animation to move the gradient towards right */
+@keyframes slide-right {
+  0% {
+      background-position: 0 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+
+
 hr.line {
   width: 100px; /* initial length */
   transition: width 0.3s ease; /* smooth transition */
