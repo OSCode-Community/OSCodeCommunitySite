@@ -594,3 +594,32 @@ div .dot {
 		width: 100%;
 	}
 }
+/* Scroll arrow from top to bottom */
+.back-to-top,
+.back-to-bottom {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #8751e3;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0.8;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover,
+.back-to-bottom:hover {
+  opacity: 1;
+}
+
+/* Additional styles for top to bottom arrow */
+.back-to-bottom {
+  bottom: unset;
+  top: 20px;
+}
