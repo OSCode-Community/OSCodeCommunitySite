@@ -1,7 +1,23 @@
 body {
-  background-image: linear-gradient(to bottom, #121b2a 5%, #120e25) !important;
+  background-image: linear-gradient(
+    60deg, 
+    #141e30, 
+    #25283e
+  ) !important;
 }
 
+.contributors-page-heading {
+  margin-top: 50px;
+  text-align: center;
+  padding: 5rem 0 3rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: .35rem;
+  word-spacing: .35rem;
+  font-weight: 600;
+  font-size: 2.25rem;
+  font-variant: petite-caps;
+}
 
 #preloader {
   background: #000 url(https://www.oscode.co.in/assets/img/gifs/OSCode.gif) no-repeat center center;
@@ -68,6 +84,7 @@ body {
   text-align: center;
   padding-top: 1rem;
 }
+
 .contributor p .contri {
   font-size: 1rem;
   text-align: center;
@@ -76,12 +93,14 @@ body {
   font-size: 1rem !important;
   padding-top: 1rem;
 }
+
 .cname {
   color: white;
   font-size: 20px;
   font-family: cursive;
   font-weight: 800;
 }
+
 .contributor button {
   align-items: center;
   background: #5942e9;
@@ -118,19 +137,13 @@ body {
 }
 
 @media (max-width: 400px) {
-  span {
-    font-size: 2rem;
-  }
   .contributor {
     width: 80%;
   }
 }
-@media (min-width: 400px) and (max-width: 800px) {
-  span {
-    font-size: 3rem;
+
+@media (min-width: 35em) {
+  .contributors-page-heading {
+    font-size: 3.25rem;
   }
-}
-@media (max-width: 800px) {
-  span {
-    font-size: 1rem;
 }
