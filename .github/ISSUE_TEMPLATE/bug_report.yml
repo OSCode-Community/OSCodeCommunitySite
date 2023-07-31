@@ -1,7 +1,7 @@
 name: 🐛 Bug Report
 description: Report a bug report
 title: '[Bug]: '
-labels: ['🔧 goal: fix']
+labels: ['🔧 goal: fix','gssoc23','level1']
 body:
 - type: textarea
   id: what-happened
