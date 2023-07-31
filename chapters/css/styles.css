@@ -226,6 +226,13 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  height: 410px;
+  transition: box-shadow 0.2s ease;
+}
+
+.feature-card:hover{
+  box-shadow: 0 0 20px rgba(99, 114, 130, 0.5);
+  -webkit-box-shadow: 0 0 20px rgba(99, 114, 130, 0.5);
 }
 
 .feature-card .feature-card__body,
