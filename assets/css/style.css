@@ -404,19 +404,19 @@ h1 {
 
 .navbar-mobile {
   position: fixed;
-  overflow: hidden;
-  top: 70px;
-  right: -22px;
+  /* overflow: hidden; */
+  /* top: 70px; */
+  /* right: -22px; */
   left: 0;
   bottom: 0;
-  background: var(--navbar-mobile-background-color);
+  /* background: var(--navbar-mobile-background-color); */
   transition: 0.3s;
   z-index: 9999;
 }
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 20px;
+  /* top: 20px; */
   right: 25px;
 }
 
@@ -1549,7 +1549,7 @@ a:hover i {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
-  margin-top: -.75rem;
+  margin-top: -0.75rem;
 }
 
 #footer .footer-top .footer-contact h3 span {
@@ -1865,7 +1865,6 @@ a:hover i {
     width: 100%;
   }
 }
-
 
 .animator {
   animation: aka 8s infinite cubic-bezier(0.23, 1, 0.32, 1);
