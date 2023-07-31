@@ -298,7 +298,7 @@ h1 {
   background-color: transparent;
 }
 
-.navbar li a{
+.navbar li a {
   margin: 10px; /* Adjust the desired spacing here */
 }
 
@@ -622,7 +622,21 @@ h1 {
   }
 }
 #hero .btn-get-started:hover {
-   background-image: linear-gradient(to bottom, #55ceff, #5fc7fd, #68c0f9, #72b9f5, #7bb2f0, #75b6f3, #6fbbf6, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image: linear-gradient(
+    to bottom,
+    #55ceff,
+    #5fc7fd,
+    #68c0f9,
+    #72b9f5,
+    #7bb2f0,
+    #75b6f3,
+    #6fbbf6,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
   border-color: var(--background-white);
   color: var(--background-white);
   border: 2px solid var(--backtotop-btn-color);
@@ -1120,7 +1134,7 @@ a:hover i {
   padding: 0;
 }
 
-.benefit-head{
+.benefit-head {
   color: var(--backtotop-btn-color) !important;
   font-weight: bold;
   text-shadow: 0 0 1px black;
@@ -1669,12 +1683,15 @@ a:hover i {
   justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
   .social-links {
     display: flex;
     flex-direction: row;
     width: 100%;
     gap: 1rem;
+  }
+  .socialIcons {
+    margin-left: 2rem;
   }
 }
 
@@ -1710,7 +1727,7 @@ a:hover i {
   text-decoration: none;
   transform: rotateY(360deg);
 }
-#footer .social-links .twitter{
+#footer .social-links .twitter {
   color: #1da1f2;
   background: var(--background-white);
   text-decoration: none;
@@ -1737,7 +1754,7 @@ a:hover i {
   text-decoration: none;
   transform: rotateY(360deg);
 }
-#footer .social-links .instagram{
+#footer .social-links .instagram {
   color: #d6249f;
   background-color: var(--background-white);
   text-decoration: none;
@@ -1860,26 +1877,23 @@ a:hover i {
   .social-links .list1 {
     text-align: center;
   }
-  .textSocials{
+  .textSocials {
     display: block;
     width: 100%;
   }
 }
 
-
-.animator{
-  animation: aka 8s infinite cubic-bezier(0.23, 1, 0.320, 1);
+.animator {
+  animation: aka 8s infinite cubic-bezier(0.23, 1, 0.32, 1);
 }
-@keyframes aka{
-  0%{
+@keyframes aka {
+  0% {
     transform: translateY(20px);
   }
-  50%{
+  50% {
     transform: translateY(-20px);
   }
-  100%{
+  100% {
     transform: translateY(20px);
   }
 }
-
-
