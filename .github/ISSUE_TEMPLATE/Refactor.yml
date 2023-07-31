@@ -1,7 +1,7 @@
 name: Refactor Code 🔧
 description: Use this label for code refactoring tasks.
 title: '[Refactor] <write what you want to add>'
-labels: ['goal: refactor']
+labels: ['goal: refactor','gssoc23','level2']
 body:
   - type: input
     attributes:
