@@ -1,7 +1,7 @@
 name: 📄 Documentation issue
 description: Found an issue in the documentation? You can use this one!
 title: "[Docs]:"
-labels: ["documentation"]
+labels: ["documentation",'gssoc23','level1']
 body:
 - type: textarea
   id: description

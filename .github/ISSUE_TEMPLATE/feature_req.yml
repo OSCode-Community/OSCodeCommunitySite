@@ -1,7 +1,7 @@
 name: ✨ Feature Request
 description: Suggest a feature request
 title: '[Feat]: '
-labels: ['⭐ goal: addition']
+labels: ['⭐ goal: addition','gssoc23']
 body:
 - type: textarea
   id: what-feature
