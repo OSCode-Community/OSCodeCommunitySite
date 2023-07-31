@@ -361,7 +361,7 @@ h2 {
 
 .misc-text {
   position: relative;
-  padding: 20% 18%;
+  padding: 15% 18%;
   text-align: center;
   color: white;
 }
@@ -481,7 +481,7 @@ h2 {
   }
 
   .socialIcons {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -508,7 +508,7 @@ ul {
     margin: 0 15px;
   }
   .misc-text {
-    padding: 60% 15%;
+    padding: 30% 5%;
   }
   h2 {
     font-size: 35px;
