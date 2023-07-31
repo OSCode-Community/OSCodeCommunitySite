@@ -22,10 +22,10 @@ body:
     attributes:
       label: 'Checklist'
       options:
-        - label: 'I have checked the existing [issues](https://github.com/rupali-codes/LinksHub/issues).'
+        - label: 'I have checked the existing [issues](https://github.com/OSCode-Community/OSCodeCommunitySite/issues).'
           required: true
 
-        - label: 'I have read the [Contributing Guidelines](https://github.com/rupali-codes/LinksHub/blob/main/CONTRIBUTING.md).'
+        - label: 'I have read the [Contributing Guidelines](https://github.com/OSCode-Community/OSCodeCommunitySite/blob/master/CONTRIBUTING.md).'
           required: true
 
         - label: "The changes don't break the code and don't introduce new functionality."
