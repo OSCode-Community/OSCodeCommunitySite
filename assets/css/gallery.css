@@ -1,6 +1,6 @@
 /* Gallery Section */
 .number {
-  color: #5942e9;
+  color: #91ddf4;
   /* text-shadow: 2px 2px 3px rgb(166, 0, 255); */
   font-size: 40px;
   margin-top: 40px;
@@ -18,6 +18,28 @@
   );
 }
 
+/* Existing styles for the image slideshow */
+
+/* New styles for the rotating effect */
+@keyframes rotateIn {
+  from {
+    transform: rotateY(20deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+.image-slideshow img {
+  animation: rotateIn 2.5s ease-in-out;
+}
+
+/* Optional: To make the rotating effect play for every image except the first one */
+.image.active:first-child {
+  animation: none;
+}
+
+
 .image-slideshow {
   max-width: 700px;
   transition: 3s ease-in;
@@ -32,6 +54,7 @@
 
 .image-slideshow img {
   width: 100%;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
