@@ -106,6 +106,7 @@
     margin-left: 70px;
   }
   .join .con-box a{
+    padding: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,45 +264,65 @@
 .tele-container:hover::before{
     transform: scaleX(1);
 }
-  .git-box:hover .github-box{
-  background: var(--background-white) !important;
-  color: black !important;
-  text-decoration: none;
-  border: transparent !important;
-  font-size: 36px !important;
+
+.git-box:hover::before {
+  background-color: #21D4FD;
+  background-image: linear-gradient(
+     19deg, 
+     #21D4FD 0%, 
+     #B721FF 100%
+  );
+  transform: scaleX(1);
 }
-.discord-container:hover .discord-box{
-  background: #4e27fa !important;
-  color: var(--background-white)  !important;
-  text-decoration: none;
-  border: transparent !important;
-  font-size: 33px !important;
+
+.discord-container:hover::before {
+  background-color: #21D4FD;
+  background-image: linear-gradient(
+     19deg, 
+     #21D4FD 0%, 
+     #B721FF 100%
+  );
+  transform: scaleX(1);
 }
-.linkedin-container:hover .linkedin-box{
-  background: #0072b1 !important;
-  color: var(--background-white) !important;
-  text-decoration: none;
-  border: transparent !important;
-  font-size: 33px !important;
+
+.linkedin-container:hover::before {
+  background-color: #21D4FD;
+  background-image: linear-gradient(
+     19deg, 
+     #21D4FD 0%, 
+     #B721FF 100%
+  );
+  transform: scaleX(1);
 }
-.instagram-container:hover .instagram-box{
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
-  color: var(--background-white) !important;
-  text-decoration: none;
-  border: transparent !important;
-  font-size: 33px !important;
+
+.instagram-container:hover::before {
+  background-color: #21D4FD;
+  background-image: linear-gradient(
+     19deg, 
+     #21D4FD 0%, 
+     #B721FF 100%
+  );
+  transform: scaleX(1);
 }
-.twitter-container:hover .twitter-box{
-  background: #00acee !important;
-  color: var(--background-white) !important;
-  text-decoration: none;
-  border: transparent !important;
-  font-size: 31px !important;
+
+.twitter-container:hover::before {
+  background-color: #21D4FD;
+  background-image: linear-gradient(
+     19deg, 
+     #21D4FD 0%, 
+     #B721FF 100%
+  );
+  transform: scaleX(1);
 }
-.telegram-box {
-  font-size: 62px !important;
-  background-color: white !important;
-  color:#5942e9 !important;
+
+.tele-container:hover::before {
+  background-color: #21D4FD;
+  background-image: linear-gradient(
+     19deg, 
+     #21D4FD 0%, 
+     #B721FF 100%
+  );
+  transform: scaleX(1);
 }
 .tele-container:hover .telegram-box{
   background: var(--background-white)  !important;

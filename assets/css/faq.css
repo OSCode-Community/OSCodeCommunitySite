@@ -90,6 +90,16 @@
   display: none;
 }
 
+#join-us::after {
+  content: "";
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  width: 100%;
+  height: 5.5rem;
+  position: absolute;
+  bottom: -2rem;
+  transform: rotate(-3.5deg) scale(1.1);
+}
+
 /* Media Query */
 @media only screen and (max-width: 600px) {
   #faq h1 {

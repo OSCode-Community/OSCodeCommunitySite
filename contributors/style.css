@@ -1,7 +1,23 @@
 body {
-  background-image: linear-gradient(to bottom, #121b2a 5%, #120e25) !important;
+  background-image: linear-gradient(
+    60deg, 
+    #141e30, 
+    #25283e
+  ) !important;
 }
 
+.contributors-page-heading {
+  margin-top: 50px;
+  text-align: center;
+  padding: 5rem 0 3rem;
+  color: #91ddf4;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: .35rem;
+  word-spacing: .35rem;
+  font-weight: 600;
+  font-size: 2.25rem;
+  font-variant: petite-caps;
+}
 
 #preloader {
   background: #000 url(https://www.oscode.co.in/assets/img/gifs/OSCode.gif) no-repeat center center;
@@ -23,7 +39,8 @@ body {
 }
 
 .contributor {
-  width: 26%;
+  width: 24%;
+  margin-left: 20px;
   cursor: pointer;
   padding: 1.5rem 1rem;
   border-radius: 10px;
@@ -32,18 +49,21 @@ body {
   align-items: center;
   border: none;
   transition: .3s ease;
-  box-shadow:
-    rgba(77, 163, 255, 0.4) 5px 5px,
-    rgba(46, 76, 240, 0.3) 10px 10px,
-    rgba(52, 46, 240, 0.2) 15px 15px,
-    rgba(46, 95, 240, 0.1) 20px 20px,
-    rgba(46, 85, 240, 0.05) 25px 25px;
   margin-bottom: 20px;
   background: linear-gradient(145deg, #0e034d, #240ab3);
+
+  /* New box-shadow */
+  box-shadow:
+  rgba(77, 163, 255, 0.4) 5px 5px,
+  rgba(46, 76, 240, 0.3) 10px 10px,
+  rgba(52, 46, 240, 0.2) 15px 15px,
+  rgba(46, 95, 240, 0.1) 20px 20px,
+  rgba(46, 85, 240, 0.05) 25px 25px;
+;
 }
 
+
 .contributor:hover {
-  filter: drop-shadow(0px 0px 2px white) brightness(1.25);
   transform: scale(1.05);
 }
 
@@ -60,14 +80,15 @@ body {
     rgba(0, 0, 0, 0.07) 0px 16px 18px,
     rgba(0, 0, 0, 0.092) 0px 35px 16px;
 }
-.contributor img :hover {
-  transform: scale(0.8);
+.contributor img:hover {
+  transform: scale(1.1);
 }
 .contributor p {
   font-size: 1rem;
   text-align: center;
   padding-top: 1rem;
 }
+
 .contributor p .contri {
   font-size: 1rem;
   text-align: center;
@@ -76,12 +97,14 @@ body {
   font-size: 1rem !important;
   padding-top: 1rem;
 }
+
 .cname {
   color: white;
   font-size: 20px;
   font-family: cursive;
   font-weight: 800;
 }
+
 .contributor button {
   align-items: center;
   background: #5942e9;
@@ -118,19 +141,13 @@ body {
 }
 
 @media (max-width: 400px) {
-  span {
-    font-size: 2rem;
-  }
   .contributor {
     width: 80%;
   }
 }
-@media (min-width: 400px) and (max-width: 800px) {
-  span {
-    font-size: 3rem;
+
+@media (min-width: 35em) {
+  .contributors-page-heading {
+    font-size: 3.25rem;
   }
-}
-@media (max-width: 800px) {
-  span {
-    font-size: 1rem;
 }

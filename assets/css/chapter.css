@@ -4,8 +4,7 @@
                     url("/assets/img/background/peopleImg.webp");
   padding: unset;
   height: 400px;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 100px 0 50px 0;
   justify-content: center;
 }
 
@@ -236,7 +235,11 @@ body {
 }
 
 .card-title a {
-  color: white !important;
+  color: white;
+}
+
+.card-title a:hover {
+  color: #009ffd;
 }
 
 .card-text {
@@ -258,6 +261,11 @@ body {
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   height: 150px;
   box-sizing: border-box;
+  transition: transform 0.5s ease;
+}
+
+.img-fluid:hover{
+  transform: scale(1.1);
 }
 
 .row {
@@ -287,10 +295,6 @@ body {
 }
 
 @media (min-width: 35em) {
-  .card img {
-    width: 100% !important;
-    height: 100% !important;
-  }
   .card-title,
   .card-text {
     text-align: center !important;
@@ -301,6 +305,7 @@ body {
   .card > div > div {
     height: unset;
   }
+}
 
 #footer .footer-top h4 {
   font-size: 16px;
