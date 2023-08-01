@@ -1312,59 +1312,29 @@
     
     
                 <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-                    <form class="contactForm" id="contact_Form" action="mailto:oscode.community@gmail.com" method="post" enctype="text/plain" autocomplete="on">
-                        <div class="row form-group">
-                            <div class="col form-group">
-                                <div class="Cfr">
-                                    <input type="email" autocomplete="email" class="form-control email" name="email" id="email" required />
-                                    <label class="label-name em">
-                                        <span class="content-name">Email</span>
-                                    </label>
-                                </div>
-                            </div>
-    
-                            <div class="col form-group">
-                                <div class="Cfr">
-                                    <input type="text" autocomplete="name" name="name" class="form-control nm" id="name"
-                                        pattern="[a-zA-Z][a-zA-Z ]{2,}" title="Number Not Allowed" required />
-                                    <label class="label-name nm">
-                                        <span class="content-name">Name</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                        <div class="col form-group">
-                            <div class="form-group">
-                                <input type="text" autocomplete="subject" class="form-control" name="College" id="college" required />
-                                <label class="label-name">
-                                    <span class="content-name">College</span>
-                                </label>
-                            </div>
-                            <div class="spandiv" style="padding-top: 2px;"> <small class="small"></small></div>
-                        </div>
-                        <div class="col form-group">
-                            <div>
-                                <input type="text" autocomplete="subject" class="form-control" name="subject" id="subject" required />
-                                <label class="label-name">
-                                    <span class="content-name">Subject</span>
-                                </label>
-                            </div>
-                            <div class="spandiv" style="padding-top: 12px;"> <small class="small"></small></div>
-                        </div>
-    
-                        <div class="col form-group">
-                            <div>
-                                <textarea class="form-control" autocomplete="message" id="message" name="message" rows="5" required></textarea>
-                                <label class="label-name">
-                                    <span class="content-name">Message</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="text-center white">
-                            <button type="submit" class="btn get-started-btn msg-us">Message us</button>
-                        </div>
+                  <div class="contact">
+                    <form class="contact-form" id="enquiry-form">
+                      <div class="title">Details</div>
+                      <input type="text" id="name" placeholder="Your Name" class="" pattern="[a-zA-Z]+" required="" fdprocessedid="t41fi9">
+                      <div class="spandiv"><small class="small" id="nameerr"></small></div>
+        
+                      <input type="email" id="email" class="" placeholder="Email id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="" fdprocessedid="9gmh9k">
+                      <div class="spandiv"><small class="small" id="mailerr"></small></div>
+        
+                      <input type="email" id="email" class="" placeholder="college">
+                      <div class="spandiv"><small class="small" id="mailerr"></small></div>
+
+                      <input type="tel" id="phone" class="" placeholder="Phone no." pattern="[0-9]{10}$" required="" fdprocessedid="ix6wjo">
+                      <div class="spandiv"><small class="small" id="phoneerr"></small></div>
+        
+                      <textarea id="message" row="5" class="" placeholder="How can we help you?" required=""></textarea>
+                      <div class="spandiv"><small class="small" id="msgerr"></small></div>
+        
+                      <button type="submit" onclick="sendMail()" class="hoverchanger" fdprocessedid="ur2n8">
+                        Send
+                      </button>
                     </form>
+                  </div>
                 </div>
             </div>
             <div class="row">
