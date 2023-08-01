@@ -28,8 +28,7 @@
 
 .socialLinkMod {
   display: flex;
-  justify-content: center;
-  column-gap: 3px;
+  justify-content: space-between;
   margin-bottom: 0;
 }
 
