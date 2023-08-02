@@ -17,7 +17,7 @@
     line-height: normal;
     text-decoration: none;
     font-weight: normal !important;
-    color: var(--background-white);
+    color: var(--background-black);
     margin: auto;
     text-align: center;
     letter-spacing: 0.18em;
@@ -29,7 +29,7 @@
   }
 
   #join-us h1{
-    color:beige;
+    color:#5942e9;
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
   }
