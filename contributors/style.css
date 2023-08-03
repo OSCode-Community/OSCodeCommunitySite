@@ -1,7 +1,7 @@
 body {
- background-color: #141e30;
+ background-color: #ffffff;
  animation: changeColor 10s linear infinite;
-  background-image: linear-gradient(to top left,#141e30,#4377cf,#141e30,#395ea2); 
+  background-image: linear-gradient(to top left,#ffffff,#9cc0ff,#f2f2f2,#67c5ff); 
   background-size: 200% 200%;
 }
 @keyframes changeColor {
@@ -26,10 +26,11 @@ body {
   margin-top: 50px;
   text-align: center;
   padding: 5rem 0 3rem;
-  color: #91ddf4;
+  color:#5942e9;
+  text-shadow: 1px 1px #ffffff;
   font-family: "Poppins", sans-serif;
   letter-spacing: .35rem;
-  word-spacing: .35rem;
+  word-spacing: .20rem;
   font-weight: 600;
   font-size: 2.25rem;
   font-variant: petite-caps;
@@ -66,7 +67,7 @@ body {
   border: none;
   transition: .3s ease;
   margin-bottom: 20px;
-  background: linear-gradient(145deg, #0e034d, #240ab3);
+  background: linear-gradient(145deg, #8bf0f7, #240ab3);
 
   /* New box-shadow */
   box-shadow:
@@ -108,7 +109,7 @@ body {
 .contributor p .contri {
   font-size: 1rem;
   text-align: center;
-  color: #ddd !important;
+  color: #ffc5cb !important;
   font-weight: 300 !important;
   font-size: 1rem !important;
   padding-top: 1rem;
@@ -123,7 +124,7 @@ body {
 
 .contributor button {
   align-items: center;
-  background: #5942e9;
+  background: #1d91bb;
   border: 0;
   border-radius: 8px;
   box-sizing: border-box;
