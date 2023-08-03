@@ -11,8 +11,8 @@ hr.line {
   .counts {
     padding-top: 80px;
   }
-  .number {
-    color: white !important;
+  #counts h1 {
+    color: white ;
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
     font-weight: bold;
@@ -71,7 +71,85 @@ hr.line {
     font-size: 21px;
     color: var(--background-white);
   }
-  
+.count-box:hover i{
+  transform: rotateY(360deg);
+}  
+.count-box{
+    padding: 2px 0;
+    font-size: 18px;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    position: relative; /*nearesr common ancestor to .git-box::before*/
+    z-index: 1;
+}
+.bx-1::before{
+    content:"";
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #e8f89b, #d7f096, #c6e891, #b5df8d, #a4d789, #adce77, #b6c468, #bfb95a, #e1a551, #fb8e61, #ff7782, #ff6cae);
+    position: absolute;
+    transform: scaleX(0);
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transform-origin: 0;
+    transition: 1s;
+    z-index: -1;
+}
+.bx-1:hover::before{
+  transform: scaleX(1);
+}
+.bx-2::before{
+    content:"";
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #6ef7ef, #7af2ff, #97eaff, #b6e2ff, #cfdbff, #d2d6ff, #d7d0ff, #dfc9ff, #cfc4fe, #bcbffd, #a8bafc, #91b6f9);
+    position: absolute;
+    transform: scaleX(0);
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transform-origin: 0;
+    transition: 1s;
+    z-index: -1;
+}
+.bx-2:hover::before{
+  transform: scaleX(1);
+}
+.bx-3::before{
+    content:"";
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #a3bfc7, #a3b6c0, #a2aeb7, #a1a6ae, #9d9ea3, #9da1ad, #9ba5b7, #96aac0, #7ec0d9, #5fd6df, #60eace, #91f9ab);
+    position: absolute;
+    transform: scaleX(0);
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transform-origin: 0;
+    transition: 1s;
+    z-index: -1;
+}
+.bx-3:hover::before{
+  transform: scaleX(1);
+}
+.bx-4::before{
+    content:"";
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    position: absolute;
+    transform: scaleX(0);
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transform-origin: 0;
+    transition: 1s;
+    z-index: -1;
+}
+.bx-4:hover::before{
+  transform: scaleX(1);
+}
+
   @media (max-width: 526px) {
     .css-15 {
       font-size: 5vh;

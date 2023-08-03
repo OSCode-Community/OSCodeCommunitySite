@@ -1,65 +1,80 @@
-const firstName = "";
-const surname = "";
-const email = "";
-const password = "";
+import { database, auth } from "../firebase/firebase.js";
+import {
+  set,
+  ref,
+} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
+import {
+  createUserWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
+} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
 
-function handleSubmit(e) {
+// Sign up with email and password
+signUp.addEventListener("click", (e) => {
   e.preventDefault();
-  // PostData();
-}
 
-function handleChange(e) {
-  if (e.target.type == "text") {
-    if (e.target.name == "firstName") {
-      firstName = e.target.value;
-    } else if (e.target.name == "surname") {
-      surname = e.target.value;
-    }
-  } else if (e.target.type == "email") {
-    email = e.target.value;
-  } else if (e.target.type == "password") {
-    password = e.target.value;
-  }
-}
+  var f_name = document.getElementById("f_name").value;
+  var s_name = document.getElementById("s_name").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
 
-const PostData = () => {
-  if (
-    !/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-      email
-    )
-  ) {
-    console.log({ html: "Invalid Email", classes: "#d32f2f red darken-2" });
+  // Validation check
+  if (f_name.length == 0) {
+    document.getElementById("error-msg").innerHTML = "*First name is required!";
+    return;
+  } else if (s_name.length == 0) {
+    document.getElementById("error-msg").innerHTML = "*Surname is required!";
     return;
   }
-  fetch("http://localhost:3000/signup/signup", {
-    method: "post",
-    "Access-Control-Allow-Origin": "http://localhost:3000/signup/signup",
-    headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "http://localhost:3000/signup/signup",
-    },
-    body: JSON.stringify({
-      fname: firstName,
-      lname: surname,
-      email,
-      password,
-    }),
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      if (data.error) {
-        console.log({ html: data.error, classes: "#d32f2f red darken-2" });
-      } else {
-        console.log(data);
-      }
-    });
-};
+  document.getElementById("error-msg").innerHTML = "";
 
-function togglePassword() {
-  var password = document.getElementById("password");
-  if (password.type === "password") {
-    password.type = "text";
+  // Move on with auth
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed in
+      const user = userCredential.user;
+
+      set(ref(database, "users/" + user.uid), {
+        email: email,
+      }).then(() => (window.location.href = "/"));
+    })
+    .catch((error) => {
+      // Handle errors here
+      const errorCode = error.code;
+      const errorMessage = error.message;
+
+      document.getElementById("error-msg").innerHTML = errorMessage;
+    });
+});
+
+// Sign Up with google
+const provider = new GoogleAuthProvider();
+
+googleSignup.addEventListener("click", (e) => {
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      // This gives you a Google Access Token. You can use it to access the Google API.
+      const credential = GoogleAuthProvider.credentialFromResult(result);
+      const token = credential.accessToken;
+      // The signed-in user info.
+      const user = result.user;
+
+      // Redirecting to the home page
+      window.location.href = "/";
+    })
+    .catch((error) => {
+      // Handle Errors here.
+      const errorCode = error.code;
+      const errorMessage = error.message;
+
+      document.getElementById("error-msg").innerHTML = errorMessage;
+    });
+});
+
+togglePassword.addEventListener("click", (e) => {
+  if (document.getElementById("password").type == "password") {
+    document.getElementById("password").type = "text";
   } else {
-    password.type = "password";
+    document.getElementById("password").type = "password";
   }
-}
+});

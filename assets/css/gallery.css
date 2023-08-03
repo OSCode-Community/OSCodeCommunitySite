@@ -1,35 +1,89 @@
-/*Gallery Section
----------------------------*/
-
+/* Gallery Section */
 .number {
-    color: rgb(253, 253, 253) !important;
-    font-family: "Montserrat", sans-serif;
-    font-size: 40px;
-    margin-top: -40px;
-  }
+  color: #91ddf4;
+  /* text-shadow: 2px 2px 3px rgb(166, 0, 255); */
+  font-size: 40px;
+  margin-top: 40px;
+  letter-spacing: 1.5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 #gallery {
-    background-image: linear-gradient(
-      to right,
-      #0f0c29,
-      #302b63,
-      #24243e,
-      rgb(69, 69, 107)
-    );
+  background-image: linear-gradient(
+    to right,
+    #0f0c29,
+    #302b63,
+    #24243e,
+    rgb(69, 69, 107)
+  );
+}
+
+/* Existing styles for the image slideshow */
+
+/* New styles for the rotating effect */
+@keyframes rotateIn {
+  from {
+    transform: rotateY(20deg);
   }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+.image-slideshow img {
+  animation: rotateIn 2.5s ease-in-out;
+}
+
+/* Optional: To make the rotating effect play for every image except the first one */
+.image.active:first-child {
+  animation: none;
+}
+
+
 .image-slideshow {
-    max-width: 700px;
-    position: relative;
-    margin: auto;
-    margin-top: 40px;
-    }
-    .image-slideshow img {
-    width: 100%
-    }
-    .fade {
-    animation-name: fade;
-    animation-duration: 2s;
-    }
-    @keyframes fade {
-    from {opacity: .5}
-    to {opacity: 1}
-    }
+  max-width: 700px;
+  transition: 3s ease-in;
+  margin: auto;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px,
+    rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.image-slideshow img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  object-fit: cover;
+  transition: 3s ease-in;
+}
+
+.image-slideshow img:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transform: scale(1.1);
+}
+
+.image-slideshow:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  position: relative;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}

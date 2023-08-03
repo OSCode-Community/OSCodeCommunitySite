@@ -5,6 +5,7 @@
   height: 70px;
 }
 .modifyRow {
+  display: flex;
   align-items: flex-start;
 }
 .mainContainer {
@@ -24,20 +25,27 @@
   justify-content: space-between;
   flex-flow: row-reverse;
 }
+
+.socialLinkMod {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
 .modifiedFooterTop {
   padding: 20px 0;
 }
 @media only screen and (max-width: 800px) {
+  .modifyRow {
+    flex-direction: column;
+  }
   .modifiedFooterTop {
     padding: 10px 0;
   }
-}
-.socialLinkMod {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 10px;
-  margin-bottom: 0;
+  .socialLinkMod {
+    display: flex;
+    /* flex-direction: column; */
+  }
 }
 
 .crMod {
@@ -48,7 +56,9 @@
 }
 
 .logoAndName {
+  width: 100%;
   display: flex;
+  justify-content: start;
   align-items: center;
 }
 
@@ -106,13 +116,8 @@
   color: white;
 }
 
-.cntctBtn:hover {
-  background-color: #5942e9;
-  color: white;
-}
-
 .faq .faq-list li {
-  margin: 0;
+  margin: 1rem 0;
   padding: 0;
   padding: 20px 15px;
   transition: 0.3s ease-in-out;
@@ -267,6 +272,20 @@
   background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
 }
 
+.faqs {
+  background-color: #677480;
+  background-image: linear-gradient(315deg, #3a4045 0%, #8693ab 74%);
+}
+
+.faq .faq-list a {
+  cursor: pointer;
+  font-weight: 600 !important;
+}
+
+.faq .faq-list p {
+  color: #fffc;
+}
+
 .wrapping {
   display: flex;
   align-items: center;
@@ -286,7 +305,8 @@
   align-items: center;
   justify-content: center;
   column-gap: 10px;
-  max-height: 200px;
+  height: max-content;
+  /* max-height: 200px; */
 }
 
 .textUpperPart {
@@ -295,4 +315,21 @@
   justify-content: center;
   flex-direction: column;
   row-gap: 10px;
+}
+@media (max-width: 400px) {
+  .upperPart {
+    margin-top: 0;
+    padding-top: 0;
+    flex-direction: column;
+  }
+  .testimonials .testimonial-item .testimonial-img {
+    width: 80%;
+  }
+  .testimonials .testimonial-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: x-small;
+    line-height: normal;
+  }
 }

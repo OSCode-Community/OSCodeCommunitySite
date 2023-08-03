@@ -2226,8 +2226,7 @@
     placement
   ) {
     return acc.concat([placement + "-" + start, placement + "-" + end]);
-  },
-  []);
+  }, []);
   var placements = /*#__PURE__*/ []
     .concat(basePlacements, [auto])
     .reduce(function (acc, placement) {
@@ -3253,18 +3252,21 @@
         : [].concat(boundary);
     var clippingParents = [].concat(mainClippingParents, [rootBoundary]);
     var firstClippingParent = clippingParents[0];
-    var clippingRect = clippingParents.reduce(function (
-      accRect,
-      clippingParent
-    ) {
-      var rect = getClientRectFromMixedType(element, clippingParent, strategy);
-      accRect.top = max(rect.top, accRect.top);
-      accRect.right = min(rect.right, accRect.right);
-      accRect.bottom = min(rect.bottom, accRect.bottom);
-      accRect.left = max(rect.left, accRect.left);
-      return accRect;
-    },
-    getClientRectFromMixedType(element, firstClippingParent, strategy));
+    var clippingRect = clippingParents.reduce(
+      function (accRect, clippingParent) {
+        var rect = getClientRectFromMixedType(
+          element,
+          clippingParent,
+          strategy
+        );
+        accRect.top = max(rect.top, accRect.top);
+        accRect.right = min(rect.right, accRect.right);
+        accRect.bottom = min(rect.bottom, accRect.bottom);
+        accRect.left = max(rect.left, accRect.left);
+        return accRect;
+      },
+      getClientRectFromMixedType(element, firstClippingParent, strategy)
+    );
     clippingRect.width = clippingRect.right - clippingRect.left;
     clippingRect.height = clippingRect.bottom - clippingRect.top;
     clippingRect.x = clippingRect.left;
