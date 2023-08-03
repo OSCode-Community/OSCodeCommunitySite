@@ -103,8 +103,31 @@
         backtotop.classList.remove("active");
       }
     };
-    window.addEventListener("load", toggleBacktotop);
-    onscroll(document, toggleBacktotop);
+    const hideBacktotop = () => {
+      backtotop.style.visibility = "hidden";
+    };
+
+    const showBacktotop = () => {
+      backtotop.style.visibility = "visible";
+    };
+
+    window.addEventListener("load", () => {
+      toggleBacktotop();
+      if (window.scrollY === 0) {
+        hideBacktotop();
+      } else {
+        showBacktotop();
+      }
+    });
+
+    onscroll(document, () => {
+      toggleBacktotop();
+      if (window.scrollY === 0) {
+        hideBacktotop();
+      } else {
+        showBacktotop();
+      }
+    });
   }
 
   /**
@@ -275,11 +298,6 @@
       type: "bullets",
       clickable: true,
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-      color: "#5942e9",
-    },
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -323,9 +341,12 @@ spans.forEach((span, idx) => {
   });
 
   // Initial animation
-  setTimeout(() => {
-    span.classList.add("active");
-  }, 750 * (idx + 1));
+  setTimeout(
+    () => {
+      span.classList.add("active");
+    },
+    750 * (idx + 1)
+  );
 });
 
 //Gallery

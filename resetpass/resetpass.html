@@ -6,7 +6,7 @@
     <title>Reset Password</title>
 
     <!-- Favicons -->
-    <link href="../assets/img/logo.jpeg" rel="icon" />
+    <link href="../assets/img/logo.webp" rel="icon" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,15 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Montserrat&family=Noto+Serif&family=Prompt:wght@500&family=Rajdhani:wght@500&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Vendor CSS Files -->
-    <link href="vendor/aos/aos.css" rel="stylesheet" />
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-    <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-    <link href="vendor/remixicon/remixicon.css" rel="stylesheet" />
-    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <!-- Bootstrap Script -->
     <link
@@ -61,14 +52,12 @@
         <div class="logoAndName">
           <img
             class="logo1"
-            src="../assets/img/logo.jpeg"
+            src="../assets/img/logo.webp"
             width="60px"
             height="60px"
             alt="logo"
           />
-          <h1 class="logo me-auto" id="landingPage">
-            <a href="/#hero">OS-CODE</a>
-          </h1>
+          <h1 class="logo me-auto" id="landingPage"><a href="#">OS-CODE</a></h1>
         </div>
       </div>
 
@@ -124,20 +113,16 @@
             >
           </li>
         </ul>
-        <a href="/login/login.html">
-          <h1
-            style="
-              font-size: 1rem;
-              display: flex;
-              align-items: center;
-              padding-top: 0.2rem;
-            "
-          >
-            Login
-          </h1>
-        </a>
+        <i class="bi bi-list mobile-nav-toggle"></i>
       </div>
+      <span>
+        <a
+          href="/login/login.html"
+          class="get-started-btn-1 active-get-started-btn-1 scrollto cntctBtn"
+        ></a>
+      </span>
     </header>
+    <div class="alan-btn"></div>
 
     <!-- resetpass container -->
     <div class="resetpass-container min-vh-100">
@@ -161,9 +146,10 @@
               name="oldpass"
               onChange="handleChange()"
               required
-              id="oldpassword"
+              id="password"
             />
             <label for="oldpass">Old Password</label>
+            <span class="error-msg" id="passworderr"></span>
           </div>
 
           <div class="user-box">
@@ -172,13 +158,14 @@
               name="newpass"
               onChange="handleChange()"
               required
-              id="newpassword"
+              id="password1"
             />
             <label for="newpass">New Password</label>
+            <span class="error-msg" id="password1err"></span>
           </div>
 
           <div style="display: flex; align-items: center">
-            <input type="checkbox" onclick="togglePassword()" />
+            <input id="togglePassword" type="checkbox" />
             <label style="margin-top: 5px; margin-left: 5px"
               >Show password</label
             >
@@ -186,15 +173,37 @@
 
           <!-- reset pass button -->
           <div class="btn">
-            <button type="submit" class="submit-button cursor-pointer">
+            <button type="submit" class="submit-button cursor-pointer" onclick="handleSubmit()">
               Confirm
             </button>
           </div>
         </form>
       </div>
+      
     </div>
 
     <!-- javascript -->
     <script src="resetpass.js"></script>
+    <script type="text/javascript"
+    src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+   <script>
+     var alanBtnInstance = alanBtn({
+       key: "4cc35fadda67f87264a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+       left: '50px',
+      bottom: '50px',
+      onCommand: function (commandData) {
+        if (commandData && commandData.command === 'openURL') {
+          if (commandData.target === '_blank') {
+            window.open(commandData.url, '_newtab' + Math.floor(Math.random() * 999999));
+          } else {
+            window.location.href = commandData.url;
+          }
+        }
+
+      },
+
+       rootEl: document.getElementById("alan-btn"),
+     });
+   </script>
   </body>
 </html>
