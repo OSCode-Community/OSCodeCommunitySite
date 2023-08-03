@@ -1703,6 +1703,25 @@
       function myFunction() {
         preloader.style.display = "none";
       }
+
+      var imageIndex = 0;
+      var imagesArray = [
+        "url('assets/img/background/bg.jfif')",
+        "url('assets/img/imgg.jpg') center",
+        "url('assets/img/watch.jpg') center",
+        "url('assets/img/team.jpg')"
+        
+      ];
+
+      function changeBackground() {
+          var index = imageIndex++ % imagesArray.length;
+          document.querySelector("#hero").style.background = imagesArray[index];
+      }
+
+      document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("#hero").style.background = imagesArray[0];
+        setInterval(changeBackground, 2000);
+      });
     </script>
   </body>
 </html>
