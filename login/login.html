@@ -180,10 +180,8 @@
             </div>
 
             <div style="display: flex; align-items: center">
-              <input id="togglePassword" type="checkbox" />
-              <label style="margin-top: 5px; margin-left: 5px; cursor: pointer"
-                >Show password</label
-              >
+             <input id="togglePassword" type="checkbox" />
+            <label style="margin-top: 5px; margin-left: 5px; cursor: pointer">Show password</label>
             </div>
           </div>
           <div class="remember-me">
@@ -227,17 +225,7 @@
       </div>
     </div>
 
-    <!-- javascript -->
-    <script src="login.js" type="module"></script>
-    <script>
-      togglePassword.addEventListener("click", (e) => {
-        if (document.getElementById("password").type == "password") {
-          document.getElementById("password").type = "text";
-        } else {
-          document.getElementById("password").type = "password";
-        }
-      });
-    </script>
+   
     <script>
       var email = document.getElementById("email");
       var password = document.getElementById("password");
