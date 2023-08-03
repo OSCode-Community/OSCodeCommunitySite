@@ -1,37 +1,53 @@
 /*--------------------------------------------------------------
-# Frequently Asked Questions
+  Frequently Asked Questions
 --------------------------------------------------------------*/
 #faq {
-  padding-bottom: 0;
-  background-image: url('../img/background/abt-bg1.jpg');
+  padding-bottom: 40px;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   background-size: cover;
   position: relative;
 }
+
 #faq h1 {
-  color: var(--backtotop-btn-color) !important;
+  color: white;
   font-weight: bold;
-  text-shadow: 0 0 1px black;
-  font-family: 'Montserrat', sans-serif;
+  text-shadow: 0 0 1px rgb(204, 201, 201);
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
 }
+
 #faq hr {
+  font-weight: bold;
   margin-bottom: 50px;
+  color: white;
 }
+
 .faq .faq-list {
   padding: 0;
   list-style: none;
+  display: grid;
+  gap: 0.5rem;
+  box-shadow:
+    rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-
-.faq .faq-list li {
-  border-bottom: 1px solid #eee;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+.line {
+  color: #eee;
 }
-
+.faqs:hover {
+  transition: 0.3s ease-in-out !important;
+  box-shadow: rgb(0, 0, 0) 0px 8px 15px !important;
+  transform: scale(1.025) !important;
+}
 .faq .faq-list a {
   display: block;
+  transition: 0.2s ease;
+  color: white;
   position: relative;
-  font-family: var(--backtotop-btn-color);
   font-size: 18px;
   line-height: 24px;
   font-weight: 900;
@@ -48,7 +64,9 @@
 
 .faq .faq-list p {
   margin-bottom: 0;
-  padding: 10px 0 0 0;
+  color: #fffa;
+  font-weight: 400;
+  margin-top: 1.55rem;
 }
 
 .faq .faq-list .icon-show {
@@ -56,11 +74,12 @@
 }
 
 .faq .faq-list a.collapsed {
-  color: #343a40;
+  color: #dfdff9;
+  font-weight: 400;
 }
 
-.faq .faq-list a.collapsed:hover {
-  color: var(--backtotop-btn-color);
+.faq .faq-list li a:hover {
+  color: white;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -70,6 +89,18 @@
 .faq .faq-list a.collapsed .icon-close {
   display: none;
 }
+
+#join-us::after {
+  content: "";
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  width: 100%;
+  height: 5.5rem;
+  position: absolute;
+  bottom: -2rem;
+  transform: rotate(-3.5deg) scale(1.1);
+}
+
+/* Media Query */
 @media only screen and (max-width: 600px) {
   #faq h1 {
     font-size: 27px;
