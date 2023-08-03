@@ -6458,7 +6458,7 @@
   content: "\f74a";
 }
 
-.bi-filetype-jpg::before {
+.bi-filetype-webp::before {
   content: "\f74b";
 }
 
@@ -6510,7 +6510,7 @@
   content: "\f757";
 }
 
-.bi-filetype-png::before {
+.bi-filetype-webp::before {
   content: "\f758";
 }
 

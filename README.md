@@ -42,14 +42,18 @@ Before making a contribution, check the <a href="https://github.com/OSCode-Commu
 
 <div align="center"> <h1>✨ GSSoC '23 </h1> </div>
 
-![GSSoC Logo](https://camo.githubusercontent.com/0eaaaece51cad6ed831cbaf77ad31538f241fd324eec3d5fc6fcec27543fca29/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a66714a61485f6f49534f523936674c67704a427757512e706e67)
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
+  <img alt="Girlscript Summer of Code" width=100% src="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
+</picture>
 
 We are proud to be a part of GSSoC '23 (GirlScript Summer of Code)! Join us and be a part of this amazing programme.
 </br> </br>
-<a href=""><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
-<a href=""><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
-<a href=""><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
-<a href=""><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103"></a>
+<a href=""><img src="https://forthebadge.com/images/badges/open-source.svg"></a>
+<a href=""><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3?style=for-the-badge"></a>
+<a href=""><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow&style=for-the-badge"></a>
+<a href=""><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103&style=for-the-badge"></a>
 
 <div align="center"><h1>🧧 Code of Conduct</h1></div>
 
@@ -65,22 +69,53 @@ This Community is <a href="https://github.com/OSCode-Community/OSCodeCommunitySi
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-- Create an issue of the project or a feature you would like to add to the project and get the task assigned for yourself. (An issue can be any feature or project that you think you could contribute to. ).
+We welcome contributions through pull requests (PRs). To submit a PR, please follow these steps:
 
-- Fork the repo to your GitHub.<br/>
+1. Fork the Project
+2. Clone your forked repository
 
-- Clone the repo by going to your local Git client in a particular local folder in your local machine by using this command with your forked repository link in place of below-given link: <br/>
-  `git clone https://github.com/<GITHUB PROFILE NAME>/OSCodeCommunitySite.git`
-- Create a branch using below command.
-  `git branch <your branch name>`
-- Checkout to your branch.
-  `git checkout <your branch name>`
-- Add your code to your local machine folder.
-  `git add . `
-- Commit your changes.
-  `git commit -m"<add your message here>"`
-- Push your changes.
-  `git push  origin <your branch name>`
+```sh
+git clone https://github.com/<your_github_username>/OSCodeCommunitySite.git
+```
+
+3. Now go ahead and create a new branch and move to the branch
+
+```sh
+git checkout -b fix-issue-<ISSUE-NUMBER>
+```
+
+4. After you have added your changes, follow the following command chain
+   Check the changed files
+
+```sh
+git status -s
+```
+
+- Add all the files to the staging area
+
+```sh
+git add .
+```
+
+or
+
+```sh
+git add <file_name1> <file_name2>
+```
+
+5. Commit your changes
+
+```sh
+git commit -m "<EXPLAIN-YOUR_CHANGES>"
+```
+
+6. Push your changes
+
+```sh
+git push origin fix-issue-<ISSUE-NUMBER>
+```
+
+7. Open a Pull Request
 
 - Make a pull request! (compare your branch with the owner main branch)
 
@@ -110,12 +145,47 @@ Before starting out, you'll need to install the following on your computer.
 <div align="center"><h1>🛠️ Installation</h1></div>
 
 1. Fork the repo
-2. Clone the repository `git clone `
-3. Run `cd ` to change the working directory
-4. Run `npm install or npm i` to install all the dependencies
-5. Run `npm install -g serve` to install serve
-6. Run `serve` to start the development server
-7. Navigate to `http://localhost:5000/`
+2. Clone the repository
+
+```sh
+git clone https://github.com/<your_github_username>/OSCodeCommunitySite.git
+```
+
+3. Run the following command to change the working directory
+
+```sh
+cd OSCodeCommunitySite
+```
+
+4. Run the following command to install all the dependencies
+
+```sh
+npm install
+```
+
+or
+
+```sh
+npm i
+```
+
+5. Run the following command to install server
+
+```sh
+npm install -g serve
+```
+
+6. Run the following command to start the development server
+
+```sh
+serve
+```
+
+7. Navigate to
+
+```sh
+[npm install -g serve](http://localhost:3000/)
+```
 
 <div align="center"><h1>💫 Opportunities We Offer</h1></div>
      We are a Multi-College Tech Community that helps college students to learn in public and engage with similar-minded people
@@ -142,8 +212,12 @@ Before starting out, you'll need to install the following on your computer.
 <a href="https://discord.gg/P3xqtSU8zU">
   <img src="https://img.icons8.com/color/2x/discord--v2.png" height="50px"></img>
 </a>
-<a href="https://github.com/OSCode-Community">
-  <img src="https://img.icons8.com/ios-glyphs/2x/github.png" height="50px"></img>
+<a href="https://github.com/OSCode-Community"> 
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/OSCode-Community/OSCodeCommunitySite/assets/92252895/78134206-b1b5-4d42-a966-3f031fc7a3a8">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/OSCode-Community/OSCodeCommunitySite/assets/92252895/670b51a1-6efc-4305-b0a4-5a26b3abd421">
+    <img height="50px" src="https://github.com/OSCode-Community/OSCodeCommunitySite/assets/92252895/78134206-b1b5-4d42-a966-3f031fc7a3a8">
+  </picture>
 </a>
 <a href="https://twitter.com/OSCodeCommunity">
   <img src="https://img.icons8.com/fluency/2x/twitter.png" height="50px"></img>

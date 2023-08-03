@@ -1,12 +1,11 @@
 #hero {
-  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.2)),
-    url("/assets/img/background/peopleImg.jpg");
-  padding: 0;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), 
+                                    rgba(4, 9, 30, 0.2)),
+                    url("/assets/img/background/peopleImg.webp");
+  padding: unset;
   height: 400px;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 100px 0 50px 0;
   justify-content: center;
-  /* margin-top: 5.4%; */
 }
 .navbar-mobile {
   position: fixed;
@@ -20,7 +19,7 @@
   z-index: 999;
 }
 #about {
-  background-image: url("/assets/img/background/s3.png");
+  background: center/cover url("/assets/img/background/s3.webp");
 }
 
 .row {
@@ -63,11 +62,11 @@
   .us:hover:before {
     width: 0;
   }
+
 }
 
 #faq {
   background-image: none;
-  /* margin-left: 50px; */
 }
 
 .text-clg {
@@ -104,23 +103,14 @@
 
 .faq .faq-list a:hover {
   background-position: 0;
-  /* font-size:28px; */
 }
-
-/* #search-bar {
-          padding: 10px;
-          font-size: 16px;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          width: 300px;
-      } */
 
 .input {
   width: 250px;
   padding: 10px 0px 10px 40px;
   border-radius: 9999px;
   border: solid 1px #333;
-  background-image: url("/assets/img/search.png");
+  background-image: url("/assets/img/search.webp");
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: 3% 50%;
@@ -167,12 +157,12 @@ a:hover {
 }
 
 #results li:hover {
-  background-color: #9b999c;
+  background: #9b999c;
   font-weight: bolder;
 }
 
 #results li.active {
-  background-color: #78a4f1;
+  background: #78a4f1;
 }
 
 #results li a {
@@ -186,35 +176,15 @@ a:hover {
 }
 
 #results::-webkit-scrollbar-track {
-  background-color: rgba(204, 204, 204, 0.4);
+  background: rgba(204, 204, 204, 0.4);
   backdrop-filter: blur(4px);
 }
 
 #results::-webkit-scrollbar-thumb {
-  background-color: rgba(131, 128, 128, 0.7);
+  background: rgba(131, 128, 128, 0.7);
 }
 
-/* input {
-      width: 400px;
-      height: 40px;
-    }
-
-    button {
-      height: 40px;
-      width: 40px;
-    } */
-
 @media screen and (max-width: 600px) {
-  /* input {
-        width: 250px;
-        height: 30px;
-      }
-
-      button {
-        height: 30px;
-        width: 30px;
-      } */
-
   #results {
     margin-left: 10px;
     max-width: 350px;
@@ -294,3 +264,4 @@ a:hover {
     display: block;
   }
 }
+

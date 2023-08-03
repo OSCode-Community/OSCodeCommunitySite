@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500;600&family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@500;600&family=Rubik&display=swap");
 
 
 body {
   font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+
   scroll-behavior: smooth;
 }
 
@@ -38,6 +39,7 @@ h4 {
 }
 
 @media screen and (max-width:410px) {
+
   #title-background {
     height: 100vh;
   }
@@ -46,7 +48,6 @@ h4 {
 section {
   padding: 0;
 }
-
 .row {
   position: relative;
 }
@@ -73,6 +74,7 @@ h6 {
 
 .btn {
   font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif !important;
+
   letter-spacing: 1px;
   font-size: 20px;
   border: 1px solid #263547;
@@ -106,6 +108,17 @@ h6 {
   animation: action 0.7s infinite alternate;
 }
 
+/* Testimonials */
+#testimonials_section {
+  margin: 12% 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 979px) {
+  #testimonials_section h1 {
+    font-size: 32px;
+  }
+}
 
 
 /* Testimonials */
@@ -128,12 +141,14 @@ h6 {
   background-position-x: center;
   background-position-y: bottom;
   background-repeat: no-repeat;
-  background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-04.png);
-  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-04.webp);
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .test-col:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
 }
 
 .test_para {
@@ -151,8 +166,6 @@ hr {
   border-color: #ff8f00;
 }
 
-
-
 /* Cards */
 
 #our-services {
@@ -167,6 +180,7 @@ hr {
 
 }
 
+
 .ag-courses-item_date-box .btn:hover {
   background-color: orange;
   color: black;
@@ -179,7 +193,6 @@ hr {
   height: 150px;
   border-radius: 50px;
 }
-
 .para {
   font-size: 1rem;
   margin: 2% 0;
@@ -236,6 +249,7 @@ li {
 .ag-courses-item_link {
   display: block;
   padding: 30px 20px;
+
   background-color: #fff;
   text-decoration: none;
 
@@ -266,6 +280,7 @@ li {
   font-size: 30px;
   color: #FFF;
 
+
   z-index: 2;
   position: relative;
 }
@@ -274,11 +289,9 @@ li {
   text-align: center;
   font-size: 18px;
   color: #FFF;
-
   z-index: 2;
   position: relative;
 }
-
 .ag-courses-item_date {
   font-weight: bold;
   color: #f9b234;
@@ -321,11 +334,10 @@ li {
   background-color: #cd3e94;
 }
 
+
 .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
   background-color: #4c49ea;
 }
-
-
 
 @media only screen and (max-width: 979px) {
   .ag-courses_item {
@@ -350,13 +362,13 @@ li {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
   }
-
   .ag-courses-item_title {
     min-height: 72px;
     line-height: 1;
 
     font-size: 24px;
   }
+
 
   .ag-courses-item_link {
     padding: 22px 40px;
@@ -366,10 +378,9 @@ li {
     font-size: 16px;
   }
 }
-
-
 div#lo-card {
   margin: 0 0 0 10rem;
+
 }
 
 .ag-courses_item.lower {
@@ -379,7 +390,6 @@ div#lo-card {
 .lock {
   margin: 0 0 6px;
 }
-
 
 /* NEXT SECTION */
 
@@ -405,9 +415,6 @@ h2 {
   color: white;
 }
 
-
-
-
 /* resume section */
 
 #resume_building {
@@ -419,7 +426,7 @@ h2 {
   margin-bottom: 5rem;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
 .resume-img {
   display: block;
@@ -438,7 +445,6 @@ h2 {
     .card:before {
       transform: translatey(-2%) rotate(-4deg);
     }
-
     .card:after {
       transform: translatey(2%) rotate(4deg);
     }
@@ -477,15 +483,13 @@ h2 {
   &:after {
     transform: translatey(2%) rotate(6deg);
   }
-
-
-
 }
 
 .image {
   width: 100%;
   border: 4px solid;
   background-color: #EEE;
+
   aspect-ratio: 1 / 1;
   position: relative;
 }
@@ -502,10 +506,10 @@ h2 {
 }
 
 .social-links {
-  float: right;
-  width: 50%;
   margin-bottom: 10px;
   padding-bottom: -50px;
+  display: flex;
+  width: 50%;
 }
 
 ul {
@@ -513,13 +517,38 @@ ul {
   list-style-type: square;
 }
 
+.socialIcons {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
 
+@media only screen and (max-width: 800px) {
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .textSocials {
+    width: 35%;
+  }
+
+  .socialIcons {
+    width: 90%;
+  }
+}
+
+ul {
+  text-align: left;
+  list-style-type: square;
+}
 
 @media screen and (max-width:420px) {
   h1 {
     font-size: 60px;
   }
-
   .col-l {
     text-align: center;
     padding: 2rem 5rem;
@@ -623,19 +652,18 @@ ul {
 
 }
 
-
 /* BUTTON */
 
 button {
   padding: 0.8em 1.8em;
-  border: 2px solid #17C3B2;
+  border: 2px solid #17c3b2;
   position: relative;
   overflow: hidden;
   background-color: transparent;
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
-  transition: .3s;
+  transition: 0.3s;
   z-index: 1;
   font-family: inherit;
   color: #17C3B2;
@@ -649,8 +677,8 @@ button::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  background: #17C3B2;
-  transition: .5s ease;
+  background: #17c3b2;
+  transition: 0.5s ease;
   display: block;
   z-index: -1;
 }
@@ -668,4 +696,57 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+}
+.slick-prev,
+.slick-next {
+  /* Adjust styles for the previous and next buttons as needed */
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 10%;
+  text-align: center;
+  height: 40px;
+  background-color: #f4f3f3;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Adjust the left position */
+}
+
+.slick-next {
+  right: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Adjust the right position */
+}
+
+.resumeContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .slick-prev,
+  .slick-next {
+    width: 30%;
+  }
+
+  .slick-prev {
+    left: 10%;
+  }
+
+  .slick-next {
+    right: 10%;
+  }
+
+  .resumeContainer {
+    flex-direction: column;
+  }
 }
