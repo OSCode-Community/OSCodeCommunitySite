@@ -1,6 +1,13 @@
 import { database, auth } from "../firebase/firebase.js";
-import { set, ref } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
-import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+import {
+  set,
+  ref,
+} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
+import {
+  createUserWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
+} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
 
 // Utility function to get input field values
 function getInputValue(elementId) {
