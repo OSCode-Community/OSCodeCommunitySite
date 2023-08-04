@@ -9,24 +9,33 @@ import {
   signInWithPopup,
 } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
 
-// Sign up with email and password
-signUp.addEventListener("click", (e) => {
-  e.preventDefault();
+// Utility function to get input field values
+function getInputValue(elementId) {
+  return document.getElementById(elementId).value;
+}
 
-  var f_name = document.getElementById("f_name").value;
-  var s_name = document.getElementById("s_name").value;
-  var email = document.getElementById("email").value;
-  var password = document.getElementById("password").value;
+// Utility function to display error message
+function displayErrorMessage(message) {
+  document.getElementById("error-msg").innerHTML = message;
+}
+
+// Function for signing up with email and password
+function signUpWithEmail() {
+  const firstName = getInputValue("f_name");
+  const lastName = getInputValue("s_name");
+  const email = getInputValue("email");
+  const password = getInputValue("password");
 
   // Validation check
-  if (f_name.length == 0) {
-    document.getElementById("error-msg").innerHTML = "*First name is required!";
+  if (!firstName) {
+    displayErrorMessage("*First name is required!");
     return;
-  } else if (s_name.length == 0) {
-    document.getElementById("error-msg").innerHTML = "*Surname is required!";
+  } else if (!lastName) {
+    displayErrorMessage("*Surname is required!");
     return;
   }
-  document.getElementById("error-msg").innerHTML = "";
+
+  displayErrorMessage(""); // Clear error message
 
   // Move on with auth
   createUserWithEmailAndPassword(auth, email, password)
@@ -40,18 +49,14 @@ signUp.addEventListener("click", (e) => {
     })
     .catch((error) => {
       // Handle errors here
-      const errorCode = error.code;
       const errorMessage = error.message;
-
-      document.getElementById("error-msg").innerHTML = errorMessage;
+      displayErrorMessage(errorMessage);
     });
-});
+}
 
-// Sign Up with google
-const provider = new GoogleAuthProvider();
-
-googleSignup.addEventListener("click", (e) => {
-  signInWithPopup(auth, provider)
+// Function for signing up with Google
+function signUpWithGoogle() {
+  signInWithPopup(auth, new GoogleAuthProvider())
     .then((result) => {
       // This gives you a Google Access Token. You can use it to access the Google API.
       const credential = GoogleAuthProvider.credentialFromResult(result);
@@ -64,17 +69,22 @@ googleSignup.addEventListener("click", (e) => {
     })
     .catch((error) => {
       // Handle Errors here.
-      const errorCode = error.code;
       const errorMessage = error.message;
-
-      document.getElementById("error-msg").innerHTML = errorMessage;
+      displayErrorMessage(errorMessage);
     });
+}
+
+// Event listeners
+document.getElementById("signUp").addEventListener("click", (e) => {
+  e.preventDefault();
+  signUpWithEmail();
 });
 
-togglePassword.addEventListener("click", (e) => {
-  if (document.getElementById("password").type == "password") {
-    document.getElementById("password").type = "text";
-  } else {
-    document.getElementById("password").type = "password";
-  }
+document.getElementById("googleSignup").addEventListener("click", (e) => {
+  signUpWithGoogle();
+});
+
+document.getElementById("togglePassword").addEventListener("click", (e) => {
+  const passwordInput = document.getElementById("password");
+  passwordInput.type = passwordInput.type === "password" ? "text" : "password";
 });
