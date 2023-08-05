@@ -1883,3 +1883,11 @@ a:hover i {
     transform: translateY(20px);
   }
 }
+
+#hero{
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  min-height: 100vh;
+  opacity: 0.9;
+  transition: 1.5s ease-in-out;
+}
