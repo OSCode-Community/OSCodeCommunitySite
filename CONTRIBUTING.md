@@ -43,7 +43,7 @@ Make sure to remove <paste-the-link-here> and replace it with the actual link yo
 Which looks something like:
 
 ```bash
-  git clone https://github.com/yourUsername/OSCodeCommunitySite.git
+  git clone https://github.com/<YOUR_USERNAME>/OSCodeCommunitySite.git
 ```
 
 The yourUsername is nothing but your GitHub username.
