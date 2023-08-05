@@ -50,7 +50,7 @@ The yourUsername is nothing but your GitHub username.
 
 Congratulations! You have successfully cloned the repository to your local machine. You can now make changes, add new features, or fix issues in the codebase.
 
-### Step 3: GO to the directory
+### Step 3: Go to the directory
 ```
 cd OSCodeCommunitySite
 ```
