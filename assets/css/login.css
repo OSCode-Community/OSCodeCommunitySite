@@ -12,7 +12,7 @@
   position: relative;
   width: 100%;
   font-family: "Montserrat", sans-serif;
-  background-image: linear-gradient(to right, #141e30, #243b55);
+  background-image: linear-gradient(to right, #6092f0, #1c426e);
 }
 
 .login-box {
@@ -117,7 +117,7 @@
 .form-container .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: #d8b8ff;
+  color: #22004b;
   font-size: 14px;
 }
 
@@ -167,7 +167,7 @@
 }
 
 .remember-me input:checked + .slider {
-  background-color: #00aaff;
+  background-color: #004c73;
 }
 
 .remember-me input:checked + .slider:before {
@@ -224,7 +224,7 @@ button .flow {
 	top: -80px;
 	width: 250px;
 	height: 200px;
-	background:  #243b55;
+	background:  #0050ab;
 	box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
 	transition: 0.5s;
 }
@@ -286,7 +286,7 @@ button .flow:after {
 }
 .form-container .signup_link {
   display: inline-block;
-  color: cyan;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   text-decoration: none;
   font-weight: 500;

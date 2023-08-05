@@ -7,10 +7,23 @@
   padding: 100px 0 50px 0;
   justify-content: center;
 }
-
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 70px;
+  right: -22px;
+  left: 0;
+  bottom: 0;
+  background: var(--navbar-mobile-background-color);
+  transition: 0.3s;
+  z-index: 999;
+}
 #about {
   background: center/cover url("/assets/img/background/s3.webp");
 }
+
+.row {
+  margin-top: 20px;
 
 .hidden {
   opacity: 0;
@@ -47,18 +60,39 @@
   padding: 0;
   text-transform: uppercase;
   position: relative;
-  color: #3a1383;
-  text-align: center;
-  align-items: center;
+  color: #c8c3d1;
 }
 
-.quotee {
-  color: #040008;
-  font-size: 25px;
-  margin-top: -50px;
-  font-family: cursive;
-  font-weight: 500;
+.us:before {
+  content: "College_Chapters";
+  position: absolute;
+  color: #262626;
+  top: 0;
+  left: 0;
+  width: 0%;
+  overflow: hidden;
+  transition: all 01s;
 }
+
+.us:hover:before {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .us {
+    word-break: break-all;
+  }
+
+  .us:before {
+    width: 100%;
+    transition: none;
+  }
+
+  .us:hover:before {
+    width: 0;
+
+}
+
 #faq {
   background-image: none;
 }
@@ -230,6 +264,78 @@ a:hover {
   }
 }
 
+#boxx {
+  display: block;
+
+}
+
+#one,
+#two,
+#three {
+  display: flex;
+  justify-content: center;
+}
+
+.image-card {
+  width: fit-content;
+  margin: 10px;
+  border: #000 solid 1px;
+}
+
+.instituteImages {
+  width: 381.58px;
+  height: 200px;
+}
+
+.heading {
+  background-image: linear-gradient(43deg, #21beee, #ee21d9 46%, #ee2121);
+  -webkit-animation: home_btn__VDNR5 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: home_btn__VDNR5 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  width: 381.58px;
+  text-align: center;
+}
+
+.heading a {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  padding: 10px 5px;
+}
+
+/* hover */
+.image-card:hover {
+  box-shadow: 0 0 10px #5942e9;
+  z-index: 1;
+}
+
+.image-card:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+  /* *, ::after, ::before {
+    box-sizing: border-box;
+    width: inherit; */
+  #header {
+    width: 100vw;
+    overflow-x: hidden;
+
+  }
+
+  .instituteImages,
+  .heading {
+    width: 100%;
+  }
+
+  #one,
+  #two,
+  #three {
+    display: block;
+  }
+}
 body {
   font-family:
     Varela Round,
