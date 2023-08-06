@@ -1674,11 +1674,12 @@ a:hover i {
 
 .social-links {
   margin-bottom: 10px;
+  margin-right: 50px;
   padding-bottom: -50px;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 5px;
   display: flex;
-  width: 43%;
+  width: 40%;
 }
 
 .socialIcons {
