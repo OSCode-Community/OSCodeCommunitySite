@@ -51,26 +51,33 @@ The yourUsername is nothing but your GitHub username.
 Congratulations! You have successfully cloned the repository to your local machine. You can now make changes, add new features, or fix issues in the codebase.
 
 ### Step 3: Go to the directory
+
 ```
 cd OSCodeCommunitySite
 ```
 
 ### Step 4: Add a reference(remote) to the original repository
+
 ```
 git remote add upstream https://github.com/OSCode-Community/OSCodeCommunitySite.git
 ```
+
 Adding a reference to the original repository (upstream) allows for syncing and pulling updates from the main project repository.
 
 ### Step 5: Check the remotes for this repository
+
 ```
 git remote -v
 ```
+
 This step checks and displays the remote repositories linked to the local repository to ensure the upstream reference was added correctly.
 
 ### Step 6: Take a pull request from the upstream repository
+
 ```
 git pull upstream master
 ```
+
 Always take a pull from the upstream repository to your main branch to keep it updated as per the main project repository.
 
 ### Step 7: Create a New Branch
@@ -99,17 +106,21 @@ Make the necessary changes or additions to the codebase.
 Once you have added changes in your local, its time to push them, for that run this command to bring the modification to the staging area.
 
 ### Step 9: Check your changes
+
 ```
 git status
 ```
+
 ```
 git diff
 ```
+
 git status: Shows the current status of the repository, including changes, untracked files, and branch information.
 
 git diff: Displays the differences between the working directory and the last commit or between branches.
 
 ### Step 10: Stage your changes
+
 ```
 git add .
 ```
