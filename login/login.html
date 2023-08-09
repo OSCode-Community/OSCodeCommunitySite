@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
 
-         <!-- Nav Bar Theme -->
-    <meta name="theme-color" content="#0E034D">
-    <meta name="msapplication-navbutton-color" content="#04C8FF">
-    <meta name="msapplication-TileColor" content="#0E034D">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#0E034D">
+    <!-- Nav Bar Theme -->
+    <meta name="theme-color" content="#0E034D" />
+    <meta name="msapplication-navbutton-color" content="#04C8FF" />
+    <meta name="msapplication-TileColor" content="#0E034D" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0E034D" />
 
     <!-- Favicons -->
     <link href="../assets/img/logo.webp" rel="icon" />
@@ -198,13 +198,12 @@
           <div id="error-msg" class="text-danger font-weight-bold"></div>
 
           <!-- login button -->
-          <div class="btn-wrapper" >
-            <button class="btn"onclick="validateForm()">
-             <span class="btn-pos Span">LOGIN</span> 
-             <div class="flow"></div>
+          <div class="btn-wrapper">
+            <button class="btn" onclick="validateForm()">
+              <span class="btn-pos Span">LOGIN</span>
+              <div class="flow"></div>
             </button>
           </div>
-          
 
           <!-- forgot password & dont have account -->
           <div
@@ -283,7 +282,7 @@
         }
       }
     </script>
-    <script>
+    <!-- <script>
       const togglePassword = document.getElementById("togglePassword");
       const passwordField = document.getElementById("password");
 
@@ -322,7 +321,7 @@
           // Add your sign-in with email and password logic here
         }
       }
-    </script>
+    </script> -->
     <script
       type="text/javascript"
       src="https://studio.alan.app/web/lib/alan_lib.min.js"
@@ -333,15 +332,17 @@
         left: "50px",
         bottom: "50px",
         onCommand: function (commandData) {
-        if (commandData && commandData.command === 'openURL') {
-          if (commandData.target === '_blank') {
-            window.open(commandData.url, '_newtab' + Math.floor(Math.random() * 999999));
-          } else {
-            window.location.href = commandData.url;
+          if (commandData && commandData.command === "openURL") {
+            if (commandData.target === "_blank") {
+              window.open(
+                commandData.url,
+                "_newtab" + Math.floor(Math.random() * 999999)
+              );
+            } else {
+              window.location.href = commandData.url;
+            }
           }
-        }
-
-      },
+        },
 
         rootEl: document.getElementById("alan-btn"),
       });
