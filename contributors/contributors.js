@@ -1,4 +1,4 @@
-(async function() {
+(async function () {
   try {
     const response = await fetch(
       "https://api.github.com/repos/OSCode-Community/OSCodeCommunitySite/contributors?per_page=100"
