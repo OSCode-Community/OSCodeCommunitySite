@@ -1,18 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@500;600&family=Rubik&display=swap");
 
+
 body {
-  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+
   scroll-behavior: smooth;
 }
+
 /* TITLE SECTION */
 #logo-img {
   width: 12rem;
 }
+
 /* NAVBAR */
 .navbar-light .navbar-brand {
   font-size: 20px;
   font-weight: bold;
 }
+
 /* .nav-item:hover{
     
 } */
@@ -21,7 +26,7 @@ h2,
 h4,
 h5,
 h6 {
-  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
 }
 
 h4 {
@@ -29,10 +34,12 @@ h4 {
 }
 
 #title-background {
-  width: 100%;
+  width: 100vw;
   position: absolute;
 }
-@media screen and (max-width: 410px) {
+
+@media screen and (max-width:410px) {
+
   #title-background {
     height: 100vh;
   }
@@ -49,20 +56,25 @@ section {
   padding: 2rem 0 4rem 9rem;
   color: azure;
 }
+
 h1 {
   font-size: 80px;
   font-weight: bolder;
-  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+  font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
   text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);
 }
+
 h5 {
-  font-size: 1.5rem;
+  font-size: 1.5rem
 }
+
 h6 {
   color: #666;
 }
+
 .btn {
-  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif !important;
+  font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif !important;
+
   letter-spacing: 1px;
   font-size: 20px;
   border: 1px solid #263547;
@@ -71,6 +83,7 @@ h6 {
   margin: 15px 0;
   padding: 10px 20px;
 }
+
 /* TITLE IMAGE */
 
 .parallax-container {
@@ -87,6 +100,7 @@ h6 {
   transform: translateZ(0);
   transition: transform 0.3s ease;
 }
+
 .main-cont-img {
   width: 40rem;
   filter: drop-shadow(12px 12px 12px rgba(0, 0, 0, 0.7));
@@ -106,10 +120,18 @@ h6 {
   }
 }
 
+
+/* Testimonials */
+#testimonials_section {
+  margin: 12% 0;
+  text-align: center;
+}
+
 .test_img {
   width: 80px;
   border-radius: 80%;
 }
+
 .test-col {
   display: inline-block;
   padding: 20px;
@@ -125,9 +147,8 @@ h6 {
 }
 
 .test-col:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
 }
 
 .test_para {
@@ -135,6 +156,7 @@ h6 {
   text-align: center;
   color: #666;
 }
+
 hr {
   width: 10%;
   margin: 10px auto;
@@ -155,7 +177,10 @@ hr {
   border: 3px solid orange;
   color: black;
   background-color: white;
+
 }
+
+
 .ag-courses-item_date-box .btn:hover {
   background-color: orange;
   color: black;
@@ -173,15 +198,18 @@ hr {
   margin: 2% 0;
   color: #111;
 }
+
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
+
 .headings {
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #111;
 }
+
 .ag-format-container {
   width: 1142px;
   margin: 0 auto;
@@ -192,6 +220,8 @@ li {
   font-size: 15px;
 }
 
+
+
 .ag-courses_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,10 +231,10 @@ li {
   align-items: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  /* width:50%; */
+
   padding: 50px 0;
-  /* margin-left: 300px; */
 }
+
 .ag-courses_item {
   -ms-flex-preferred-size: calc(33.33333% - 30px);
   flex-basis: calc(33.33333% - 30px);
@@ -215,26 +245,31 @@ li {
 
   border-radius: 10px;
 }
+
 .ag-courses-item_link {
   display: block;
-  padding: 5px 20px;
+  padding: 30px 20px;
+
   background-color: #fff;
   text-decoration: none;
 
   overflow: hidden;
-  height: 34rem;
+  height: 32rem;
   position: relative;
 }
+
 .ag-courses-item_link:hover,
 .ag-courses-item_link:hover .ag-courses-item_date {
   text-decoration: none;
-  color: #fff;
+  color: #FFF;
 }
+
 .ag-courses-item_link:hover .ag-courses-item_bg {
   -webkit-transform: scale(10);
   -ms-transform: scale(10);
   transform: scale(10);
 }
+
 .ag-courses-item_title {
   text-align: center;
   min-height: 87px;
@@ -243,16 +278,17 @@ li {
 
   font-weight: bold;
   font-size: 30px;
-  color: #fff;
+  color: #FFF;
+
 
   z-index: 2;
   position: relative;
 }
+
 .ag-courses-item_date-box {
   text-align: center;
   font-size: 18px;
-  color: #fff;
-
+  color: #FFF;
   z-index: 2;
   position: relative;
 }
@@ -260,10 +296,11 @@ li {
   font-weight: bold;
   color: #f9b234;
 
-  -webkit-transition: color 0.5s ease;
-  -o-transition: color 0.5s ease;
-  transition: color 0.5s ease;
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease
 }
+
 .ag-courses-item_bg {
   height: 128px;
   width: 128px;
@@ -276,22 +313,28 @@ li {
 
   border-radius: 50%;
 
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
 }
+
 .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
   background-color: #3ecd5e;
 }
+
 .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
   background-color: #e44002;
 }
+
 .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
   background-color: #952aff;
 }
+
 .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
   background-color: #cd3e94;
 }
+
+
 .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
   background-color: #4c49ea;
 }
@@ -301,15 +344,17 @@ li {
     -ms-flex-preferred-size: calc(50% - 30px);
     flex-basis: calc(50% - 30px);
   }
+
   .ag-courses-item_title {
     font-size: 24px;
   }
 }
 
-@media only screen and (max-width: 1145px) {
+@media only screen and (max-width: 767px) {
   .ag-format-container {
     width: 96%;
   }
+
 }
 
 @media only screen and (max-width: 639px) {
@@ -323,17 +368,21 @@ li {
 
     font-size: 24px;
   }
+
+
   .ag-courses-item_link {
     padding: 22px 40px;
   }
+
   .ag-courses-item_date-box {
     font-size: 16px;
   }
 }
-
 div#lo-card {
-  /* margin: 0 0 0 10rem; */
+  margin: 0 0 0 10rem;
+
 }
+
 .ag-courses_item.lower {
   margin: 0 30px;
 }
@@ -345,23 +394,23 @@ div#lo-card {
 /* NEXT SECTION */
 
 h2 {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 600;
   font-size: 52px;
   line-height: 1.2em;
   margin-bottom: 2.5rem;
-  text-shadow: 0em 0.1em 2em rgba(0, 0, 0, 0.4);
+  text-shadow: 0em 0.1em 2em rgba(0, 0, 0, 0.4)
 }
 
 .yellow-portion {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
 .misc-text {
   position: relative;
-  padding: 15% 18%;
+  padding: 20% 18%;
   text-align: center;
   color: white;
 }
@@ -388,9 +437,11 @@ h2 {
 .stack {
   width: 85%;
   max-width: 400px;
-  transition: 0.25s ease;
+  transition: .25s ease;
+
   &:hover {
     transform: rotate(5deg);
+
     .card:before {
       transform: translatey(-2%) rotate(-4deg);
     }
@@ -403,11 +454,12 @@ h2 {
 .card {
   aspect-ratio: 3 / 2;
   border: 4px solid;
-  background-color: #fff;
+  background-color: #FFF;
   position: relative;
-  transition: 0.15s ease;
+  transition: .15s ease;
   cursor: pointer;
   padding: 5% 5% 15% 5%;
+
   &:before,
   &:after {
     content: "";
@@ -416,10 +468,10 @@ h2 {
     height: 100%;
     width: 100%;
     border: 4px solid;
-    background-color: #fff;
+    background-color: #FFF;
     transform-origin: center center;
     z-index: -1;
-    transition: 0.15s ease;
+    transition: .15s ease;
     top: 0;
     left: 0;
   }
@@ -432,10 +484,12 @@ h2 {
     transform: translatey(2%) rotate(6deg);
   }
 }
+
 .image {
   width: 100%;
   border: 4px solid;
-  background-color: #eee;
+  background-color: #EEE;
+
   aspect-ratio: 1 / 1;
   position: relative;
 }
@@ -458,8 +512,9 @@ h2 {
   width: 50%;
 }
 
-.textSocials {
-  width: 35%;
+ul {
+  text-align: left;
+  list-style-type: square;
 }
 
 .socialIcons {
@@ -490,7 +545,7 @@ ul {
   list-style-type: square;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width:420px) {
   h1 {
     font-size: 60px;
   }
@@ -498,25 +553,103 @@ ul {
     text-align: center;
     padding: 2rem 5rem;
   }
+
   .main-cont-img {
-    width: 24rem;
+    width: 28rem;
+    padding-right: 20px;
+    translate: -22px;
   }
+
+  div#our-services {
+    padding-bottom: 0;
+  }
+
   div#lo-card {
     margin: 1rem;
   }
+
   .ag-courses_item.lower {
     margin: 0 15px;
   }
+
   .misc-text {
-    padding: 30% 5%;
+    padding: 48% 12%;
+    font-size: small;
+    padding-bottom: 50px;
   }
+
   h2 {
-    font-size: 35px;
+    font-size: 25px;
   }
+
   .col-lg-3 {
     margin-bottom: 4rem;
     /* margin-left: 6rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
+
+  .container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+    width: 100%;
+  }
+
+  #testimonials_section {
+    margin: 5px;
+  }
+
+  #testimonialCards,
+  #our-services-card {
+    margin: 5px 10%;
+  }
+  #footer .footer-top{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+  #link1,
+  #link2,
+  #link3 {
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    margin-bottom: 30px;
+  }
+
+  #juststart {
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    margin-bottom: 35px;
+  }
+
+  #endpart {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #endpart .social-links{
+    width: max-content;
+    margin-bottom: 10px;
+  }
+  .copyright{
+    width: max-content;
+    translate: -19%; 
+  }
+  .credits{
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
 }
 
 /* BUTTON */
@@ -533,11 +666,11 @@ button {
   transition: 0.3s;
   z-index: 1;
   font-family: inherit;
-  color: #17c3b2;
+  color: #17C3B2;
 }
 
 button::before {
-  content: "";
+  content: '';
   width: 0;
   height: 300%;
   position: absolute;
@@ -556,6 +689,13 @@ button:hover::before {
 
 button:hover {
   color: #111;
+}
+
+.testimonials-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
 }
 .slick-prev,
 .slick-next {
