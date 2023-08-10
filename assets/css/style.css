@@ -1178,7 +1178,7 @@ a:hover i {
   height: 400px;
   position: relative;
   background: var(--background-white);
-  height: 350px;
+  height: fit-content;
   border-radius: 15px;
   transition: 0.4s ease-in-out;
 }
