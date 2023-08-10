@@ -150,41 +150,45 @@
         </div>
 
         <!-- signup form -->
-        <form class="form-container d-flex flex-column">
+        <form class="form-container d-flex flex-column" aria-labelledby="form-label">
           <!-- inputs -->
           <div class="name d-flex w-100">
             <div class="user-box name-part" style="width: 50%">
-              <input id="f_name" type="text" required />
+              <input id="f_name" type="text" required aria-labelledby="f_name-label"
+              aria-describedby="firstnameerr"/>
               <label for="firstName">First name</label>
-              <span class="error-msg" id="firstnameerr"></span>
+              <span class="error-msg" id="firstnameerr" role="alert" aria-live="assertive"></span>
             </div>
 
             <div class="user-box name-part" style="width: 50%">
-              <input id="s_name" type="text" required />
+              <input id="s_name" type="text" required aria-labelledby="s_name-label"
+              aria-describedby="surnameerr"/>
               <label for="surname">Surname</label>
-              <span class="error-msg" id="surnameerr"></span>
+              <span class="error-msg" id="surnameerr" role="alert" aria-live="assertive"></span>
             </div>
           </div>
 
           <div class="user-box">
-            <input id="email" type="email" required />
+            <input id="email" type="email" required aria-labelledby="email-label"
+            aria-describedby="emailerr"/>
             <label for="email">Email address</label>
-            <span class="error-msg" id="emailerr"></span>
+            <span class="error-msg" id="emailerr" role="alert" aria-live="assertive"></span>
           </div>
 
           <div class="user-box">
-            <input id="password" type="password" required />
+            <input id="password" type="password" required aria-labelledby="password-label"
+            aria-describedby="passworderr"/>
             <label for="password">Password</label>
-            <span class="error-msg" id="passworderr"></span>
+            <span class="error-msg" id="passworderr" role="alert" aria-live="assertive"></span>
           </div>
           <div style="display: flex; align-items: center">
-            <input id="togglePassword" type="checkbox" />
+            <input id="togglePassword" type="checkbox" aria-labelledby="togglePassword-label"/>
             <label style="margin-top: 5px; margin-left: 5px"
               >Show password</label
             >
           </div>
-          <div class="alan-btn"></div>
-          <div id="error-msg" class="text-danger font-weight-bold"></div>
+          <div class="alan-btn" aria-hidden="true"></div>
+          <div id="error-msg" class="text-danger font-weight-bold"  aria-live="assertive"></div>
 
           <!-- sign up button -->
           <div class="btn-wrapper">
@@ -193,6 +197,7 @@
               type="submit"
               onclick="validateForm()"
               class="submit-button"
+              aria-labelledby="signup-button-label"
             >
               <span class="btn-pos Span"> signup</span>
               <div class="flow"></div>
@@ -202,7 +207,7 @@
           <!-- already account -->
           <div class="ahaa">
             Already have an account?
-            <a href="/login/login.html" class="pl-2 login_link">Login</a>
+            <a href="/login/login.html" class="pl-2 login_link"  aria-label="Login">Login</a>
           </div>
         </form>
       </div>

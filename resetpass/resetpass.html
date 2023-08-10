@@ -137,6 +137,7 @@
           method="get"
           class="form-container d-flex flex-column"
           onSubmit="handleSubmit()"
+          aria-labelledby="form-label"
         >
           <!-- inputs -->
 
@@ -147,9 +148,11 @@
               onChange="handleChange()"
               required
               id="password"
+              aria-labelledby="oldpass-label"
+              aria-describedby="passworderr"
             />
             <label for="oldpass">Old Password</label>
-            <span class="error-msg" id="passworderr"></span>
+            <span class="error-msg" id="passworderr" role="alert" aria-live="assertive"></span>
           </div>
 
           <div class="user-box">
@@ -159,13 +162,15 @@
               onChange="handleChange()"
               required
               id="password1"
+              aria-labelledby="newpass-label"
+              aria-describedby="password1err"
             />
             <label for="newpass">New Password</label>
-            <span class="error-msg" id="password1err"></span>
+            <span class="error-msg" id="password1err" role="alert" aria-live="assertive"></span>
           </div>
 
           <div style="display: flex; align-items: center">
-            <input id="togglePassword" type="checkbox" />
+            <input id="togglePassword" type="checkbox" aria-labelledby="togglePassword-label"/>
             <label style="margin-top: 5px; margin-left: 5px"
               >Show password</label
             >
@@ -173,7 +178,7 @@
 
           <!-- reset pass button -->
           <div class="btn">
-            <button type="submit" class="submit-button cursor-pointer" onclick="handleSubmit()">
+            <button type="submit" class="submit-button cursor-pointer" onclick="handleSubmit()" aria-labelledby="confirm-button-label">
               Confirm
             </button>
           </div>

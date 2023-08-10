@@ -1313,24 +1313,28 @@
     
                 <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
                   <div class="contact">
-                    <form class="contact-form" id="enquiry-form">
+                    <form class="contact-form" id="enquiry-form" aria-labelledby="form-title">
                       <div class="title">Details</div>
-                      <input type="text" id="name" placeholder="Your Name" class="" pattern="[a-zA-Z]+" required="" fdprocessedid="t41fi9">
-                      <div class="spandiv"><small class="small" id="nameerr"></small></div>
+                      <input type="text" id="name" placeholder="Your Name" class="" pattern="[a-zA-Z]+" required aria-labelledby="name-label"
+                      aria-describedby="nameerr" fdprocessedid="t41fi9">
+                      <div class="spandiv"><small class="small" id="nameerr" role="alert" aria-live="assertive"></small></div>
         
-                      <input type="email" id="email" class="" placeholder="Email id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="" fdprocessedid="9gmh9k">
-                      <div class="spandiv"><small class="small" id="mailerr"></small></div>
+                      <input type="email" id="email" class="" placeholder="Email id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required aria-labelledby="email-label"
+                      aria-describedby="mailerr" fdprocessedid="9gmh9k">
+                      <div class="spandiv"><small class="small" id="mailerr" role="alert" aria-live="assertive"></small></div>
         
-                      <input type="email" id="email" class="" placeholder="college">
+                      <input type="email" id="email" class="" placeholder="college"  aria-labelledby="college-label">
                       <div class="spandiv"><small class="small" id="mailerr"></small></div>
 
-                      <input type="tel" id="phone" class="" placeholder="Phone no." pattern="[0-9]{10}$" required="" fdprocessedid="ix6wjo">
-                      <div class="spandiv"><small class="small" id="phoneerr"></small></div>
+                      <input type="tel" id="phone" class="" placeholder="Phone no." pattern="[0-9]{10}$" required aria-labelledby="phone-label"
+                      aria-describedby="phoneerr" fdprocessedid="ix6wjo">
+                      <div class="spandiv"><small class="small" id="phoneerr" role="alert" aria-live="assertive"></small></div>
         
-                      <textarea id="message" row="5" class="" placeholder="How can we help you?" required=""></textarea>
-                      <div class="spandiv"><small class="small" id="msgerr"></small></div>
+                      <textarea id="message" row="5" class="" placeholder="How can we help you?" required aria-labelledby="message-label"
+                      aria-describedby="msgerr"></textarea>
+                      <div class="spandiv"><small class="small" id="msgerr" role="alert" aria-live="assertive"></small></div>
         
-                      <button type="submit" onclick="sendMail()" class="hoverchanger" fdprocessedid="ur2n8">
+                      <button type="submit" onclick="sendMail()" class="hoverchanger" fdprocessedid="ur2n8"   aria-labelledby="send-button-label">
                         Send
                       </button>
                     </form>
@@ -1455,8 +1459,8 @@
           <a
             href="https://wa.me/7975954835 "
             target="_blank"
-            aria-label="Visit us on Whatapp"
-            title="Whatapp (External Link)"
+            aria-label="Visit us on Whatsapp"
+            title="Whatsapp (External Link)"
             rel="noopener noreferrer"
             class="whatsapp"
           >
@@ -1496,7 +1500,7 @@
             href="https://www.youtube.com/@oscodecommunity"
             target="_blank"
             aria-label="Visit us on Youtube"
-            title="Linkedin (External Link)"
+            title="Youtube (External Link)"
             rel="noopener noreferrer"
             class="youtube"
           >
@@ -1526,6 +1530,9 @@
             href="https://github.com/OSCode-Community/OSCodeCommunitySite"
             target="_blank"
             class="github"
+            aria-label="Visit us on Github"
+            title="Github (External Link)"
+            rel="noopener noreferrer"
           >
             <i class="bi bi-github"></i
           ></a>
