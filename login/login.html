@@ -164,23 +164,24 @@
         </div>
 
         <!-- Login form -->
-        <form class="form-container d-flex flex-column">
+        <form class="form-container d-flex flex-column" aria-labelledby="form-label">
           <!-- inputs -->
           <div class="user-box">
-            <input id="email" type="email" required />
+            <input id="email" type="email" required aria-labelledby="email-label"/>
             <label for="email">User Email</label>
-            <span class="error-msg" id="emailerr"></span>
+            <span class="error-msg" id="emailerr" aria-live="assertive"></span>
           </div>
 
           <div>
             <div class="user-box">
-              <input type="password" id="password" required />
+              <input type="password" id="password" required  aria-labelledby="password-label"
+              aria-describedby="password-desc"/>
               <label for="password">Password</label>
-              <span class="error-msg" id="passworderr"></span>
+              <span class="error-msg" id="passworderr" aria-live="assertive"></span>
             </div>
 
             <div style="display: flex; align-items: center">
-              <input id="togglePassword" type="checkbox" />
+              <input id="togglePassword" type="checkbox" aria-labelledby="togglePassword-label"/>
               <label style="margin-top: 5px; margin-left: 5px; cursor: pointer"
                 >Show password</label
               >
@@ -188,18 +189,18 @@
           </div>
           <div class="remember-me">
             <label class="switch" for="remember-me">
-              <input type="checkbox" id="remember-me" />
+              <input type="checkbox" id="remember-me" aria-labelledby="remember-me-label"/>
               <div class="slider round"></div>
             </label>
             <label for="remember-me"> Remember me</label>
           </div>
 
           <!-- error message -->
-          <div id="error-msg" class="text-danger font-weight-bold"></div>
+          <div id="error-msg" class="text-danger font-weight-bold" aria-live="assertive"></div>
 
           <!-- login button -->
           <div class="btn-wrapper">
-            <button class="btn" onclick="validateForm()">
+            <button class="btn" onclick="validateForm()" aria-labelledby="login-label">
               <span class="btn-pos Span">LOGIN</span>
               <div class="flow"></div>
             </button>
@@ -210,14 +211,14 @@
             class="d-flex flex-column align-items-center justify-content-center"
           >
             <div class="mb-2 fyp">
-              <a href="/resetpass/resetpass.html" class="text-white">
+              <a href="/resetpass/resetpass.html" class="text-white" aria-label="Forgot Your password?">
                 Forgot Your password?
               </a>
             </div>
 
             <div class="dhaa">
               Don't have an account?
-              <a href="/signup/signup.html" class="pl-2 signup_link">
+              <a href="/signup/signup.html" class="pl-2 signup_link" aria-label="Sign Up">
                 Sign Up
               </a>
             </div>
