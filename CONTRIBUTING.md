@@ -43,15 +43,44 @@ Make sure to remove <paste-the-link-here> and replace it with the actual link yo
 Which looks something like:
 
 ```bash
-  git clone https://github.com/yourUsername/OSCodeCommunitySite
-.git
+  git clone https://github.com/<YOUR_USERNAME>/OSCodeCommunitySite.git
 ```
 
 The yourUsername is nothing but your GitHub username.
 
 Congratulations! You have successfully cloned the repository to your local machine. You can now make changes, add new features, or fix issues in the codebase.
 
-### Step 3: Create a New Branch
+### Step 3: Go to the directory
+
+```
+cd OSCodeCommunitySite
+```
+
+### Step 4: Add a reference(remote) to the original repository
+
+```
+git remote add upstream https://github.com/OSCode-Community/OSCodeCommunitySite.git
+```
+
+Adding a reference to the original repository (upstream) allows for syncing and pulling updates from the main project repository.
+
+### Step 5: Check the remotes for this repository
+
+```
+git remote -v
+```
+
+This step checks and displays the remote repositories linked to the local repository to ensure the upstream reference was added correctly.
+
+### Step 6: Take a pull request from the upstream repository
+
+```
+git pull upstream master
+```
+
+Always take a pull from the upstream repository to your main branch to keep it updated as per the main project repository.
+
+### Step 7: Create a New Branch
 
 After making the necessary changes, it's recommended to create a new branch for your changes. This helps keep your modifications separate from the main branch, making it easier to manage and review your contributions.
 
@@ -71,12 +100,30 @@ The git checkout -b branch-name command in Git creates a new branch with the spe
 
 **-b** : this creates the branch if it not exists already of name branch-name.
 
-### Step 4: Make Your Changes
+### Step 8: Make Your Changes
 
 Make the necessary changes or additions to the codebase.
 Once you have added changes in your local, its time to push them, for that run this command to bring the modification to the staging area.
 
-### git add .
+### Step 9: Check your changes
+
+```
+git status
+```
+
+```
+git diff
+```
+
+git status: Shows the current status of the repository, including changes, untracked files, and branch information.
+
+git diff: Displays the differences between the working directory and the last commit or between branches.
+
+### Step 10: Stage your changes
+
+```
+git add .
+```
 
 This command is used to stage all the changes in the current directory and it's subdirectories for the next commit. It adds all modified and new files to the staging area, allowing you to include them in the next commit.
 
@@ -93,11 +140,9 @@ replace <path> with your working directory.
 
 and then run this command:
 
-```bash
-  git add .
-```
+`git add .`
 
-### Step 5: Commit Your Changes
+### Step 11: Commit Your Changes
 
 Commit your changes with a meaningful commit message using the following command:
 
@@ -107,30 +152,30 @@ Commit your changes with a meaningful commit message using the following command
 
 Once you have committed your changes, it's time to push them to your forked repository on GitHub.
 
-### Step 6: Push Your Changes
+### Step 12: Push Your Changes
 
 Use the following command to push your changes:
 
 ```bash
-git push origin branch-name
+git push -u origin <branch-name>
 ```
 
-Replace branch-name with the name of the branch you created earlier.
+Replace <branch-name> with the name of the branch you created earlier.
 
-### Step 7: Make a Pull Request
+### Step 13: Make a Pull Request
 
 After pushing your changes, open your forked repository on GitHub in your web browser.
 
 Go to pull request section in your forked repository (not the main repository)
 
-Click on "New Pull Request".
+Click on `comapre and pull request`
 Then this will appear.
 
 Provide a clear and informative title and description for your pull request. Explain the changes you have made and why they should be incorporated into the original repository.
 
 Review your pull request to ensure everything is correct, and then click on the "Create pull request" button to submit it.
 
-### Congrats!
+### Congrats!🎉
 
 Your pull request will now be visible to the maintainers of the original repository. They will review your changes, provide feedback if necessary, and decide whether to merge them into the main branch.
 

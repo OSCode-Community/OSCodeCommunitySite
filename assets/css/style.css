@@ -696,6 +696,10 @@ h1 {
     margin: 10px;
   }
 
+  .bx-1.count-box{
+    margin-bottom: 2.5rem;
+  }
+
   @media (max-width: 325px) {
     #hero h1 {
       font-size: 34px;
@@ -1181,7 +1185,7 @@ a:hover i {
 
 @media only screen and (max-width: 370px) {
   .testimonials .testimonial-item {
-    height: 490px;
+    height: fit-content;
   }
 }
 
@@ -1674,11 +1678,12 @@ a:hover i {
 
 .social-links {
   margin-bottom: 10px;
+  margin-right: 50px;
   padding-bottom: -50px;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 5px;
   display: flex;
-  width: 43%;
+  width: 40%;
 }
 
 .socialIcons {
