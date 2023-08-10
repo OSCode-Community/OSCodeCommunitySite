@@ -3,26 +3,16 @@
     url("/assets/img/background/peopleImg.webp");
   padding: unset;
   height: 400px;
-  padding: 100px 0 50px 0;
+  padding-top: 100px;
+  padding-bottom: 50px;
   justify-content: center;
 }
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 70px;
-  right: -22px;
-  left: 0;
-  bottom: 0;
-  background: var(--navbar-mobile-background-color);
-  transition: 0.3s;
-  z-index: 999;
-}
+
 #about {
   background: center/cover url("/assets/img/background/s3.webp");
 }
 
-.row {
-  margin-top: 20px;
+
 
   .hidden {
     opacity: 0;
@@ -86,6 +76,7 @@
       width: 100%;
       transition: none;
     }
+
 
     .us:hover:before {
       width: 0;
@@ -514,6 +505,16 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 600px) {
+  #results {
+    margin-left: 10px;
+    max-width: 350px;
+    max-height: 200px;
+  }
+}
+
+
 body {
   font-family:
     Varela Round,
@@ -566,11 +567,7 @@ body {
 }
 
 .card-title a {
-  color: white;
-}
-
-.card-title a:hover {
-  color: #009ffd;
+  color: white !important;
 }
 
 .card-text {
@@ -592,11 +589,6 @@ body {
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   height: 150px;
   box-sizing: border-box;
-  transition: transform 0.5s ease;
-}
-
-.img-fluid:hover{
-  transform: scale(1.1);
 }
 
 .row {
@@ -626,6 +618,10 @@ body {
 }
 
 @media (min-width: 35em) {
+  .card img {
+    width: 100% !important;
+    height: 100% !important;
+  }
   .card-title,
   .card-text {
     text-align: center !important;
@@ -636,13 +632,12 @@ body {
   .card > div > div {
     height: unset;
   }
-}
 
+  
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
   margin-right: 150px;
-}
 
