@@ -1185,7 +1185,7 @@ a:hover i {
 
 @media only screen and (max-width: 370px) {
   .testimonials .testimonial-item {
-    height: 490px;
+    height: fit-content;
   }
 }
 
