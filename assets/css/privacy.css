@@ -21,7 +21,6 @@ a {
 
 a:visited {
   text-decoration: none;
-  color: rgb(141, 27, 255);
 }
 
 a:hover {
@@ -37,7 +36,7 @@ a:hover {
   overflow: auto;
   text-align: center;
   background-color: purple;
-  padding-bottom: 0rem;
+  padding-top: 9rem;
 }
 
 /* Heading styles */
