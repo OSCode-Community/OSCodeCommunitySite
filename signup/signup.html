@@ -126,7 +126,7 @@
     <!-- signup container -->
     <div class="signup-container min-vh-100">
       <div
-        class="signup-box   text-white d-flex flex-column align-items-center justify-content-center mx-auto"
+        class="signup-box text-white d-flex flex-column align-items-center justify-content-center mx-auto"
       >
         <h1 class="signuptxt text-center p-0">Sign Up</h1>
         <!-- p class="text-center fw-bolder p-0">It's quick and easy.</p -->
@@ -153,13 +153,13 @@
         <form class="form-container d-flex flex-column">
           <!-- inputs -->
           <div class="name d-flex w-100">
-            <div class="user-box name-part">
+            <div class="user-box name-part" style="width: 50%">
               <input id="f_name" type="text" required />
               <label for="firstName">First name</label>
               <span class="error-msg" id="firstnameerr"></span>
             </div>
 
-            <div class="user-box name-part">
+            <div class="user-box name-part" style="width: 50%">
               <input id="s_name" type="text" required />
               <label for="surname">Surname</label>
               <span class="error-msg" id="surnameerr"></span>
@@ -188,7 +188,12 @@
 
           <!-- sign up button -->
           <div class="btn-wrapper">
-            <button id="signUp" type="submit" onclick="validateForm()" class="submit-button">
+            <button
+              id="signUp"
+              type="submit"
+              onclick="validateForm()"
+              class="submit-button"
+            >
               <span class="btn-pos Span"> signup</span>
               <div class="flow"></div>
             </button>
@@ -204,7 +209,7 @@
     </div>
 
     <!-- javascript -->
- 
+
     <script>
       togglePassword.addEventListener("click", (e) => {
         if (document.getElementById("password").type == "password") {
@@ -214,81 +219,93 @@
         }
       });
     </script>
-       <script>
-       
-        var f_name = document.getElementById("f_name");
-        var s_name = document.getElementById("s_name");
-        var email = document.getElementById("email");
-        var password = document.getElementById("password");
-        var fnameerr = document.getElementById("firstnameerr");
-        var surnameerr = document.getElementById("surnameerr");
-        var emailerr = document.getElementById("emailerr");
-        var passwderr = document.getElementById("passworderr");
-      
-        function validEmail(mail) 
-      {
-       if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
-        { return true;}
-         return false;
+    <script>
+      var f_name = document.getElementById("f_name");
+      var s_name = document.getElementById("s_name");
+      var email = document.getElementById("email");
+      var password = document.getElementById("password");
+      var fnameerr = document.getElementById("firstnameerr");
+      var surnameerr = document.getElementById("surnameerr");
+      var emailerr = document.getElementById("emailerr");
+      var passwderr = document.getElementById("passworderr");
+
+      function validEmail(mail) {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+          return true;
+        }
+        return false;
       }
-        function validateForm(){
-          console.log("called");
-             // Validation check
-        if (f_name.value=='') {
+      function validateForm() {
+        console.log("called");
+        // Validation check
+        if (f_name.value == "") {
           fnameerr.innerText = "*First name is required";
-        } else if (s_name.value=='') {
+        } else if (s_name.value == "") {
           fnameerr.innerText = "";
           surnameerr.innerText = "*Surname is required!";
-        } else if(email.value=='')
-        { fnameerr.innerText = ""; surnameerr.innerText=""; emailerr.innerText = "*Email is required!"; }
-        else if(!validEmail(email.value))
-        { fnameerr.innerText = ""; surnameerr.innerText=""; emailerr.innerText = "*Enter valid email!";}
-        else if(password.value =='')
-        { fnameerr.innerText = ""; surnameerr.innerText=""; emailerr.innerText = ""; passwderr.innerText = "*Password is required!";}
-        else
-        {
-          fnameerr.innerText = ""; surnameerr.innerText=""; emailerr.innerText =""; passwderr.innerText="";
-            // Move on with auth
-            createUserWithEmailAndPassword(auth, email, password)
-              .then((userCredential) => {
-                // Signed in
-                const user = userCredential.user;
-      
-                set(ref(database, "users/" + user.uid), {
-                  email: email,
-                }).then(() => (window.location.href = "/"));
-              })
-              .catch((error) => {
-                // Handle errors here
-                const errorCode = error.code;
-                const errorMessage = error.message;
-      
-                document.getElementById("error-msg").innerHTML = errorMessage;
-              });
-          }
-        }
-         </script>
-           <script type="text/javascript"
-           src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
-          <script>
-            var alanBtnInstance = alanBtn({
-              key: "4cc35fadda67f87264a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
-              left: '50px',
-      bottom: '50px',
-      onCommand: function (commandData) {
-        if (commandData && commandData.command === 'openURL') {
-          if (commandData.target === '_blank') {
-            window.open(commandData.url, '_newtab' + Math.floor(Math.random() * 999999));
-          } else {
-            window.location.href = commandData.url;
-          }
-        }
+        } else if (email.value == "") {
+          fnameerr.innerText = "";
+          surnameerr.innerText = "";
+          emailerr.innerText = "*Email is required!";
+        } else if (!validEmail(email.value)) {
+          fnameerr.innerText = "";
+          surnameerr.innerText = "";
+          emailerr.innerText = "*Enter valid email!";
+        } else if (password.value == "") {
+          fnameerr.innerText = "";
+          surnameerr.innerText = "";
+          emailerr.innerText = "";
+          passwderr.innerText = "*Password is required!";
+        } else {
+          fnameerr.innerText = "";
+          surnameerr.innerText = "";
+          emailerr.innerText = "";
+          passwderr.innerText = "";
+          // Move on with auth
+          createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+              // Signed in
+              const user = userCredential.user;
 
-      },
+              set(ref(database, "users/" + user.uid), {
+                email: email,
+              }).then(() => (window.location.href = "/"));
+            })
+            .catch((error) => {
+              // Handle errors here
+              const errorCode = error.code;
+              const errorMessage = error.message;
 
-              rootEl: document.getElementById("alan-btn"),
+              document.getElementById("error-msg").innerHTML = errorMessage;
             });
-          </script>
-            <script src="signup.js" type="module"></script>
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://studio.alan.app/web/lib/alan_lib.min.js"
+    ></script>
+    <script>
+      var alanBtnInstance = alanBtn({
+        key: "4cc35fadda67f87264a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+        left: "50px",
+        bottom: "50px",
+        onCommand: function (commandData) {
+          if (commandData && commandData.command === "openURL") {
+            if (commandData.target === "_blank") {
+              window.open(
+                commandData.url,
+                "_newtab" + Math.floor(Math.random() * 999999)
+              );
+            } else {
+              window.location.href = commandData.url;
+            }
+          }
+        },
+
+        rootEl: document.getElementById("alan-btn"),
+      });
+    </script>
+    <script src="signup.js" type="module"></script>
   </body>
 </html>
