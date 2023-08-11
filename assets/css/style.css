@@ -113,6 +113,7 @@ h1 {
 .back-to-top:hover {
   background: var(--backtotop-btn-color);
   color: var(--background-white);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.6);
 }
 
 .back-to-top.active {
