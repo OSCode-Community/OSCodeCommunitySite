@@ -9,10 +9,10 @@
   "object" == typeof exports && "object" == typeof module
     ? (module.exports = t())
     : "function" == typeof define && define.amd
-    ? define([], t)
-    : "object" == typeof exports
-    ? (exports.PureCounter = t())
-    : (e.PureCounter = t());
+      ? define([], t)
+      : "object" == typeof exports
+        ? (exports.PureCounter = t())
+        : (e.PureCounter = t());
 })(self, function () {
   return (
     (e = {
@@ -51,9 +51,9 @@
                   "Map" === r || "Set" === r
                     ? Array.from(e)
                     : "Arguments" === r ||
-                      /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)
-                    ? n(e, t)
-                    : void 0
+                        /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)
+                      ? n(e, t)
+                      : void 0
                 );
               }
             })(e) ||
@@ -171,9 +171,9 @@
                             ? ((a = t.replace(new RegExp(/,/gi, "gi"), n)),
                               (u = ","))
                             : void 0 !== r
-                            ? (a = r.replace(new RegExp(/\./gi, "gi"), n))
-                            : void 0 !== o &&
-                              (a = o.replace(new RegExp(/ /gi, "gi"), n)),
+                              ? (a = r.replace(new RegExp(/\./gi, "gi"), n))
+                              : void 0 !== o &&
+                                (a = o.replace(new RegExp(/ /gi, "gi"), n)),
                           void 0 !== i)
                         ) {
                           var c = "," !== u && "," !== n ? "," : ".";
@@ -200,10 +200,10 @@
           return /^[0-9]+\.[0-9]+$/.test(e)
             ? parseFloat(e)
             : /^[0-9]+$/.test(e)
-            ? parseInt(e)
-            : /^true|false/i.test(e)
-            ? /^true/i.test(e)
-            : e;
+              ? parseInt(e)
+              : /^true|false/i.test(e)
+                ? /^true/i.test(e)
+                : e;
         }
         function f(e) {
           for (

@@ -608,8 +608,8 @@
     input.maxPointers = !session.prevInput
       ? input.pointers.length
       : input.pointers.length > session.prevInput.maxPointers
-      ? input.pointers.length
-      : session.prevInput.maxPointers;
+        ? input.pointers.length
+        : session.prevInput.maxPointers;
 
     computeIntervalInputData(session, input);
 
@@ -2779,8 +2779,8 @@
     typeof window !== "undefined"
       ? window
       : typeof self !== "undefined"
-      ? self
-      : {}; // jshint ignore:line
+        ? self
+        : {}; // jshint ignore:line
   freeGlobal.Hammer = Hammer;
 
   if (typeof define === "function" && define.amd) {
