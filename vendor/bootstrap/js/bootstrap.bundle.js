@@ -7,10 +7,10 @@
   typeof exports === "object" && typeof module !== "undefined"
     ? (module.exports = factory())
     : typeof define === "function" && define.amd
-    ? define(factory)
-    : ((global =
-        typeof globalThis !== "undefined" ? globalThis : global || self),
-      (global.bootstrap = factory()));
+      ? define(factory)
+      : ((global =
+          typeof globalThis !== "undefined" ? globalThis : global || self),
+        (global.bootstrap = factory()));
 })(this, function () {
   "use strict";
 
@@ -3216,8 +3216,8 @@
     return clippingParent === viewport
       ? rectToClientRect(getViewportRect(element, strategy))
       : isElement(clippingParent)
-      ? getInnerBoundingClientRect(clippingParent, strategy)
-      : rectToClientRect(getDocumentRect(getDocumentElement(element)));
+        ? getInnerBoundingClientRect(clippingParent, strategy)
+        : rectToClientRect(getDocumentRect(getDocumentElement(element)));
   } // A "clipping parent" is an overflowable container with the characteristic of
   // clipping (or hiding) overflowing elements with a position different from
   // `initial`
@@ -3555,8 +3555,8 @@
           ? right
           : left
         : isStartVariation
-        ? bottom
-        : top;
+          ? bottom
+          : top;
 
       if (referenceRect[len] > popperRect[len]) {
         mainVariationSide = getOppositePlacement(mainVariationSide);
@@ -4215,8 +4215,8 @@
             reference: isElement(reference)
               ? listScrollParents(reference)
               : reference.contextElement
-              ? listScrollParents(reference.contextElement)
-              : [],
+                ? listScrollParents(reference.contextElement)
+                : [],
             popper: listScrollParents(popper),
           }; // Orders the modifiers based on their dependencies and `phase`
           // properties
