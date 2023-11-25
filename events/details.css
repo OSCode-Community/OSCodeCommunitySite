@@ -1,0 +1,35 @@
+#events {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: linear-gradient(rgb(57, 23, 132), rgb(12, 12, 83));
+}
+
+.task-container {
+    overflow-y: scroll;
+    max-height: 700px;
+}
+
+.task {
+    cursor: pointer;
+}
+
+.task:hover {
+    background: #f5f5f5;
+}
+
+#icon-image {
+    border-radius: 50px;
+}
+
+#website-name {
+    padding: 0.4rem;
+    color: white;
+}
+
+#navbarNav .nav-item {
+    margin-right: 35px;
+}
+
+#details-card {
+    max-height: 650px;
+}
