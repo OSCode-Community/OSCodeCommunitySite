@@ -215,6 +215,22 @@ h3 {
   margin: 0 auto;
 }
 
+@media (max-width: 1163px){
+  
+.ag-format-container {
+  width: 905px;
+  margin: 0 auto;
+}
+}
+
+
+@media (max-width: 906px) {
+  .ag-format-container {
+    width: 656px;
+    margin: 0 auto;
+  }
+}
+
 li {
   color: black;
   font-size: 15px;
@@ -225,7 +241,7 @@ li {
 .ag-courses_box {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
