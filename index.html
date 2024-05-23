@@ -91,6 +91,26 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Show the button when the user scrolls down 20px from the top
+      window.onscroll = function() {
+      scrollFunction();
+      };
+
+      function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("backToTop").style.display = "block";
+      } else {
+      document.getElementById("backToTop").style.display = "none";
+        }
+      }
+
+      // Scroll to the top of the document
+      function scrollToTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+      }
+    </script>
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -117,6 +137,37 @@
 
     <!-- for overriding the nav css -->
     <link rel="stylesheet" href="./assets/css/override.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+      #backToTop {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed position to stay at the bottom */
+      bottom: 20px; /* Position from the bottom */
+      right: 20px; /* Position from the right */
+      z-index: 100; /* Ensure it is above other elements */
+      background-color: #000; /* Background color */
+      color: white; /* Text color */
+      border: none; /* No border */
+      padding: 10px; /* Padding */
+      border-radius: 50%; /* Rounded corners to make it a circle */
+      cursor: pointer; /* Pointer cursor on hover */
+      font-size: 16px; /* Font size */
+      width: 50px; /* Fixed width */
+      height: 50px; /* Fixed height */
+      text-align: center; /* Center the icon */
+      line-height: 30px; /* Adjust line height for vertical alignment */
+}
+#backToTop:hover {
+  background-color: #555; /* Darker background on hover */
+}
+#backToTop i, #backToTop svg {
+  font-size: 24px; /* Adjust icon size */
+  vertical-align: middle; /* Center the icon vertically */
+}
+
+    </style>
+
 
     <!--Start of Tawk.to Script-->
     <!--<script type="text/javascript">
@@ -1730,5 +1781,7 @@
         setInterval(changeBackground, 2000);
       });
     </script>
+        <button id="backToTop" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
+
   </body>
 </html>
